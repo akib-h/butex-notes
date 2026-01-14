@@ -1,0 +1,194 @@
+# Chemistry Class Test - Comprehensive Notes
+
+## 1. Key Theories and Concepts
+
+### Bond Order
+
+Bond order represents the number of chemical bonds between a pair of atoms. It indicates the stability of a bond - higher bond order means greater stability and shorter bond length.
+
+**Formula:**
+Bond order = (Number of bonding electrons - Number of antibonding electrons) / 2
+
+**Key Points:**
+- Bond order of 1 = single bond
+- Bond order of 2 = double bond
+- Bond order of 3 = triple bond
+- Bond order of 0 = no bond exists (molecule is unstable)
+- Fractional bond orders are possible in molecules like O₂⁺ (2.5)
+
+**Examples:**
+- H₂ has bond order 1 (single bond)
+- O₂ has bond order 2 (double bond)
+- N₂ has bond order 3 (triple bond)
+
+### Valence Bond Theory (VBT)
+
+Valence Bond Theory was proposed by Heitler and London in 1927 and later extended by Pauling and Slater. It explains bond formation through the overlap of atomic orbitals.
+
+**Main Postulates:**
+1. A covalent bond forms when half-filled atomic orbitals of two atoms overlap
+2. The overlapping orbitals must have electrons with opposite spins
+3. Greater the overlap, stronger the bond
+4. The electron density is maximum between the two nuclei
+
+**Types of Overlap:**
+- **Sigma (σ) bond:** Head-on overlap along the internuclear axis (strongest). Examples: s-s overlap in H₂, p-p overlap in Cl₂
+- **Pi (π) bond:** Lateral or sideways overlap (weaker than sigma). Example: in O₂ and N₂
+
+**Hybridization Concept:**
+Hybridization is the mixing of atomic orbitals to form new hybrid orbitals suitable for bonding.
+
+- **sp hybridization:** Linear geometry (180°). Example: BeH₂, C₂H₂
+- **sp² hybridization:** Trigonal planar (120°). Example: BF₃, C₂H₄
+- **sp³ hybridization:** Tetrahedral (109.5°). Example: CH₄, NH₃
+- **sp³d hybridization:** Trigonal bipyramidal. Example: PCl₅
+- **sp³d² hybridization:** Octahedral. Example: SF₆
+
+**Limitations of VBT:**
+- Cannot explain paramagnetism of O₂
+- Cannot predict bond energies accurately
+- Fails to explain the color of coordination compounds
+
+### Molecular Orbital Theory (MOT)
+
+Proposed by Hund and Mulliken, MOT provides a more accurate description of bonding by considering the molecule as a whole rather than individual atoms.
+
+**Main Postulates:**
+1. Atomic orbitals combine to form molecular orbitals
+2. The number of molecular orbitals formed equals the number of atomic orbitals combined
+3. Electrons occupy molecular orbitals following Aufbau principle, Pauli exclusion principle, and Hund's rule
+4. Molecular orbitals are of two types: bonding (lower energy) and antibonding (higher energy)
+
+**Bonding vs Antibonding Orbitals:**
+- **Bonding orbitals (σ, π):** Formed by constructive interference, electron density increases between nuclei, stabilizes the molecule
+- **Antibonding orbitals (σ*, π*):** Formed by destructive interference, electron density decreases between nuclei, destabilizes the molecule
+
+**MO Configuration for Homonuclear Diatomic Molecules:**
+
+For O₂, F₂, Ne₂:
+σ1s² σ*1s² σ2s² σ*2s² σ2p² π2p⁴ π*2p² σ*2p²
+
+For B₂, C₂, N₂:
+σ1s² σ*1s² σ2s² σ*2s² π2p⁴ σ2p² π*2p² σ*2p²
+
+**Advantages of MOT over VBT:**
+- Explains paramagnetism of O₂ (2 unpaired electrons in π* orbitals)
+- Predicts bond order and magnetic properties accurately
+- Explains the existence of molecules like He₂⁺ and H₂⁺
+
+### Fajans' Rules
+
+Proposed by Kasimir Fajans in 1923, these rules predict the covalent character in ionic compounds. They explain when an ionic bond develops partial covalent character.
+
+**The Rules:**
+1. **Small cation, large anion:** Increases covalent character. Small cations have high polarizing power and large anions are easily polarizable.
+
+2. **High charge on ions:** Higher charges increase covalent character. Greater charge means stronger polarization.
+
+3. **Electronic configuration of cation:** Cations with 18-electron configuration (pseudo noble gas) or incomplete d-orbitals have greater polarizing power than cations with noble gas configuration.
+
+**Polarizing Power and Polarizability:**
+- Polarizing power: Ability of a cation to distort the electron cloud of an anion
+- Polarizability: Tendency of an anion to get polarized
+
+**Examples:**
+- LiCl is more covalent than NaCl (Li⁺ is smaller than Na⁺)
+- AlCl₃ is more covalent than MgCl₂ (Al³⁺ has higher charge)
+- CuCl is more covalent than NaCl (Cu⁺ has 18-electron configuration)
+- AgI is more covalent than AgF (I⁻ is larger and more polarizable than F⁻)
+
+**Applications:**
+- Explains why some compounds expected to be ionic are actually covalent (like AlCl₃)
+- Helps predict solubility patterns
+- Explains the variation in melting points of ionic compounds
+
+## 2. Bond Order Calculations
+
+### Oxygen (O₂)
+
+Total electrons = 8 + 8 = 16 electrons
+
+**MO Configuration:**
+σ1s² σ*1s² σ2s² σ*2s² σ2p² π2p⁴ π*2p²
+
+**Calculation:**
+- Bonding electrons = 2(σ1s) + 2(σ2s) + 2(σ2p) + 4(π2p) = 10
+- Antibonding electrons = 2(σ*1s) + 2(σ*2s) + 2(π*2p) = 6
+
+Bond order = (10 - 6) / 2 = 4/2 = **2**
+
+**Interpretation:**
+- O₂ has a double bond (one σ and one π bond)
+- O₂ is paramagnetic (has 2 unpaired electrons in π*2p orbitals)
+- Stable molecule
+
+### Neon (Ne₂)
+
+Total electrons = 10 + 10 = 20 electrons
+
+**MO Configuration:**
+σ1s² σ*1s² σ2s² σ*2s² σ2p² π2p⁴ π*2p⁴ σ*2p²
+
+**Calculation:**
+- Bonding electrons = 2(σ1s) + 2(σ2s) + 2(σ2p) + 4(π2p) = 10
+- Antibonding electrons = 2(σ*1s) + 2(σ*2s) + 4(π*2p) + 2(σ*2p) = 10
+
+Bond order = (10 - 10) / 2 = 0/2 = **0**
+
+**Interpretation:**
+- Ne₂ does not exist as a stable molecule
+- Bond order of zero means no bond formation
+- This explains why neon exists as monoatomic gas
+
+## 3. Differences Between Bond Types
+
+### Ionic Bond vs Covalent Bond vs Coordinate Covalent Bond
+
+| **Property** | **Ionic Bond** | **Covalent Bond** | **Coordinate Covalent Bond** |
+|--------------|----------------|-------------------|------------------------------|
+| **Definition** | Transfer of electrons from one atom to another | Sharing of electrons between atoms | Sharing of electrons where both electrons come from one atom |
+| **Formation** | Between metal and non-metal | Between non-metals | Between an electron-rich species (donor) and electron-deficient species (acceptor) |
+| **Electron participation** | Complete transfer | Mutual sharing | One-sided donation |
+| **Nature** | Electrostatic attraction between ions | Directional overlap of orbitals | Similar to covalent after formation |
+| **Physical state** | Generally solid at room temperature | Can be solid, liquid, or gas | Varies depending on compound |
+| **Melting/Boiling point** | High | Relatively lower | Intermediate |
+| **Solubility** | Soluble in polar solvents (water) | Soluble in non-polar solvents | Depends on overall polarity |
+| **Electrical conductivity** | Conducts in molten/aqueous state | Does not conduct | Generally does not conduct |
+| **Hardness** | Hard but brittle | Variable | Variable |
+| **Bond strength** | Strong | Variable (can be strong) | Similar to covalent |
+
+**Detailed Explanations:**
+
+**Ionic Bond:**
+- Formed by electrostatic attraction between oppositely charged ions
+- Example: NaCl (Na⁺ and Cl⁻), MgO (Mg²⁺ and O²⁻)
+- Na loses one electron to form Na⁺, Cl gains one electron to form Cl⁻
+- Forms crystalline lattice structures
+- Non-directional (acts in all directions)
+
+**Covalent Bond:**
+- Formed by mutual sharing of electrons
+- Example: H₂ (each H shares 1 electron), Cl₂ (each Cl shares 1 electron), N₂ (each N shares 3 electrons)
+- Can be single, double, or triple bonds
+- Directional (specific orientation)
+- Can be polar or non-polar depending on electronegativity difference
+
+**Coordinate Covalent Bond (Dative Bond):**
+- Also called coordinate bond or dative covalent bond
+- The donor atom must have a lone pair of electrons
+- The acceptor atom must have vacant orbitals
+- Examples:
+  - **NH₃ + BF₃ → NH₃-BF₃:** Nitrogen donates lone pair to boron
+  - **H₃O⁺ (Hydronium ion):** Oxygen in H₂O donates lone pair to H⁺
+  - **NH₄⁺ (Ammonium ion):** Nitrogen in NH₃ donates lone pair to H⁺
+  - **Ozone (O₃):** Contains one coordinate bond
+  - **CO (Carbon monoxide):** Contains one coordinate bond along with two covalent bonds
+
+- Once formed, coordinate covalent bonds are indistinguishable from regular covalent bonds
+- Represented by an arrow (→) pointing from donor to acceptor
+
+**Key Distinction:**
+The main difference lies in how the shared electron pair originates. In a covalent bond, each atom contributes one electron. In a coordinate covalent bond, one atom provides both electrons. However, once the bond is formed, both types behave similarly and cannot be distinguished from each other.
+
+---
+
