@@ -223,8 +223,10 @@ This project is licensed under the terms specified in the [LICENSE](LICENSE) fil
 
 ## 🔗 Connect
 
-- GitHub: [@itachi-re](https://github.com/itachi-re)
-- Repository: [butex-notes](https://github.com/itachi-re/butex-notes)
+[![GitHub](https://img.shields.io/badge/GitHub-itachi--re-181717?style=flat&logo=github)](https://github.com/itachi-re)
+[![Repo](https://img.shields.io/badge/Repo-butex--notes-blue?style=flat&logo=github)](https://github.com/itachi-re/butex-notes)
+[![Telegram Study](https://img.shields.io/badge/Telegram-Study%20Resources-26A5E4?style=flat&logo=telegram)](https://t.me/itachi_reinc)
+[![Telegram Contact](https://img.shields.io/badge/Telegram-Contact-26A5E4?style=flat&logo=telegram)](https://t.me/itachi_re)
 
 ---
 
