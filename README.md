@@ -80,9 +80,67 @@ Convert all notes to PDF format with proper formatting:
 # Maintains directory structure: exported_pdfs/YE-101/01_natural_fibres.pdf
 ```
 
-**Requirements:**
-- Pandoc: `sudo zypper in pandoc`
-- LaTeX: `sudo zypper in texlive-scheme-basic`
+## 🖥️ System Requirements
+
+### 🐧 Linux (Recommended)
+- Any modern Linux distribution
+  - Ubuntu / Debian
+  - Arch Linux / Manjaro
+  - Fedora
+  - openSUSE (Leap / Tumbleweed)
+- Core tools:
+  - `git`
+  - `bash` or `zsh`
+  - `python` (if scripts/tools are included)
+- Optional:
+  - `docker` (for containerized workflows)
+  - `make`
+
+---
+
+### 🪟 Windows
+- Windows 10 / 11 (64-bit)
+- Required:
+  - Git for Windows
+  - PowerShell or Windows Terminal
+- Recommended:
+  - **WSL2** (Ubuntu or openSUSE)
+  - Python 3.x
+- Optional:
+  - Docker Desktop (WSL2 backend)
+
+---
+
+### 🍎 macOS
+- macOS 12+ (Monterey or newer)
+- Required:
+  - Xcode Command Line Tools  
+    ```bash
+    xcode-select --install
+    ```
+- Recommended:
+  - Homebrew
+  - Git
+  - Python 3.x
+- Optional:
+  - Docker Desktop
+
+---
+
+### 🌐 Platform-Independent
+- A modern web browser (Chrome / Firefox / Brave)
+- Markdown viewer or editor:
+  - VS Code
+  - Obsidian
+  - Typora
+- PDF reader (for exported notes)
+
+---
+
+### 📦 Recommended Editors
+- **VS Code** (Markdown + Git extensions)
+- **Neovim** (for terminal users)
+- **Obsidian** (knowledge base style)
 
 ### 📂 Repository Structure
 
