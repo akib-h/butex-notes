@@ -166,208 +166,276 @@ Cu⁺ > Al³⁺ > Mg²⁺ > Na⁺
 
 ## Table of Contents
 
-1. [Introduction to Chemical Bonding](#introduction-to-chemical-bonding)
-2. [Fajans' Rules: Covalent Character in Ionic Bonds](#fajans-rules-covalent-character-in-ionic-bonds)
-3. [Valence Bond Theory (VBT) & Orbital Overlapping](#valence-bond-theory-vbt--orbital-overlapping)
-4. [Molecular Orbital Theory (MOT)](#molecular-orbital-theory-mot)
-5. [Comparison: VBT vs. MOT](#comparison-vbt-vs-mot)
-6. [Bond Order: Concept & Calculations (N<sub>2</sub>, O<sub>2</sub>, Ne<sub>2</sub>)](#bond-order-concept--calculations)
-7. [Practice Questions & Answers](#practice-questions--answers)
-8. [References](#references)
+1. [Introduction to Chemical Bonding](#1-introduction-to-chemical-bonding)  
+2. [Fajans' Rules: Covalent Character in Ionic Bonds](#2-fajans-rules-covalent-character-in-ionic-bonds)  
+3. [Valence Bond Theory (VBT) & Orbital Overlapping](#3-valence-bond-theory-vbt--orbital-overlapping)  
+4. [Molecular Orbital Theory (MOT)](#4-molecular-orbital-theory-mot)  
+5. [Comparison: VBT vs. MOT](#5-comparison-vbt-vs-mot)  
+6. [Bond Order: Concept & Calculations (N₂, O₂, Ne₂)](#6-bond-order-concept--calculations-n₂-o₂-ne₂)  
+7. [Practice Questions & Answers](#7-practice-questions--answers)  
+8. [References](#8-references)  
 
 ---
 
-## Introduction to Chemical Bonding
+## 1. Introduction to Chemical Bonding
 
-Chemical bonding describes the attractive forces that hold atoms, ions, or molecules together. The driving force behind bond formation is the lowering of the system's potential energy, often by acquiring a stable electronic configuration (octet rule). [web:4]
+Chemical bonding describes the attractive forces that hold atoms, ions, or molecules together. The driving force behind bond formation is the lowering of the system's potential energy, often by acquiring a stable electronic configuration (octet rule).
 
 ### Primary Types of Bonds
 
-- **Ionic Bond:** Electrostatic attraction between cations and anions (formed by electron transfer). Non-directional.
-- **Covalent Bond:** Formed by the sharing of electron pairs between atoms. Directional.
-- **Metallic Bond:** Attraction between fixed positive metal ions ("kernels") and a "sea" of delocalized electrons.
-- **Coordinate (Dative) Bond:** A covalent bond where both shared electrons come from the same atom.
+- **Ionic Bond:** Electrostatic attraction between cations and anions (formed by electron transfer). Non‑directional.  
+- **Covalent Bond:** Formed by the sharing of electron pairs between atoms. Directional.  
+- **Metallic Bond:** Attraction between fixed positive metal ions (“kernels”) and a “sea” of delocalized electrons.  
+- **Coordinate (Dative) Bond:** A covalent bond where both shared electrons come from the same atom.  
 
 ---
 
-## Fajans' Rules: Covalent Character in Ionic Bonds
+## 2. Fajans' Rules: Covalent Character in Ionic Bonds
 
-Though a bond may be formally ionic, no bond is 100% ionic. Fajans' rules predict the partial **covalent character** in ionic compounds based on the **polarization** of the anion by the cation. [web:1][web:3][web:9]
+Though a bond may be formally ionic, no bond is 100% ionic. Fajans' rules predict the partial **covalent character** in ionic compounds based on the **polarization** of the anion by the cation.
 
 ### The Concept of Polarization
 
-- **Cation:** Has "Polarizing Power" (ability to distort the anion's electron cloud).
-- **Anion:** Has "Polarizability" (susceptibility to distortion).
-
-When the anion's electron cloud is distorted toward the cation, electron density builds up between the nuclei, creating covalent character.
+- **Cation:** Has *polarizing power* (ability to distort the anion's electron cloud).  
+- **Anion:** Has *polarizability* (susceptibility to distortion).  
+- When the anion's electron cloud is distorted toward the cation, electron density builds up between the nuclei, creating covalent character.
 
 ### The Rules
 
 Greater covalent character is favored by:
 
-1. **Small Size of Cation:** High charge density (charge/radius) pulls electrons more strongly.
-    - *Example:* LiCl is more covalent than NaCl because Li<sup>+</sup> is smaller than Na<sup>+</sup>. [web:1]
-2. **Large Size of Anion:** Valence electrons are loosely held and easily distorted.
-    - *Example:* LiI is more covalent than LiF because I<sup>-</sup> is larger than F<sup>-</sup>. [web:3]
-3. **High Charge on Ions:** Higher charge increases electrostatic attraction and distortion.
-    - *Example:* AlCl<sub>3</sub> (Al<sup>3+</sup>) is more covalent than NaCl (Na<sup>+</sup>). [web:1]
-4. **Electronic Configuration (Pseudo-noble gas):** Cations with 18 valence electrons (ns<sup>2</sup>np<sup>6</sup>nd<sup>10</sup>) polarize more than those with 8 valence electrons (ns<sup>2</sup>np<sup>6</sup>) due to poor shielding by d-electrons.
-    - *Example:* CuCl (Cu<sup>+</sup>) is more covalent than NaCl (Na<sup>+</sup>). [web:5]
+1. **Small Size of Cation**  
+   High charge density (charge / radius) pulls electrons more strongly.  
+   - Example: LiCl is more covalent than NaCl because Li⁺ is smaller than Na⁺.
+
+2. **Large Size of Anion**  
+   Valence electrons are loosely held and easily distorted.  
+   - Example: LiI is more covalent than LiF because I⁻ is larger than F⁻.
+
+3. **High Charge on Ions**  
+   Higher charge increases electrostatic attraction and distortion.  
+   - Example: AlCl₃ (Al³⁺) is more covalent than NaCl (Na⁺).
+
+4. **Electronic Configuration (Pseudo‑noble gas)**  
+   Cations with 18 outer electrons (ns² np⁶ nd¹⁰) polarize more than those with 8 outer electrons (ns² np⁶), due to poor shielding by d‑electrons.  
+   - Example: CuCl (Cu⁺, 3d¹⁰) is more covalent than NaCl (Na⁺, no d electrons).
 
 ---
 
-## Valence Bond Theory (VBT) & Orbital Overlapping
+## 3. Valence Bond Theory (VBT) & Orbital Overlapping
 
-Proposed by Heitler and London (1927) and developed by Pauling. [web:2]
+Proposed by Heitler and London (1927) and developed by Pauling.
 
 ### Core Postulates
 
-1. A covalent bond forms due to the **overlap** of half-filled atomic orbitals (AOs) containing electrons with opposite spins.
-2. The strength of the bond is directly proportional to the **extent of overlapping**.
-3. Bonds are **directional** (except s-s overlap) because orbitals (p, d, f) have specific orientations.
+1. A covalent bond forms due to the **overlap** of half‑filled atomic orbitals (AOs) containing electrons with opposite spins.  
+2. The strength of the bond is directly proportional to the **extent of overlapping**.  
+3. Bonds are **directional** (except s–s overlap) because orbitals (p, d, f) have specific orientations.  
 
 ### Types of Orbital Overlapping
 
 Overlapping creates a region of high electron density between nuclei.
 
-#### 1. Sigma (`σ`) Bond (Axial/Head-on Overlap)
+#### 1. Sigma (σ) Bond – Axial / Head‑on Overlap
 
-Formed by end-to-end overlap along the internuclear axis. Stronger than `π` bonds.
+Formed by end‑to‑end overlap along the internuclear axis. Stronger than π bonds.
 
-- **s-s overlap:** Two s-orbitals overlap (e.g., H<sub>2</sub>). Non-directional.
-- **s-p overlap:** One s and one p orbital overlap (e.g., HF).
-- **p-p (axial) overlap:** Two p-orbitals overlap head-to-head (e.g., F<sub>2</sub>, Cl<sub>2</sub>).
+- **s–s overlap:** Two s‑orbitals overlap (e.g., H₂). Non‑directional.  
+- **s–p overlap:** One s and one p orbital overlap (e.g., HF).  
+- **p–p (axial) overlap:** Two p‑orbitals overlap head‑to‑head (e.g., F₂, Cl₂).  
 
-#### 2. Pi (`π`) Bond (Sideways/Lateral Overlap)
+#### 2. Pi (π) Bond – Sideways / Lateral Overlap
 
-Formed by the sideways overlap of parallel p-orbitals perpendicular to the internuclear axis.
+Formed by the sideways overlap of parallel p‑orbitals perpendicular to the internuclear axis.
 
-- Electron density is present **above and below** the internuclear axis, but zero on the axis (nodal plane).
-- Always formed *after* a `σ` bond (in double/triple bonds).
-- Weaker than `σ` bonds due to less efficient overlap.
+- Electron density is present **above and below** the internuclear axis, with a nodal plane on the axis.  
+- Always formed *after* a σ bond (in double / triple bonds).  
+- Weaker than σ bonds due to less effective overlap.
 
-> **Note:** A single bond is always `σ`. A double bond is `1σ + 1π`. A triple bond is `1σ + 2π`.
-
----
-
-## Molecular Orbital Theory (MOT)
-
-Developed by Hund and Mulliken (1932). It treats the **molecule as a whole**, not just localized atoms. [web:2]
-
-### Core Postulates (LCAO - Linear Combination of Atomic Orbitals)
-
-1. Atomic orbitals combine to form **Molecular Orbitals (MOs)**.
-2. Number of MOs formed = Number of combining AOs.
-3. **Bonding MO (`σ`, `π`):** Lower energy, constructive interference (`ψ`<sub>A</sub> + `ψ`<sub>B</sub>), concentrates electron density *between* nuclei.
-4. **Antibonding MO (`σ*`, `π*`):** Higher energy, destructive interference (`ψ`<sub>A</sub> - `ψ`<sub>B</sub>), has a node *between* nuclei.
-5. Electrons fill MOs from lowest to highest energy (Aufbau principle) and obey Hund’s Rule and Pauli’s Exclusion Principle.
-
-### Energy Level Diagrams (Important Distinction)
-
-The order of MO energies depends on **s-p mixing**.
-
-**Case A: Molecules with ≤ 14 electrons (B<sub>2</sub>, C<sub>2</sub>, N<sub>2</sub>)**  
-Significant s-p mixing pushes `σ`<sub>2p</sub> higher in energy.
-
-```
-σ1s < σ*1s < σ2s < σ*2s < π2px = π2py < σ2pz < π*2px = π*2py < σ*2pz
-```
-
-**Case B: Molecules with > 14 electrons (O<sub>2</sub>, F<sub>2</sub>, Ne<sub>2</sub>)**  
-S-p mixing is negligible. `σ`<sub>2p</sub> is lower than `π`<sub>2p</sub>.
-
-```
-σ1s < σ*1s < σ2s < σ*2s < σ2pz < π2px = π2py < π*2px = π*2py < σ*2pz
-```
+> **Note:**  
+> - Single bond = 1 σ  
+> - Double bond = 1 σ + 1 π  
+> - Triple bond = 1 σ + 2 π  
 
 ---
 
-## Comparison: VBT vs. MOT
+## 4. Molecular Orbital Theory (MOT)
 
-| Feature          | Valence Bond Theory (VBT)                          | Molecular Orbital Theory (MOT)                     |
-|------------------|----------------------------------------------------|----------------------------------------------------|
-| **Electron Location** | Electrons are **localized** between two specific atoms. | Electrons are **delocalized** over the entire molecule. [web:2] |
-| **Identity**     | Atomic orbitals retain their character (monocentric). | Atomic orbitals lose identity; new MOs form (polycentric). |
-| **Magnetic Nature** | Often fails to explain paramagnetism (e.g., predicts O<sub>2</sub> is diamagnetic). | Successfully explains paramagnetism (e.g., O<sub>2</sub> has unpaired e<sup>-</sup>). |
-| **Resonance**    | Requires "resonance hybrids" to explain delocalization. | Delocalization is inherent in the theory; no resonance structures needed. |
-| **Calculation**  | Mathematically simpler, visualizes bond formation. | Computationally complex, but more accurate for spectra/energy. |
-| **Existence**    | Cannot predict if a molecule like He<sub>2</sub> doesn't exist. | Predicts non-existence via Bond Order = 0. |
+Developed by Hund and Mulliken (1932). It treats the **molecule as a whole**, not just localized atoms.
 
----
+### Core Postulates (LCAO – Linear Combination of Atomic Orbitals)
 
-## Bond Order: Concept & Calculations
+1. Atomic orbitals combine to form **molecular orbitals (MOs)**.  
+2. Number of MOs formed = number of combining AOs.  
+3. **Bonding MO (σ, π):**  
+   - Lower energy  
+   - Constructive combination (`ψA + ψB`)  
+   - Electron density concentrated *between* the nuclei  
+4. **Antibonding MO (σ\*, π\*):**  
+   - Higher energy  
+   - Destructive combination (`ψA − ψB`)  
+   - Node between the nuclei  
+5. Electrons fill MOs from lowest to highest energy (Aufbau principle) and obey Hund’s rule and Pauli’s exclusion principle.
 
-**Bond Order (B.O.)** is half the difference between the number of electrons in bonding MOs (N<sub>b</sub>) and antibonding MOs (N<sub>a</sub>).
+### Energy Level Diagrams (s–p Mixing)
 
-**Bond Order = (N<sub>b</sub> - N<sub>a</sub>) / 2**
+The order of MO energies depends on **s–p mixing**.
 
-- **B.O. > 0:** Molecule is stable.
-- **B.O. = 0:** Molecule is unstable/does not exist.
-- **Significance:** Higher B.O. → Stronger bond, Shorter bond length.
+**Case A: Molecules with ≤ 14 electrons (B₂, C₂, N₂)**  
+Significant s–p mixing pushes σ(2p) higher than π(2p).
 
-### Calculation Examples
+`σ1s < σ*1s < σ2s < σ*2s < π2px = π2py < σ2pz < π*2px = π*2py < σ*2pz`
 
-#### 1. Nitrogen Molecule (N<sub>2</sub>)
+**Case B: Molecules with > 14 electrons (O₂, F₂, Ne₂)**  
+s–p mixing is negligible. σ(2p) is lower than π(2p).
 
-- **Total Electrons:** 14
-- **Configuration (Order for ≤14e<sup>-</sup>):**  
-  `(σ1s)<sup>2</sup> (σ*1s)<sup>2</sup> (σ2s)<sup>2</sup> (σ*2s)<sup>2</sup> (π2px<sup>2</sup> = π2py<sup>2</sup>) (σ2pz)<sup>2</sup>`
-- **N<sub>b</sub> (Bonding):** 10
-- **N<sub>a</sub> (Antibonding):** 4
-- **B.O. = (10 - 4)/2 = 3**  
-  *Result:* N ≡ N triple bond. Diamagnetic (no unpaired electrons).
+`σ1s < σ*1s < σ2s < σ*2s < σ2pz < π2px = π2py < π*2px = π*2py < σ*2pz`
 
-#### 2. Oxygen Molecule (O<sub>2</sub>)
-
-- **Total Electrons:** 16
-- **Configuration (Order for >14e<sup>-</sup>):**  
-  `(σ1s)<sup>2</sup> (σ*1s)<sup>2</sup> (σ2s)<sup>2</sup> (σ*2s)<sup>2</sup> (σ2pz)<sup>2</sup> (π2px<sup>2</sup> = π2py<sup>2</sup>) (π*2px<sup>1</sup> = π*2py<sup>1</sup>)`
-- **N<sub>b</sub>:** 10
-- **N<sub>a</sub>:** 6
-- **B.O. = (10 - 6)/2 = 2**  
-  *Result:* O = O double bond. **Paramagnetic** (due to 2 unpaired electrons in `π*` orbitals).
-
-#### 3. Neon Molecule (Ne<sub>2</sub>)
-
-- **Total Electrons:** 20
-- **Configuration:**  
-  `(σ1s)<sup>2</sup> (σ*1s)<sup>2</sup> (σ2s)<sup>2</sup> (σ*2s)<sup>2</sup> (σ2pz)<sup>2</sup> (π2px<sup>2</sup> = π2py<sup>2</sup>) (π*2px<sup>2</sup> = π*2py<sup>2</sup>) (σ*2pz)<sup>2</sup>`
-- **N<sub>b</sub>:** 10
-- **N<sub>a</sub>:** 10
-- **B.O. = (10 - 10)/2 = 0**  
-  *Result:* Ne<sub>2</sub> **does not exist**.
+(Here, `*` indicates antibonding MOs.)
 
 ---
 
-## Practice Questions & Answers
+## 5. Comparison: VBT vs. MOT
 
-**Q1: Why is O<sub>2</sub> paramagnetic while N<sub>2</sub> is diamagnetic despite both having even numbers of electrons?**
-
-**Answer:** According to MOT, for O<sub>2</sub> (16 electrons), the last two electrons enter the degenerate antibonding `π*` orbitals singly (Hund’s Rule). These unpaired electrons cause paramagnetism. In N<sub>2</sub> (14 electrons), all electrons are paired in the lower energy bonding orbitals. [web:2]
-
-**Q2: Arrange O<sub>2</sub>, O<sub>2</sub><sup>+</sup>, O<sub>2</sub><sup>-</sup>, O<sub>2</sub><sup>2-</sup> in increasing order of stability.**
-
-**Answer:** Calculate Bond Orders:  
-- O<sub>2</sub> (16e): BO = 2.0  
-- O<sub>2</sub><sup>+</sup> (15e): BO = 2.5  
-- O<sub>2</sub><sup>-</sup> (17e): BO = 1.5  
-- O<sub>2</sub><sup>2-</sup> (18e): BO = 1.0  
-**Order:** O<sub>2</sub><sup>2-</sup> < O<sub>2</sub><sup>-</sup> < O<sub>2</sub> < O<sub>2</sub><sup>+</sup>
-
-**Q3: Using Fajans' Rules, explain why SnCl<sub>2</sub> is a solid while SnCl<sub>4</sub> is a volatile liquid.**
-
-**Answer:** Sn<sup>4+</sup> in SnCl<sub>4</sub> has a higher charge and smaller size than Sn<sup>2+</sup> in SnCl<sub>2</sub>. According to Fajans' rules, higher positive charge leads to greater polarization of the anion (Cl<sup>-</sup>), resulting in higher covalent character. High covalent character implies weak intermolecular forces (Van der Waals) compared to the strong electrostatic forces in ionic solids, making SnCl<sub>4</sub> volatile. [web:1][web:5]
-
-**Q4: Differentiate between a Sigma and a Pi bond regarding rotation.**
-
-**Answer:** A sigma bond allows for free rotation of atoms around the internuclear axis because the electron distribution is cylindrically symmetrical. A pi bond restricts rotation because rotating one atom would break the parallel overlap of the p-orbitals.
+| Feature | Valence Bond Theory (VBT) | Molecular Orbital Theory (MOT) |
+| :--- | :--- | :--- |
+| **Electron Location** | Electrons are **localized** between two specific atoms. | Electrons are **delocalized** over the entire molecule. |
+| **Orbital Identity** | Atomic orbitals retain their character (monocentric). | Atomic orbitals combine to form new MOs (polycentric). |
+| **Magnetic Nature** | Often fails to explain paramagnetism (e.g., predicts O₂ is diamagnetic). | Successfully explains paramagnetism (e.g., O₂ has unpaired electrons). |
+| **Resonance / Delocalization** | Requires “resonance structures” to explain delocalization. | Delocalization is built‑in; no extra resonance structures needed. |
+| **Mathematical Treatment** | Conceptually simpler, good for basic shapes. | More complex, but more accurate for energies and spectra. |
+| **Prediction of Existence** | Cannot easily show non‑existence of He₂, Ne₂, etc. | Predicts non‑existence via bond order = 0 (no net bonding). |
 
 ---
 
-## References
+## 6. Bond Order: Concept & Calculations (N₂, O₂, Ne₂)
 
-1. **Atkins, P., & de Paula, J.** *Atkins' Physical Chemistry*. Oxford University Press.
-2. **Huheey, J. E., Keiter, E. A., & Keiter, R. L.** *Inorganic Chemistry: Principles of Structure and Reactivity*. Pearson.
-3. **Miessler, G. L., & Tarr, D. A.** *Inorganic Chemistry*. Pearson Education.
-4. **Lee, J. D.** *Concise Inorganic Chemistry*. Wiley-Blackwell.
-```
+**Bond order (B.O.)** is defined as:
+
+`Bond Order = (Nb − Na) / 2`
+
+where:  
+- `Nb` = number of electrons in bonding MOs  
+- `Na` = number of electrons in antibonding MOs  
+
+- If **B.O. > 0** → molecule is stable.  
+- If **B.O. = 0** → molecule is unstable / does not exist.  
+- Higher B.O. → stronger bond and shorter bond length.
+
+### 6.1 Nitrogen Molecule (N₂)
+
+- **Total electrons:** 14  
+- **Applicable MO order:** (for ≤ 14 electrons)  
+  `σ1s < σ*1s < σ2s < σ*2s < π2px = π2py < σ2pz < π*2px = π*2py < σ*2pz`
+
+- **Electron configuration (valence region shown):**  
+  Bonding MOs: `(σ2s)² (π2px)² (π2py)² (σ2pz)²`  
+  Antibonding MOs: `(σ*2s)²`  
+
+- `Nb = 2 (σ2s) + 4 (π2p) + 2 (σ2pz) = 8` (valence)  
+  Including 1s core: total bonding electrons = 10  
+- `Na = 2 (σ*1s) + 2 (σ*2s) = 4`  
+
+`Bond Order = (10 − 4) / 2 = 3`
+
+- Result: N≡N triple bond.  
+- All electrons are paired → N₂ is **diamagnetic**.
+
+### 6.2 Oxygen Molecule (O₂)
+
+- **Total electrons:** 16  
+- **Applicable MO order:** (for > 14 electrons)  
+  `σ1s < σ*1s < σ2s < σ*2s < σ2pz < π2px = π2py < π*2px = π*2py < σ*2pz`
+
+- **Electron configuration (valence region shown):**  
+  Bonding MOs: `(σ2s)² (σ2pz)² (π2px)² (π2py)²`  
+  Antibonding MOs: `(σ*2s)² (π*2px)¹ (π*2py)¹`
+
+- `Nb = 2 (σ2s) + 2 (σ2pz) + 4 (π2p) = 8` (valence)  
+  Including 1s core: total bonding electrons = 10  
+- `Na = 2 (σ*1s) + 2 (σ*2s) + 2 (π*2p) = 6`  
+
+`Bond Order = (10 − 6) / 2 = 2`
+
+- Result: O=O double bond.  
+- Two unpaired electrons in π\* orbitals → O₂ is **paramagnetic**.
+
+### 6.3 Neon Molecule (Ne₂)
+
+- **Total electrons:** 20  
+
+All bonding MOs are filled and all corresponding antibonding MOs are also filled.
+
+- `Nb = 10`  
+- `Na = 10`  
+
+`Bond Order = (10 − 10) / 2 = 0`
+
+- Result: Ne₂ **does not exist** (no net stabilization from bonding).
+
+---
+
+## 7. Practice Questions & Answers
+
+**Q1. Why is O₂ paramagnetic while N₂ is diamagnetic despite both having even numbers of electrons?**
+
+**Answer:**  
+According to MOT:
+
+- In O₂ (16 electrons), the last two electrons occupy the degenerate antibonding π\* orbitals singly (Hund’s rule), resulting in **two unpaired electrons** → paramagnetic.  
+- In N₂ (14 electrons), all electrons are paired in bonding MOs, with no electrons in π\* orbitals → **diamagnetic**.
+
+---
+
+**Q2. Arrange O₂, O₂⁺, O₂⁻, O₂²⁻ in increasing order of stability.**
+
+**Answer:**  
+
+Use bond order:
+
+- O₂ (16 e⁻): B.O. = 2.0  
+- O₂⁺ (15 e⁻): one electron removed from π\* → B.O. = 2.5  
+- O₂⁻ (17 e⁻): one electron added to π\* → B.O. = 1.5  
+- O₂²⁻ (18 e⁻): two electrons added to π\* → B.O. = 1.0  
+
+Higher bond order → greater stability.
+
+**Order (increasing stability):**  
+O₂²⁻ < O₂⁻ < O₂ < O₂⁺
+
+---
+
+**Q3. Using Fajans' rules, explain why SnCl₂ is a solid while SnCl₄ is a volatile liquid.**
+
+**Answer:**  
+
+- SnCl₂ contains Sn²⁺; SnCl₄ contains Sn⁴⁺.  
+- Sn⁴⁺ has higher charge and (effectively) higher charge density than Sn²⁺ → greater polarizing power.  
+- According to Fajans' rules, greater polarizing power of Sn⁴⁺ leads to more covalent character in SnCl₄ compared to SnCl₂.  
+- **SnCl₂**: more ionic, strong electrostatic attractions, forms an ionic lattice → high melting point, solid.  
+- **SnCl₄**: more covalent, exists as discrete molecules with weaker intermolecular forces → low boiling point, volatile liquid.
+
+---
+
+**Q4. Differentiate between a sigma (σ) bond and a pi (π) bond regarding rotation.**
+
+**Answer:**
+
+- **Sigma (σ) bond:**  
+  - Electron density is cylindrically symmetrical around the internuclear axis.  
+  - Free rotation about the bond axis is generally possible without breaking the bond.  
+
+- **Pi (π) bond:**  
+  - Electron density lies above and below the internuclear axis due to sideways overlap of p‑orbitals.  
+  - Rotation around the bond axis would break the parallel overlap of p‑orbitals, thus **restricting rotation**.
+
+---
+
+## 8. References
+
+1. **Atkins, P., & de Paula, J.** *Atkins' Physical Chemistry*. Oxford University Press.  
+2. **Huheey, J. E., Keiter, E. A., & Keiter, R. L.** *Inorganic Chemistry: Principles of Structure and Reactivity*. Pearson.  
+3. **Miessler, G. L., & Tarr, D. A.** *Inorganic Chemistry*. Pearson Education.  
+4. **Lee, J. D.** *Concise Inorganic Chemistry*. Wiley‑Blackwell.  
+
+---
