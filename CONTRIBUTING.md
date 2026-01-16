@@ -574,7 +574,7 @@ By contributing, you agree that your contributions will be licensed under the sa
 
 <div align="center">
 
-**Made with 📚 for Fabric Engineering students at BUTEX**
+**Made with 📚 for Engineering students at BUTEX**
 
 [Report Bug](https://github.com/itachi-re/butex-notes/issues) · [Request Feature](https://github.com/itachi-re/butex-notes/issues)
 
