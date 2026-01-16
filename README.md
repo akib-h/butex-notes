@@ -260,15 +260,15 @@ nvim YE-101/03_fiber_identification.md
 6. **Cross-Reference** - Link related topics across courses
 
 ---
-
 ## 🤝 Contributing
 
 While this is a personal note repository, suggestions and corrections are welcome!
 
-- 🐛 Found an error? Open an issue
-- 💡 Have a suggestion? Create a pull request
-- 📖 Want to share resources? Add them to discussions
+- 🐛 **Found an error?** Open an issue.
+- 💡 **Have a suggestion?** Create a pull request.
+- 📖 **Want to share resources?** Add them to discussions.
 
+For detailed guidelines, please refer to the [Contributing Guide](https://github.com/itachi-re/butex-notes/blob/master/CONTRIBUTING.md).
 ---
 
 ## 📄 License
