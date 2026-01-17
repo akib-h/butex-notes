@@ -18,7 +18,7 @@ This repository contains comprehensive course notes from my journey through the 
 
 - 📝 **Structured Markdown Notes** - Clean, readable format with proper hierarchy
 - 🧮 **LaTeX Math Support** - Full equation and formula rendering
-- 🔄 **Version Controlled** - Track changes and improvements over time
+- 📊 **Version Controlled** - Track changes and improvements over time
 - 📄 **PDF Export Ready** - Automated scripts to convert notes to PDF
 - 🏷️ **Tagged & Organized** - Easy navigation with course codes and topics
 - 🔍 **Searchable** - Quick find using Git search or GitHub search features
@@ -27,24 +27,126 @@ This repository contains comprehensive course notes from my journey through the 
 
 ## 🗂️ Course Index
 
-### 📐 Core Sciences & Mathematics
+### 🔬 Core Sciences & Mathematics
 
-| Course Code | Course Title | Status | Topics Covered |
-| :--- | :--- | :---: | :--- |
-| **CHEM-101** | Chemistry - I | 🟡 In Progress | Periodicity, Bonding, Acids/Bases |
-| **PHY-101** | Physics - I | 🟡 In Progress | Fluid Mechanics, Viscosity, Optics |
-| **MATH-101** | Mathematics - I | 🟢 Active | Matrices, Calculus, Linear Algebra |
-| **AS-102** | Physics - I (Practical) | ⚪ Pending | Lab Reports & Experimental Data |
+| Course Code | Course Title | Status | Topics Covered | Quick Links |
+| :--- | :--- | :---: | :--- | :--- |
+| **[CHEM-101](https://github.com/itachi-re/butex-notes/tree/master/CHEM-101)** | Chemistry - I | 🟢 Active | Periodicity, Bonding, Acids/Bases, Equilibrium, Kinetics, Colloids, Photochemistry | [📑 Topics](#chemistry-101-topics) |
+| **[PHY-101](https://github.com/itachi-re/butex-notes/tree/master/PHY-101)** | Physics - I | 🟢 Active | Elasticity, Fluid Mechanics, Viscosity, Surface Tension | [📑 Topics](#physics-101-topics) |
+| **[MATH-101](https://github.com/itachi-re/butex-notes/tree/master/MATH-101)** | Mathematics - I | 🟡 In Progress | Matrices, Calculus, Linear Algebra | - |
+| **[HSS-101](https://github.com/itachi-re/butex-notes/tree/master/HSS-101)** | Humanities & Social Science | 🟡 In Progress | Communication, Letters, Presentations, Meetings | - |
+| **AS-102** | Physics - I (Practical) | ⚪ Pending | Lab Reports & Experimental Data | - |
 
 ### 🧵 Yarn Engineering (Fabric Department Focus)
 
-| Course Code | Course Title | Status | Topics Covered |
-| :--- | :--- | :---: | :--- |
-| **YE-101** | Natural Textile Fibres | 🟢 Active | Cotton, Jute, Silk, Wool, Fiber Properties |
-| **YE-201** | Fibre & Yarn Testing | 🟢 Active | Moisture Regain, Sampling Methods, Quality Control |
+| Course Code | Course Title | Status | Topics Covered | Quick Links |
+| :--- | :--- | :---: | :--- | :--- |
+| **[YE-101](https://github.com/itachi-re/butex-notes/tree/master/YE-101)** | Natural Textile Fibres | 🟢 Active | Cotton, Jute, Silk, Wool, Fiber Properties | [📑 Topics](#ye-101-topics) |
+| **[YE-201](https://github.com/itachi-re/butex-notes/tree/master/YE-201)** | Fibre & Yarn Testing | 🟢 Active | Moisture Regain, Sampling Methods, Quality Control | - |
 
 **Status Legend:**  
 🟢 Active - Regularly updated | 🟡 In Progress - Being developed | ⚪ Pending - Not started
+
+---
+
+## 📚 Detailed Course Contents
+
+### Chemistry 101 Topics
+
+**[🔗 View All Chemistry Notes](https://github.com/itachi-re/butex-notes/tree/master/CHEM-101)**
+
+<details>
+<summary><b>📂 01 - Periodicity</b></summary>
+
+- [Periodicity Notes](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/01_periodicity/periodicity.md)
+- [CT-01 Class Test](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/01_periodicity/CT-01.md)
+
+</details>
+
+<details>
+<summary><b>📂 02 - Chemical Bonding</b></summary>
+
+- [📖 Chemical Bonding README](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/02_chemical_bonding/chemical_bonding_README.md)
+- [🎯 One-Shot Review](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/02_chemical_bonding/chemical_bonding_oneshot.md)
+- [Introduction to Chemical Bonding](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/02_chemical_bonding/intro_chemical_bonding.md)
+- [Ionic Bonding](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/02_chemical_bonding/ionic_bonding.md)
+- [Metallic Bond Theory](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/02_chemical_bonding/metallic_bond_theory.md)
+- [Metallic Properties](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/02_chemical_bonding/metallic_properties.md)
+- [Metallic Examples](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/02_chemical_bonding/metallic_examples.md)
+- [Valence Bond Theory (VBT)](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/02_chemical_bonding/vbt_fundamentals.md)
+- [VSEPR Principles](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/02_chemical_bonding/vsepr_principles.md)
+- [VSEPR Molecular Geometry](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/02_chemical_bonding/vsepr_mol_geometry.md)
+- [Molecular Orbital Theory](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/02_chemical_bonding/molecular_orbital_theory.md)
+- [IMF and Advanced Topics](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/02_chemical_bonding/imf_and_advanced.md)
+- [📝 CT-02 Class Test](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/02_chemical_bonding/z_CT-02.md)
+- [💡 CT Suggestions](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/02_chemical_bonding/z_CT_Suggestions.md)
+
+</details>
+
+<details>
+<summary><b>📂 03-10 - Additional Chemistry Topics</b></summary>
+
+- [03 - Complex Compounds](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/03_complex_compounds.md)
+- [04 - Acids & Bases](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/04_acids_bases.md)
+- [05 - Analytical Methods](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/05_analytical_methods.md)
+- [06 - Physical Chemistry (Dilute Solutions)](https://github.com/itachi-re/butex-notes/tree/master/CHEM-101/06_physical_chemistry)
+- [07 - Equilibrium](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/07_equilibrium.md)
+- [08 - Kinetics](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/08_kinetics.md)
+- [09 - Colloids](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/09_colloids.md)
+- [10 - Photochemistry](https://github.com/itachi-re/butex-notes/tree/master/CHEM-101/10_photochemistry)
+  - [Laws of Photochemistry](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/10_photochemistry/10_laws_photochemistry.md)
+  - [Quantum Yield](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/10_photochemistry/11_quantum_yield.md)
+  - [HX Decomposition](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/10_photochemistry/12_hx_decomposition.md)
+  - [Photosensitized Reactions](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/10_photochemistry/13_photosensitized_reactions.md)
+
+</details>
+
+---
+
+### Physics 101 Topics
+
+**[🔗 View All Physics Notes](https://github.com/itachi-re/butex-notes/tree/master/PHY-101)**
+
+<details>
+<summary><b>📂 01 - Elasticity</b></summary>
+
+- [Elasticity Fundamentals](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/01_elasticity/elasticity.md)
+
+</details>
+
+<details>
+<summary><b>📂 02 - Fluid Mechanics</b></summary>
+
+- [📖 Fluid Mechanics Overview](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid-mechanics/01-fluid-mechanics-overview.md)
+- [Fluid Properties](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid-mechanics/01-fluid-properties.md)
+- [Fluid Classification](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid-mechanics/02-fluid-classification.md)
+- [Fluid Flow Types](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid-mechanics/01-fluid-flow-types.md)
+- [Viscosity Detailed](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid-mechanics/03-viscosity-detailed.md)
+- [Viscosity & Stokes' Law](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid-mechanics/01-viscosity-and-stokes-law.md)
+- [Surface Tension](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid-mechanics/01-surface-tension.md)
+- [Continuity Equation](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid-mechanics/01-continuity-equation.md)
+- [Conservation Laws](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid-mechanics/04-conservation-laws.md)
+- [Bernoulli's Equation](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid-mechanics/01-bernoulli-equation.md)
+- [Fluid Applications](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid-mechanics/05-fluid-applications.md)
+
+</details>
+
+---
+
+### YE-101 Topics
+
+**[🔗 View All Natural Textile Fibres Notes](https://github.com/itachi-re/butex-notes/tree/master/YE-101)**
+
+<details>
+<summary><b>📂 Natural Textile Fibres</b></summary>
+
+- [Introduction to Natural Fibres](https://github.com/itachi-re/butex-notes/blob/master/YE-101/ntf_01_introduction.md)
+- [Cotton](https://github.com/itachi-re/butex-notes/blob/master/YE-101/ntf_02_Cotton.md)
+- [Silk](https://github.com/itachi-re/butex-notes/blob/master/YE-101/ntf_03_silk_notes.md)
+- [Jute](https://github.com/itachi-re/butex-notes/blob/master/YE-101/ntf_04_jute_notes.md)
+- [Complete Natural Fibres Overview](https://github.com/itachi-re/butex-notes/blob/master/YE-101/01_natural_fibres.md)
+
+</details>
 
 ---
 
@@ -147,13 +249,27 @@ Convert all notes to PDF format with proper formatting:
 ```
 butex-notes/
 ├── CHEM-101/              # Chemistry notes
-│   └── 01_periodicity.md
+│   ├── 01_periodicity/
+│   ├── 02_chemical_bonding/
+│   ├── 06_physical_chemistry/
+│   ├── 10_photochemistry/
+│   └── README.md
 ├── PHY-101/               # Physics notes
-│   └── 01_fluid_mechanics.md
+│   ├── 01_elasticity/
+│   ├── 02_fluid-mechanics/
+│   └── README.md
 ├── MATH-101/              # Mathematics notes
 │   └── 01_matrices.md
+├── HSS-101/               # Humanities & Social Science
+│   ├── 01_intro.md
+│   ├── 02_letters.md
+│   ├── 03_presentations.md
+│   └── 04_meetings.md
 ├── YE-101/                # Natural Textile Fibres
-│   └── 01_natural_fibres.md
+│   ├── ntf_01_introduction.md
+│   ├── ntf_02_Cotton.md
+│   ├── ntf_03_silk_notes.md
+│   └── ntf_04_jute_notes.md
 ├── YE-201/                # Fibre & Yarn Testing
 │   └── 01_testing_and_moisture.md
 ├── AS-102-Practical/      # Physics Lab
@@ -162,7 +278,7 @@ butex-notes/
 │   └── build_all.sh      # Export all notes to PDF
 ├── _templates/            # Note templates
 │   └── note_template.md  # Standard note format
-├── exported_pdfs/         # PDF exports (auto-generated)
+├── pdfs/                  # PDF resources
 └── README.md
 ```
 
@@ -260,6 +376,7 @@ nvim YE-101/03_fiber_identification.md
 6. **Cross-Reference** - Link related topics across courses
 
 ---
+
 ## 🤝 Contributing
 
 While this is a personal note repository, suggestions and corrections are welcome!
@@ -269,6 +386,7 @@ While this is a personal note repository, suggestions and corrections are welcom
 - 📖 **Want to share resources?** Add them to discussions.
 
 For detailed guidelines, please refer to the [Contributing Guide](https://github.com/itachi-re/butex-notes/blob/master/CONTRIBUTING.md).
+
 ---
 
 ## 📄 License
@@ -291,7 +409,7 @@ This project is licensed under the terms specified in the [LICENSE](LICENSE) fil
 ## 📊 Repository Stats
 
 ```
-Total Notes: Growing
+Total Notes: 67 files
 Last Updated: Regularly
 Export Format: Markdown → PDF
 Department: Fabric Engineering
