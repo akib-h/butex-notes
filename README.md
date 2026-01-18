@@ -424,4 +424,6 @@ University: BUTEX
 
 Made with 📝 and ☕ by a Fabric Engineering student
 
+![MoeCounter](https://count.getloli.com/@itachi?name=itachi&theme=booru-lewd&padding=5&offset=30&align=center&scale=2&pixelated=0&darkmode=auto&prefix=9876)
+
 </div>
