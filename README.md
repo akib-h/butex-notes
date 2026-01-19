@@ -151,8 +151,6 @@ This repository contains comprehensive course notes from my journey through the 
 ---
 ---
 
-## 📄 Adding to README.md
-
 ### HSS-101 Topics
 
 **[🔗 View All HSS Notes](https://github.com/itachi-re/butex-notes/tree/master/HSS-101)**

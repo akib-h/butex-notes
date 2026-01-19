@@ -1,7 +1,7 @@
 ---
 subject: HSS-101
 topic: Business Communication - Class Test Preparation
-date: 2025-01-19
+date: 2026-01-19
 tags: [notes, HSS-101, business-communication, class-test]
 ---
 
