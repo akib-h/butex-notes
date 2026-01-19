@@ -149,20 +149,18 @@ This repository contains comprehensive course notes from my journey through the 
 </details>
 
 ---
----
 
 ### HSS-101 Topics
 
-**[🔗 View All HSS Notes](https://github.com/itachi-re/butex-notes/tree/master/HSS-101)**
+[View All HSS Notes](https://github.com/itachi-re/butex-notes/tree/master/HSS-101)
 
-<details>
-<summary><b>📂 Business Communication</b></summary>
+**Business Communication Module:**
 
 - [Introduction to Business Communication](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/01_intro.md)
 - [Business Letters & Email Writing](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/02_letters.md)
 - [Business Presentations](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/03_presentations.md)
 - [Business Meetings](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/04_meetings.md)
-- [📝 CT Suggestions - Business Communication](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/suggestions_01.md)
+- [CT Suggestions - Business Communication](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/suggestions_01.md)
 
 **Topics Covered:**
 - Definition and objectives of business communication
@@ -171,8 +169,6 @@ This repository contains comprehensive course notes from my journey through the 
 - Professional email structure and etiquette
 - Writing persuasive business emails
 - Communication best practices
-
-</details>
 
 ---
 
