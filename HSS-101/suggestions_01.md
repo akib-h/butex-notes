@@ -274,14 +274,13 @@ Courteous ending
 Professional sign-off with full details
 
 **Format:**
-```
-Best regards,
-Karim Hassan
-Senior Purchase Manager
-Bangladesh Textile Mills Ltd.
-Phone: +880-1756-123456
-Email: karim.hassan@btmills.com
-```
+
+> Best regards,  
+> Karim Hassan  
+> Senior Purchase Manager  
+> Bangladesh Textile Mills Ltd.  
+> Phone: +880-1756-123456  
+> Email: karim.hassan@btmills.com
 
 **Alternative sign-offs:**
 - Sincerely,
