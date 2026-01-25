@@ -318,7 +318,7 @@ where:
 2. **Range**: -1 ≤ ν ≤ 0.5
    - For most materials: 0 < ν < 0.5
    - ν = 0.5 for incompressible materials (rubber)
-   - Theoretical minimum ν = -1 (auxetic materials[Auxetic Materials](https://en.wikipedia.org/wiki/Auxetics))
+   - Theoretical minimum ν = -1 ([Auxetic Materials](https://en.wikipedia.org/wiki/Auxetics))
    - Theoretical maximum ν = 0.5
 
 3. **Typical values**:
