@@ -52,7 +52,7 @@ Where:
 1. **Valid only within elastic limit** - Beyond the yield point, materials exhibit plastic deformation
 2. **Assumes homogeneous materials** - Not applicable to composite materials without modification
 3. **Temperature dependent** - Elastic modulus varies with temperature
-4. **Time-independent** - Doesn't account for viscoelastic behavior (creep, stress relaxation)
+4. **Time-independent** - Doesn't account for [viscoelastic behavior](https://en.wikipedia.org/wiki/Viscoelasticity/)(creep, stress relaxation)
 
 **Textile Application:**
 In fiber testing, Hooke's law applies to the initial loading region of stress-strain curves. Natural fibers like cotton show linear behavior up to ~2% strain, while synthetic fibers like polyester maintain linearity up to ~5% strain.
