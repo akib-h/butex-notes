@@ -160,7 +160,6 @@ $$
 > **Note:** Typical steel has $Y \approx 200$ GPa. This high value suggests measurement errors or the wire might be high-carbon steel.
 
 ---
-
 #### Example 2: Bulk Modulus Problem
 
 **Problem:** A sphere of radius 10 cm is subjected to a uniform pressure of $10^8$ N/m². If the bulk modulus is $10^{11}$ N/m², find the change in volume.
@@ -175,23 +174,18 @@ $$
 **Solution:**
 
 Original volume:
-$$
-V = \frac{4}{3}\pi r^3 = \frac{4}{3} \times 3.14159 \times (0.1)^3 = 4.189 \times 10^{-3} \text{ m}^3
-$$
+
+$$V = \frac{4}{3}\pi r^3 = \frac{4}{3} \times 3.14159 \times (0.1)^3 = 4.189 \times 10^{-3} \text{ m}^3$$
 
 Bulk modulus definition:
-$$
-K = -\frac{P}{\Delta V / V}
-$$
+
+$$K = -\frac{P}{\Delta V / V}$$
 
 Rearranging:
-$$
-\Delta V = -\frac{P \cdot V}{K} = -\frac{10^8 \times 4.189 \times 10^{-3}}{10^{11}}
-$$
 
-$$
-\Delta V = -4.189 \times 10^{-6} \text{ m}^3 = -4.19 \text{ cm}^3
-$$
+$$\Delta V = -\frac{P \cdot V}{K} = -\frac{10^8 \times 4.189 \times 10^{-3}}{10^{11}}$$
+
+$$\Delta V = -4.189 \times 10^{-6} \text{ m}^3 = -4.19 \text{ cm}^3$$
 
 **Answer:** Volume decreases by 4.19 cm³ (negative sign indicates compression)
 
@@ -216,21 +210,15 @@ Work done by pressure forces + Work done by gravity = Change in kinetic energy
 
 For a small displacement $ds$:
 
-$$
-P_1 A_1 ds_1 - P_2 A_2 ds_2 - \rho g A_1 ds_1 h_1 + \rho g A_2 ds_2 h_2 = \frac{1}{2} \rho A_1 ds_1 v_1^2 - \frac{1}{2} \rho A_2 ds_2 v_2^2
-$$
+$$P_1 A_1 ds_1 - P_2 A_2 ds_2 - \rho g A_1 ds_1 h_1 + \rho g A_2 ds_2 h_2 = \frac{1}{2} \rho A_1 ds_1 v_1^2 - \frac{1}{2} \rho A_2 ds_2 v_2^2$$
 
 Using continuity equation ($A_1 v_1 = A_2 v_2$) and simplifying:
 
-$$
-P_1 + \frac{1}{2}\rho v_1^2 + \rho g h_1 = P_2 + \frac{1}{2}\rho v_2^2 + \rho g h_2
-$$
+$$P_1 + \frac{1}{2}\rho v_1^2 + \rho g h_1 = P_2 + \frac{1}{2}\rho v_2^2 + \rho g h_2$$
 
 **General form:**
 
-$$
-P + \frac{1}{2}\rho v^2 + \rho g h = \text{constant}
-$$
+$$P + \frac{1}{2}\rho v^2 + \rho g h = \text{constant}$$
 
 **Terms:**
 - $P$ = Static pressure (pressure energy per unit volume)
@@ -238,6 +226,7 @@ $$
 - $\rho g h$ = Hydrostatic pressure (potential energy per unit volume)
 
 **Textile Application:**
+
 Bernoulli's equation is fundamental in understanding:
 - Air jet weaving (high-velocity air flow)
 - Dyeing liquor circulation systems
