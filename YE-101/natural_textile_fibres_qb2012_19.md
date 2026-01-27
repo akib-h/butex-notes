@@ -80,6 +80,43 @@ Level 5: FIBER STRAND
 │  └──────────────────────────────┘  │
 └─────────────────────────────────────┘
 ```
+HIERARCHICAL CONSTRUCTION OF TEXTILE FIBERS
+═══════════════════════════════════════════════════════════════
+
+Level 5: FIBER STRAND (Macroscopic)
+├─ Diameter: 10-50 μm
+├─ Composed of: Multiple fibrils
+└─ Function: Textile production unit
+
+    ↓ Contains 10³-10⁴ units
+
+Level 4: FIBRILS (Microscopic)
+├─ Diameter: 0.1-1.0 μm
+├─ Composed of: Bundled microfibrils
+└─ Visible under: Optical microscope
+
+    ↓ Contains 10²-10³ units
+
+Level 3: MICROFIBRILS (Nanoscopic)
+├─ Diameter: 10-30 nm
+├─ Structure: Alternating crystalline/amorphous regions
+└─ Visible under: Electron microscope
+
+    ↓ Contains 10-100 polymer chains
+
+Level 2: CRYSTALLINE & AMORPHOUS REGIONS
+├─ Crystalline regions: Ordered, parallel chains
+│  └─ Properties: High strength, dense packing
+├─ Amorphous regions: Disordered, random chains
+│  └─ Properties: Flexibility, dye absorption
+└─ Ratio determines fiber properties
+
+    ↓ Molecular arrangement
+
+Level 1: POLYMER CHAINS (Molecular)
+├─ Basic unit: Macromolecules
+├─ DP: 50-20,000 repeating units
+└─ Chemical structure determines fiber type
 
 ### 3. "All Textile Fibres are Fibres, but All Fibres are Not Textile Fibres"
 
@@ -98,6 +135,29 @@ Level 5: FIBER STRAND
 **Examples:**
 - ✅ Cotton, wool, silk, polyester = Textile fibers
 - ❌ Wood fibers, individual glass strands = Fibers but not textile fibers (too short/brittle)
+
+
+| Property Influenced | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 |
+|-------------------|---------|---------|---------|---------|---------|
+| **Chemical**      | ✓       | ✓       | -       | -       | -       |
+| **Thermal**       | ✓       | ✓       | ✓       | -       | -       |
+| **Mechanical**    | -       | ✓       | ✓       | ✓       | ✓       |
+| **Optical**       | -       | -       | ✓       | ✓       | ✓       |
+| **Tactile**       | -       | -       | -       | ✓       | ✓       |
+
+Key: ✓ = Primary influence
+
+flowchart TD
+    A[Polymer Chains<br>Level 1] --> B[Crystalline &<br>Amorphous Regions<br>Level 2]
+    B --> C[Microfibrils<br>10-30 nm diameter<br>Level 3]
+    C --> D[Fibrils<br>0.1-1 μm diameter<br>Level 4]
+    D --> E[Fiber Strand<br>10-50 μm diameter<br>Level 5]
+    
+    style A fill:#e1f5fe
+    style B fill:#f3e5f5
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
+    style E fill:#ffebee
 
 ### 4. Classification of Natural Textile Fibers
 
