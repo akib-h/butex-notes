@@ -434,9 +434,9 @@ $$P = \rho gh = 900 \times 9.81 \times 5 = 44,145 \text{ Pa} = 44.1 \text{ kPa}$
 
 ## Next Topics
 
-- [Rate of Flow](03-rate-of-flow.md)
-- [Uniform Motion](04-uniform-motion.md)
-- [Viscosity](03-viscosity-detailed.md)
+- [Rate of Flow](rate-of-flow.md)
+- [Uniform Motion](uniform-motion.md)
+- [Viscosity](viscosity-detailed.md)
 
 ---
 
