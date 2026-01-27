@@ -63,24 +63,147 @@ Level 5: FIBER STRAND
 ```
 
 **Visual Representation:**
-
-```
+```text
 ┌─────────────────────────────────────┐
-│         FIBER STRAND                │
-│  ┌──────────────────────────────┐  │
-│  │   FIBRILLAR BUNDLES          │  │
-│  │  ┌────────────────────────┐ │  │
-│  │  │   INDIVIDUAL FIBRILS   │ │  │
-│  │  │  ┌──────────────────┐ │ │  │
-│  │  │  │ POLYMER CHAINS   │ │ │  │
-│  │  │  │  ████ Crystalline│ │ │  │
-│  │  │  │  ∿∿∿∿ Amorphous  │ │ │  │
-│  │  │  └──────────────────┘ │ │  │
-│  │  └────────────────────────┘ │  │
-│  └──────────────────────────────┘  │
+│            FIBER STRAND             │
+│  ┌──────────────────────────────┐   │
+│  │       FIBRILLAR BUNDLES      │   │
+│  │  ┌────────────────────────┐  │   │
+│  │  │     INDIVIDUAL FIBRILS │  │   │
+│  │  │  ┌──────────────────┐  │  │   │
+│  │  │  │   POLYMER CHAINS │  │  │   │
+│  │  │  │  ████ Crystalline│  │  │   │
+│  │  │  │  ∿∿∿∿ Amorphous│  │  │   │
+│  │  │  └──────────────────┘  │  │   │
+│  │  └────────────────────────┘  │   │
+│  └──────────────────────────────┘   │
+└─────────────────────────────────────┘
+```
+### 2. Standard Construction Model of a Textile Fiber
+
+#### Hierarchical Structure
+```text
+Level 1: POLYMER CHAINS
+    │
+    ├─ Long macromolecules
+    ├─ Repeating structural units
+    └─ Degree of Polymerization (DP): 50-20,000
+    ↓
+Level 2: CRYSTALLINE & AMORPHOUS REGIONS
+    │
+    ├─ Crystalline: Ordered, parallel arrangement
+    └─ Amorphous: Disordered, random arrangement
+    ↓
+Level 3: MICROFIBRILS
+    │
+    ├─ Bundles of polymer chains
+    ├─ Diameter: 10-30 nm
+    └─ Alternating crystalline/amorphous regions
+    ↓
+Level 4: FIBRILS
+    │
+    ├─ Bundles of microfibrils
+    └─ Diameter: 0.1-1 μm
+    ↓
+Level 5: FIBER STRAND
+    │
+    └─ Complete fiber structure
+```
+
+#### Visual Representation
+
+```text
+┌─────────────────────────────────────┐
+│          FIBER STRAND               │
+│  ┌──────────────────────────────┐   │
+│  │   FIBRILLAR BUNDLES          │   │
+│  │  ┌────────────────────────┐  │   │
+│  │  │   INDIVIDUAL FIBRILS   │  │   │
+│  │  │  ┌──────────────────┐  │  │   │
+│  │  │  │ POLYMER CHAINS   │  │  │   │
+│  │  │  │  ████ Crystalline│  │  │   │
+│  │  │  │  ∿∿∿∿ Amorphous│  │  │   │
+│  │  │  └──────────────────┘  │  │   │
+│  │  └────────────────────────┘  │   │
+│  └──────────────────────────────┘   │
 └─────────────────────────────────────┘
 ```
 
+#### Flowchart Representation
+
+```mermaid
+flowchart TD
+    A[Polymer Chains<br>Level 1] --> B[Crystalline &<br>Amorphous Regions<br>Level 2]
+    B --> C[Microfibrils<br>10-30 nm diameter<br>Level 3]
+    C --> D[Fibrils<br>0.1-1 μm diameter<br>Level 4]
+    D --> E[Fiber Strand<br>10-50 μm diameter<br>Level 5]
+    
+    style A fill:#e1f5fe
+    style B fill:#f3e5f5
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
+    style E fill:#ffebee
+```
+
+#### Detailed Construction Breakdown
+
+**Level 5: FIBER STRAND (Macroscopic)**
+* Diameter: 10-50 μm
+* Composed of: Multiple fibrils
+* Function: Textile production unit
+*(Contains 10³-10⁴ units)*
+
+**Level 4: FIBRILS (Microscopic)**
+* Diameter: 0.1-1.0 μm
+* Composed of: Bundled microfibrils
+* Visible under: Optical microscope
+*(Contains 10²-10³ units)*
+
+**Level 3: MICROFIBRILS (Nanoscopic)**
+* Diameter: 10-30 nm
+* Structure: Alternating crystalline/amorphous regions
+* Visible under: Electron microscope
+*(Contains 10-100 polymer chains)*
+
+**Level 2: CRYSTALLINE & AMORPHOUS REGIONS**
+* **Crystalline regions:** Ordered, parallel chains (High strength, dense packing)
+* **Amorphous regions:** Disordered, random chains (Flexibility, dye absorption)
+* *Ratio determines fiber properties*
+
+**Level 1: POLYMER CHAINS (Molecular)**
+* Basic unit: Macromolecules
+* DP: 50-20,000 repeating units
+* Chemical structure determines fiber type
+
+| Property Influenced | Level 1 | Level 2 | Level 3 | Level 4 | Level 5 |
+|-------------------|:-------:|:-------:|:-------:|:-------:|:-------:|
+| **Chemical** | ✓       | ✓       | -       | -       | -       |
+| **Thermal** | ✓       | ✓       | ✓       | -       | -       |
+| **Mechanical** | -       | ✓       | ✓       | ✓       | ✓       |
+| **Optical** | -       | -       | ✓       | ✓       | ✓       |
+| **Tactile** | -       | -       | -       | ✓       | ✓       |
+
+*Key: ✓ = Primary influence*
+
+---
+
+### 3. "All Textile Fibres are Fibres, but All Fibres are Not Textile Fibres"
+
+**Requirements for Textile Fibers:**
+
+| Criterion | Requirement |
+|-----------|-------------|
+| **Length-to-Diameter Ratio** | > 1000:1 (minimum) |
+| **Strength** | Sufficient to withstand processing |
+| **Flexibility** | Bend without breaking |
+| **Cohesiveness** | Ability to stick together |
+| **Uniformity** | Reasonable consistency |
+| **Elongation** | 5-50% elastic recovery |
+| **Spinability** | Can be converted into yarn |
+
+**Examples:**
+- ✅ **Textile fibers:** Cotton, wool, silk, polyester
+- ❌ **Non-textile fibers:** Wood fibers, individual glass strands (too short/brittle)
 ### 3. "All Textile Fibres are Fibres, but All Fibres are Not Textile Fibres"
 
 **Requirements for Textile Fibers:**
