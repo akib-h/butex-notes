@@ -17,7 +17,7 @@ tags: [notes, MATH-101, linear-algebra, matrices, vectors, eigenvalues]
 
 ---
 
-## 1. Matrices and Matrix Operations {#matrices}
+## 1. Matrices and Matrix Operations
 
 ### 1.1 What is a Matrix?
 
@@ -279,7 +279,7 @@ where adj(A) is the adjoint (transpose of cofactor matrix).
 
 ---
 
-## 2. Determinants {#determinants}
+## 2. Determinants
 
 ### 2.1 Definition
 
@@ -425,7 +425,7 @@ $$
 
 ---
 
-## 3. Vector Spaces {#vector-spaces}
+## 3. Vector Spaces
 
 ### 3.1 Definition of Vector Space
 
@@ -521,7 +521,7 @@ $$
 
 ---
 
-## 4. Linear Independence and Basis {#linear-independence}
+## 4. Linear Independence and Basis
 
 ### 4.1 Linear Independence
 
@@ -669,7 +669,7 @@ Therefore: $\dim(M_{2×2}) = 4$
 
 ---
 
-## 5. Eigenvalues and Eigenvectors {#eigenvalues}
+## 5. Eigenvalues and Eigenvectors
 
 ### 5.1 Definitions
 
