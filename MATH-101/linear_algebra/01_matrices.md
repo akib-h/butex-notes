@@ -347,18 +347,14 @@ $$
 
 1. **Triangular matrices**: Determinant = product of diagonal elements
 
-   $$
-   \begin{vmatrix} 3 & 5 & 2 \\ 0 & 4 & 7 \\ 0 & 0 & 6 \end{vmatrix} = 3 \times 4 \times 6 = 72
-   $$
+$$
+\begin{vmatrix} 3 & 5 & 2 \\ 0 & 4 & 7 \\ 0 & 0 & 6 \end{vmatrix} = 3 \times 4 \times 6 = 72
+$$
 
 2. **Transpose**: $|A^T| = |A|$
-
 3. **Scalar multiplication**: $|kA| = k^n|A|$ (for $n \times n$ matrix)
-
 4. **Product**: $|AB| = |A| \cdot |B|$
-
 5. **Inverse**: $|A^{-1}| = \frac{1}{|A|}$
-
 6. **Row operations**:
    - Swap two rows → sign changes
    - Multiply row by k → determinant multiplied by k
@@ -391,7 +387,10 @@ where $A_i$ is A with column i replaced by b.
 **Example 11: Solve using Cramer's Rule**
 
 $$
-\begin{cases} 2x + 3y = 8 \\ 4x + y = 10 \end{cases}
+\begin{aligned}
+2x + 3y &= 8 \\
+4x + y &= 10
+\end{aligned}
 $$
 
 $$
