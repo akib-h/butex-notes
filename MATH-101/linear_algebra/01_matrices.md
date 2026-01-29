@@ -14,7 +14,12 @@ tags: [notes, MATH-101, linear-algebra, matrices, vectors, eigenvalues]
 4. [Linear Independence and Basis](#linear-independence)
 5. [Eigenvalues and Eigenvectors](#eigenvalues)
 6. [Applications in Textile Engineering](#applications)
-
+7. [Key Formulas Summary](#key-formulas)
+8. [Important Theorems](#theorems)
+9. [Common Mistakes to Avoid](#common-mistakes)
+10. [Practice Problems](#practice-problems)
+11. [Exam Tips](#exam-tips)
+12. [Further Study Resources](#study-resources)
 ---
 
 ## 1. Matrices and Matrix Operations
