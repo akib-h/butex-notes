@@ -866,7 +866,7 @@ Much easier than multiplying A by itself 10 times!
 
 ---
 
-## 6. Applications in Textile Engineering {#applications}
+## 6. Applications in Textile Engineering
 
 ### 6.1 Yarn Twist and Tension Analysis
 
