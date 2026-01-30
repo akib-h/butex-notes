@@ -8,18 +8,18 @@ tags: [notes, MATH-101, linear-algebra, matrices, vectors, eigenvalues]
 # Linear Algebra - Complete Conceptual Guide
 
 ## Table of Contents
-1. [Matrices and Matrix Operations](#matrices)
-2. [Determinants](#determinants)
-3. [Vector Spaces](#vector-spaces)
-4. [Linear Independence and Basis](#linear-independence)
-5. [Eigenvalues and Eigenvectors](#eigenvalues)
-6. [Applications in Textile Engineering](#applications)
-7. [Key Formulas Summary](#key-formulas)
-8. [Important Theorems](#theorems)
-9. [Common Mistakes to Avoid](#common-mistakes)
-10. [Practice Problems](#practice-problems)
-11. [Exam Tips](#exam-tips)
-12. [Further Study Resources](#study-resources)
+1. [Matrices and Matrix Operations](#1-matrices-and-matrix-operations)
+2. [Determinants](#2-determinants)
+3. [Vector Spaces](#3-vector-spaces)
+4. [Linear Independence and Basis](#4-linear-independence-and-basis)
+5. [Eigenvalues and Eigenvectors](#5-eigenvalues-and-eigenvectors)
+6. [Applications in Textile Engineering](#6-applications-in-textile-engineering)
+7. [Key Formulas Summary](#7-key-formulas-summary)
+8. [Important Theorems](#8-important-theorems)
+9. [Common Mistakes to Avoid](#9-common-mistakes-to-avoid)
+10. [Practice Problems](#10-practice-problems)
+11. [Exam Tips](#11-exam-tips)
+12. [Further Study Resources](#12-further-study-resources)
 ---
 
 ## 1. Matrices and Matrix Operations
