@@ -1,6 +1,6 @@
 # 📝 Business & Communicative English (HSS-101) — Class Test Answer Bank
 
-> **Institutions:** Gopalganj Textile Engineering College | Sheikh Rehana Textile Engineering College
+> **Institutions:** Gopalganj Textile Engineering College |
 > **Program:** B.Sc. in Textile Engineering | Level-1, Term-1
 > **Subject Code:** HSS-101 | Full Marks: 10 | Time: 30 mins
 
