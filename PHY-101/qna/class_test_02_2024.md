@@ -467,6 +467,136 @@ $$\boxed{W \approx 1.067 \text{ J}}$$
 
 6. A parallel beam of sodium light (λ = 5893 Å) is incident on a thin glass plate of μ = 1.5 such that the angle of refraction is 60°. Find the smallest thickness of the plate which will make it appear dark by reflection.
 
+# 🔬 Optics — Extra Practice Solutions
+
+## Q1. Young's Double Slit — Wavelength of Light
+
+**Given:**
+- Fringe width: $\beta = 0.3 \text{ mm} = 0.3 \times 10^{-3} \text{ m}$
+- Distance to screen: $D = 1.5 \text{ m}$
+- Slit separation: $d = 2 \text{ mm} = 2 \times 10^{-3} \text{ m}$
+
+**Formula:**
+
+$$\beta = \frac{\lambda D}{d}$$
+
+**Solution:**
+
+$$\lambda = \frac{\beta \cdot d}{D} = \frac{0.3 \times 10^{-3} \times 2 \times 10^{-3}}{1.5}$$
+
+$$\boxed{\lambda = 4 \times 10^{-7} \text{ m} = 4000 \text{ Å}}$$
+
+---
+
+## Q2. Newton's Rings — Radius of Curvature
+
+**Given:**
+- $D_5 = 0.3 \text{ cm} = 3 \times 10^{-3} \text{ m}$
+- $D_{15} = 0.62 \text{ cm} = 6.2 \times 10^{-3} \text{ m}$
+- $\lambda = 5893 \text{ Å} = 5893 \times 10^{-10} \text{ m}$ (sodium light assumed)
+- $m = 15,\ n = 5$
+
+**Formula:**
+
+$$R = \frac{D_m^2 - D_n^2}{4(m - n)\lambda}$$
+
+**Solution:**
+
+$$D_{15}^2 - D_5^2 = (6.2 \times 10^{-3})^2 - (3 \times 10^{-3})^2 = 38.44 \times 10^{-6} - 9 \times 10^{-6} = 29.44 \times 10^{-6} \text{ m}^2$$
+
+$$4(m-n)\lambda = 4 \times 10 \times 5893 \times 10^{-10} = 2.3572 \times 10^{-5} \text{ m}$$
+
+$$R = \frac{29.44 \times 10^{-6}}{2.3572 \times 10^{-5}}$$
+
+$$\boxed{R \approx 1.25 \text{ m}}$$
+
+---
+
+## Q3. Why Two Independent Sources Cannot Produce Interference
+
+Two independent light sources **cannot produce sustained interference fringes** due to the following reasons:
+
+1. **Incoherence:** Each source emits light from independent atoms undergoing random transitions. The phase difference between the two sources changes randomly and rapidly (~$10^{-8}$ s), producing no stable fringe pattern.
+
+2. **Condition for interference:** Sustained fringes require that the phase difference $\Delta\phi$ remain constant over time — i.e., the sources must be **coherent**.
+
+3. **Frequency mismatch:** Even sources of the "same" wavelength have slight frequency differences, causing the fringe pattern to shift so rapidly it appears as uniform illumination to the eye or detector.
+
+> **Key Principle:** For observable interference, sources must be coherent — derived from a single parent source (e.g., via wavefront splitting in YDSE or amplitude splitting in Newton's Rings).
+
+---
+
+## Q4. Effect on Fringe Width $\left(\beta = \frac{\lambda D}{d}\right)$
+
+| Change | Effect on $\beta$ | Reason |
+|---|---|---|
+| Screen moved **farther** ($D \uparrow$) | $\beta$ **increases** | $\beta \propto D$ |
+| Slit separation **increased** ($d \uparrow$) | $\beta$ **decreases** | $\beta \propto \frac{1}{d}$ |
+| Wavelength **decreased** ($\lambda \downarrow$) | $\beta$ **decreases** | $\beta \propto \lambda$ |
+
+---
+
+## Q5. Derivation — Diameter of nth Bright Ring (Newton's Rings)
+
+**Setup:** A plano-convex lens of radius of curvature $R$ rests on a flat glass plate. An air wedge forms between them.
+
+**Geometry:**
+
+For a ring of radius $r_n$ at a distance from the point of contact, the air gap thickness $t$ satisfies:
+
+$$r_n^2 = R^2 - (R - t)^2 = 2Rt - t^2 \approx 2Rt \quad (\text{since } t \ll R)$$
+
+$$\therefore\quad t = \frac{r_n^2}{2R}$$
+
+**Condition for Bright Rings:**
+
+Reflected light from the top and bottom surfaces of the air film interferes. The ray reflecting off the lower (denser) surface undergoes a phase shift of $\pi$. The condition for **constructive interference** is:
+
+$$2t = \left(n - \frac{1}{2}\right)\lambda, \quad n = 1, 2, 3, \ldots$$
+
+**Substituting** $t = \frac{r_n^2}{2R}$:
+
+$$2 \cdot \frac{r_n^2}{2R} = \left(n - \frac{1}{2}\right)\lambda$$
+
+$$r_n^2 = \left(n - \frac{1}{2}\right)\lambda R$$
+
+Since $D_n = 2r_n$:
+
+$$\frac{D_n^2}{4} = \left(n - \frac{1}{2}\right)\lambda R$$
+
+$$\boxed{D_n = \sqrt{2(2n-1)\lambda R}}$$
+
+This shows the diameter of bright rings grows as $\sqrt{n}$ (non-uniformly spaced).
+
+---
+
+## Q6. Thin Film — Minimum Thickness for Dark Reflection
+
+**Given:**
+- $\lambda = 5893 \text{ Å} = 5893 \times 10^{-10} \text{ m}$
+- $\mu = 1.5$
+- Angle of refraction: $r = 60°$
+
+**Condition for Dark by Reflection** (destructive interference):
+
+When light reflects off a denser medium at the first surface, it picks up a phase shift of $\pi$. The condition for destructive interference (dark film) is:
+
+$$2\mu t \cos r = n\lambda, \quad n = 1, 2, 3, \ldots$$
+
+**For minimum thickness**, take $n = 1$:
+
+$$t_{\min} = \frac{\lambda}{2\mu \cos r}$$
+
+$$t_{\min} = \frac{5893 \times 10^{-10}}{2 \times 1.5 \times \cos 60°} = \frac{5893 \times 10^{-10}}{2 \times 1.5 \times 0.5}$$
+
+$$t_{\min} = \frac{5893 \times 10^{-10}}{1.5}$$
+
+$$\boxed{t_{\min} \approx 3929 \text{ Å} \approx 3.93 \times 10^{-7} \text{ m}}$$
+
+---
+
+*All solutions follow standard wave optics conventions. Newton's Rings Q2 assumes sodium light (λ = 5893 Å) as the illuminating source.*
+
 ## 🌊 Surface Tension — Extra Practice
 
 1. A soap bubble of radius 2 cm is formed. If the surface tension of soap solution is 0.04 N/m, find the excess pressure inside the bubble.
