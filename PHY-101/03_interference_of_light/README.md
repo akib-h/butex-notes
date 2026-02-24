@@ -2,7 +2,7 @@
 
 > **Course:** Physics I (Part B: Optics)
 > **Topic:** Interference of Light
-> **Date:** February 23, 2025
+> **Date:** February 23, 2026
 > **Level:** Undergraduate / University
 
 ---
@@ -21,25 +21,25 @@ interference-of-light/
 ├── README.md                          ← You are here
 │
 ├── 01_wavefront_huygens/
-│   └── README.md                      ← Wave Front & Huygens' Principle
+│   -------------                      ← Wave Front & Huygens' Principle
 │
 ├── 02_reflection_refraction/
-│   └── README.md                      ← Laws of Reflection & Refraction via Huygens
+│   -------------                      ← Laws of Reflection & Refraction via Huygens
 │
 ├── 03_interference/
-│   └── README.md                      ← Interference of Light (Theory & Analysis)
+│   -------------                      ← Interference of Light (Theory & Analysis)
 │
 ├── 04_youngs_experiment/
-│   └── README.md                      ← Young's Double Slit Experiment
+│   -------------                      ← Young's Double Slit Experiment
 │
 ├── 05_fresnel_biprism/
-│   └── README.md                      ← Fresnel's Biprism
+│   -------------                      ← Fresnel's Biprism
 │
 ├── 06_newtons_rings/
-│   └── README.md                      ← Newton's Rings
+│   -------------                      ← Newton's Rings
 │
 └── 07_thin_films/
-    └── README.md                      ← Colours of Thin Films
+    -------------                      ← Colours of Thin Films
 ```
 
 ---
