@@ -431,8 +431,8 @@ This project is licensed under the terms specified in the [LICENSE](LICENSE) fil
 ## 📊 Repository Stats
 
 ```
-Total Notes: 25 directories, 102 files
-Last Updated: Wednesday, February 25, 2026 12:52 AM
+Total Notes: 27 directories, 120 files
+Last Updated: Thursday, February 26, 2026 1:28 AM
 Export Format: Markdown → PDF
 Department: Fabric Engineering
 University: BUTEX
