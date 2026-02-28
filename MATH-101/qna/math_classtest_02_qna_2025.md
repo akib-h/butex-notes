@@ -8,11 +8,11 @@
 
 ## 📚 Table of Contents
 
-1. [Key Definitions](#key-definitions)
-2. [Paper 1 — Solutions](#paper-1--solutions)
-3. [Paper 2 — Solutions](#paper-2--solutions)
-4. [Practice Questions with Solutions](#practice-questions-with-solutions)
-5. [References & Further Reading](#references--further-reading)
+1. [Key Definitions](#📖-key-definitions)
+2. [Paper 1 — Solutions](#📄-paper-1--solutions)
+3. [Paper 2 — Solutions](#📄-paper-2--solutions)
+4. [Practice Questions with Solutions](#🧪-practice-questions-with-solutions)
+5. [References & Further Reading](#📚-references--further-reading)
 
 ---
 
