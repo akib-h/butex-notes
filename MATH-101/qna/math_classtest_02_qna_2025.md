@@ -288,7 +288,6 @@ $$\boxed{\frac{dy}{dx} = \frac{e^{x^2}\left[(2x+2x^3 - x)\tan^{-1}x + 1\right]}{
 ## 🧪 Practice Questions with Solutions
 
 ### Practice Set A — Continuity & Differentiability
-
 ---
 
 **P1.** Test continuity and differentiability at $x = 2$ for:
@@ -306,6 +305,7 @@ $f(2) = 3$ ✅ **Continuous.**
 $\text{LHD} = \lim_{h\to 0^-} \frac{(2+h)^2-1-3}{h} = \lim \frac{4h+h^2}{h} = 4$  
 $\text{RHD} = \lim_{h\to 0^+} \frac{2(2+h)-1-3}{h} = \lim \frac{2h}{h} = 2$  
 LHD ≠ RHD ❌ **Not differentiable at $x=2$.**
+
 </details>
 
 ---
@@ -321,8 +321,8 @@ Let $x = \pi/2 - h$ as $h \to 0$:
 $$\lim_{x\to\pi/2} \frac{k\cos x}{\pi - 2x} = \lim_{h\to 0}\frac{k\cos(\pi/2 - h)}{\pi - 2(\pi/2 - h)} = \lim_{h\to 0}\frac{k\sin h}{2h} = \frac{k}{2}$$
 
 For continuity: $\frac{k}{2} = 3 \Rightarrow \boxed{k = 6}$
-</details>
 
+</details>
 ---
 
 **P3.** Show that $f(x) = |x - 3|$ is continuous but not differentiable at $x = 3$.
