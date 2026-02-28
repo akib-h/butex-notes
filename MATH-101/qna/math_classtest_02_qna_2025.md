@@ -288,41 +288,61 @@ $$\boxed{\frac{dy}{dx} = \frac{e^{x^2}\left[(2x+2x^3 - x)\tan^{-1}x + 1\right]}{
 ## 🧪 Practice Questions with Solutions
 
 ### Practice Set A — Continuity & Differentiability
+
 ---
 
 **P1.** Test continuity and differentiability at $x = 2$ for:
+
 $$f(x) = \begin{cases} x^2 - 1 & x < 2 \\ 3 & x = 2 \\ 2x - 1 & x > 2 \end{cases}$$
 
 <details>
 <summary>📋 Solution</summary>
 
-**Continuity:**  
-$\lim_{x\to 2^-} f(x) = 4 - 1 = 3$  
-$\lim_{x\to 2^+} f(x) = 4 - 1 = 3$  
-$f(2) = 3$ ✅ **Continuous.**
+**Continuity:**
 
-**Differentiability:**  
-$\text{LHD} = \lim_{h\to 0^-} \frac{(2+h)^2-1-3}{h} = \lim \frac{4h+h^2}{h} = 4$  
-$\text{RHD} = \lim_{h\to 0^+} \frac{2(2+h)-1-3}{h} = \lim \frac{2h}{h} = 2$  
-LHD ≠ RHD ❌ **Not differentiable at $x=2$.**
+$$\lim_{x\to 2^-} f(x) = (2)^2 - 1 = 3$$
+
+$$\lim_{x\to 2^+} f(x) = 2(2) - 1 = 3$$
+
+$$f(2) = 3$$
+
+Since LHL = RHL = f(2) = 3 ✅ **f is continuous at x = 2.**
+
+---
+
+**Differentiability:**
+
+$$\text{LHD} = \lim_{h\to 0^-} \frac{f(2+h) - f(2)}{h} = \lim_{h\to 0^-} \frac{(2+h)^2 - 1 - 3}{h} = \lim_{h\to 0^-} \frac{4h + h^2}{h} = 4$$
+
+$$\text{RHD} = \lim_{h\to 0^+} \frac{f(2+h) - f(2)}{h} = \lim_{h\to 0^+} \frac{2(2+h) - 1 - 3}{h} = \lim_{h\to 0^+} \frac{2h}{h} = 2$$
+
+Since LHD = 4 ≠ 2 = RHD ❌ **f is NOT differentiable at x = 2.**
 
 </details>
 
 ---
 
 **P2.** For what value of $k$ is the following function continuous at $x = \pi/2$?
-$$f(x) = \begin{cases} k\cos x / (\pi - 2x) & x \neq \pi/2 \\ 3 & x = \pi/2 \end{cases}$$
+
+$$f(x) = \begin{cases} \dfrac{k\cos x}{\pi - 2x} & x \neq \dfrac{\pi}{2} \\[6pt] 3 & x = \dfrac{\pi}{2} \end{cases}$$
 
 <details>
 <summary>📋 Solution</summary>
 
-Let $x = \pi/2 - h$ as $h \to 0$:
+For continuity at $x = \pi/2$, we need:
 
-$$\lim_{x\to\pi/2} \frac{k\cos x}{\pi - 2x} = \lim_{h\to 0}\frac{k\cos(\pi/2 - h)}{\pi - 2(\pi/2 - h)} = \lim_{h\to 0}\frac{k\sin h}{2h} = \frac{k}{2}$$
+$$\lim_{x \to \pi/2} \frac{k \cos x}{\pi - 2x} = f\!\left(\frac{\pi}{2}\right) = 3$$
 
-For continuity: $\frac{k}{2} = 3 \Rightarrow \boxed{k = 6}$
+**Substitution:** Let $x = \dfrac{\pi}{2} - h$, so as $x \to \dfrac{\pi}{2}$, we have $h \to 0$.
+
+$$\lim_{h\to 0} \frac{k\cos\!\left(\dfrac{\pi}{2} - h\right)}{\pi - 2\!\left(\dfrac{\pi}{2} - h\right)} = \lim_{h\to 0} \frac{k \sin h}{2h} = \frac{k}{2} \cdot \lim_{h\to 0}\frac{\sin h}{h} = \frac{k}{2} \cdot 1 = \frac{k}{2}$$
+
+Setting equal to 3:
+
+$$\frac{k}{2} = 3 \implies \boxed{k = 6}$$
 
 </details>
+
 ---
 
 **P3.** Show that $f(x) = |x - 3|$ is continuous but not differentiable at $x = 3$.
