@@ -14,7 +14,7 @@
 5. [📚 References & Further Reading](#📚-references--further-reading)
 
 ---
-
+<a name="📖-key-definitions"></a>
 ## 📖 Key Definitions
 
 ### 1. Continuity
@@ -59,7 +59,7 @@ If $f(x,y)$ is a homogeneous function of degree $n$, then:
 $$x\frac{\partial f}{\partial x} + y\frac{\partial f}{\partial y} = n \cdot f(x, y)$$
 
 ---
-
+<a name="📄-paper-1--solutions"></a>
 ## 📄 Paper 1 — Solutions
 
 ### Question 1 — Continuity & Differentiability at $x = 1$
@@ -166,7 +166,7 @@ $$x\frac{\partial u}{\partial x} + y\frac{\partial u}{\partial y} = -\frac{\cos 
 $$\therefore \quad x\frac{\partial u}{\partial x} + y\frac{\partial u}{\partial y} + \frac{1}{2}\cot u = 0 \quad \blacksquare$$
 
 ---
-
+<a name="📄-paper-2--solutions"></a>
 ## 📄 Paper 2 — Solutions
 
 ### Question 1 — Find Maximum and Minimum of $u$
@@ -284,7 +284,7 @@ $$\frac{dy}{dx} = \frac{e^{x^2}}{(1+x^2)^{3/2}}\left[2x(1+x^2)\tan^{-1}x + 1 - x
 $$\boxed{\frac{dy}{dx} = \frac{e^{x^2}\left[(2x+2x^3 - x)\tan^{-1}x + 1\right]}{(1+x^2)^{3/2}}}$$
 
 ---
-
+<a name="🧪-practice-questions-with-solutions"></a>
 ## 🧪 Practice Questions with Solutions
 
 ### Practice Set A — Continuity & Differentiability
@@ -542,7 +542,7 @@ $f''(x) = 6x$
 | $\frac{d}{dx}\cos^{-1}x$ | $-\frac{1}{\sqrt{1-x^2}}$ |
 
 ---
-
+<a name="📚-references--further-reading"></a>
 ## 📚 References & Further Reading
 
 1. **Euler's Theorem (Wolfram MathWorld)**  
