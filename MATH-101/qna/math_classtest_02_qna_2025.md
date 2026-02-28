@@ -1,18 +1,19 @@
 # 📐 Mathematics-1 (Ms-101) — Class Test Solutions & Practice Guide
 
 > **Course:** B.Sc in Textile Engineering, Level-1 Term-1  
-> **College:** Gopalganj Textile Engineering College & Sheikh Rehana Textile Engineering College  
+> **College:** Gopalganj Textile Engineering College  
 > **Topics Covered:** Continuity, Differentiability, Limits, Homogeneous Functions, Partial Derivatives, Optimization, Differentiation Techniques
 
 ---
 
 ## 📚 Table of Contents
 
-1. [Key Definitions](#📖-key-definitions)
-2. [Paper 1 — Solutions](#📄-paper-1--solutions)
-3. [Paper 2 — Solutions](#📄-paper-2--solutions)
-4. [Practice Questions with Solutions](#🧪-practice-questions-with-solutions)
-5. [References & Further Reading](#📚-references--further-reading)
+1. [Key Definitions](#key-definitions)
+2. [Paper 1 — Solutions](#paper-1--solutions)
+3. [Paper 2 — Solutions](#paper-2--solutions)
+4. [Practice Questions with Solutions](#practice-questions-with-solutions)
+5. [References & Further Reading](#references--further-reading)
+
 
 ---
 
