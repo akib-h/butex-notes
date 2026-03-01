@@ -162,7 +162,11 @@ $$\boxed{\lim_{x \to 1}(1-x^2)^{\frac{1}{\log(1-x)}} = e}$$
 ---
 
 ### Question 3 (3 Marks)
-**Define Homogeneous Function. If $u = \cos^{-1}\left\{\dfrac{x+y}{\sqrt{x}+\sqrt{y}}\right\}$, show that $x\dfrac{\partial u}{\partial x} + y\dfrac{\partial u}{\partial y} + \dfrac{1}{2}\cot u = 0$.**
+**Define Homogeneous Function. If**
+
+$$u = \cos^{-1}\!\left(\frac{x+y}{\sqrt{x}+\sqrt{y}}\right)$$
+
+**show that $x\dfrac{\partial u}{\partial x} + y\dfrac{\partial u}{\partial y} + \dfrac{1}{2}\cot u = 0$.**
 
 #### Definition of Homogeneous Function
 A function $f(x, y)$ is **homogeneous of degree $n$** if $f(tx, ty) = t^n f(x, y)$ for all $t > 0$.
