@@ -1,7 +1,7 @@
 ---
 subject: MATH-101 (MS-101)
 topic: Continuity, Differentiability, Limits & Homogeneous Functions
-date: 2024-01-01
+date: 2026-03-01
 tags: [notes, math-101, ms-101, continuity, differentiability, limits, homogeneous-function, euler-theorem]
 ---
 
@@ -18,9 +18,10 @@ tags: [notes, math-101, ms-101, continuity, differentiability, limits, homogeneo
 2. [Solutions — Gopalganj Textile Engineering College](#2-solutions--gopalganj-textile-engineering-college)
 3. [Solutions — Sheikh Rehana Textile Engineering College](#3-solutions--sheikh-rehana-textile-engineering-college)
 4. [Solutions — Jhenaidah Textile Engineering College](#4-solutions--jhenaidah-textile-engineering-college)
-5. [Practice Problems with Solutions](#5-practice-problems-with-solutions)
-6. [Quick-Reference Formula Sheet](#6-quick-reference-formula-sheet)
-7. [References](#7-references)
+5. [Solutions — Barishal Textile Engineering College](#5-solutions--barishal-textile-engineering-college)
+6. [Practice Problems with Solutions](#6-practice-problems-with-solutions)
+7. [Quick-Reference Formula Sheet](#7-quick-reference-formula-sheet)
+8. [References](#8-references)
 
 ---
 
@@ -398,7 +399,149 @@ $$\boxed{\frac{d(x^{\sin^{-1}x})}{d(\sin^{-1}x)} = x^{\sin^{-1}x}\left(\ln x + \
 
 ---
 
-## 5. Practice Problems with Solutions
+## 5. Solutions — Barishal Textile Engineering College
+
+> **Test:** 2nd Class Test (Level-1, Term-1) 14th Batch | Full Marks: 10 (4+2+4) | Time: 30 min
+
+---
+
+### Question 1 (4 Marks)
+**Define Continuity. Test the continuity and differentiability of $f(x)$ at $x = \dfrac{\pi}{2}$ where:**
+
+$$f(x) = \begin{cases} 1 & \text{when } x < 0 \\ 1 + \sin x & \text{when } 0 \leq x \leq \dfrac{\pi}{2} \\ 2 + \left(x - \dfrac{\pi}{2}\right)^2 & \text{when } x \geq \dfrac{\pi}{2} \end{cases}$$
+
+#### Definition of Continuity
+
+A function $f(x)$ is **continuous at $x = a$** if:
+1. $f(a)$ exists
+2. $\displaystyle\lim_{x \to a} f(x)$ exists (i.e., LHL $=$ RHL)
+3. $\displaystyle\lim_{x \to a} f(x) = f(a)$
+
+#### Testing Continuity at $x = \dfrac{\pi}{2}$
+
+**Step 1: Find $f\!\left(\dfrac{\pi}{2}\right)$**
+
+Using the branch $f(x) = 1 + \sin x$ at $x = \dfrac{\pi}{2}$:
+$$f\!\left(\frac{\pi}{2}\right) = 1 + \sin\frac{\pi}{2} = 1 + 1 = 2$$
+
+**Step 2: Left-Hand Limit (LHL)**
+
+$$\lim_{x \to (\pi/2)^-} f(x) = \lim_{x \to (\pi/2)^-}(1 + \sin x) = 1 + \sin\frac{\pi}{2} = 1 + 1 = 2$$
+
+**Step 3: Right-Hand Limit (RHL)**
+
+$$\lim_{x \to (\pi/2)^+} f(x) = \lim_{x \to (\pi/2)^+}\left[2 + \left(x - \frac{\pi}{2}\right)^2\right] = 2 + 0 = 2$$
+
+**Conclusion of Continuity:**
+$$\text{LHL} = \text{RHL} = f\!\left(\tfrac{\pi}{2}\right) = 2$$
+
+$\therefore$ **$f(x)$ is continuous at $x = \dfrac{\pi}{2}$.** ✔
+
+#### Testing Differentiability at $x = \dfrac{\pi}{2}$
+
+**Step 4: Left-Hand Derivative (LHD)**
+
+$$\text{LHD} = \lim_{h \to 0^-} \frac{f\!\left(\frac{\pi}{2}+h\right) - f\!\left(\frac{\pi}{2}\right)}{h}$$
+
+For $h \to 0^-$, we use $f(x) = 1 + \sin x$:
+
+$$= \lim_{h \to 0^-} \frac{\left(1 + \sin\!\left(\frac{\pi}{2}+h\right)\right) - 2}{h} = \lim_{h \to 0^-} \frac{1 + \cos h - 2}{h} = \lim_{h \to 0^-} \frac{\cos h - 1}{h}$$
+
+Using the standard result $\displaystyle\lim_{h\to 0}\frac{\cos h - 1}{h} = 0$:
+
+$$\text{LHD} = 0$$
+
+**Step 5: Right-Hand Derivative (RHD)**
+
+$$\text{RHD} = \lim_{h \to 0^+} \frac{f\!\left(\frac{\pi}{2}+h\right) - f\!\left(\frac{\pi}{2}\right)}{h}$$
+
+For $h \to 0^+$, we use $f(x) = 2 + \left(x - \dfrac{\pi}{2}\right)^2$:
+
+$$= \lim_{h \to 0^+} \frac{\left[2 + \left(\frac{\pi}{2}+h - \frac{\pi}{2}\right)^2\right] - 2}{h} = \lim_{h \to 0^+} \frac{h^2}{h} = \lim_{h \to 0^+} h = 0$$
+
+**Conclusion of Differentiability:**
+$$\text{LHD} = 0 = \text{RHD}$$
+
+$\therefore$ **$f(x)$ is differentiable at $x = \dfrac{\pi}{2}$**, with $f'\!\left(\dfrac{\pi}{2}\right) = 0$. ✔
+
+> This is a rare and important case: the function is **both continuous AND differentiable** at the junction point. The two branches meet smoothly with zero slope from both sides.
+
+---
+
+### Question 2 (2 Marks)
+**Evaluate:** $\displaystyle\lim_{x \to 0} \frac{(e^x - 1)\tan^2 x}{x^3}$
+
+**Strategy:** Split into a product of standard limits.
+
+$$\lim_{x \to 0} \frac{(e^x - 1)\tan^2 x}{x^3} = \lim_{x \to 0} \frac{e^x - 1}{x} \cdot \frac{\tan^2 x}{x^2}$$
+
+Now apply known standard limits separately:
+
+$$\lim_{x \to 0}\frac{e^x - 1}{x} = 1 \qquad \text{and} \qquad \lim_{x \to 0}\frac{\tan x}{x} = 1$$
+
+Therefore:
+
+$$= \lim_{x \to 0}\frac{e^x-1}{x} \cdot \left(\lim_{x \to 0}\frac{\tan x}{x}\right)^2 = 1 \cdot 1^2$$
+
+$$\boxed{\lim_{x \to 0} \frac{(e^x-1)\tan^2 x}{x^3} = 1}$$
+
+---
+
+### Question 3 (4 Marks)
+**Define Domain and Range. Find $\dfrac{dy}{dx}$ where $y = x^{\sin^{-1}x} + (\cos x)^{\ln x}$.**
+
+#### Definitions
+
+- **Domain:** The complete set of all possible input values $x$ for which $f(x)$ is defined.
+- **Range:** The complete set of all output values $f(x)$ can take.
+
+*Example:* For $f(x) = \ln x$: Domain $= (0, \infty)$, Range $= (-\infty, \infty)$.
+
+#### Finding $\dfrac{dy}{dx}$
+
+Let $y = u + v$ where $u = x^{\sin^{-1}x}$ and $v = (\cos x)^{\ln x}$.
+
+Then $\dfrac{dy}{dx} = \dfrac{du}{dx} + \dfrac{dv}{dx}$.
+
+---
+
+**Part 1: Differentiate $u = x^{\sin^{-1}x}$**
+
+Take natural log of both sides:
+$$\ln u = \sin^{-1}x \cdot \ln x$$
+
+Differentiate both sides w.r.t. $x$ (product rule on the right):
+$$\frac{1}{u}\frac{du}{dx} = \frac{d}{dx}(\sin^{-1}x)\cdot\ln x + \sin^{-1}x \cdot \frac{d}{dx}(\ln x)$$
+
+$$\frac{1}{u}\frac{du}{dx} = \frac{\ln x}{\sqrt{1-x^2}} + \frac{\sin^{-1}x}{x}$$
+
+$$\boxed{\frac{du}{dx} = x^{\sin^{-1}x}\left(\frac{\ln x}{\sqrt{1-x^2}} + \frac{\sin^{-1}x}{x}\right)}$$
+
+---
+
+**Part 2: Differentiate $v = (\cos x)^{\ln x}$**
+
+Take natural log of both sides:
+$$\ln v = \ln x \cdot \ln(\cos x)$$
+
+Differentiate both sides w.r.t. $x$ (product rule on the right):
+$$\frac{1}{v}\frac{dv}{dx} = \frac{d}{dx}(\ln x)\cdot\ln(\cos x) + \ln x \cdot \frac{d}{dx}(\ln(\cos x))$$
+
+$$\frac{1}{v}\frac{dv}{dx} = \frac{\ln(\cos x)}{x} + \ln x \cdot \frac{-\sin x}{\cos x}$$
+
+$$\frac{1}{v}\frac{dv}{dx} = \frac{\ln(\cos x)}{x} - \ln x \cdot \tan x$$
+
+$$\boxed{\frac{dv}{dx} = (\cos x)^{\ln x}\left(\frac{\ln(\cos x)}{x} - \ln x \cdot \tan x\right)}$$
+
+---
+
+**Final Answer:**
+
+$$\boxed{\frac{dy}{dx} = x^{\sin^{-1}x}\!\left(\frac{\ln x}{\sqrt{1-x^2}} + \frac{\sin^{-1}x}{x}\right) + (\cos x)^{\ln x}\!\left(\frac{\ln(\cos x)}{x} - \ln x\cdot\tan x\right)}$$
+
+---
+
+## 6. Practice Problems with Solutions
 
 ### Practice Set A: Continuity & Differentiability
 
@@ -552,7 +695,7 @@ $$\frac{dy}{dx} \cdot \frac{nx-my}{y(x+y)} = \frac{nx-my}{x(x+y)} \implies \frac
 
 ---
 
-## 6. Quick-Reference Formula Sheet
+## 7. Quick-Reference Formula Sheet
 
 | Concept | Key Formula |
 |:---|:---|
@@ -569,7 +712,7 @@ $$\frac{dy}{dx} \cdot \frac{nx-my}{y(x+y)} = \frac{nx-my}{x(x+y)} \implies \frac
 
 ---
 
-## 7. References
+## 8. References
 
 1. **Thomas & Finney** — *Calculus and Analytic Geometry*, 9th Edition, Addison-Wesley. *(Standard reference for continuity, differentiability, and limits.)*
 
