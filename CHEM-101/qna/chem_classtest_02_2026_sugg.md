@@ -49,7 +49,7 @@
   - `i < 1` for association (e.g., acetic acid in benzene)
   - `i = 1` for non-electrolytes
 
-![Colligative Properties Diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Raoult_law_1.svg/800px-Raoult_law_1.svg.png)
+![Colligative Properties Diagram](https://en.wikipedia.org/wiki/Colligative_properties#/media/File:Freezing_point_depression_and_boiling_point_elevation.png)
 
 *Figure 1: Vapour pressure diagram illustrating Raoult's Law for ideal solutions. Source: Wikimedia Commons*
 
