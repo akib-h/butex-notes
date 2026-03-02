@@ -2,7 +2,7 @@
 
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-December%202025-blue)]()
 [![License](https://img.shields.io/badge/License-MIT-green)]()
-[![Topics](https://img.shields.io/badge/Topics-3-orange)]()
+[![Topics](https://img.shields.io/badge/Topics-10-orange)]()
 
 A comprehensive collection of study materials covering essential topics in Chemistry-I, including Complex Compounds (Coordination Chemistry), Acids and Bases, and Analytical Analysis (Gravimetric Methods).
 
