@@ -9,36 +9,55 @@ A comprehensive collection of study materials covering essential topics in Chemi
 ## 📚 Repository Structure
 
 ```
-chemistry-i/
+CHEM-101/
 │
 ├── README.md                          # This file
 │
-├── complex-compounds/
-│   ├── README.md                      # Complex Compounds guide
-│   ├── examples/                      # Worked examples
-│   └── practice-problems/             # Practice questions
+├── 01_periodicity/
+│   ├── CT-01.md                       # Class test 1 materials
+│   ├── ionic_radii_questions.md       # Practice questions on ionic radii
+│   └── periodicity.md                 # Periodicity notes
 │
-├── acids-and-bases/
-│   ├── README.md                      # Acids and Bases guide
-│   ├── calculations/                  # pH calculations and examples
-│   ├── buffer-systems/                # Buffer preparation guides
-│   └── titration-curves/              # Titration examples
+├── 02_chemical_bonding/
+│   ├── chemical_bonding_oneshot.md    # Quick revision guide
+│   ├── chemical_bonding_README.md     # Topic overview
+│   ├── imf_and_advanced.md            # Intermolecular forces
+│   ├── intro_chemical_bonding.md      # Introduction
+│   ├── ionic_bonding.md               # Ionic bonding
+│   ├── iron_oxidation_states.md       # Iron oxidation states
+│   ├── metallic_bond_theory.md        # Metallic bond theory
+│   ├── metallic_examples.md           # Metallic bonding examples
+│   ├── metallic_properties.md         # Properties of metals
+│   ├── molecular_orbital_theory.md    # MOT
+│   ├── vbt_fundamentals.md            # Valence Bond Theory
+│   ├── vsepr_mol_geometry.md          # VSEPR molecular geometry
+│   ├── vsepr_principles.md            # VSEPR principles
+│   └── z_CT-02.md / z_CT_Suggestions.md
 │
-├── analytical-analysis/
-│   ├── README.md                      # Analytical Analysis guide
-│   ├── procedures/                    # Laboratory procedures
-│   ├── calculations/                  # Worked calculation examples
-│   └── data-sheets/                   # Sample data collection sheets
+├── 03_complex_compounds.md            # Coordination chemistry
+├── 04_acids_bases.md                  # Acid-base chemistry
+├── 05_analytical_methods.md           # Gravimetric & analytical methods
 │
-├── reference-materials/
-│   ├── periodic-table.pdf
-│   ├── common-constants.md
-│   └── useful-formulas.md
+├── 06_physical_chemistry/
+│   ├── dilute_solutions.md            # Dilute solution properties
+│   ├── physical_chemistry.md          # Core physical chemistry
+│   └── README.md
 │
-└── handwritten-notes/                 # Original handwritten notes
-    ├── complex-compounds-notes.pdf
-    ├── acid-base-notes.pdf
-    └── analytical-analysis-notes.pdf
+├── 07_equilibrium.md                  # Chemical equilibrium
+├── 08_kinetics.md                     # Chemical kinetics
+├── 09_colloids.md                     # Colloid chemistry
+│
+├── 10_photochemistry/
+│   ├── 10_laws_photochemistry.md      # Laws of photochemistry
+│   ├── 11_quantum_yield.md            # Quantum yield
+│   ├── 12_hx_decomposition.md        # HX decomposition
+│   ├── 13_photosensitized_reactions.md # Photosensitized reactions
+│   └── photochem_guide.tsx            # Interactive guide
+│
+└── qna/
+    ├── chem_classtest_02_2024_25.md   # Class test QnA 2024-25
+    ├── chem_classtest_02_2024.md      # Class test QnA 2024
+    └── chem_classtest_02_2026_sugg.md # 2026 suggestions
 ```
 
 ## 📖 Topics Covered
@@ -436,8 +455,7 @@ This educational content is provided under the MIT License. See LICENSE file for
 
 ---
 
-**Last Updated:** December 14, 2025
 
-**Repository Maintained By:** Chemistry-I Study Group
-
-**Version:** 1.0.0
+**Last Updated:** March 2026  
+**Repository Maintained By:** itachi_re  
+**Version:** 2.0.0
