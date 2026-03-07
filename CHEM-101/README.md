@@ -273,6 +273,49 @@ This repository includes guidance on:
 
 ---
 
+## 🎯 Learning Objectives
+
+### Periodicity & Bonding
+- ✓ Explain periodic trends in atomic/ionic properties
+- ✓ Apply VSEPR, VBT, and MOT to predict molecular structure
+- ✓ Understand metallic and intermolecular forces
+
+### Complex Compounds
+- ✓ Name coordination compounds using IUPAC rules
+- ✓ Classify ligands and predict stability
+- ✓ Apply CFT to predict color and magnetic properties
+
+### Acids, Bases & Analytical Methods
+- ✓ Calculate pH, pOH, Ka, and Kb
+- ✓ Design buffer solutions using Henderson-Hasselbalch
+- ✓ Perform gravimetric determinations and error analysis
+
+### Physical Chemistry, Equilibrium & Kinetics
+- ✓ Apply colligative properties to dilute solutions
+- ✓ Use equilibrium constants to predict reaction direction
+- ✓ Determine reaction order and rate constants
+
+### Photochemistry & Colloids
+- ✓ Apply laws of photochemistry and calculate quantum yield
+- ✓ Distinguish colloidal systems and their properties
+
+---
+
+## 💡 How to Use This Repository
+
+### For Self-Study:
+1. Follow the numbered topic order (01 → 10)
+2. Work through concepts, then attempt practice problems
+3. Use the `qna/` folder for exam-style questions
+
+### For Exam Preparation:
+1. Review notes in each section
+2. Practice calculations (pH, gravimetric factors, rate laws)
+3. Use `*_oneshot.md` files for quick revision
+4. Refer to `qna/` for class test preparation
+
+---
+
 ## 📊 Additional Resources
 
 ### Online References
