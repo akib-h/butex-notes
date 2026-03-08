@@ -74,17 +74,17 @@ Set $y = f(x)$, then **solve for $x$ in terms of $y$**, and find which $y$-value
 
 **Solution:**
 
-**Domain:** 
-The denominator cannot be zero.
-$$2x + 1 \neq 0 \Rightarrow x \neq -\frac{1}{2}$$
-$$D_f = \mathbb{R} - \left\{-\frac{1}{2}\right\}$$
+**Domain:**
+- Numerator requires: $x + 2 \geq 0 \Rightarrow x \geq -2$
+- Denominator requires: $x^2 - 9 \neq 0 \Rightarrow x \neq \pm 3$
 
-**Range:** 
-Let $y = \frac{x-3}{2x+1}$. Solving for $x$:
-$$y(2x + 1) = x - 3 \implies 2xy - x = -3 - y \implies x(2y-1) = -(3+y)$$
-$$x = \frac{-(3+y)}{2y - 1}$$
-This is undefined when $2y - 1 = 0 \Rightarrow y = \frac{1}{2}$.
-$$\boxed{R_f = \mathbb{R} - \left\{\frac{1}{2}\right\}}$$
+Since $x \geq -2$, we only exclude $x = 3$ (as $x = -3 < -2$ is already excluded).
+
+$$\boxed{D_f = [-2, 3) \cup (3, \infty)}$$
+
+**Range:** On $[-2, 3)$, $x^2 - 9 < 0$ so $f(x) \leq 0$ (equals $0$ at $x=-2$, $\to -\infty$ as $x \to 3^-$). On $(3, \infty)$, $x^2 - 9 > 0$ so $f(x) > 0$ ($\to +\infty$ as $x \to 3^+$, $\to 0^+$ as $x \to \infty$).
+
+$$\boxed{R_f = (-\infty, 0] \cup (0, +\infty) = \mathbb{R}}$$
 
 ---
 
@@ -94,16 +94,20 @@ $$\boxed{R_f = \mathbb{R} - \left\{\frac{1}{2}\right\}}$$
 
 **Solution:**
 
-**Domain:** 
-The denominator cannot be zero.
-$$2x + 1 \neq 0 \Rightarrow x \neq -\dfrac{1}{2}$$
+**Domain:** $2x + 1 \neq 0 \Rightarrow x \neq -\dfrac{1}{2}$
+
 $$D_f = \mathbb{R} - \left\{-\frac{1}{2}\right\}$$
 
-**Range:** 
-Let $y = \dfrac{x-3}{2x+1}$. Solving for $x$:
+**Range:** Let $y = \dfrac{x-3}{2x+1}$
+
+Solving for $x$:
+
 $$y(2x + 1) = x - 3 \implies 2xy - x = -3 - y \implies x(2y-1) = -(3+y)$$
+
 $$x = \frac{-(3+y)}{2y - 1}$$
-This is undefined when $2y - 1 = 0 \Rightarrow y = \dfrac{1}{2}$.
+
+This is undefined when $2y - 1 = 0 \Rightarrow y = \dfrac{1}{2}$
+
 $$\boxed{R_f = \mathbb{R} - \left\{\frac{1}{2}\right\}}$$
 
 ---
@@ -116,17 +120,16 @@ $$f(x) = \begin{cases} -x & \text{if } x \leq 0 \\ x & \text{if } 0 < x \leq 1 \
 
 **Solution:**
 
-**Domain:** 
-All three pieces together cover $(-\infty, 0] \cup (0,1] \cup (1,\infty) = \mathbb{R}$.
+**Domain:** All three pieces together cover $(-\infty, 0] \cup (0,1] \cup (1,\infty) = \mathbb{R}$
+
 $$D_f = \mathbb{R}$$
 
 **Range:**
-- **Piece 1:** $x \leq 0 \Rightarrow -x \geq 0$, so outputs $[0, \infty)$
-- **Piece 2:** $0 < x \leq 1 \Rightarrow$ outputs $(0, 1]$
-- **Piece 3:** $x > 1 \Rightarrow 2 - x < 1$, so outputs $(-\infty, 1)$
+- Piece 1: $x \leq 0 \Rightarrow -x \geq 0$, so outputs $[0, \infty)$
+- Piece 2: $0 < x \leq 1 \Rightarrow$ outputs $(0, 1]$
+- Piece 3: $x > 1 \Rightarrow 2 - x < 1$, so outputs $(-\infty, 1)$
 
-Combining these sets: $[0, \infty) \cup (0, 1] \cup (-\infty, 1) = \mathbb{R}$.
-$$\boxed{R_f = \mathbb{R}}$$
+$$R_f = \mathbb{R}$$
 
 ---
 
