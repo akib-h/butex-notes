@@ -74,15 +74,17 @@ Set $y = f(x)$, then **solve for $x$ in terms of $y$**, and find which $y$-value
 
 **Solution:**
 
-**Domain:**
-- Numerator requires: $x + 2 \geq 0 \Rightarrow x \geq -2$
-- Denominator requires: $x^2 - 9 \neq 0 \Rightarrow x \neq \pm 3$
+**Domain:** 
+The denominator cannot be zero.
+$$2x + 1 \neq 0 \Rightarrow x \neq -\frac{1}{2}$$
+$$D_f = \mathbb{R} - \left\{-\frac{1}{2}\right\}$$
 
-Since $x \geq -2$, we only exclude $x = 3$ (as $x = -3 < -2$ is already excluded).
-
-$$\boxed{D_f = [-2, 3) \cup (3, \infty)}$$
-
-**Range:** $R_f = (-\infty, 0] \cup (0, \infty)$
+**Range:** 
+Let $y = \frac{x-3}{2x+1}$. Solving for $x$:
+$$y(2x + 1) = x - 3 \implies 2xy - x = -3 - y \implies x(2y-1) = -(3+y)$$
+$$x = \frac{-(3+y)}{2y - 1}$$
+This is undefined when $2y - 1 = 0 \Rightarrow y = \frac{1}{2}$.
+$$\boxed{R_f = \mathbb{R} - \left\{\frac{1}{2}\right\}}$$
 
 ---
 
