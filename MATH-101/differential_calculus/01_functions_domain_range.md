@@ -160,8 +160,26 @@ $$\boxed{R_f = \mathbb{R}}$$
 1. Find domain and range of $f(x) = \dfrac{2}{3-x}$
 2. Find domain and range of $f(x) = \sqrt{4 - x^2}$
 3. Find domain and range of $f(x) = x \sin\!\dfrac{1}{x}$
-4. Find domain and range of:
-$$f(x) = \begin{cases} 1-x & -1 \leq x \leq 1 \\ 0 & 1 \leq x \leq 2 \\ x^2 - 4 & x > 2 \end{cases}$$
+**Find domain and range of:**
+
+$$f(x) = \begin{cases} 
+1-x & -1 \leq x \leq 1 \\ 
+0 & 1 \leq x \leq 2 \\ 
+x^2 - 4 & x > 2 
+\end{cases}$$
+
+**Solution:**
+
+**Domain:** $[-1, 1] \cup [1, 2] \cup (2, \infty) = [-1, \infty)$
+
+$$\boxed{D_f = [-1, \infty)}$$
+
+**Range:** 
+- Piece 1: $[0, 2]$
+- Piece 2: $\{0\}$
+- Piece 3: $(0, \infty)$
+
+$$\boxed{R_f = [0, \infty)}$$
 
 ---
 
@@ -169,7 +187,7 @@ $$f(x) = \begin{cases} 1-x & -1 \leq x \leq 1 \\ 0 & 1 \leq x \leq 2 \\ x^2 - 4 
 
 - 📘 **Stewart, J.** — *Calculus: Early Transcendentals*, 8th Ed., Chapter 1
 - 📘 **Thomas, G.B.** — *Thomas' Calculus*, 14th Ed., Section 1.1
-- 🌐 [Paul's Online Math Notes — Functions](https://tutorial.math.lamar.edu/Classes/CalcI/ReviewFcns.aspx)
+- 🌐 [Paul's Online Math Notes](https://tutorial.math.lamar.edu/Classes/CalcI/ReviewFcns.aspx)
 - 🌐 [Khan Academy — Domain and Range](https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:functions/x2f8bb11595b61c86:domain-and-range/a/intro-to-domain-and-range)
 - 🌐 [MIT OpenCourseWare — Single Variable Calculus](https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/)
 - 🌐 [Wolfram MathWorld — Function](https://mathworld.wolfram.com/Function.html)
