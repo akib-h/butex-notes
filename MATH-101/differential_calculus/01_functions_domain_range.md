@@ -96,7 +96,7 @@ $$\boxed{R_f = (-\infty, 0] \cup (0, +\infty) = \mathbb{R}}$$
 
 **Domain:** $2x + 1 \neq 0 \Rightarrow x \neq -\dfrac{1}{2}$
 
-$$D_f = \mathbb{R} - \left\{-\frac{1}{2}\right\}$$
+$$D_f = \mathbb{R} - \lbrace -\frac{1}{2}\rbrace$$
 
 **Range:** Let $y = \dfrac{x-3}{2x+1}$
 
@@ -108,7 +108,7 @@ $$x = \frac{-(3+y)}{2y - 1}$$
 
 This is undefined when $2y - 1 = 0 \Rightarrow y = \dfrac{1}{2}$
 
-$$\boxed{R_f = \mathbb{R} - \left\{\frac{1}{2}\right\}}$$
+$$\boxed{R_f = \mathbb{R} - \lbrace \frac{1}{2}\rbrace}$$
 
 ---
 
