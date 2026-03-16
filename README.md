@@ -4,7 +4,7 @@
 ![Repo Size](https://img.shields.io/github/repo-size/itachi-re/butex-notes?style=flat-square&color=orange)
 ![License](https://img.shields.io/github/license/itachi-re/butex-notes?style=flat-square&color=green)
 ![Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg?style=flat-square)
-
+[![Changelog](https://img.shields.io/badge/Changelog-view-blueviolet?style=flat-square)](https://github.com/itachi-re/butex-notes/blob/master/CHANGELOG.md)
 > **Personal study notes for B.Sc. in Textile Engineering (Fabric Engineering Department)**  
 > Maintained by **itachi_re** | Bangladesh University of Textiles (BUTEX)
 
@@ -22,6 +22,7 @@ This repository contains comprehensive course notes from my journey through the 
 - 📄 **PDF Export Ready** - Automated scripts to convert notes to PDF
 - 🏷️ **Tagged & Organized** - Easy navigation with course codes and topics
 - 🔍 **Searchable** - Quick find using Git search or GitHub search features
+- 📋 **Changelog Tracked** - Every notable update logged in [CHANGELOG.md](CHANGELOG.md)
 
 ---
 
@@ -53,12 +54,14 @@ This repository contains comprehensive course notes from my journey through the 
 
 ### Chemistry 101 Topics
 
+
 **[🔗 View All Chemistry Notes](https://github.com/itachi-re/butex-notes/tree/master/CHEM-101)**
 
 <details>
 <summary><b>📂 01 - Periodicity</b></summary>
 
 - [Periodicity Notes](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/01_periodicity/periodicity.md)
+- [Ionic Radii Questions](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/01_periodicity/ionic_radii_questions.md)
 - [CT-01 Class Test](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/01_periodicity/CT-01.md)
 
 </details>
@@ -70,6 +73,7 @@ This repository contains comprehensive course notes from my journey through the 
 - [🎯 One-Shot Review](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/02_chemical_bonding/chemical_bonding_oneshot.md)
 - [Introduction to Chemical Bonding](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/02_chemical_bonding/intro_chemical_bonding.md)
 - [Ionic Bonding](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/02_chemical_bonding/ionic_bonding.md)
+- [Iron Oxidation States](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/02_chemical_bonding/iron_oxidation_states.md)
 - [Metallic Bond Theory](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/02_chemical_bonding/metallic_bond_theory.md)
 - [Metallic Properties](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/02_chemical_bonding/metallic_properties.md)
 - [Metallic Examples](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/02_chemical_bonding/metallic_examples.md)
@@ -101,6 +105,20 @@ This repository contains comprehensive course notes from my journey through the 
 
 </details>
 
+<details>
+<summary><b>📂 Q&A / Class Tests</b></summary>
+
+- [01 - Periodicity Q&A](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/qna/01_Periodicity_of_Elements.md)
+- [02 - Chemical Bonding Q&A](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/qna/02_Chemical_Bonding.md)
+- [03 - Complex Compounds Q&A](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/qna/03_Complex_Compounds.md)
+- [04 - Acid and Base Q&A](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/qna/04_Acid_and_Base.md)
+- [05 - Colligative Properties Q&A](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/qna/05_Colligative_Properties.md)
+- [Class Test 02 - 2024](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/qna/chem_classtest_02_2024.md)
+- [Class Test 02 - 2024-25](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/qna/chem_classtest_02_2024_25.md)
+- [Class Test 02 - 2026 Suggestions](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/qna/chem_classtest_02_2026_sugg.md)
+
+</details>
+
 ---
 
 ### Physics 101 Topics
@@ -117,17 +135,102 @@ This repository contains comprehensive course notes from my journey through the 
 <details>
 <summary><b>📂 02 - Fluid Mechanics</b></summary>
 
-- [📖 Fluid Mechanics Overview](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid-mechanics/01-fluid-mechanics-overview.md)
-- [Fluid Properties](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid-mechanics/01-fluid-properties.md)
-- [Fluid Classification](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid-mechanics/02-fluid-classification.md)
-- [Fluid Flow Types](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid-mechanics/01-fluid-flow-types.md)
-- [Viscosity Detailed](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid-mechanics/03-viscosity-detailed.md)
-- [Viscosity & Stokes' Law](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid-mechanics/01-viscosity-and-stokes-law.md)
-- [Surface Tension](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid-mechanics/01-surface-tension.md)
-- [Continuity Equation](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid-mechanics/01-continuity-equation.md)
-- [Conservation Laws](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid-mechanics/04-conservation-laws.md)
-- [Bernoulli's Equation](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid-mechanics/01-bernoulli-equation.md)
-- [Fluid Applications](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid-mechanics/05-fluid-applications.md)
+- [📖 Fluid Overview](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid_mechanics/fluid_overview.md)
+- [Fluid Properties](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid_mechanics/fluid_properties.md)
+- [Steady & Unsteady Motion](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid_mechanics/steady-unsteady-motion.md)
+- [Streamline & Turbulent Flow](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid_mechanics/streamline-turbulent.md)
+- [Uniform & Non-Uniform Motion](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid_mechanics/uniform_motion.md)
+- [Continuity Equation](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid_mechanics/continuity_equation.md)
+- [Bernoulli's Equation](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid_mechanics/bernoulli_equation.md)
+- [Rate of Flow](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid_mechanics/rate_of_flow.md)
+- [Torricelli's Theorem](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid_mechanics/torricelli_theorem.md)
+- [Venturimeter Guide](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid_mechanics/venturimeter_guide.md)
+
+</details>
+
+<details>
+<summary><b>📂 03 - Interference of Light ✨ New</b></summary>
+
+- [📖 Interference & Optics Notes](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/03_interference_of_light/Interference_Optics_Notes.md)
+- [01 - Wavefront & Huygens' Principle](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/03_interference_of_light/01_wavefront_huygens.md)
+- [02 - Reflection & Refraction](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/03_interference_of_light/02_reflection_refraction.md)
+- [03 - Interference](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/03_interference_of_light/03_interference.md)
+- [04 - Young's Double Slit Experiment](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/03_interference_of_light/04_youngs_experiment.md)
+- [05 - Fresnel Biprism](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/03_interference_of_light/05_fresnel_biprism.md)
+- [06 - Newton's Rings](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/03_interference_of_light/06_newtons_rings.md)
+- [07 - Thin Films](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/03_interference_of_light/07_thin_films.md)
+- [📝 CT Q2 2026](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/03_interference_of_light/ct_q2_2026.md)
+
+</details>
+
+<details>
+<summary><b>📂 Q&A / Class Tests</b></summary>
+
+- [Class Test 02 - 2024](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/qna/class_test_02_2024.md)
+- [Questions 2017–2023](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/qna/ques_2017~23.md)
+- [Questions & Solutions 2012–2018](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/qna/questions_n_sols_2012_18.md)
+
+</details>
+
+---
+
+### MATH-101 Topics
+
+**[🔗 View All Mathematics Notes](https://github.com/itachi-re/butex-notes/tree/master/MATH-101)**
+
+<details>
+<summary><b>📂 Differential Calculus</b></summary>
+
+- [01 - Functions, Domain & Range](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/differential_calculus/01_functions_domain_range.md)
+- [02 - Limit & Continuity](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/differential_calculus/02_limit_and_continuity.md)
+- [03 - Differentiability & Derivatives](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/differential_calculus/03_differentiability_and_derivatives.md)
+- [04 - Tangent & Normal](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/differential_calculus/04_tangent_and_normal.md)
+- [05 - Rolle's & Mean Value Theorem](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/differential_calculus/05_rolles_and_mean_value_theorem.md)
+- [06 - Taylor & Maclaurin Series](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/differential_calculus/06_taylor_and_maclaurin_series.md)
+- [07 - L'Hôpital & Indeterminate Forms](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/differential_calculus/07_lhopital_indeterminate_forms.md)
+- [08 - Extrema, Maxima & Minima](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/differential_calculus/08_extrema_maxima_minima.md)
+- [09 - Partial Differentiation](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/differential_calculus/09_partial_differentiation.md)
+
+</details>
+
+<details>
+<summary><b>📂 Integral Calculus</b></summary>
+
+- [01 - Indefinite Integrals](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/integral_calculus/01_indefinite_integrals.md)
+- [02 - Successive Reduction](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/integral_calculus/02_successive_reduction.md)
+- [03 - Definite Integrals](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/integral_calculus/03_definite_integrals.md)
+- [04 - Wallis Formula](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/integral_calculus/04_wallis_formula.md)
+- [05 - Improper Integrals](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/integral_calculus/05_improper_integrals.md)
+- [06 - Gamma & Beta Functions](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/integral_calculus/06_gamma_beta_functions.md)
+- [07 - Arc Length](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/integral_calculus/07_arc_length.md)
+- [08 - Area of Plane Curves](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/integral_calculus/08_area_plane_curves.md)
+- [09 - Volume of Solids of Revolution](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/integral_calculus/09_volume_solids_revolution.md)
+
+</details>
+
+<details>
+<summary><b>📂 Linear Algebra</b></summary>
+
+- [01 - Matrix Fundamentals](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/linear_algebra/01_matrix_fundamentals.md)
+- [02 - Determinant](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/linear_algebra/02_determinant.md)
+- [03 - Inverse Matrix](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/linear_algebra/03_inverse_matrix.md)
+- [04 - System of Linear Equations](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/linear_algebra/04_system_linear_equations.md)
+- [05 - Elementary Operations](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/linear_algebra/05_elementary_operations.md)
+- [06 - Gaussian Elimination](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/linear_algebra/06_gaussian_elimination.md)
+- [07 - Cramer's Rule](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/linear_algebra/07_cramers_rule.md)
+- [08 - Echelon & Canonical Form](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/linear_algebra/08_echelon_canonical_form.md)
+- [09 - Rank of Matrix](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/linear_algebra/09_rank_of_matrix.md)
+- [10 - Consistency Test via Rank](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/linear_algebra/10_consistency_test_rank.md)
+
+</details>
+
+<details>
+<summary><b>📂 Q&A / Class Tests</b></summary>
+
+- [Class Test 02 Q&A - 2024](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/qna/math_classtest_02_qna_2024.md)
+- [Class Test 02 Q&A - 2025](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/qna/math_classtest_02_qna_2025.md)
+- [Class Test 02 Q&A - 2026](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/qna/math_classtest_02_qna_2026.md)
+- [Mixed Q&A](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/qna/math_classtest_02_qna_mixed.md)
 
 </details>
 
@@ -140,11 +243,47 @@ This repository contains comprehensive course notes from my journey through the 
 <details>
 <summary><b>📂 Natural Textile Fibres</b></summary>
 
-- [Introduction to Natural Fibres](https://github.com/itachi-re/butex-notes/blob/master/YE-101/ntf_01_introduction.md)
-- [Cotton](https://github.com/itachi-re/butex-notes/blob/master/YE-101/ntf_02_Cotton.md)
-- [Silk](https://github.com/itachi-re/butex-notes/blob/master/YE-101/ntf_03_silk_notes.md)
-- [Jute](https://github.com/itachi-re/butex-notes/blob/master/YE-101/ntf_04_jute_notes.md)
-- [Complete Natural Fibres Overview](https://github.com/itachi-re/butex-notes/blob/master/YE-101/01_natural_fibres.md)
+- [Introduction to Natural Fibres](https://github.com/itachi-re/butex-notes/blob/master/YE-101/introduction.md)
+- [Cotton](https://github.com/itachi-re/butex-notes/blob/master/YE-101/Cotton.md)
+- [Silk](https://github.com/itachi-re/butex-notes/blob/master/YE-101/silk_notes.md)
+- [NTF Overview](https://github.com/itachi-re/butex-notes/blob/master/YE-101/NTF.md)
+
+</details>
+
+<details>
+<summary><b>📂 Jute (Full Module)</b></summary>
+
+- [01 - Introduction to Jute](https://github.com/itachi-re/butex-notes/blob/master/YE-101/jute/01_introduction.md)
+- [02 - Production & Processing](https://github.com/itachi-re/butex-notes/blob/master/YE-101/jute/02_production_processing.md)
+- [03 - Grading System](https://github.com/itachi-re/butex-notes/blob/master/YE-101/jute/03_grading_system.md)
+- [04 - Structure](https://github.com/itachi-re/butex-notes/blob/master/YE-101/jute/04_structure.md)
+- [05 - Chemical Composition](https://github.com/itachi-re/butex-notes/blob/master/YE-101/jute/05_chemical_composition.md)
+- [06 - Properties](https://github.com/itachi-re/butex-notes/blob/master/YE-101/jute/06_properties.md)
+- [07 - Defects](https://github.com/itachi-re/butex-notes/blob/master/YE-101/jute/07_defects.md)
+- [08 - End Uses & Identification](https://github.com/itachi-re/butex-notes/blob/master/YE-101/jute/08_end_uses_identification.md)
+
+</details>
+
+<details>
+<summary><b>📂 Wool (Full Module)</b></summary>
+
+- [Introduction to Wool](https://github.com/itachi-re/butex-notes/blob/master/YE-101/wool/wool_introduction.md)
+- [Morphology](https://github.com/itachi-re/butex-notes/blob/master/YE-101/wool/wool_morphology.md)
+- [Classification](https://github.com/itachi-re/butex-notes/blob/master/YE-101/wool/wool_classification.md)
+- [Manufacturing](https://github.com/itachi-re/butex-notes/blob/master/YE-101/wool/wool_manufacturing.md)
+- [Physical Properties](https://github.com/itachi-re/butex-notes/blob/master/YE-101/wool/wool_physical_properties.md)
+- [Chemical Structure](https://github.com/itachi-re/butex-notes/blob/master/YE-101/wool/wool_chemical_structure.md)
+- [Chemical Properties](https://github.com/itachi-re/butex-notes/blob/master/YE-101/wool/wool_chemical_properties.md)
+
+</details>
+
+<details>
+<summary><b>📂 Q&A / Class Tests</b></summary>
+
+- [NTF Class Test 02 Q&A - 2024](https://github.com/itachi-re/butex-notes/blob/master/YE-101/qna/NTF_classtest_02_qna_2024_.md)
+- [NTF Class Test 02 Q&A - 2024-25](https://github.com/itachi-re/butex-notes/blob/master/YE-101/qna/ntf_classtest_02_qna_24-25.md)
+- [NTF Class Test 02 Q&A - 2026](https://github.com/itachi-re/butex-notes/blob/master/YE-101/qna/ntf_classtest_02_qna_2026.md)
+- [Q&A 2012–2019](https://github.com/itachi-re/butex-notes/blob/master/YE-101/qna/qna_2012_19.md)
 
 </details>
 
@@ -160,7 +299,6 @@ This repository contains comprehensive course notes from my journey through the 
 - [Business Letters & Email Writing](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/02_letters.md)
 - [Business Presentations](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/03_presentations.md)
 - [Business Meetings](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/04_meetings.md)
-- [CT Suggestions - Business Communication](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/suggestions_01.md)
 
 **Topics Covered:**
 - Definition and objectives of business communication
@@ -270,40 +408,51 @@ Convert all notes to PDF format with proper formatting:
 
 ```
 butex-notes/
-├── CHEM-101/              # Chemistry notes
+├── CHEM-101/                    # Chemistry notes
 │   ├── 01_periodicity/
 │   ├── 02_chemical_bonding/
 │   ├── 06_physical_chemistry/
 │   ├── 10_photochemistry/
+│   ├── qna/
 │   └── README.md
-├── PHY-101/               # Physics notes
+├── PHY-101/                     # Physics notes
 │   ├── 01_elasticity/
-│   ├── 02_fluid-mechanics/
+│   ├── 02_fluid_mechanics/
+│   ├── 03_interference_of_light/
+│   ├── qna/
 │   └── README.md
-├── MATH-101/              # Mathematics notes
-│   └── 01_matrices.md
-├── HSS-101/               # Humanities & Social Science
+├── MATH-101/                    # Mathematics notes
+│   ├── differential_calculus/
+│   ├── integral_calculus/
+│   ├── linear_algebra/
+│   └── qna/
+├── HSS-101/                     # Humanities & Social Science
 │   ├── 01_intro.md
 │   ├── 02_letters.md
 │   ├── 03_presentations.md
-│   └── 04_meetings.md
-├── YE-101/                # Natural Textile Fibres
-│   ├── ntf_01_introduction.md
-│   ├── ntf_02_Cotton.md
-│   ├── ntf_03_silk_notes.md
-│   └── ntf_04_jute_notes.md
-├── YE-201/                # Fibre & Yarn Testing
+│   ├── 04_meetings.md
+│   └── qna/
+├── YE-101/                      # Natural Textile Fibres
+│   ├── jute/                    # Jute module (8 files)
+│   ├── wool/                    # Wool module (7 files)
+│   ├── qna/
+│   ├── Cotton.md
+│   ├── silk_notes.md
+│   └── NTF.md
+├── YE-201/                      # Fibre & Yarn Testing
 │   └── 01_testing_and_moisture.md
-├── AS-102-Practical/      # Physics Lab
-├── scripts/               # Automation scripts
-│   ├── new_note.sh       # Create new note from template
-│   └── build_all.sh      # Export all notes to PDF
-├── _templates/            # Note templates
-│   └── note_template.md  # Standard note format
-├── pdfs/                  # PDF resources
+├── AS-102-Practical/            # Physics Lab
+├── lab_reports/                 # Lab report templates
+├── pdfs/                        # PDF resources
+├── scripts/                     # Automation scripts
+│   ├── new_note.sh              # Create new note from template
+│   └── build_all.sh             # Export all notes to PDF
+├── _templates/                  # Note templates
+│   └── note_template.md
+├── CHANGELOG.md                 # Version history
+├── CONTRIBUTING.md
 └── README.md
 ```
-
 ---
 
 ## 📋 Note Template Structure
@@ -314,7 +463,7 @@ Each note follows a consistent structure for better organization:
 ---
 subject: YE-101
 topic: Natural Fibres
-date: 2024-12-10
+date: 2025-12-10
 tags: [notes, YE-101, fabric-engineering]
 ---
 
@@ -431,8 +580,8 @@ This project is licensed under the terms specified in the [LICENSE](LICENSE) fil
 ## 📊 Repository Stats
 
 ```
-Total Notes: 30 directories, 149 files
-Last Updated: Friday, March 13, 2026 11:52 PM
+Total Notes: 30 directories, 170 files
+Last Updated: Monday, March 16, 2026
 Export Format: Markdown → PDF
 Department: Fabric Engineering
 University: BUTEX
