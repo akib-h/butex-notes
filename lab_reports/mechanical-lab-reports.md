@@ -39,6 +39,7 @@ Reasons: Low cost, suitable low-pressure steam for dyeing/drying/printing/finish
 
 **Q2: Schematic diagram of boiler plant**  
 (Boiler → Superheater → Economiser → Air preheater → Feed pump → Stack. Steam to engine. Ash & air paths.)
+![Schematic Diagram of Boiler Plant](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihgSMSzxNSa7pAB24I8nJWV2ijYgH6RDRkUr9qiJ9tnMNDx1O3_V-0E0pF1d87nNU0UngPgEnLvcCjRcLfKwQOqIAMNzIuI4PbTZ0cC9yPtPDv9kmQea4qWS6gU1DWizUK7QTFi3eWlh_M/s1600/Schematic+Diagram+of+a+boiler+plant2.jpg)
 
 **Q3: Importance in textile**  
 1. Dyeing (colour control)  
