@@ -1,7 +1,7 @@
-# 📋 Changelog — PHY-101 Physics I
+# 📋 Changelog — BUTEX Notes
 
-All notable changes to the PHY-101 notes are documented here.  
-Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+All notable changes to the BUTEX Notes project are documented here.
+Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) with [Semantic Versioning](https://semver.org/).
 
 ---
 
@@ -9,114 +9,114 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 > Changes staged but not yet committed to master.
 
+### Planned
 - [ ] Wool fiber mechanical properties (cross-reference with YE-101)
 - [ ] Add practice problems to elasticity module
 - [ ] Merge and deduplicate `02_fluid-mechanics/` and `02_fluid_mechanics/` directories
+- [ ] Expand CHEM-101 module coverage
+- [ ] Complete MATH-101 differential equations section
+- [ ] Add HSS-101 humanities notes
 
 ---
 
-## [3.0.0] — 2026-03-13
+## [0.0.3] — 2026-03-09
 
-### Added
-- `README.md` — Comprehensive course index with module breakdown, formula quick-reference, textile relevance table, and study tips
-- `CHANGELOG.md` — This file; full history of PHY-101 notes
-- `03_interference_of_light/ct_q2_2026.md` — Class Test Q2 2026 questions and solutions
+*Release Notes:* https://github.com/itachi-re/butex-notes/releases/tag/0.0.3
+
+### Summary
+Repository maintenance and documentation enhancements.
 
 ### Changed
-- Reorganized `03_interference_of_light/` directory structure for consistency with other modules
+- Repository structure refinement
+- Documentation improvements
 
 ---
 
-## [2.2.0] — 2026-03-08 *(CHEM-101 milestone, PHY-101 minor sync)*
+## [0.0.2] — 2026-03-08
+
+*Release Notes:* https://github.com/itachi-re/butex-notes/releases/tag/0.0.2
+
+### Summary
+First major update with comprehensive documentation improvements and content additions.
 
 ### Added
-- `03_interference_of_light/Interference_Optics_Notes.md` — Comprehensive combined optics reference
-- `03_interference_of_light/README.md` — Module-level index for optics section
-
----
-
-## [2.1.0] — 2026-02-28
-
-### Added
-- `03_interference_of_light/07_thin_films.md` — Thin film interference; anti-reflection coating applications
-- `03_interference_of_light/06_newtons_rings.md` — Newton's rings derivation and numericals
+- Link to auxetic materials in elasticity.md (#1)
+- Refactored equations for clarity in questions_n_sols_2012_18 (#2)
+- LaTeX formatting fixes in matrices documentation (#6)
+- Updated table of contents with numbered sections (#7)
 
 ### Fixed
-- Corrected fringe width formula in `04_youngs_experiment.md` (factor of 2 error in path difference)
-
----
-
-## [2.0.0] — 2026-02-23
-
-### Added — Interference of Light Module (03)
-- `03_interference_of_light/01_wavefront_huygens.md` — Huygens' principle, wavefront types
-- `03_interference_of_light/02_reflection_refraction.md` — Snell's law, laws of reflection
-- `03_interference_of_light/03_interference.md` — Constructive & destructive interference, coherence conditions
-- `03_interference_of_light/04_youngs_experiment.md` — Double slit experiment, fringe width derivation
-- `03_interference_of_light/05_fresnel_biprism.md` — Fresnel biprism setup and fringe calculations
+- Links in fluid_properties.md (#3)
 
 ### Changed
-- Promoted `02_fluid-mechanics/` as the primary fluid mechanics directory
-- Retained `02_fluid_mechanics/` as legacy/alternate set
+- Updated natural_textile_fibres_qb2012_19.md (#5)
+- Updated repository statistics in README.md (#9)
+- Updated total notes count in README (#8)
+
+### New Contributors
+- @akib-h (first contribution)
 
 ---
 
-## [1.3.0] — 2026-01-20
+## [0.0.1] — 2026-01-16
 
-### Added
-- `02_fluid_mechanics/torricelli_theorem.md` — Efflux velocity derivation $v = \sqrt{2gh}$
-- `02_fluid_mechanics/venturimeter_guide.md` — Venturimeter construction, working, and flow rate calculation
-- `02_fluid_mechanics/rate_of_flow.md` — Volume flow rate $Q = Av$
+*Release Notes:* https://github.com/itachi-re/butex-notes/releases/tag/0.0.1
 
-### Changed
-- `02_fluid_mechanics/fluid_mechanics_readme.md` — Updated with links to new files
+### Summary
+Initial project setup establishing comprehensive BUTEX course notes repository foundation.
 
----
+### Added — Core Infrastructure
+- **Project Foundation**
+  - `README.md` — Comprehensive course index and project overview
+  - `CHANGELOG.md` — Version history and project evolution
+  - `CONTRIBUTING.md` — Contribution guidelines
+  - `LICENSE` — Project licensing
 
-## [1.2.0] — 2024-12-10 *(Initial structured release)*
+- **Subject Directories** (6 courses)
+  - PHY-101, CHEM-101, MATH-101, HSS-101, YE-101, YE-201
 
-### Added — Fluid Mechanics Primary Set (02_fluid-mechanics)
-- `02_fluid-mechanics/01-fluid-mechanics-overview.md` — Course overview and textile context
-- `02_fluid-mechanics/01-fluid-properties.md` — Density, pressure, compressibility, buoyancy
-- `02_fluid-mechanics/01-fluid-flow-types.md` — Laminar vs turbulent, Reynolds number
-- `02_fluid-mechanics/02-fluid-classification.md` — Newtonian vs Non-Newtonian fluids
-- `02_fluid-mechanics/03-viscosity-detailed.md` — Dynamic & kinematic viscosity, Poiseuille's law
-- `02_fluid-mechanics/01-viscosity-and-stokes-law.md` — Stokes' law, terminal velocity derivation
-- `02_fluid-mechanics/01-surface-tension.md` — Cohesion, adhesion, capillarity, contact angle
-- `02_fluid-mechanics/01-continuity-equation.md` — Mass conservation, $A_1v_1 = A_2v_2$
-- `02_fluid-mechanics/04-conservation-laws.md` — Energy and momentum conservation in fluids
-- `02_fluid-mechanics/01-bernoulli-equation.md` — Bernoulli's theorem derivation and applications
-- `02_fluid-mechanics/05-fluid-applications.md` — Venturimeter, Pitot tube, textile process applications
+- **Supporting Infrastructure**
+  - `lab_reports/` — Lab documentation
+  - `pdfs/` — Reference materials
+  - `scripts/` — Maintenance utilities
+  - `_templates/` — Document templates
+  - `tmp/` — Workspace
 
-### Added — Fluid Mechanics Legacy Set (02_fluid_mechanics)
-- `02_fluid_mechanics/fluid_overview.md`
-- `02_fluid_mechanics/fluid_properties.md`
-- `02_fluid_mechanics/bernoulli_equation.md`
-- `02_fluid_mechanics/continuity_equation.md`
-- `02_fluid_mechanics/uniform_motion.md`
-- `02_fluid_mechanics/non-uniform-motion.md`
-- `02_fluid_mechanics/steady-unsteady-motion.md`
-- `02_fluid_mechanics/streamline-turbulent.md`
-- `02_fluid_mechanics/fluid_mechanics_readme.md`
+- **Physics I Module (PHY-101)**
+  
+  *Module 01: Elasticity*
+  - `01_elasticity/elasticity.md` — Stress, Strain, Hooke's Law, Moduli, Poisson's ratio, elastic potential energy
+  
+  *Module 02: Fluid Mechanics (Dual Implementation)*
+  - **Primary Set** `02_fluid-mechanics/` (11 files):
+    - Overview, properties, flow types, fluid classification
+    - Viscosity (detailed), Stokes' law, surface tension
+    - Continuity equation, conservation laws
+    - Bernoulli's theorem, applications
+  
+  - **Legacy Set** `02_fluid_mechanics/` (9 files):
+    - Alternate implementation for flexibility
+  
+  - **Specialized Topics** (Added 2026-01-20):
+    - `torricelli_theorem.md` — Efflux velocity
+    - `venturimeter_guide.md` — Design and flow calculations
+    - `rate_of_flow.md` — Volume flow rate equations
+  
+  *Module 03: Interference of Light* (Added 2026-02-23 onwards)
+  - Wavefront & Huygens' principle
+  - Reflection & refraction
+  - Interference concepts
+  - Young's double slit experiment
+  - Fresnel biprism
+  - Newton's rings (2026-02-28)
+  - Thin film interference (2026-02-28)
+  - Combined optics reference (2026-03-08)
+  - Class test materials (2026-03-13)
 
-### Added — Q&A
-- `qna/questions_n_sols_2012_18.md` — University questions and solutions 2012–2018
-
----
-
-## [1.1.0] — 2024-12-10
-
-### Added
-- `qna/class_test_02_2024.md` — Class Test 02 (2024) with solutions
-- `qna/ques_2017~23.md` — Compiled university questions 2017–2023
-
----
-
-## [1.0.0] — 2024-12-10 *(Initial commit)*
-
-### Added
-- `01_elasticity/elasticity.md` — Elasticity fundamentals: Stress, Strain, Hooke's Law, Young's/Bulk/Shear moduli, Poisson's ratio, elastic potential energy
-- `CHANGELOG.md` — Initialized changelog
+- **Question Banks**
+  - `qna/questions_n_sols_2012_18.md` — 2012–2018 exam questions
+  - `qna/class_test_02_2024.md` — 2024 class test with solutions
+  - `qna/ques_2017~23.md` — 2017–2023 questions compilation
 
 ---
 
@@ -128,12 +128,24 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 |:------|:-------------|
 | **MAJOR** | New module or major restructure |
 | **MINOR** | New notes or files added |
-| **PATCH** | Corrections, typo fixes, formatting improvements |
+| **PATCH** | Corrections, typo fixes, formatting |
+
+---
+
+## Project Timeline
+
+- **2026-01-16** — v0.0.1: Project launch with PHY-101 foundation
+- **2026-01-20** — Fluid mechanics expanded (Torricelli, venturimeter)
+- **2026-02-23** — Interference of Light module begins (5 files)
+- **2026-02-28** — Thin films & Newton's rings added
+- **2026-03-08** — v0.0.2: Documentation refinements, 8 PRs merged
+- **2026-03-09** — v0.0.3: Repository maintenance
+- **2026-03-13** — Latest: Assessment materials added
 
 ---
 
 <div align="center">
 
-**[⬆ Back to PHY-101 README](README.md)** · **[⬆ Back to Main Repository](../README.md)**
+**[⬆ Back to Main README](README.md)** · **[View Releases](https://github.com/itachi-re/butex-notes/releases)**
 
 </div>
