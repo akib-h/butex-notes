@@ -244,7 +244,7 @@ $$I_2 = \frac{2(1500)(980)(150) - 1500(29.82)^2(1.05)^2}{(29.82)^2\!\left(1+\fra
 
 $$\boxed{I = \frac{I_1+I_2}{2} = \frac{156{,}693+349{,}932}{2} = 253{,}313\ \text{gm·cm}^2}$$
 
-> **Result:** Moment of Inertia of the flywheel $I = \textbf{253,313 gm·cm}^2 \approx \textbf{25.33 \times 10}^{-3}\ \textbf{kg·m}^2$
+> **Result:** Moment of Inertia of the flywheel $I = 253{,}313\ \text{gm·cm}^2 \approx 25.33 \times 10^{-3}\ \text{kg·m}^2$
 
 ---
 
