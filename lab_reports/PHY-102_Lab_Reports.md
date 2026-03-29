@@ -3,6 +3,18 @@
 
 ---
 
+## Table of Contents
+
+1. [Experiment 01 — Vernier Calipers: Width of a Rectangular Object](#experiment-01--vernier-calipers-width-of-a-rectangular-object)
+2. [Experiment 02 — Screw Gauge: Thickness of a Thin Object](#experiment-02--screw-gauge-thickness-of-a-thin-object)
+3. [Experiment 03 — Focal Length of a Convex Lens (Displacement Method)](#experiment-03--focal-length-of-a-convex-lens-displacement-method)
+4. [Experiment 04 — Acceleration Due to Gravity *g* (Simple Pendulum)](#experiment-04--acceleration-due-to-gravity-g-simple-pendulum)
+5. [Experiment 05 — Acceleration Due to Gravity *g* (Compound / Bar Pendulum)](#experiment-05--acceleration-due-to-gravity-g-compound--bar-pendulum)
+6. [Experiment 06 — Moment of Inertia of a Flywheel](#experiment-06--moment-of-inertia-of-a-flywheel)
+7. [References & Extended Knowledge](#references--extended-knowledge)
+
+---
+
 ## Experiment 01 — Vernier Calipers: Width of a Rectangular Object
 
 ### Apparatus
