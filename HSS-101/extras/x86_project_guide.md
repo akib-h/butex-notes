@@ -32,7 +32,7 @@ The name is not random. **x86** refers to the family of processor instruction se
 
 ### Group Composition
 
-| # | Role | Gender |
+| # | Role | - |
 |---|---|---|
 | 1 | Group Leader | name |
 | 2 | Research Lead — AI History & Basics | name |
@@ -123,7 +123,7 @@ To deliver a **structured, visually polished, and academically sound** presentat
 
 > **Note:** Assign real names to roles and share this with the team on Day 1.
 
-### 👑 Role 1 — Group Leader (You)
+### 👑 Role 1 — Group Leader
 **Responsibilities:**
 - Overall project coordination and deadline enforcement
 - Final approval of all slides, scripts, and research content
