@@ -6,11 +6,9 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) with [Se
 ---
 
 ## [Unreleased]
-
+## [0.5.3] — 2026-04-02
+*Release Notes:* https://github.com/itachi-re/butex-notes/releases/tag/0.5.3
 ...
-
-## [1.0.0] — 2026-04-02
-*Release Notes:* https://github.com/itachi-re/butex-notes/releases/tag/1.0.0
 
 ### Summary
 Major release consolidating HSS-101 scripts, CHEM-101 QnA, PHY-101 lab reports, MATH-101 modules, and textile notes.
