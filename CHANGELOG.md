@@ -31,11 +31,6 @@ Major release consolidating HSS-101 scripts, CHEM-101 QnA, PHY-101 lab reports, 
 - Enhanced README with stats, TOC, contribution guidelines
 - Refactored CHEM-101 and PHY-101 to match syllabus
 - Added CHANGELOG and CONTRIBUTING.md
-
-## [0.0.3] — 2026-03-09
-...
-
-
 ---
 
 ## [0.0.3] — 2026-03-09
