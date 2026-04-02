@@ -7,15 +7,36 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) with [Se
 
 ## [Unreleased]
 
-> Changes staged but not yet committed to master.
+...
 
-### Planned
-- [ ] Wool fiber mechanical properties (cross-reference with YE-101)
-- [ ] Add practice problems to elasticity module
-- [ ] Merge and deduplicate `02_fluid-mechanics/` and `02_fluid_mechanics/` directories
-- [ ] Expand CHEM-101 module coverage
-- [ ] Complete MATH-101 differential equations section
-- [ ] Add HSS-101 humanities notes
+## [1.0.0] — 2026-04-02
+*Release Notes:* https://github.com/itachi-re/butex-notes/releases/tag/1.0.0
+
+### Summary
+Major release consolidating HSS-101 scripts, CHEM-101 QnA, PHY-101 lab reports, MATH-101 modules, and textile notes.
+
+### Added
+- HSS-101 scripts, research notes, project guide, references masterlist
+- CHEM-101 QnA, class test solutions, compound names, reorganized syllabus
+- PHY-101 lab reports, optics/interference notes, QnA 2017–2023
+- MATH-101 linear algebra, differential calculus, integral calculus modules
+- Textile notes: wool (intro, morphology, properties, defects, grading, end uses), reorganized jute/silk/cotton
+
+### Fixed
+- LaTeX rendering issues in math/chemistry
+- Broken Markdown links and TOC anchors
+- Syntax fixes across multiple files
+- Formatting corrections in lab reports
+
+### Changed
+- Standardized repo structure into `theory/`, `questions/`, `suggestions/`
+- Enhanced README with stats, TOC, contribution guidelines
+- Refactored CHEM-101 and PHY-101 to match syllabus
+- Added CHANGELOG and CONTRIBUTING.md
+
+## [0.0.3] — 2026-03-09
+...
+
 
 ---
 
