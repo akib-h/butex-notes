@@ -5,6 +5,7 @@
 ![License](https://img.shields.io/github/license/itachi-re/butex-notes?style=flat-square&color=green)
 ![Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg?style=flat-square)
 [![Changelog](https://img.shields.io/badge/Changelog-view-blueviolet?style=flat-square)](https://github.com/itachi-re/butex-notes/blob/master/CHANGELOG.md)
+
 > **Personal study notes for B.Sc. in Textile Engineering (Fabric Engineering Department)**  
 > Maintained by **itachi_re** | Bangladesh University of Textiles (BUTEX)
 
@@ -33,17 +34,23 @@ This repository contains comprehensive course notes from my journey through the 
 | Course Code | Course Title | Status | Topics Covered | Quick Links |
 | :--- | :--- | :---: | :--- | :--- |
 | **[CHEM-101](https://github.com/itachi-re/butex-notes/tree/master/CHEM-101)** | Chemistry - I | 🟢 Active | Periodicity, Bonding, Acids/Bases, Equilibrium, Kinetics, Colloids, Photochemistry | [📑 Topics](#chemistry-101-topics) |
-| **[PHY-101](https://github.com/itachi-re/butex-notes/tree/master/PHY-101)** | Physics - I | 🟢 Active | Elasticity, Fluid Mechanics, Viscosity, Surface Tension | [📑 Topics](#physics-101-topics) |
-| **[MATH-101](https://github.com/itachi-re/butex-notes/tree/master/MATH-101)** | Mathematics - I | 🟡 In Progress | Matrices, Calculus, Linear Algebra | - |
-| **[HSS-101](https://github.com/itachi-re/butex-notes/tree/master/HSS-101)** | Humanities & Social Science | 🟡 In Progress | Communication, Letters, Presentations, Meetings | - |
-| **AS-102** | Physics - I (Practical) | ⚪ Pending | Lab Reports & Experimental Data | - |
+| **[PHY-101](https://github.com/itachi-re/butex-notes/tree/master/PHY-101)** | Physics - I | 🟢 Active | Elasticity, Fluid Mechanics, Interference of Light, Optics | [📑 Topics](#physics-101-topics) |
+| **[MATH-101](https://github.com/itachi-re/butex-notes/tree/master/MATH-101)** | Mathematics - I | 🟢 Active | Differential Calculus, Integral Calculus, Linear Algebra | [📑 Topics](#math-101-topics) |
+| **[HSS-101](https://github.com/itachi-re/butex-notes/tree/master/HSS-101)** | Humanities & Social Science | 🟢 Active | Communication, Letters, Presentations, Meetings, Group Project | [📑 Topics](#hss-101-topics) |
 
 ### 🧵 Yarn Engineering (Fabric Department Focus)
 
 | Course Code | Course Title | Status | Topics Covered | Quick Links |
 | :--- | :--- | :---: | :--- | :--- |
-| **[YE-101](https://github.com/itachi-re/butex-notes/tree/master/YE-101)** | Natural Textile Fibres | 🟢 Active | Cotton, Jute, Silk, Wool, Fiber Properties | [📑 Topics](#ye-101-topics) |
-| **[YE-201](https://github.com/itachi-re/butex-notes/tree/master/YE-201)** | Fibre & Yarn Testing | 🟢 Active | Moisture Regain, Sampling Methods, Quality Control | - |
+| **[YE-101](https://github.com/itachi-re/butex-notes/tree/master/YE-101)** | Natural Textile Fibres | 🟢 Active | Flax, Jute, Cotton, Silk, Wool — Full Modules | [📑 Topics](#ye-101-topics) |
+| **[YE-201](https://github.com/itachi-re/butex-notes/tree/master/YE-201)** | Fibre & Yarn Testing | 🟡 In Progress | Moisture Regain, Sampling Methods, Quality Control | - |
+
+### 🔩 Practical & Lab Work
+
+| Course Code | Course Title | Status | Topics Covered | Quick Links |
+| :--- | :--- | :---: | :--- | :--- |
+| **[lab_reports](https://github.com/itachi-re/butex-notes/tree/master/lab_reports)** | Lab Reports (CHEM-102 / PHY-102) | 🟢 Active | Chemistry & Physics Lab Reports, Mechanical Labs | [📑 Topics](#lab-reports) |
+| **[ME-102 Practical](https://github.com/itachi-re/butex-notes/tree/master/tmp/ME-102-Practical)** | Mechanical Engineering Practical | 🟡 In Progress | Boilers, Pumps, Engines, Refrigeration, Turbines | [📑 Topics](#me-102-practical) |
 
 **Status Legend:**  
 🟢 Active - Regularly updated | 🟡 In Progress - Being developed | ⚪ Pending - Not started
@@ -53,7 +60,6 @@ This repository contains comprehensive course notes from my journey through the 
 ## 📚 Detailed Course Contents
 
 ### Chemistry 101 Topics
-
 
 **[🔗 View All Chemistry Notes](https://github.com/itachi-re/butex-notes/tree/master/CHEM-101)**
 
@@ -129,6 +135,7 @@ This repository contains comprehensive course notes from my journey through the 
 <summary><b>📂 01 - Elasticity</b></summary>
 
 - [Elasticity Fundamentals](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/01_elasticity/elasticity.md)
+- [Elasticity Guide](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/01_elasticity/elasticity-guide.md)
 
 </details>
 
@@ -139,7 +146,8 @@ This repository contains comprehensive course notes from my journey through the 
 - [Fluid Properties](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid_mechanics/fluid_properties.md)
 - [Steady & Unsteady Motion](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid_mechanics/steady-unsteady-motion.md)
 - [Streamline & Turbulent Flow](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid_mechanics/streamline-turbulent.md)
-- [Uniform & Non-Uniform Motion](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid_mechanics/uniform_motion.md)
+- [Uniform Motion](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid_mechanics/uniform_motion.md)
+- [Non-Uniform Motion](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid_mechanics/non-uniform-motion.md)
 - [Continuity Equation](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid_mechanics/continuity_equation.md)
 - [Bernoulli's Equation](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid_mechanics/bernoulli_equation.md)
 - [Rate of Flow](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid_mechanics/rate_of_flow.md)
@@ -149,7 +157,7 @@ This repository contains comprehensive course notes from my journey through the 
 </details>
 
 <details>
-<summary><b>📂 03 - Interference of Light ✨ New</b></summary>
+<summary><b>📂 03 - Interference of Light</b></summary>
 
 - [📖 Interference & Optics Notes](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/03_interference_of_light/Interference_Optics_Notes.md)
 - [01 - Wavefront & Huygens' Principle](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/03_interference_of_light/01_wavefront_huygens.md)
@@ -221,6 +229,8 @@ This repository contains comprehensive course notes from my journey through the 
 - [08 - Echelon & Canonical Form](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/linear_algebra/08_echelon_canonical_form.md)
 - [09 - Rank of Matrix](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/linear_algebra/09_rank_of_matrix.md)
 - [10 - Consistency Test via Rank](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/linear_algebra/10_consistency_test_rank.md)
+- [Matrices Overview](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/linear_algebra/matrices.md)
+- [Orthogonal Matrices](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/linear_algebra/orthogonal.md)
 
 </details>
 
@@ -240,40 +250,79 @@ This repository contains comprehensive course notes from my journey through the 
 
 **[🔗 View All Natural Textile Fibres Notes](https://github.com/itachi-re/butex-notes/tree/master/YE-101)**
 
+> YE-101 has been reorganised into three fibre families: **Bast**, **Cellulosic**, and **Protein**.
+
 <details>
-<summary><b>📂 Natural Textile Fibres</b></summary>
+<summary><b>📂 Introduction</b></summary>
 
 - [Introduction to Natural Fibres](https://github.com/itachi-re/butex-notes/blob/master/YE-101/introduction.md)
-- [Cotton](https://github.com/itachi-re/butex-notes/blob/master/YE-101/Cotton.md)
-- [Silk](https://github.com/itachi-re/butex-notes/blob/master/YE-101/silk_notes.md)
-- [NTF Overview](https://github.com/itachi-re/butex-notes/blob/master/YE-101/NTF.md)
 
 </details>
 
 <details>
-<summary><b>📂 Jute (Full Module)</b></summary>
+<summary><b>📂 Bast Fibres — Jute (Full Module)</b></summary>
 
-- [01 - Introduction to Jute](https://github.com/itachi-re/butex-notes/blob/master/YE-101/jute/01_introduction.md)
-- [02 - Production & Processing](https://github.com/itachi-re/butex-notes/blob/master/YE-101/jute/02_production_processing.md)
-- [03 - Grading System](https://github.com/itachi-re/butex-notes/blob/master/YE-101/jute/03_grading_system.md)
-- [04 - Structure](https://github.com/itachi-re/butex-notes/blob/master/YE-101/jute/04_structure.md)
-- [05 - Chemical Composition](https://github.com/itachi-re/butex-notes/blob/master/YE-101/jute/05_chemical_composition.md)
-- [06 - Properties](https://github.com/itachi-re/butex-notes/blob/master/YE-101/jute/06_properties.md)
-- [07 - Defects](https://github.com/itachi-re/butex-notes/blob/master/YE-101/jute/07_defects.md)
-- [08 - End Uses & Identification](https://github.com/itachi-re/butex-notes/blob/master/YE-101/jute/08_end_uses_identification.md)
+- [Jute Notes Overview](https://github.com/itachi-re/butex-notes/blob/master/YE-101/bast/jute_notes.md)
+- [01 - Introduction to Jute](https://github.com/itachi-re/butex-notes/blob/master/YE-101/bast/jute/01_introduction.md)
+- [02 - Production & Processing](https://github.com/itachi-re/butex-notes/blob/master/YE-101/bast/jute/02_production_processing.md)
+- [03 - Grading System](https://github.com/itachi-re/butex-notes/blob/master/YE-101/bast/jute/03_grading_system.md)
+- [04 - Structure](https://github.com/itachi-re/butex-notes/blob/master/YE-101/bast/jute/04_structure.md)
+- [05 - Chemical Composition](https://github.com/itachi-re/butex-notes/blob/master/YE-101/bast/jute/05_chemical_composition.md)
+- [06 - Properties](https://github.com/itachi-re/butex-notes/blob/master/YE-101/bast/jute/06_properties.md)
+- [07 - Defects](https://github.com/itachi-re/butex-notes/blob/master/YE-101/bast/jute/07_defects.md)
+- [08 - End Uses & Identification](https://github.com/itachi-re/butex-notes/blob/master/YE-101/bast/jute/08_end_uses_identification.md)
 
 </details>
 
 <details>
-<summary><b>📂 Wool (Full Module)</b></summary>
+<summary><b>📂 Bast Fibres — Flax (Full Module) ✨ New</b></summary>
 
-- [Introduction to Wool](https://github.com/itachi-re/butex-notes/blob/master/YE-101/wool/wool_introduction.md)
-- [Morphology](https://github.com/itachi-re/butex-notes/blob/master/YE-101/wool/wool_morphology.md)
-- [Classification](https://github.com/itachi-re/butex-notes/blob/master/YE-101/wool/wool_classification.md)
-- [Manufacturing](https://github.com/itachi-re/butex-notes/blob/master/YE-101/wool/wool_manufacturing.md)
-- [Physical Properties](https://github.com/itachi-re/butex-notes/blob/master/YE-101/wool/wool_physical_properties.md)
-- [Chemical Structure](https://github.com/itachi-re/butex-notes/blob/master/YE-101/wool/wool_chemical_structure.md)
-- [Chemical Properties](https://github.com/itachi-re/butex-notes/blob/master/YE-101/wool/wool_chemical_properties.md)
+- [01 - Introduction to Flax](https://github.com/itachi-re/butex-notes/blob/master/YE-101/bast/flax/01_introduction.md)
+- [02 - Cultivation, Growth & Harvesting](https://github.com/itachi-re/butex-notes/blob/master/YE-101/bast/flax/02_cultivation_growth_harvesting.md)
+- [03 - Geographical Distribution](https://github.com/itachi-re/butex-notes/blob/master/YE-101/bast/flax/03_geographical_distribution.md)
+- [04 - Grading & Classification](https://github.com/itachi-re/butex-notes/blob/master/YE-101/bast/flax/04_grading_classification.md)
+- [05 - Defects](https://github.com/itachi-re/butex-notes/blob/master/YE-101/bast/flax/05_defects.md)
+- [06 - Physical & Morphological Structure](https://github.com/itachi-re/butex-notes/blob/master/YE-101/bast/flax/06_physical_morphological_structure.md)
+- [07 - Microscopic View](https://github.com/itachi-re/butex-notes/blob/master/YE-101/bast/flax/07_microscopic_view.md)
+- [08 - Chemical Composition](https://github.com/itachi-re/butex-notes/blob/master/YE-101/bast/flax/08_chemical_composition.md)
+- [09 - Physical & Chemical Properties](https://github.com/itachi-re/butex-notes/blob/master/YE-101/bast/flax/09_physical_chemical_properties.md)
+- [10 - Cottonized Flax](https://github.com/itachi-re/butex-notes/blob/master/YE-101/bast/flax/10_cottonized_flax.md)
+- [11 - End Uses](https://github.com/itachi-re/butex-notes/blob/master/YE-101/bast/flax/11_end_uses.md)
+
+</details>
+
+<details>
+<summary><b>📂 Cellulosic Fibres — Cotton</b></summary>
+
+- [Cotton](https://github.com/itachi-re/butex-notes/blob/master/YE-101/cellulosic/cotton/Cotton.md)
+
+</details>
+
+<details>
+<summary><b>📂 Protein Fibres — Silk (Full Module) ✨ New</b></summary>
+
+- [Silk Notes Overview](https://github.com/itachi-re/butex-notes/blob/master/YE-101/protein/silk/silk_notes.md)
+- [01 - Growth, Sericulture & Production Methods](https://github.com/itachi-re/butex-notes/blob/master/YE-101/protein/silk/01_growth_sericulture_and_methods_of_production.md)
+- [02 - Geographical Distribution](https://github.com/itachi-re/butex-notes/blob/master/YE-101/protein/silk/02_geographical_distribution.md)
+- [03 - Physical & Morphological Structure](https://github.com/itachi-re/butex-notes/blob/master/YE-101/protein/silk/03_physical_and_morphological_structure.md)
+- [04 - Microscopic View](https://github.com/itachi-re/butex-notes/blob/master/YE-101/protein/silk/04_microscopic_view.md)
+- [05 - Chemical Composition, Structure & Bonds](https://github.com/itachi-re/butex-notes/blob/master/YE-101/protein/silk/05_chemical_composition_structure_and_bonds.md)
+- [06 - Physical & Chemical Properties](https://github.com/itachi-re/butex-notes/blob/master/YE-101/protein/silk/06_physical_and_chemical_properties.md)
+- [07 - End Uses](https://github.com/itachi-re/butex-notes/blob/master/YE-101/protein/silk/07_end_uses.md)
+- [08 - Difference Between Wool, Silk & Hair Fibre](https://github.com/itachi-re/butex-notes/blob/master/YE-101/protein/silk/08_difference_between_wool_silk_and_hair_fibre.md)
+
+</details>
+
+<details>
+<summary><b>📂 Protein Fibres — Wool (Full Module)</b></summary>
+
+- [Introduction to Wool](https://github.com/itachi-re/butex-notes/blob/master/YE-101/protein/wool/wool_introduction.md)
+- [Morphology](https://github.com/itachi-re/butex-notes/blob/master/YE-101/protein/wool/wool_morphology.md)
+- [Classification](https://github.com/itachi-re/butex-notes/blob/master/YE-101/protein/wool/wool_classification.md)
+- [Manufacturing](https://github.com/itachi-re/butex-notes/blob/master/YE-101/protein/wool/wool_manufacturing.md)
+- [Physical Properties](https://github.com/itachi-re/butex-notes/blob/master/YE-101/protein/wool/wool_physical_properties.md)
+- [Chemical Structure](https://github.com/itachi-re/butex-notes/blob/master/YE-101/protein/wool/wool_chemical_structure.md)
+- [Chemical Properties](https://github.com/itachi-re/butex-notes/blob/master/YE-101/protein/wool/wool_chemical_properties.md)
 
 </details>
 
@@ -291,7 +340,7 @@ This repository contains comprehensive course notes from my journey through the 
 
 ### HSS-101 Topics
 
-[View All HSS Notes](https://github.com/itachi-re/butex-notes/tree/master/HSS-101)
+**[🔗 View All HSS Notes](https://github.com/itachi-re/butex-notes/tree/master/HSS-101)**
 
 **Business Communication Module:**
 
@@ -300,13 +349,88 @@ This repository contains comprehensive course notes from my journey through the 
 - [Business Presentations](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/03_presentations.md)
 - [Business Meetings](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/04_meetings.md)
 
-**Topics Covered:**
-- Definition and objectives of business communication
-- Importance of communication in business
-- Types of business communication (Vertical, Horizontal, Formal, Informal)
-- Professional email structure and etiquette
-- Writing persuasive business emails
-- Communication best practices
+<details>
+<summary><b>📂 Extras — Group Project (x86 AI Presentation) ✨ New</b></summary>
+
+**Research Notes:**
+- [AI History Notes](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/extras/01_Research/member2_AI_history_notes.md)
+- [ML & Deep Learning Notes](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/extras/01_Research/member3_ML_DL_notes.md)
+- [Applications Notes](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/extras/01_Research/member4_Applications_notes.md)
+- [Ethics & Future Notes](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/extras/01_Research/member6_Ethics_Future_notes.md)
+
+**Presentation Scripts:**
+- [🎤 Final Script](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/extras/03_Script/x86_FINAL_SCRIPT.md)
+- [Intro / Leader Script](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/extras/03_Script/intro_leader.md)
+- [Member 2 Script](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/extras/03_Script/member2_script.md)
+- [Member 3 Script](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/extras/03_Script/member3_script.md)
+- [Member 4 Script](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/extras/03_Script/member4_script.md)
+- [Member 6 Script](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/extras/03_Script/member6_script.md)
+
+**References & Guides:**
+- [References Masterlist](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/extras/05_References/references_masterlist.md)
+- [Presentation Script (Draft)](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/extras/x86_presentation_script.md)
+- [Project Guide](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/extras/x86_project_guide.md)
+
+</details>
+
+<details>
+<summary><b>📂 Q&A / Class Tests</b></summary>
+
+- [BCE Class Test 02 Q&A - 2024](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/qna/BCE_classtest_02_qna_2024_.md)
+- [Class Test 01 Suggestions](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/qna/sugg_classtest_01.md)
+- [Class Test 02 Suggestions](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/qna/sugg_classtest_02.md)
+- [Business Report Example](https://github.com/itachi-re/butex-notes/blob/master/HSS-101/qna/business_report_example.docx)
+
+</details>
+
+---
+
+### Lab Reports
+
+**[🔗 View All Lab Reports](https://github.com/itachi-re/butex-notes/tree/master/lab_reports)**
+
+<details>
+<summary><b>📂 Chemistry Lab (CHEM-102) ✨ New</b></summary>
+
+- [CHEM-102 Lab Report](https://github.com/itachi-re/butex-notes/blob/master/lab_reports/CHEM-102_lab_report.md)
+- [CHEM-102 Lab Report (AKD variant)](https://github.com/itachi-re/butex-notes/blob/master/lab_reports/CHEM-102_lab_report_AKD.md)
+- [Chemistry Extra](https://github.com/itachi-re/butex-notes/blob/master/lab_reports/chem_extra.md)
+- [Chemistry Lab Report Suggestions](https://github.com/itachi-re/butex-notes/blob/master/lab_reports/chem_labrep_sug.md)
+
+</details>
+
+<details>
+<summary><b>📂 Physics Lab (PHY-102) ✨ New</b></summary>
+
+- [PHY-102 Lab Reports](https://github.com/itachi-re/butex-notes/blob/master/lab_reports/PHY-102_Lab_Reports.md)
+- [PHY-102 Lab Report (Imtiaj)](https://github.com/itachi-re/butex-notes/blob/master/lab_reports/PHY-102_lab_report_Imtiaj.md)
+- [PHY-102 Lab Report (Tahin)](https://github.com/itachi-re/butex-notes/blob/master/lab_reports/PHY-102_lab_report_Tahin.md)
+
+</details>
+
+<details>
+<summary><b>📂 Mechanical Lab ✨ New</b></summary>
+
+- [Mechanical Lab Reports](https://github.com/itachi-re/butex-notes/blob/master/lab_reports/mechanical-lab-reports.md)
+
+</details>
+
+---
+
+### ME-102 Practical
+
+**[🔗 View ME-102 Practical Notes](https://github.com/itachi-re/butex-notes/tree/master/tmp/ME-102-Practical)**
+
+<details>
+<summary><b>📂 Mechanical Engineering Practical Topics ✨ New</b></summary>
+
+- [01 - Boilers](https://github.com/itachi-re/butex-notes/blob/master/tmp/ME-102-Practical/01_boilers.md)
+- [02 - Pumps](https://github.com/itachi-re/butex-notes/blob/master/tmp/ME-102-Practical/02_pumps.md)
+- [03 - Engines](https://github.com/itachi-re/butex-notes/blob/master/tmp/ME-102-Practical/03_engines.md)
+- [04 - Refrigeration](https://github.com/itachi-re/butex-notes/blob/master/tmp/ME-102-Practical/04_refrigeration.md)
+- [05 - Turbines](https://github.com/itachi-re/butex-notes/blob/master/tmp/ME-102-Practical/05_turbines.md)
+
+</details>
 
 ---
 
@@ -345,56 +469,31 @@ Convert all notes to PDF format with proper formatting:
 ## 🖥️ System Requirements
 
 ### 🐧 Linux (Recommended)
-- Any modern Linux distribution
-  - Ubuntu / Debian
-  - Arch Linux / Manjaro
-  - Fedora
-  - openSUSE (Leap / Tumbleweed)
-- Core tools:
-  - `git`
-  - `bash` or `zsh`
-  - `python` (if scripts/tools are included)
-- Optional:
-  - `docker` (for containerized workflows)
-  - `make`
+- Any modern Linux distribution (Ubuntu / Debian, Arch / Manjaro, Fedora, openSUSE)
+- Core tools: `git`, `bash` or `zsh`, `python`
+- Optional: `docker`, `make`
 
 ---
 
 ### 🪟 Windows
 - Windows 10 / 11 (64-bit)
-- Required:
-  - Git for Windows
-  - PowerShell or Windows Terminal
-- Recommended:
-  - **WSL2** (Ubuntu or openSUSE)
-  - Python 3.x
-- Optional:
-  - Docker Desktop (WSL2 backend)
+- Required: Git for Windows, PowerShell or Windows Terminal
+- Recommended: **WSL2** (Ubuntu or openSUSE), Python 3.x
+- Optional: Docker Desktop (WSL2 backend)
 
 ---
 
 ### 🍎 macOS
 - macOS 12+ (Monterey or newer)
-- Required:
-  - Xcode Command Line Tools  
-    ```bash
-    xcode-select --install
-    ```
-- Recommended:
-  - Homebrew
-  - Git
-  - Python 3.x
-- Optional:
-  - Docker Desktop
+- Required: Xcode Command Line Tools (`xcode-select --install`)
+- Recommended: Homebrew, Git, Python 3.x
+- Optional: Docker Desktop
 
 ---
 
 ### 🌐 Platform-Independent
 - A modern web browser (Chrome / Firefox / Brave)
-- Markdown viewer or editor:
-  - VS Code
-  - Obsidian
-  - Typora
+- Markdown viewer: VS Code, Obsidian, or Typora
 - PDF reader (for exported notes)
 
 ---
@@ -427,32 +526,39 @@ butex-notes/
 │   ├── linear_algebra/
 │   └── qna/
 ├── HSS-101/                     # Humanities & Social Science
-│   ├── 01_intro.md
-│   ├── 02_letters.md
-│   ├── 03_presentations.md
-│   ├── 04_meetings.md
+│   ├── 01_intro.md … 04_meetings.md
+│   ├── extras/                  # Group project materials
+│   │   ├── 01_Research/         # Member research notes
+│   │   ├── 03_Script/           # Presentation scripts
+│   │   └── 05_References/       # Reference masterlist
 │   └── qna/
 ├── YE-101/                      # Natural Textile Fibres
-│   ├── jute/                    # Jute module (8 files)
-│   ├── wool/                    # Wool module (7 files)
-│   ├── qna/
-│   ├── Cotton.md
-│   ├── silk_notes.md
-│   └── NTF.md
+│   ├── bast/
+│   │   ├── flax/                # Flax module (11 files)
+│   │   ├── jute/                # Jute module (8 files)
+│   │   └── jute_notes.md
+│   ├── cellulosic/
+│   │   └── cotton/Cotton.md
+│   ├── protein/
+│   │   ├── silk/                # Silk module (8 files)
+│   │   └── wool/                # Wool module (7 files)
+│   ├── introduction.md
+│   └── qna/
 ├── YE-201/                      # Fibre & Yarn Testing
 │   └── 01_testing_and_moisture.md
-├── AS-102-Practical/            # Physics Lab
-├── lab_reports/                 # Lab report templates
+├── lab_reports/                 # Lab reports (CHEM-102, PHY-102, Mechanical)
+├── tmp/
+│   └── ME-102-Practical/        # ME practical notes (5 topics)
 ├── pdfs/                        # PDF resources
 ├── scripts/                     # Automation scripts
-│   ├── new_note.sh              # Create new note from template
-│   └── build_all.sh             # Export all notes to PDF
+│   ├── new_note.sh
+│   └── build_all.sh
 ├── _templates/                  # Note templates
-│   └── note_template.md
-├── CHANGELOG.md                 # Version history
+├── CHANGELOG.md
 ├── CONTRIBUTING.md
 └── README.md
 ```
+
 ---
 
 ## 📋 Note Template Structure
@@ -580,8 +686,8 @@ This project is licensed under the terms specified in the [LICENSE](LICENSE) fil
 ## 📊 Repository Stats
 
 ```
-Total Notes: 30 directories, 170 files
-Last Updated: Monday, March 16, 2026
+Total Notes: 41 directories, 216 files
+Last Updated: Saturday, April 04, 2026
 Export Format: Markdown → PDF
 Department: Fabric Engineering
 University: BUTEX
