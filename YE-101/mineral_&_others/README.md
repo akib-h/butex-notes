@@ -1,7 +1,4 @@
 ---
-
-```markdown
-# Fibre Study Repository  
 **Date:** April 5, 2026  
 
 ## 📖 Overview
