@@ -35,7 +35,3 @@ Each file already has:
 - **References section** with authoritative links  
 
 ---
-
-✅ Next step: I can now generate the **remaining file contents (`08_coir_fibre.md` and `README.md`)** in full Markdown so you can copy-paste them directly.  
-
-Would you like me to **finish those two files right now** so your repo is complete and ready to push?
