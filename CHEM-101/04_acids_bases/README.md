@@ -1,4 +1,3 @@
-```markdown
 ---
 subject: CHEM-101
 topic: Acids and Bases — Master Index
@@ -119,4 +118,3 @@ $$\text{Acid (e}^- \text{ acceptor)} + \text{Base (e}^- \text{ donor)} \rightarr
 ---
 
 > 📝 **Contributing:** See [`CONTRIBUTING.md`](../../CONTRIBUTING.md) for style guide and how to add/fix notes.
-```
