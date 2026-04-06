@@ -19,7 +19,7 @@ means: for every $\varepsilon > 0$ (however small), there exists a $\delta > 0$ 
 
 $$0 < |x - a| < \delta \implies |f(x) - L| < \varepsilon$$
 
-In plain English: *we can make $f(x)$ as close to $L$ as we wish by taking $x$ sufficiently close to $a$ (but $x \neq a$).*
+> **In plain English:** By taking \(x\) close enough to \(a\) (but not equal to \(a\)), the value of \(f(x)\) can be made arbitrarily close to \(L\).
 
 ---
 
