@@ -9,7 +9,7 @@ tags: [math, calculus, limit, continuity, MATH-101]
 
 ## 2.1 The Concept of a Limit
 
-Intuitively, the **limit** of a function $f(x)$ as $x$ approaches $a$ is the value that $f(x)$ gets arbitrarily close to as $x$ gets arbitrarily close to $a$ — even if $f(a)$ itself is undefined.
+> Intuitively, the **limit** of a function \(f(x)\) as \(x\) approaches \(a\) is the value \(L\) that \(f(x)\) gets arbitrarily close to as \(x\) gets arbitrarily close to \(a\) — regardless of whether \(f(a)\) is defined.
 
 ### Formal ($\varepsilon$-$\delta$) Definition
 
