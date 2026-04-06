@@ -17,7 +17,7 @@ $$\lim_{x \to a} f(x) = L$$
 
 means: for every $\varepsilon > 0$ (however small), there exists a $\delta > 0$ such that:
 
-$$0 < |x - a| \leq \delta \implies |f(x) - L| < \varepsilon$$
+$$0 < |x - a| < \delta \implies |f(x) - L| < \varepsilon$$
 
 In plain English: *we can make $f(x)$ as close to $L$ as we wish by taking $x$ sufficiently close to $a$ (but $x \neq a$).*
 
