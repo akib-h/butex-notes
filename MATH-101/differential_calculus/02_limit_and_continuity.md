@@ -17,7 +17,7 @@ $$\lim_{x \to a} f(x) = L$$
 
 means: for every $\varepsilon > 0$ (however small), there exists a $\delta > 0$ such that:
 
-$$0 < |x - a| \leq \delta \implies |f(x) - L| < \varepsilon$$
+$$0 < |x - a| < \delta \implies |f(x) - L| < \varepsilon$$
 
 In plain English: *we can make $f(x)$ as close to $L$ as we wish by taking $x$ sufficiently close to $a$ (but $x \neq a$).*
 
@@ -34,7 +34,7 @@ $$\text{RHL} = \lim_{x \to a^+} f(x) = \lim_{h \to 0} f(a + h)$$
 
 $$\text{LHL} = \lim_{x \to a^-} f(x) = \lim_{h \to 0} f(a - h)$$
 
-> **Key Fact:** $\lim_{x \to a} f(x)$ exists **if and only if** LHL = RHL.
+> **Key Fact:** $\lim_{x \to a} f(x)$ exists **iff** LHL = RHL.
 
 ---
 
@@ -44,12 +44,12 @@ If $\lim_{x \to a} f(x) = L$ and $\lim_{x \to a} g(x) = M$, then:
 
 | Law | Formula |
 |:----|:--------|
-| Sum | $\lim[f \pm g] = L \pm M$ |
-| Product | $\lim[f \cdot g] = L \cdot M$ |
-| Quotient | $\lim\dfrac{f}{g} = \dfrac{L}{M}$, provided $M \neq 0$ |
-| Scalar | $\lim[cf] = cL$ |
-| Power | $\lim[f^n] = L^n$ |
-| Root | $\lim \sqrt[n]{f} = \sqrt[n]{L}$ (for even $n$, require $L \geq 0$) |
+| Sum | $\lim_{x \to a} [f(x) \pm g(x)] = L \pm M$ |
+| Product | $\lim_{x \to a} [f(x) \cdot g(x)] = L \cdot M$ |
+| Quotient | $\lim_{x \to a} \dfrac{f(x)}{g(x)} = \dfrac{L}{M}$, provided $M \neq 0$ |
+| Scalar | $\lim_{x \to a} [c f(x)] = cL$ |
+| Power | $\lim_{x \to a} [f(x)]^n = L^n$ |
+| Root | $\lim_{x \to a} \sqrt[n]{f(x)} = \sqrt[n]{L}$ (for even $n$, require $L \geq 0$) |
 
 ### Standard Limits
 
