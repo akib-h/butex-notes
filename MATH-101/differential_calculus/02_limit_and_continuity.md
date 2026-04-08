@@ -9,7 +9,7 @@ tags: [math, calculus, limit, continuity, MATH-101]
 
 ## 2.1 The Concept of a Limit
 
-Intuitively, the **limit** of a function $f(x)$ as $x$ approaches $a$ is the value that $f(x)$ gets arbitrarily close to as $x$ gets arbitrarily close to $a$ — even if $f(a)$ itself is undefined.
+> Intuitively, the **limit** of a function \(f(x)\) as \(x\) approaches \(a\) is the value \(L\) that \(f(x)\) gets arbitrarily close to as \(x\) gets arbitrarily close to \(a\) — regardless of whether \(f(a)\) is defined.
 
 ### Formal ($\varepsilon$-$\delta$) Definition
 
@@ -19,7 +19,7 @@ means: for every $\varepsilon > 0$ (however small), there exists a $\delta > 0$ 
 
 $$0 < |x - a| < \delta \implies |f(x) - L| < \varepsilon$$
 
-In plain English: *we can make $f(x)$ as close to $L$ as we wish by taking $x$ sufficiently close to $a$ (but $x \neq a$).*
+> **In plain English:** By taking \(x\) close enough to \(a\) (but not equal to \(a\)), the value of \(f(x)\) can be made arbitrarily close to \(L\).
 
 ---
 
