@@ -205,13 +205,52 @@ Since LHD = RHD $= 0$, $f'(x)$ **exists at** $x = \dfrac{\pi}{2}$. ✓
 
 ## 2.8 Practice Problems
 
-1. Discuss the continuity of $f(x) = \dfrac{x^2 - 9}{x - 3}$ at $x = 3$.
-2. Test continuity and differentiability of:
-$$f(x) = \begin{cases} 5x - 4 & 0 < x \leq 1 \\ 4x^2 - 3x & 1 < x < 2 \\ 3x + 4 & x \geq 2 \end{cases}$$
-at $x = 1$ and $x = 2$.
+1. Discuss the continuity of:
 
-3. Prove that $f(x) = x^3 - 3x + 1$ has a root in $(1, 2)$ using IVT.
-4. For what value of $k$ is $f(x) = \begin{cases} kx^2 & x \leq 2 \\ 3 & x > 2 \end{cases}$ continuous at $x = 2$?
+```math
+f(x) = \frac{x^2 - 9}{x - 3}
+```
+
+at \( x = 3 \).
+
+---
+
+2. Test continuity and differentiability of:
+
+```math
+f(x) =
+\begin{cases}
+5x - 4 & 0 < x \leq 1 \\
+4x^2 - 3x & 1 < x < 2 \\
+3x + 4 & x \geq 2
+\end{cases}
+```
+
+at \( x = 1 \) and \( x = 2 \).
+
+---
+
+3. Prove that:
+
+```math
+f(x) = x^3 - 3x + 1
+```
+
+has a root in \( (1, 2) \) using IVT.
+
+---
+
+4. For what value of \( k \) is:
+
+```math
+f(x) =
+\begin{cases}
+kx^2 & x \leq 2 \\
+3 & x > 2
+\end{cases}
+```
+
+continuous at \( x = 2 \)?
 
 ---
 
