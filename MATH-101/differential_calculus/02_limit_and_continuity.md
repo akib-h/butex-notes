@@ -237,27 +237,29 @@ Since LHD = RHD = \(-1\), **\(f'\) exists at \(x=2\).** ✓
 ### Example 2 — Continuity and Differentiability at $x = \pi/2$
 
 **Test $f(x)$ at $x = \dfrac{\pi}{2}$:**
+
 \[
 f(x) =
 \begin{cases}
-1, & x < 0 \
-
-\[6pt]
-1 + \sin x, & 0 \leq x \leq \dfrac{\pi}{2} \
-
-\[6pt]
+1, & x < 0 \\[6pt]
+1 + \sin x, & 0 \leq x < \dfrac{\pi}{2} \\[6pt]
 2 + \left(x - \dfrac{\pi}{2}\right)^2, & x \geq \dfrac{\pi}{2}
 \end{cases}
 \]
 
-
 **Continuity:**
 
-$$\text{LHL} = \lim_{x \to (\pi/2)^-} (1 + \sin x) = 1 + \sin\frac{\pi}{2} = 2$$
+$$
+\text{LHL} = \lim_{x \to (\pi/2)^-} (1 + \sin x) = 1 + \sin\frac{\pi}{2} = 2
+$$
 
-$$\text{RHL} = \lim_{x \to (\pi/2)^+} \left[2 + \left(x - \frac{\pi}{2}\right)^2\right] = 2 + 0 = 2$$
+$$
+\text{RHL} = \lim_{x \to (\pi/2)^+} \left[2 + \left(x - \frac{\pi}{2}\right)^2\right] = 2 + 0 = 2
+$$
 
-$$f\!\left(\frac{\pi}{2}\right) = 2 + 0 = 2$$
+$$
+f\!\left(\frac{\pi}{2}\right) = 2 + 0 = 2
+$$
 
 All three equal $2$, so $f$ is **continuous at** $x = \dfrac{\pi}{2}$. ✓
 
@@ -265,15 +267,21 @@ All three equal $2$, so $f$ is **continuous at** $x = \dfrac{\pi}{2}$. ✓
 
 LHD (using $f = 1 + \sin x$ for $x < \pi/2$):
 
-$$f'\!\left(\frac{\pi}{2}\right) = \lim_{h \to 0} \frac{f\!\left(\frac{\pi}{2}-h\right) - f\!\left(\frac{\pi}{2}\right)}{-h} = \lim_{h \to 0} \frac{1 + \cos h - 2}{-h} = \lim_{h \to 0} \frac{\cos h - 1}{-h}$$
+$$
+f'\!\left(\frac{\pi}{2}\right) = \lim_{h \to 0} \frac{f\!\left(\frac{\pi}{2}-h\right) - f\!\left(\frac{\pi}{2}\right)}{-h} = \lim_{h \to 0} \frac{1 + \cos h - 2}{-h} = \lim_{h \to 0} \frac{\cos h - 1}{-h}
+$$
 
 Using $\lim_{h\to 0}\frac{1-\cos h}{h} = 0$:
 
-$$\text{LHD} = \lim_{h \to 0} \frac{-(1-\cos h)}{-h} = 0$$
+$$
+\text{LHD} = \lim_{h \to 0} \frac{-(1-\cos h)}{-h} = 0
+$$
 
 RHD (using $f = 2 + (x-\pi/2)^2$):
 
-$$f'\!\left(\frac{\pi}{2}\right) = \lim_{h \to 0} \frac{2 + h^2 - 2}{h} = \lim_{h \to 0} h = 0$$
+$$
+f'\!\left(\frac{\pi}{2}\right) = \lim_{h \to 0} \frac{2 + h^2 - 2}{h} = \lim_{h \to 0} h = 0
+$$
 
 Since LHD = RHD $= 0$, $f'(x)$ **exists at** $x = \dfrac{\pi}{2}$. ✓
 
