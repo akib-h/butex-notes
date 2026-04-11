@@ -127,20 +127,15 @@ If $f$ and $g$ are continuous at $a$, then so are $f \pm g$, $f \cdot g$, $f/g$ 
 
 **Test whether $f(x)$ is continuous at $x = 1$ and $x = 2$:**
 
-### Piecewise Function Definition
-
-\[
-f(x) =
+$$
+f(x)=
 \begin{cases}
-x, & 0 < x < 1 \
-
-\[6pt]
-2 - x, & 1 \leq x \leq 2 \
-
-\[6pt]
-x - \tfrac{1}{2}x^2, & x > 2
+x,                      & 0 < x < 1, \\[4pt]
+2 - x,                  & 1 \le x \le 2, \\[4pt]
+x - \dfrac{1}{2}x^{2},  & x > 2 .
 \end{cases}
-\]
+$$
+
 
 **At $x = 1$:**
 
