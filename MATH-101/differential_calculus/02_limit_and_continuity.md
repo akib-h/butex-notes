@@ -11,7 +11,7 @@ tags: [math, calculus, limit, continuity, MATH-101]
 
 > Intuitively, the **limit** of a function \(f(x)\) as \(x\) approaches \(a\) is the value \(L\) that \(f(x)\) gets arbitrarily close to as \(x\) gets arbitrarily close to \(a\) — regardless of whether \(f(a)\) is defined.
 
-### Formal ($\varepsilon$-$\delta$) Definition
+### Formal (ε-δ) Definition
 
 $$\lim_{x \to a} f(x) = L$$
 
@@ -127,7 +127,19 @@ If $f$ and $g$ are continuous at $a$, then so are $f \pm g$, $f \cdot g$, $f/g$ 
 
 **Test whether $f(x)$ is continuous at $x = 1$ and $x = 2$:**
 
-$$f(x) = \begin{cases} x & 0 < x < 1 \\ 2 - x & 1 \leq x \leq 2 \\ x - \tfrac{1}{2}x^2 & x > 2 \end{cases}$$
+\[
+f(x) =
+\begin{cases}
+x, & 0 < x < 1 \
+
+\[6pt]
+2 - x, & 1 \leq x \leq 2 \
+
+\[6pt]
+x - \tfrac{1}{2}x^2, & x > 2
+\end{cases}
+\]
+
 
 **At $x = 1$:**
 
@@ -172,8 +184,19 @@ Since LHD = RHD $= -1$, $f'(x)$ **exists at $x = 2$**. ✓
 ### Example 2 — Continuity and Differentiability at $x = \pi/2$
 
 **Test $f(x)$ at $x = \dfrac{\pi}{2}$:**
+\[
+f(x) =
+\begin{cases}
+1, & x < 0 \
 
-$$f(x) = \begin{cases} 1 & x < 0 \\ 1 + \sin x & 0 \leq x \leq \dfrac{\pi}{2} \\ 2 + \left(x - \dfrac{\pi}{2}\right)^2 & x \geq \dfrac{\pi}{2} \end{cases}$$
+\[6pt]
+1 + \sin x, & 0 \leq x \leq \dfrac{\pi}{2} \
+
+\[6pt]
+2 + \left(x - \dfrac{\pi}{2}\right)^2, & x \geq \dfrac{\pi}{2}
+\end{cases}
+\]
+
 
 **Continuity:**
 
