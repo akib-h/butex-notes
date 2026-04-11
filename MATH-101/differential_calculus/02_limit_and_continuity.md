@@ -123,61 +123,114 @@ If $f$ and $g$ are continuous at $a$, then so are $f \pm g$, $f \cdot g$, $f/g$ 
 
 ## 2.7 Worked Examples
 
-### Example 1 — Continuity and Differentiability Test
+### Example 1 — Continuity and Differentiability Test
 
-**Test whether $f(x)$ is continuous at $x = 1$ and $x = 2$:**
+**Test whether \(f(x)\) is continuous at \(x = 1\) and \(x = 2\):**
 
-\[
-f(x) =
+$$
+f(x)=
 \begin{cases}
-x, & 0 < x < 1 \
-
-\[6pt]
-2 - x, & 1 \leq x \leq 2 \
-
-\[6pt]
-x - \tfrac{1}{2}x^2, & x > 2
+x,                     & 0 < x < 1, \\
+2 - x,                 & 1 \le x \le 2, \\
+x - \tfrac12\,x^{2},   & x > 2 .
 \end{cases}
-\]
+$$
 
+---
 
-**At $x = 1$:**
+#### At \(x = 1\)
 
-$$\text{LHL} = \lim_{x \to 1^-} x = 1$$
+Left‑hand limit  
 
-$$\text{RHL} = \lim_{x \to 1^+} (2 - x) = 1$$
+$$
+\text{LHL}= \lim_{x\to 1^-} x = 1
+$$
 
-$$f(1) = 2 - 1 = 1$$
+Right‑hand limit  
 
-Since LHL = RHL = $f(1) = 1$, $f$ is **continuous at $x = 1$**. ✓
+$$
+\text{RHL}= \lim_{x\to 1^+} (2 - x) = 1
+$$
 
-**At $x = 2$:**
+Function value  
 
-$$\text{LHL} = \lim_{x \to 2^-} (2 - x) = 0$$
+$$
+f(1)=2-1 = 1
+$$
 
-$$\text{RHL} = \lim_{x \to 2^+} \left(x - \tfrac{1}{2}x^2\right) = 2 - \tfrac{1}{2}(4) = 0$$
+Since LHL = RHL = \(f(1)=1\), **\(f\) is continuous at \(x=1\).** ✓  
 
-$$f(2) = 2 - 2 = 0$$
+---
 
-Since LHL = RHL = $f(2) = 0$, $f$ is **continuous at $x = 2$**. ✓
+#### At \(x = 2\)
 
-**Differentiability at $x = 1$:**
+Left‑hand limit  
 
-$$\text{LHD} = \lim_{h \to 0} \frac{f(1-h) - f(1)}{-h} = \lim_{h \to 0} \frac{(1-h) - 1}{-h} = \lim_{h \to 0} \frac{-h}{-h} = 1$$
+$$
+\text{LHL}= \lim_{x\to 2^-} (2 - x) = 0
+$$
 
-$$\text{RHD} = \lim_{h \to 0} \frac{f(1+h) - f(1)}{h} = \lim_{h \to 0} \frac{(2-(1+h)) - 1}{h} = \lim_{h \to 0} \frac{-h}{h} = -1$$
+Right‑hand limit  
 
-Since LHD $\neq$ RHD, $f'(x)$ **does not exist at $x = 1$**. ✗
+$$
+\text{RHL}= \lim_{x\to 2^+} \Bigl(x - \tfrac12\,x^{2}\Bigr)
+          = 2 - \tfrac12\,(2)^{2}=0
+$$
 
-**Differentiability at $x = 2$:**
+Function value  
 
-$$\text{LHD} = \lim_{h \to 0} \frac{f(2-h) - f(2)}{-h} = \lim_{h \to 0} \frac{(2-(2-h)) - 0}{-h} = \lim_{h \to 0} \frac{h}{-h} = -1$$
+$$
+f(2)=2-2 = 0
+$$
 
-$$\text{RHD} = \lim_{h \to 0} \frac{f(2+h) - f(2)}{h} = \lim_{h \to 0} \frac{(2+h) - \tfrac{1}{2}(2+h)^2}{h}$$
+Since LHL = RHL = \(f(2)=0\), **\(f\) is continuous at \(x=2\).** ✓  
 
-$$= \lim_{h \to 0} \frac{-h(1 + \tfrac{1}{2}h)}{h} = -1$$
+---
 
-Since LHD = RHD $= -1$, $f'(x)$ **exists at $x = 2$**. ✓
+#### Differentiability at \(x = 1\)
+
+Left‑hand derivative  
+
+$$
+\text{LHD}= \lim_{h\to0} \frac{f(1-h)-f(1)}{-h}
+          = \lim_{h\to0} \frac{(1-h)-1}{-h}
+          = \lim_{h\to0} \frac{-h}{-h}=1
+$$
+
+Right‑hand derivative  
+
+$$
+\text{RHD}= \lim_{h\to0} \frac{f(1+h)-f(1)}{h}
+          = \lim_{h\to0} \frac{(2-(1+h))-1}{h}
+          = \lim_{h\to0} \frac{-h}{h}= -1
+$$
+
+Because LHD \(\neq\) RHD, **\(f'\) does not exist at \(x=1\).** ✗  
+
+---
+
+#### Differentiability at \(x = 2\)
+
+Left‑hand derivative  
+
+$$
+\text{LHD}= \lim_{h\to0} \frac{f(2-h)-f(2)}{-h}
+          = \lim_{h\to0} \frac{(2-(2-h))-0}{-h}
+          = \lim_{h\to0} \frac{h}{-h}= -1
+$$
+
+Right‑hand derivative  
+
+$$
+\begin{aligned}
+\text{RHD}&= \lim_{h\to0} \frac{f(2+h)-f(2)}{h} \\[4pt]
+          &= \lim_{h\to0} \frac{(2+h)-\tfrac12\,(2+h)^{2}}{h} \\[4pt]
+          &= \lim_{h\to0} \frac{-h\Bigl(1+\tfrac12 h\Bigr)}{h}
+          = -1 .
+\end{aligned}
+$$
+
+Since LHD = RHD = \(-1\), **\(f'\) exists at \(x=2\).** ✓
 
 ---
 
