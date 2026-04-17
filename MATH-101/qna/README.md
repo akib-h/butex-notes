@@ -9,21 +9,19 @@
 
 ---
 
-## 📚 Table of Contents
-
-| # | Chapter | Topics |
-|---|---------|--------|
-| [01](chapters/01-limits-continuity-differentiability.md) | Limits, Continuity & Differentiability | ε–δ definition, L'Hôpital, MVT, Rolle's, Taylor Series |
-| [02](chapters/02-series-convergence.md) | Infinite Series & Convergence | Ratio Test, Comparison, D'Alembert, Raabe's |
-| [03](chapters/03-differentiation-applications.md) | Differentiation & Applications | Stationary points, extrema, increasing/decreasing |
-| [04](chapters/04-partial-derivatives-euler.md) | Partial Derivatives & Euler's Theorem | Partial diff., homogeneous functions, Laplace |
-| [05](chapters/05-integration-techniques.md) | Integration Techniques | Substitution, partial fractions, by-parts, Gamma |
-| [06](chapters/06-applications-integration.md) | Applications of Integration | Area, arc length, volume, polar curves |
-| [07](chapters/07-matrices-linear-systems.md) | Matrices & Linear Systems | Gaussian elimination, rank, consistency |
-| [08](chapters/08-eigenvalues-cayley-hamilton.md) | Eigenvalues & Cayley–Hamilton | Eigenvalues, eigenvectors, CH theorem |
-| [09](chapters/09-analytic-geometry-conics.md) | Analytic Geometry & Conics | Rotation of axes, standard forms, identification |
-| [10](chapters/10-3d-geometry.md) | 3D Geometry | Direction cosines, lines, planes, shortest distance |
-| [11](chapters/11-complex-numbers.md) | Complex Numbers & Series (2012–2015) | De Moivre, roots of unity, trigonometric series |
+| #  | Chapter | Topics |
+|----|--------|--------|
+| [01](01-limits-continuity-differentiability.md) | Limits, Continuity & Differentiability | ε–δ definition, L'Hôpital, MVT, Rolle's, Taylor Series |
+| [02](02-series-convergence.md) | Infinite Series & Convergence | Ratio Test, Comparison, D'Alembert, Raabe's |
+| [03](03-differentiation-applications.md) | Differentiation & Applications | Stationary points, extrema, increasing/decreasing |
+| [04](04-partial-derivatives-euler.md) | Partial Derivatives & Euler's Theorem | Partial diff., homogeneous functions, Laplace |
+| [05](05-integration-techniques.md) | Integration Techniques | Substitution, partial fractions, by-parts, Gamma |
+| [06](06-applications-integration.md) | Applications of Integration | Area, arc length, volume, polar curves |
+| [07](07-matrices-linear-systems.md) | Matrices & Linear Systems | Gaussian elimination, rank, consistency |
+| [08](08-eigenvalues-cayley-hamilton.md) | Eigenvalues & Cayley–Hamilton | Eigenvalues, eigenvectors, CH theorem |
+| [09](09-analytic-geometry-conics.md) | Analytic Geometry & Conics | Rotation of axes, standard forms, identification |
+| [10](10-3d-geometry.md) | 3D Geometry | Direction cosines, lines, planes, shortest distance |
+| [11](11-complex-numbers.md) | Complex Numbers & Series (2012–2015) | De Moivre, roots of unity, trigonometric series |
 
 ---
 
