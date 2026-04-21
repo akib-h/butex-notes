@@ -6,9 +6,42 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) with [Se
 ---
 
 ## [Unreleased]
+
+## [0.6.0] — 2026-04-21
+*Release Notes:* https://github.com/itachi-re/butex-notes/releases/tag/0.6.0
+
+### Summary
+New modules for PHY-101 Polarization and fluid mechanics worked examples, a complete CHEM-101 question bank, full MATH-101 Q&A coverage (topics 08–11), and a new `quick_rev` quick-revision directory for MATH-101.
+
+### Added
+- **PHY-101/08_polarization** — Complete new module (8 files + README):
+  - Polarization, Polarization by Reflection, Brewster's Law, Double Refraction, Nicol Prism, Malus' Law, Specific Rotation, Laurent's Half-Shade Polarimeter
+- **PHY-101/02_fluid_mech_ex** — Fluid mechanics worked-examples set (12 files + README):
+  - Topic-by-topic exercise files from `01_fluid` through `12_venturimeter`
+- **CHEM-101/qb** — New question bank directory (7 files):
+  - Chemical Bonding, Periodic Properties, Coordination Compounds, Acids & Bases, Analytical Chemistry, Colligative Properties, Chemical Equilibrium
+- **MATH-101/quick_rev** — New quick-revision directory (4 files):
+  - `common-formulas.md`, `differential-calculus.md`, `integral-calculus.md`, `lhopital.md`
+- **MATH-101/qna** — Completed remaining Q&A topics:
+  - `08-eigenvalues-cayley-hamilton.md`, `09-analytic-geometry-conics.md`, `10-3d-geometry.md`, `11-complex-numbers.md`
+  - `ct/` subdirectory with class test Q&A for 2024, 2025, 2026, and mixed set
+  - `README.md` for qna directory
+
+### Changed
+- README updated: PHY-101 course-index entry now lists all 8 modules; Polarization, Fluid Mech Examples, CHEM-101 QB, MATH-101 Quick Rev, and full qna set added to Detailed Course Contents
+- README: MATH-101 coordinate geometry module added to Detailed Course Contents (was missing)
+- README: stale ✨ New markers removed from v0.5.3 content (Flax, Silk, HSS Extras, Lab Reports, ME-102)
+- README: repository structure tree updated to reflect current layout
+- README: stats updated to `62 directories, 388 files`, last-updated date updated to 2026-04-21
+
+### Fixed
+- Broken TOC fix (`2610ce3`)
+- Markdown formatting in `quick_rev/lhopital.md` (`2755f49`)
+
+---
+
 ## [0.5.3] — 2026-04-02
 *Release Notes:* https://github.com/itachi-re/butex-notes/releases/tag/0.5.3
-...
 
 ### Summary
 Major release consolidating HSS-101 scripts, CHEM-101 QnA, PHY-101 lab reports, MATH-101 modules, and textile notes.
@@ -31,6 +64,7 @@ Major release consolidating HSS-101 scripts, CHEM-101 QnA, PHY-101 lab reports, 
 - Enhanced README with stats, TOC, contribution guidelines
 - Refactored CHEM-101 and PHY-101 to match syllabus
 - Added CHANGELOG and CONTRIBUTING.md
+
 ---
 
 ## [0.0.3] — 2026-03-09
@@ -154,7 +188,9 @@ Initial project setup establishing comprehensive BUTEX course notes repository f
 - **2026-02-28** — Thin films & Newton's rings added
 - **2026-03-08** — v0.0.2: Documentation refinements, 8 PRs merged
 - **2026-03-09** — v0.0.3: Repository maintenance
-- **2026-03-13** — Latest: Assessment materials added
+- **2026-03-13** — Assessment materials added
+- **2026-04-02** — v0.5.3: Major consolidation — HSS, CHEM, PHY, MATH, Textiles
+- **2026-04-21** — v0.6.0: Polarization module, fluid examples, CHEM QB, MATH quick_rev & full qna
 
 ---
 
