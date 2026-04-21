@@ -498,5 +498,3 @@ $$\ln 2 \approx 0.6931 \qquad \ln 10 \approx 2.3026 \qquad \log_{10} e \approx 0
 $$e^\pi \approx 23.14 \qquad \pi^e \approx 22.46 \qquad \frac{1}{\sqrt{2\pi}} \approx 0.3989$$
 
 ---
-
-*Made for BUTex x86 study group — MS 101 / AS 101*
