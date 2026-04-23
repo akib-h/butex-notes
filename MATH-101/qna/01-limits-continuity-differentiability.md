@@ -95,9 +95,17 @@ For $a = 0$ (Maclaurin series):
 
 ### ✏️ 2019 — Q1
 
-**(a)** Define continuity. A function $f(x)$ is defined by
-$$f(x) = \begin{cases} \dfrac{1-\cos x}{x^2}, & x \neq 0 \\ B, & x = 0 \end{cases}$$
-For what value of $B$ is $f(x)$ continuous at $x = 0$? **[4 marks]**
+### (a) Continuity and Function Definition
+
+**Define continuity.**
+
+A function $f(x)$ is defined as:
+
+$$f(x) = \begin{cases} \dfrac{1 - \cos x}{x^2}, & x \neq 0 \\ B, & x = 0 \end{cases}$$
+
+For what value of $B$ is $f(x)$ continuous at $x = 0$?
+
+*(4 marks)*
 
 <details>
 <summary>✅ Solution</summary>
