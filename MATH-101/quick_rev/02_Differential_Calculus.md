@@ -320,7 +320,9 @@ LHD = RHD = 0 → **Differentiable at $x = \pi/2$** ✅
 
 ---
 
-#### Q4. Show $f(x) = \begin{cases} x & 0 \le x < 1/2 \\ 1-x & 1/2 \le x < 1 \end{cases}$ is continuous but not differentiable at $x = 1/2$.
+#### Q4. Show that $f$ is continuous but not differentiable at $x = 1/2$, where:
+
+$$f(x) = \begin{cases} x & 0 \le x < 1/2 \\ 1-x & 1/2 \le x < 1 \end{cases}$$
 
 <details>
 <summary>💡 Solution</summary>
@@ -345,7 +347,9 @@ LHD $\neq$ RHD → **Not differentiable at $x = 1/2$** ❌
 
 ---
 
-#### Q5. Investigate $f(x) = \begin{cases} 0 & 0 \le x < 3 \\ 4 & x = 3 \\ 5 & 3 < x \le 4 \end{cases}$ at $x = 3$
+#### Q5. Investigate continuity and differentiability at $x = 3$ for:
+
+$$f(x) = \begin{cases} 0 & 0 \le x < 3 \\ 4 & x = 3 \\ 5 & 3 < x \le 4 \end{cases}$$
 
 <details>
 <summary>💡 Solution</summary>
