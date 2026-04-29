@@ -10,7 +10,7 @@
 1. [Key Definitions](#-key-definitions)
 2. [Important Theorems & Proofs](#-important-theorems--proofs)
 3. [Questions & Solutions](#-questions--solutions)
-   - [Finding Inverse (A⁻¹)](#1-finding-inverse-a-1)
+   - [Finding Inverse (A⁻¹)](#1-finding-inverse-a)
    - [Orthogonal Matrices](#2-orthogonal-matrices)
    - [Cayley-Hamilton Theorem](#3-cayley-hamilton-theorem)
    - [Rank of a Matrix](#4-rank-of-a-matrix)
@@ -55,6 +55,7 @@
 ### Proof (a): Every Square Matrix = Hermitian + Skew-Hermitian
 
 **Statement:** Every square matrix $A$ can be expressed as:
+
 $$A = \underbrace{\frac{A + A^\dagger}{2}}_{\text{Hermitian}} + \underbrace{\frac{A - A^\dagger}{2}}_{\text{Skew-Hermitian}}$$
 
 **Proof:**
@@ -73,7 +74,9 @@ Let $H = \dfrac{A + A^\dagger}{2}$ and $K = \dfrac{A - A^\dagger}{2}$.
 **Statement:** If $A$ and $B$ are non-singular matrices of the same order, then $AB$ is also non-singular.
 
 **Proof:**
+
 $$\det(AB) = \det(A) \cdot \det(B)$$
+
 Since $A$ and $B$ are non-singular: $\det(A) \neq 0$ and $\det(B) \neq 0$.  
 Therefore $\det(AB) = \det(A) \cdot \det(B) \neq 0$, so $AB$ is non-singular. ✅
 
@@ -101,8 +104,13 @@ Therefore $\det(AB) = \det(A) \cdot \det(B) \neq 0$, so $AB$ is non-singular. �
 **Step 1: Compute det(A)**
 
 Expanding along Row 1:
-$$\det(A) = 1\cdot\det\begin{pmatrix}2&3\\4&9\end{pmatrix} - 1\cdot\det\begin{pmatrix}1&3\\1&9\end{pmatrix} + 1\cdot\det\begin{pmatrix}1&2\\1&4\end{pmatrix}$$
-$$= 1(18-12) - 1(9-3) + 1(4-2) = 6 - 6 + 2 = 2$$
+
+$$
+\begin{aligned}
+\det(A) &= 1\cdot\det\begin{pmatrix}2&3\\4&9\end{pmatrix} - 1\cdot\det\begin{pmatrix}1&3\\1&9\end{pmatrix} + 1\cdot\det\begin{pmatrix}1&2\\1&4\end{pmatrix} \\
+&= 1(18-12) - 1(9-3) + 1(4-2) = 6 - 6 + 2 = 2
+\end{aligned}
+$$
 
 **Step 2: Cofactor Matrix**
 
@@ -113,6 +121,7 @@ $$C = \begin{pmatrix} 6 & -6 & 2 \\ -5 & 8 & -3 \\ 1 & -2 & 1 \end{pmatrix}$$
 $$\text{adj}(A) = C^T = \begin{pmatrix} 6 & -5 & 1 \\ -6 & 8 & -2 \\ 2 & -3 & 1 \end{pmatrix}$$
 
 **Step 4:**
+
 $$A^{-1} = \frac{1}{2}\begin{pmatrix} 6 & -5 & 1 \\ -6 & 8 & -2 \\ 2 & -3 & 1 \end{pmatrix} = \begin{pmatrix} 3 & -5/2 & 1/2 \\ -3 & 4 & -1 \\ 1 & -3/2 & 1/2 \end{pmatrix}$$
 
 **Verification:** $AA^{-1} = I$ ✅
@@ -128,9 +137,13 @@ $$A^{-1} = \frac{1}{2}\begin{pmatrix} 6 & -5 & 1 \\ -6 & 8 & -2 \\ 2 & -3 & 1 \e
 
 **Step 1: Compute det(A)**
 
-$$\det(A) = 2(1\cdot1 - 2\cdot2) - 5(3\cdot1 - 2\cdot1) + 3(3\cdot2 - 1\cdot1)$$
-$$= 2(1-4) - 5(3-2) + 3(6-1)$$
-$$= 2(-3) - 5(1) + 3(5) = -6 - 5 + 15 = 4$$
+$$
+\begin{aligned}
+\det(A) &= 2(1\cdot1 - 2\cdot2) - 5(3\cdot1 - 2\cdot1) + 3(3\cdot2 - 1\cdot1) \\
+&= 2(1-4) - 5(3-2) + 3(6-1) \\
+&= 2(-3) - 5(1) + 3(5) = -6 - 5 + 15 = 4
+\end{aligned}
+$$
 
 **Step 2: Cofactors**
 
@@ -139,9 +152,11 @@ $C_{21} = -(5-6) = 1$, $C_{22} = (2-3) = -1$, $C_{23} = -(4-5) = 1$
 $C_{31} = (10-3) = 7$, $C_{32} = -(4-9) = 5$, $C_{33} = (2-15) = -13$
 
 **Step 3: adj(A)**
+
 $$\text{adj}(A) = \begin{pmatrix} -3 & 1 & 7 \\ -1 & -1 & 5 \\ 5 & 1 & -13 \end{pmatrix}$$
 
 **Step 4:**
+
 $$A^{-1} = \frac{1}{4}\begin{pmatrix} -3 & 1 & 7 \\ -1 & -1 & 5 \\ 5 & 1 & -13 \end{pmatrix}$$
 
 </details>
@@ -160,11 +175,13 @@ $\det(A) = 1(36-25) - 2(12-5) + 3(5-3) = 11 - 14 + 6 = 3$
 $\det(B) = 1(10-12) - 1(5-3) + 1(4-2) = -2 - 2 + 2 = -2$
 
 **Cofactor matrix of A:**
+
 $$C_A = \begin{pmatrix}11 & -7 & 2 \\ -9 & 9 & -3 \\ 1 & -2 & 1\end{pmatrix}$$
 
 $$A^{-1} = \frac{1}{3}\begin{pmatrix}11 & -9 & 1 \\ -7 & 9 & -2 \\ 2 & -3 & 1\end{pmatrix}$$
 
 **Cofactor matrix of B:**
+
 $$C_B = \begin{pmatrix}-2 & -2 & 2 \\ -1 & 4 & -3 \\ 1 & -2 & 1\end{pmatrix}$$
 
 $$B^{-1} = \frac{1}{-2}\begin{pmatrix}-2 & -1 & 1 \\ -2 & 4 & -2 \\ 2 & -3 & 1\end{pmatrix}$$
@@ -262,9 +279,11 @@ If $p(\lambda) = \det(\lambda I - A) = 0$ is the characteristic polynomial, then
 $$\det(\lambda I - A) = \det\begin{pmatrix}\lambda-1 & -3 & -2 \\ -2 & \lambda & -3 \\ -1 & 1 & \lambda-1\end{pmatrix}$$
 
 Expanding:
+
 $$p(\lambda) = \lambda^3 - 2\lambda^2 - 4\lambda - 2 = 0 \quad \text{(verify by expansion)}$$
 
 > If the characteristic polynomial is $\lambda^3 - 2\lambda^2 - 4\lambda - 2 = 0$, by Cayley-Hamilton:
+
 $$A^3 - 2A^2 - 4A - 2I = 0$$
 
 **Therefore** $A^3 - 2A^2 - 4A - 2I = \mathbf{0}$ ✅
@@ -272,11 +291,17 @@ $$A^3 - 2A^2 - 4A - 2I = 0$$
 **Finding A⁻¹:**
 
 From the characteristic equation:
-$$A^3 - 2A^2 - 4A - 2I = 0$$
-$$-2I = -A^3 + 2A^2 + 4A$$
-$$I = \frac{1}{2}(A^3 - 2A^2 - 4A) \cdot (-1)$$
+
+$$
+\begin{aligned}
+A^3 - 2A^2 - 4A - 2I &= 0 \\
+-2I &= -A^3 + 2A^2 + 4A \\
+I &= \frac{1}{2}(A^3 - 2A^2 - 4A) \cdot (-1)
+\end{aligned}
+$$
 
 Multiplying both sides by $A^{-1}$:
+
 $$A^{-1} = \frac{1}{2}(A^2 - 2A - 4I) \cdot (-1)$$
 
 $$A^2 = \begin{pmatrix}9&-1&13\\5&9&7\\-2&4&0\end{pmatrix}$$
@@ -305,12 +330,15 @@ Apply row operations to bring to echelon form:
 $$\begin{pmatrix}1&2&3&2&1\\3&1&-5&-2&1\\7&8&-1&2&5\end{pmatrix}$$
 
 $R_2 \leftarrow R_2 - 3R_1$:
+
 $$\begin{pmatrix}1&2&3&2&1\\0&-5&-14&-8&-2\\7&8&-1&2&5\end{pmatrix}$$
 
 $R_3 \leftarrow R_3 - 7R_1$:
+
 $$\begin{pmatrix}1&2&3&2&1\\0&-5&-14&-8&-2\\0&-6&-22&-12&-2\end{pmatrix}$$
 
 $R_3 \leftarrow 5R_3 - 6R_2$:
+
 $$\begin{pmatrix}1&2&3&2&1\\0&-5&-14&-8&-2\\0&0&-26&-12&2\end{pmatrix}$$
 
 Three non-zero rows → **rank = 3**
@@ -342,9 +370,11 @@ After complete row reduction, count non-zero rows.
 <summary>💡 Solution</summary>
 
 $R_2 \leftarrow R_2 - 4R_1$, $R_3 \leftarrow R_3 - 7R_1$:
+
 $$\begin{pmatrix}1&2&3&-3\\0&-3&-6&7\\0&-6&-12&14\end{pmatrix}$$
 
 $R_3 \leftarrow R_3 - 2R_2$:
+
 $$\begin{pmatrix}1&2&3&-3\\0&-3&-6&7\\0&0&0&0\end{pmatrix}$$
 
 Two non-zero rows → **rank = 2**
@@ -369,13 +399,13 @@ Apply systematic row reduction...
 ### 5. System of Equations
 
 **Rouché–Capelli Theorem:**
-For system $AX = b$ with augmented matrix $[A|b]$:
+For system $AX = b$ with augmented matrix $[A \mid b]$:
 
 | Condition | Type |
 |-----------|------|
-| $\text{rank}(A) = \text{rank}([A\|b]) = n$ | Unique solution |
-| $\text{rank}(A) = \text{rank}([A\|b]) < n$ | Infinitely many solutions |
-| $\text{rank}(A) \neq \text{rank}([A\|b])$ | No solution (inconsistent) |
+| $\text{rank}(A) = \text{rank}([A \mid b]) = n$ | Unique solution |
+| $\text{rank}(A) = \text{rank}([A \mid b]) < n$ | Infinitely many solutions |
+| $\text{rank}(A) \neq \text{rank}([A \mid b])$ | No solution (inconsistent) |
 
 #### Q8(i). Solve: $x+2y-z=0$, $3x+2z+8y=0$, $4x+9y-z=4$
 
@@ -384,12 +414,14 @@ For system $AX = b$ with augmented matrix $[A|b]$:
 
 Matrix form: $AX = b$
 
-$$[A|b] = \begin{pmatrix}1&2&-1&|&0\\3&8&2&|&0\\4&9&-1&|&4\end{pmatrix}$$
+$$[A \mid b] = \begin{pmatrix}1&2&-1&|&0\\3&8&2&|&0\\4&9&-1&|&4\end{pmatrix}$$
 
 $R_2 \leftarrow R_2 - 3R_1$, $R_3 \leftarrow R_3 - 4R_1$:
+
 $$\begin{pmatrix}1&2&-1&|&0\\0&2&5&|&0\\0&1&3&|&4\end{pmatrix}$$
 
 $R_3 \leftarrow 2R_3 - R_2$:
+
 $$\begin{pmatrix}1&2&-1&|&0\\0&2&5&|&0\\0&0&1&|&8\end{pmatrix}$$
 
 Back-substitution:
@@ -408,9 +440,10 @@ Back-substitution:
 <details>
 <summary>💡 Solution</summary>
 
-$$[A|b] = \begin{pmatrix}1&1&1&|&1\\1&2&1&|&2\\1&1&2&|&0\end{pmatrix}$$
+$$[A \mid b] = \begin{pmatrix}1&1&1&|&1\\1&2&1&|&2\\1&1&2&|&0\end{pmatrix}$$
 
 $R_2 \leftarrow R_2 - R_1$, $R_3 \leftarrow R_3 - R_1$:
+
 $$\begin{pmatrix}1&1&1&|&1\\0&1&0&|&1\\0&0&1&|&-1\end{pmatrix}$$
 
 Back-substitution:
@@ -427,6 +460,7 @@ Back-substitution:
 ### 6. Cramer's Rule
 
 **For system $AX = b$:**
+
 $$x_i = \frac{\det(A_i)}{\det(A)}$$
 
 where $A_i$ is $A$ with the $i$-th column replaced by $b$.
@@ -440,13 +474,11 @@ where $A_i$ is $A$ with the $i$-th column replaced by $b$.
 
 $$A = \begin{pmatrix}5&-7&1\\6&-8&-1\\3&2&-6\end{pmatrix},\quad b = \begin{pmatrix}11\\5\\7\end{pmatrix}$$
 
-$\det(A) = 5(48+2)+7(-36+3)+1(12+24)$  
-$= 5(50)+7(-33)+36 = 250 - 231 + 36 = 55$
+$$\det(A) = 5(48+2)+7(-36+3)+1(12+24) = 5(50)+7(-33)+36 = 250 - 231 + 36 = 55$$
 
-$$\det(A_1) = \begin{vmatrix}11&-7&1\\5&-8&-1\\7&2&-6\end{vmatrix}$$
-$= 11(48+2)+7(-30+7)+1(10+56) = 550 - 161 + 66 = 55 \cdot 1$
+$$\det(A_1) = \begin{vmatrix}11&-7&1\\5&-8&-1\\7&2&-6\end{vmatrix} = 11(48+2)+7(-30+7)+1(10+56) = 550 - 161 + 66 = 55$$
 
-$x = \frac{\det(A_1)}{\det(A)} = 1$
+$$x = \frac{\det(A_1)}{\det(A)} = 1$$
 
 Compute $\det(A_2)$, $\det(A_3)$ similarly.
 
@@ -472,6 +504,7 @@ $$\det(A) = 3(6-2) - 3(3-0) + 2(10-0) = 12 - 9 + 20 = 23 \neq 0$$
 Since $\det(A) \neq 0$, the system has a **unique solution** → **Consistent**
 
 Using Cramer's rule to solve:
+
 $$D_x = \begin{vmatrix}1&3&2\\4&2&0.2\\-2&10&3\end{vmatrix}$$
 
 Compute similarly for $D_y$ and $D_z$.
@@ -485,13 +518,13 @@ Compute similarly for $D_y$ and $D_z$.
 <details>
 <summary>💡 Solution</summary>
 
-Write augmented matrix $[A|b]$ and find ranks of $A$ and $[A|b]$.
+Write augmented matrix $[A \mid b]$ and find ranks of $A$ and $[A \mid b]$.
 
-$$[A|b] = \begin{pmatrix}1&0&-1&3&1&|&-3\\2&1&0&-2&-1&|&5\\1&0&2&2&4&|&6\\0&1&0&5&6&|&-2\end{pmatrix}$$
+$$[A \mid b] = \begin{pmatrix}1&0&-1&3&1&|&-3\\2&1&0&-2&-1&|&5\\1&0&2&2&4&|&6\\0&1&0&5&6&|&-2\end{pmatrix}$$
 
 Apply row reductions...
 
-Compare $\text{rank}(A)$ with $\text{rank}([A|b])$ to determine consistency.
+Compare $\text{rank}(A)$ with $\text{rank}([A \mid b])$ to determine consistency.
 
 </details>
 
@@ -500,6 +533,7 @@ Compare $\text{rank}(A)$ with $\text{rank}([A|b])$ to determine consistency.
 ### 8. Normal Form
 
 **Normal form** of a matrix of rank $r$ is:
+
 $$\begin{bmatrix} I_r & 0 \\ 0 & 0 \end{bmatrix}$$
 
 #### Q12. Reduce to normal form: $A = \begin{pmatrix}1&2&3&4\\2&1&4&3\\3&0&5&-10\end{pmatrix}$
@@ -510,13 +544,16 @@ $$\begin{bmatrix} I_r & 0 \\ 0 & 0 \end{bmatrix}$$
 Apply row and column operations to reduce $A$ to normal form.
 
 $R_2 \leftarrow R_2 - 2R_1$, $R_3 \leftarrow R_3 - 3R_1$:
+
 $$\begin{pmatrix}1&2&3&4\\0&-3&-2&-5\\0&-6&-4&-22\end{pmatrix}$$
 
 $R_3 \leftarrow R_3 - 2R_2$:
+
 $$\begin{pmatrix}1&2&3&4\\0&-3&-2&-5\\0&0&0&-12\end{pmatrix}$$
 
 Apply column operations:
 $C_2 \leftarrow C_2 - 2C_1$, $C_3 \leftarrow C_3 - 3C_1$, $C_4 \leftarrow C_4 - 4C_1$:
+
 $$\begin{pmatrix}1&0&0&0\\0&-3&-2&-5\\0&0&0&-12\end{pmatrix}$$
 
 Continue until normal form. **Rank = 3.**
@@ -555,9 +592,9 @@ Characteristic polynomial: $\lambda^2 - \text{tr}(A)\lambda + \det(A) = \lambda^
 
 By Cayley-Hamilton: $A^2 - 5A - 2I = 0$
 
-$A^2 = \begin{pmatrix}7&10\\15&22\end{pmatrix}$
+$$A^2 = \begin{pmatrix}7&10\\15&22\end{pmatrix}$$
 
-$A^2 - 5A - 2I = \begin{pmatrix}7&10\\15&22\end{pmatrix} - \begin{pmatrix}5&10\\15&20\end{pmatrix} - \begin{pmatrix}2&0\\0&2\end{pmatrix} = \begin{pmatrix}0&0\\0&0\end{pmatrix}$ ✅
+$$A^2 - 5A - 2I = \begin{pmatrix}7&10\\15&22\end{pmatrix} - \begin{pmatrix}5&10\\15&20\end{pmatrix} - \begin{pmatrix}2&0\\0&2\end{pmatrix} = \begin{pmatrix}0&0\\0&0\end{pmatrix}$$ ✅
 
 </details>
 
@@ -585,7 +622,7 @@ $\det(A) = 2(4-3)-3(2-9)+1(1-6) = 2+21-5 = 18$
 
 Using Cramer's rule or matrix inverse:
 
-$x = \frac{D_x}{D}$, $y = \frac{D_y}{D}$, $z = \frac{D_z}{D}$
+$$x = \frac{D_x}{D}, \quad y = \frac{D_y}{D}, \quad z = \frac{D_z}{D}$$
 
 **Solution:** $x = 35/18$, $y = 29/18$, $z = -5/18$
 
