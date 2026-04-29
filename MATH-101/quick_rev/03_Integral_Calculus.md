@@ -7,16 +7,16 @@
 
 ## 📚 Table of Contents
 
-1. [Key Formulae](#-key-formulae)
-2. [Questions & Solutions](#-questions--solutions)
+1. [Key Formulae](#key-formulae)
+2. [Questions & Solutions](#questions-solutions)
    - [Indefinite Integrals](#1-indefinite-integrals)
    - [Reduction Formulae](#2-reduction-formulae)
    - [Integration by Parts](#3-integration-by-parts)
    - [Integration by Partial Fractions](#4-integration-by-partial-fractions)
    - [Definite Integrals](#5-definite-integrals)
-   - [Walli's Formula](#6-wallis-formula)
-3. [Practice Questions](#-practice-questions)
-4. [References](#-references)
+   - [Wallis's Formula](#6-walliss-formula)
+3. [Practice Questions](#practice-questions)
+4. [References](#references)
 
 ---
 
@@ -105,7 +105,7 @@ $A = \dfrac{1}{3/2} = \dfrac{2}{3}$, $B = \dfrac{-1}{3}$
 
 $$= \frac{2}{3}\cdot\frac{1}{2}\ln|2t+1| - \frac{1}{3}\ln|t+2| + C$$
 
-$$= \frac{1}{3}\ln\left|\frac{\sqrt{2\tan(x/2)+1}}{tan(x/2)+2}\right| + C$$
+$$= \frac{1}{3}\ln\left|\frac{\sqrt{2\tan(x/2)+1}}{\tan(x/2)+2}\right| + C$$
 
 </details>
 
@@ -544,7 +544,7 @@ $\sin x + \cos x = \sqrt{2}\sin(x+\pi/4)$:
 
 $$2I = \frac{\pi}{2\sqrt{2}}\int_0^{\pi/2}\csc\left(x+\frac{\pi}{4}\right)dx$$
 
-$$= \frac{\pi}{2\sqrt{2}}\left[\ln\left|\tan\frac{x/2+\pi/8}{1}\right|\right]_0^{\pi/2} = \frac{\pi}{2\sqrt{2}}\ln(1+\sqrt{2})$$
+$$= \frac{\pi}{2\sqrt{2}}\left[\ln\left|\tan\left(\frac{x}{2}+\frac{\pi}{8}\right)\right|\right]_0^{\pi/2} = \frac{\pi}{2\sqrt{2}}\ln(1+\sqrt{2})$$
 
 $$\boxed{I = \frac{\pi}{4\sqrt{2}}\ln(1+\sqrt{2})}$$
 
@@ -610,7 +610,7 @@ $$I = \int_0^\pi x\sin^3 x\,dx = \int_0^\pi(\pi-x)\sin^3 x\,dx$$
 
 $$2I = \pi\int_0^\pi\sin^3 x\,dx = \pi\left[\frac{2}{3}\right]\cdot 2 = \frac{4\pi}{3}$$
 
-(using $\int_0^\pi\sin^3 x\,dx = \frac{4}{3}$)
+(using $\int_0^\pi\sin^3 x\,dx = \dfrac{4}{3}$)
 
 $$I = \frac{2\pi}{3}$$ ✅
 
