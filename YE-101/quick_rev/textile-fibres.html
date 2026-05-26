@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Textile Fibres</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #f5f0e8;
+    --warm-white: #faf8f4;
+    --dark: #1a1208;
+    --natural-brown: #8b6914;
+    --leaf-green: #3d6b4f;
+    --animal-rust: #8b3a2a;
+    --mineral-slate: #4a5568;
+    --synthetic-indigo: #2d3a7a;
+    --regen-teal: #1a6b6b;
+    --accent-gold: #c9962a;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background-color: var(--cream);
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    padding: 40px 20px 60px;
+    background-image:
+      radial-gradient(ellipse at 10% 20%, rgba(139,105,20,0.07) 0%, transparent 50%),
+      radial-gradient(ellipse at 90% 80%, rgba(45,58,122,0.06) 0%, transparent 50%);
+  }
+
+  .page-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .page-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
+    color: var(--dark);
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+
+  .page-header .subtitle {
+    font-size: 0.85rem;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--natural-brown);
+    margin-top: 8px;
+  }
+
+  .divider-line {
+    width: 80px;
+    height: 2px;
+    background: var(--accent-gold);
+    margin: 16px auto 0;
+  }
+
+  /* ── MAIN SPLIT ── */
+  .root-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* ── COLUMN CARDS ── */
+  .column-card {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(26,18,8,0.1);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-header {
+    padding: 22px 26px 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .col-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+    background: rgba(255,255,255,0.25);
+  }
+
+  .col-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.1;
+  }
+
+  .col-sub {
+    font-size: 0.72rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.75;
+    color: #fff;
+    margin-top: 2px;
+  }
+
+  .natural-header   { background: linear-gradient(135deg, #4a7c59 0%, #2d5a3e 100%); }
+  .synthetic-header { background: linear-gradient(135deg, #2d3a7a 0%, #1a2250 100%); }
+
+  .col-body {
+    background: var(--warm-white);
+    padding: 20px 18px 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  /* ── SUBCATEGORY BLOCKS ── */
+  .sub-block {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1.5px solid transparent;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .sub-block:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  }
+
+  .sub-header {
+    padding: 10px 14px 9px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .sub-emoji { font-size: 16px; }
+
+  .sub-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: #fff;
+    flex: 1;
+  }
+
+  .sub-label {
+    font-size: 0.65rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+    background: rgba(0,0,0,0.15);
+    padding: 2px 8px;
+    border-radius: 20px;
+  }
+
+  .sub-body {
+    padding: 10px 14px 12px;
+    background: rgba(255,255,255,0.7);
+  }
+
+  /* FIBRE PILLS */
+  .fibres-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .fibre-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 11px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    border: 1.5px solid transparent;
+    cursor: default;
+    transition: transform 0.15s;
+  }
+  .fibre-pill:hover { transform: scale(1.05); }
+
+  .fibre-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* COLOUR THEMES per subcategory */
+  /* Vegetable subs */
+  .seed    { background: linear-gradient(135deg,#a8682a,#7a4918); }
+  .bast    { background: linear-gradient(135deg,#5a8a3e,#3b6128); }
+  .leaf    { background: linear-gradient(135deg,#2e7d52,#1a5238); }
+  .fruit   { background: linear-gradient(135deg,#7a5c2e,#5a3e18); }
+
+  .seed-pill  { background:#fff8f0; border-color:#d4956a; color:#7a4918; }
+  .seed-dot   { background:#c8763c; }
+  .bast-pill  { background:#f2f8ee; border-color:#7dbb5a; color:#3b6128; }
+  .bast-dot   { background:#5a9e38; }
+  .leaf-pill  { background:#eef8f3; border-color:#55bb88; color:#1a5238; }
+  .leaf-dot   { background:#2e9e6a; }
+  .fruit-pill { background:#f8f5ee; border-color:#b89a6a; color:#5a3e18; }
+  .fruit-dot  { background:#9a7840; }
+
+  /* Animal subs */
+  .wool-sub  { background: linear-gradient(135deg,#8b4a2a,#5e2a18); }
+  .silk-sub  { background: linear-gradient(135deg,#9a6b8a,#6a3a5a); }
+  .spec-sub  { background: linear-gradient(135deg,#7a5238,#4e3020); }
+
+  .wool-pill  { background:#fff5f2; border-color:#d4866a; color:#5e2a18; }
+  .wool-dot   { background:#c8543c; }
+  .silk-pill  { background:#fdf5fb; border-color:#c8a0be; color:#6a3a5a; }
+  .silk-dot   { background:#b07898; }
+  .spec-pill  { background:#faf4ee; border-color:#b89278; color:#4e3020; }
+  .spec-dot   { background:#9a6848; }
+
+  /* Mineral natural */
+  .min-nat  { background: linear-gradient(135deg,#5a6070,#3a404a); }
+  .min-nat-pill { background:#f3f4f6; border-color:#9aa0b0; color:#3a404a; }
+  .min-nat-dot  { background:#6a7280; }
+
+  /* Synthetic cols */
+  .regen-sub { background: linear-gradient(135deg,#1a7878,#0e4e4e); }
+  .synth-sub { background: linear-gradient(135deg,#2d4a9a,#1a2c6a); }
+  .min-mm-sub{ background: linear-gradient(135deg,#3a4a5e,#202a38); }
+
+  .regen-pill  { background:#eefafa; border-color:#5ababa; color:#0e4e4e; }
+  .regen-dot   { background:#2a9898; }
+  .synth-pill  { background:#eef0fb; border-color:#7a8ad8; color:#1a2c6a; }
+  .synth-dot   { background:#4a5ac8; }
+  .mm-min-pill { background:#f0f2f5; border-color:#8090a8; color:#202a38; }
+  .mm-min-dot  { background:#5a6878; }
+
+  /* Source label inside sub-body */
+  .source-note {
+    font-size: 0.67rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #888;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+  }
+
+  /* ── LEGEND ── */
+  .legend {
+    max-width: 1200px;
+    margin: 28px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+    justify-content: center;
+    opacity: 0.7;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--dark);
+    letter-spacing: 0.5px;
+  }
+  .legend-swatch {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+  }
+
+  /* ── CONNECTOR VISUAL (top center badge) ── */
+  .root-badge {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .root-badge-inner {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--dark);
+    color: var(--cream);
+    padding: 8px 22px;
+    border-radius: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  .tree-lines {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 0;
+    position: relative;
+    height: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .tree-lines::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(25% + 12px);
+    right: calc(25% + 12px);
+    height: 1px;
+    background: var(--natural-brown);
+    opacity: 0.4;
+  }
+  .tree-lines::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 100%;
+    background: var(--natural-brown);
+    opacity: 0.2;
+  }
+  .tree-branch {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+  }
+  .tree-branch::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 100%;
+    background: var(--natural-brown);
+    opacity: 0.3;
+  }
+
+  /* responsive */
+  @media (max-width: 720px) {
+    .root-split { grid-template-columns: 1fr; }
+  }
+
+  /* entry animations */
+  .column-card {
+    animation: fadeUp 0.5s ease both;
+  }
+  .column-card:nth-child(2) { animation-delay: 0.12s; }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .sub-block {
+    animation: fadeUp 0.4s ease both;
+  }
+  .sub-block:nth-child(1) { animation-delay: 0.15s; }
+  .sub-block:nth-child(2) { animation-delay: 0.22s; }
+  .sub-block:nth-child(3) { animation-delay: 0.29s; }
+  .sub-block:nth-child(4) { animation-delay: 0.36s; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <div class="subtitle">Classification of</div>
+  <h1>Textile Fibres</h1>
+  <div class="divider-line"></div>
+</div>
+
+<div class="root-badge">
+  <div class="root-badge-inner">
+    🧵 &nbsp; All Textile Fibres
+  </div>
+</div>
+
+<div class="tree-lines">
+  <div class="tree-branch"></div>
+  <div class="tree-branch"></div>
+</div>
+
+<div class="root-split">
+
+  <!-- ══════════ NATURAL ══════════ -->
+  <div class="column-card">
+    <div class="col-header natural-header">
+      <div class="col-icon">🌿</div>
+      <div>
+        <div class="col-title">Natural Fibres</div>
+        <div class="col-sub">Derived from nature — plant, animal, mineral</div>
+      </div>
+    </div>
+    <div class="col-body">
+
+      <!-- VEGETABLE GROUP LABEL -->
+      <div style="font-size:0.68rem;letter-spacing:3px;text-transform:uppercase;color:#5a8a3e;font-weight:600;padding-left:4px;margin-bottom:-4px;">
+        ▸ Vegetable / Cellulosic
+      </div>
+
+      <!-- Seed fibre -->
+      <div class="sub-block" style="border-color:#d4956a;">
+        <div class="sub-header seed">
+          <span class="sub-emoji">🌸</span>
+          <span class="sub-title">Seed Fibres</span>
+          <span class="sub-label">From plant seeds</span>
+        </div>
+        <div class="sub-body">
+          <div class="source-note">Source · seed pods &amp; fluff</div>
+          <div class="fibres-wrap">
+            <span class="fibre-pill seed-pill"><span class="fibre-dot seed-dot"></span>Cotton</span>
+            <span class="fibre-pill seed-pill"><span class="fibre-dot seed-dot"></span>Kapok</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bast fibre -->
+      <div class="sub-block" style="border-color:#7dbb5a;">
+        <div class="sub-header bast">
+          <span class="sub-emoji">🌾</span>
+          <span class="sub-title">Bast Fibres</span>
+          <span class="sub-label">From plant stems</span>
+        </div>
+        <div class="sub-body">
+          <div class="source-note">Source · inner bark / stem</div>
+          <div class="fibres-wrap">
+            <span class="fibre-pill bast-pill"><span class="fibre-dot bast-dot"></span>Jute</span>
+            <span class="fibre-pill bast-pill"><span class="fibre-dot bast-dot"></span>Flax</span>
+            <span class="fibre-pill bast-pill"><span class="fibre-dot bast-dot"></span>Hemp</span>
+            <span class="fibre-pill bast-pill"><span class="fibre-dot bast-dot"></span>Ramie</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leaf fibre -->
+      <div class="sub-block" style="border-color:#55bb88;">
+        <div class="sub-header leaf">
+          <span class="sub-emoji">🌵</span>
+          <span class="sub-title">Leaf Fibres</span>
+          <span class="sub-label">From plant leaves</span>
+        </div>
+        <div class="sub-body">
+          <div class="source-note">Source · leaf veins &amp; fibres</div>
+          <div class="fibres-wrap">
+            <span class="fibre-pill leaf-pill"><span class="fibre-dot leaf-dot"></span>Sisal</span>
+            <span class="fibre-pill leaf-pill"><span class="fibre-dot leaf-dot"></span>PALF (Pineapple)</span>
+            <span class="fibre-pill leaf-pill"><span class="fibre-dot leaf-dot"></span>Abaca</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fruit fibre -->
+      <div class="sub-block" style="border-color:#b89a6a;">
+        <div class="sub-header fruit">
+          <span class="sub-emoji">🥥</span>
+          <span class="sub-title">Fruit Fibres</span>
+          <span class="sub-label">From fruit husk</span>
+        </div>
+        <div class="sub-body">
+          <div class="source-note">Source · coconut husk</div>
+          <div class="fibres-wrap">
+            <span class="fibre-pill fruit-pill"><span class="fibre-dot fruit-dot"></span>Coir</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ANIMAL GROUP LABEL -->
+      <div style="font-size:0.68rem;letter-spacing:3px;text-transform:uppercase;color:#8b3a2a;font-weight:600;padding-left:4px;margin-top:6px;margin-bottom:-4px;">
+        ▸ Animal / Protein
+      </div>
+
+      <!-- Wool -->
+      <div class="sub-block" style="border-color:#d4866a;">
+        <div class="sub-header wool-sub">
+          <span class="sub-emoji">🐑</span>
+          <span class="sub-title">Wool</span>
+          <span class="sub-label">Sheep</span>
+        </div>
+        <div class="sub-body">
+          <div class="source-note">Source · sheep fleece</div>
+          <div class="fibres-wrap">
+            <span class="fibre-pill wool-pill"><span class="fibre-dot wool-dot"></span>Merino</span>
+            <span class="fibre-pill wool-pill"><span class="fibre-dot wool-dot"></span>Lambswool</span>
+            <span class="fibre-pill wool-pill"><span class="fibre-dot wool-dot"></span>Virgin Wool</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Silk -->
+      <div class="sub-block" style="border-color:#c8a0be;">
+        <div class="sub-header silk-sub">
+          <span class="sub-emoji">🐛</span>
+          <span class="sub-title">Silk</span>
+          <span class="sub-label">Silkworm</span>
+        </div>
+        <div class="sub-body">
+          <div class="source-note">Source · Bombyx mori cocoon</div>
+          <div class="fibres-wrap">
+            <span class="fibre-pill silk-pill"><span class="fibre-dot silk-dot"></span>Mulberry Silk</span>
+            <span class="fibre-pill silk-pill"><span class="fibre-dot silk-dot"></span>Tussar Silk</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Specialty -->
+      <div class="sub-block" style="border-color:#b89278;">
+        <div class="sub-header spec-sub">
+          <span class="sub-emoji">🦙</span>
+          <span class="sub-title">Specialty Hair</span>
+          <span class="sub-label">Exotic animals</span>
+        </div>
+        <div class="sub-body">
+          <div class="source-note">Source · goat / rabbit / camelid</div>
+          <div class="fibres-wrap">
+            <span class="fibre-pill spec-pill"><span class="fibre-dot spec-dot"></span>Cashmere</span>
+            <span class="fibre-pill spec-pill"><span class="fibre-dot spec-dot"></span>Mohair</span>
+            <span class="fibre-pill spec-pill"><span class="fibre-dot spec-dot"></span>Angora</span>
+            <span class="fibre-pill spec-pill"><span class="fibre-dot spec-dot"></span>Alpaca</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MINERAL LABEL -->
+      <div style="font-size:0.68rem;letter-spacing:3px;text-transform:uppercase;color:#4a5568;font-weight:600;padding-left:4px;margin-top:6px;margin-bottom:-4px;">
+        ▸ Mineral (Natural)
+      </div>
+
+      <div class="sub-block" style="border-color:#9aa0b0;">
+        <div class="sub-header min-nat">
+          <span class="sub-emoji">⛏️</span>
+          <span class="sub-title">Mineral Fibre</span>
+          <span class="sub-label">Naturally occurring</span>
+        </div>
+        <div class="sub-body">
+          <div class="source-note">Source · mined mineral deposits</div>
+          <div class="fibres-wrap">
+            <span class="fibre-pill min-nat-pill"><span class="fibre-dot min-nat-dot"></span>Asbestos</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- col-body -->
+  </div><!-- natural card -->
+
+  <!-- ══════════ MAN-MADE ══════════ -->
+  <div class="column-card">
+    <div class="col-header synthetic-header">
+      <div class="col-icon">⚗️</div>
+      <div>
+        <div class="col-title">Man-made / Synthetic Fibres</div>
+        <div class="col-sub">Engineered in laboratories &amp; factories</div>
+      </div>
+    </div>
+    <div class="col-body">
+
+      <!-- REGENERATED LABEL -->
+      <div style="font-size:0.68rem;letter-spacing:3px;text-transform:uppercase;color:#1a7878;font-weight:600;padding-left:4px;margin-bottom:-4px;">
+        ▸ Regenerated Cellulosic
+      </div>
+
+      <div class="sub-block" style="border-color:#5ababa;">
+        <div class="sub-header regen-sub">
+          <span class="sub-emoji">🌳</span>
+          <span class="sub-title">Regenerated Cellulosics</span>
+          <span class="sub-label">Plant-sourced, factory-made</span>
+        </div>
+        <div class="sub-body">
+          <div class="source-note">Source · wood pulp / plant cellulose → chemical process</div>
+          <div class="fibres-wrap">
+            <span class="fibre-pill regen-pill"><span class="fibre-dot regen-dot"></span>Viscose Rayon</span>
+            <span class="fibre-pill regen-pill"><span class="fibre-dot regen-dot"></span>Modal</span>
+            <span class="fibre-pill regen-pill"><span class="fibre-dot regen-dot"></span>Lyocell (Tencel)</span>
+            <span class="fibre-pill regen-pill"><span class="fibre-dot regen-dot"></span>Cupro</span>
+            <span class="fibre-pill regen-pill"><span class="fibre-dot regen-dot"></span>Bamboo Rayon</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SYNTHETIC POLYMERS LABEL -->
+      <div style="font-size:0.68rem;letter-spacing:3px;text-transform:uppercase;color:#2d4a9a;font-weight:600;padding-left:4px;margin-top:6px;margin-bottom:-4px;">
+        ▸ Synthetic Polymers
+      </div>
+
+      <div class="sub-block" style="border-color:#7a8ad8;">
+        <div class="sub-header synth-sub">
+          <span class="sub-emoji">🔬</span>
+          <span class="sub-title">Synthetic Polymer Fibres</span>
+          <span class="sub-label">Petroleum-derived</span>
+        </div>
+        <div class="sub-body">
+          <div class="source-note">Source · petrochemicals → polymerisation</div>
+          <div class="fibres-wrap">
+            <span class="fibre-pill synth-pill"><span class="fibre-dot synth-dot"></span>Polyester (PET)</span>
+            <span class="fibre-pill synth-pill"><span class="fibre-dot synth-dot"></span>Nylon (Polyamide)</span>
+            <span class="fibre-pill synth-pill"><span class="fibre-dot synth-dot"></span>Acrylic</span>
+            <span class="fibre-pill synth-pill"><span class="fibre-dot synth-dot"></span>Polypropylene</span>
+            <span class="fibre-pill synth-pill"><span class="fibre-dot synth-dot"></span>Spandex / Lycra</span>
+            <span class="fibre-pill synth-pill"><span class="fibre-dot synth-dot"></span>Polyurethane</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MINERAL MAN-MADE LABEL -->
+      <div style="font-size:0.68rem;letter-spacing:3px;text-transform:uppercase;color:#3a4a5e;font-weight:600;padding-left:4px;margin-top:6px;margin-bottom:-4px;">
+        ▸ Mineral (Man-made)
+      </div>
+
+      <div class="sub-block" style="border-color:#8090a8;">
+        <div class="sub-header min-mm-sub">
+          <span class="sub-emoji">🏭</span>
+          <span class="sub-title">Manufactured Mineral Fibres</span>
+          <span class="sub-label">High-tech inorganic</span>
+        </div>
+        <div class="sub-body">
+          <div class="source-note">Source · silica / carbon compounds → industrial process</div>
+          <div class="fibres-wrap">
+            <span class="fibre-pill mm-min-pill"><span class="fibre-dot mm-min-dot"></span>Fiberglass</span>
+            <span class="fibre-pill mm-min-pill"><span class="fibre-dot mm-min-dot"></span>Carbon Fibre</span>
+            <span class="fibre-pill mm-min-pill"><span class="fibre-dot mm-min-dot"></span>Ceramic Fibre</span>
+            <span class="fibre-pill mm-min-pill"><span class="fibre-dot mm-min-dot"></span>Metallic Fibre</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- COMPARISON NOTE -->
+      <div style="margin-top:10px;background:linear-gradient(135deg,#eef0fb,#e8eaf8);border-radius:10px;padding:14px 16px;border-left:3px solid #4a5ac8;">
+        <div style="font-size:0.7rem;letter-spacing:2px;text-transform:uppercase;color:#2d3a7a;font-weight:600;margin-bottom:6px;">Quick Comparison</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+          <div style="font-size:0.72rem;color:#333;">
+            <span style="display:block;font-weight:600;color:#2d3a7a;margin-bottom:2px;">Natural</span>
+            Biodegradable · Breathable<br>Moisture-wicking · Hypoallergenic
+          </div>
+          <div style="font-size:0.72rem;color:#333;">
+            <span style="display:block;font-weight:600;color:#2d3a7a;margin-bottom:2px;">Synthetic</span>
+            Durable · Wrinkle-resistant<br>Consistent · Low-cost
+          </div>
+        </div>
+      </div>
+
+    </div><!-- col-body -->
+  </div><!-- synthetic card -->
+
+</div><!-- root-split -->
+
+<!-- LEGEND -->
+<div class="legend">
+  <div class="legend-item"><div class="legend-swatch" style="background:#c8763c;"></div>Seed</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#5a9e38;"></div>Bast</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#2e9e6a;"></div>Leaf</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#9a7840;"></div>Fruit</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#c8543c;"></div>Wool</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#b07898;"></div>Silk</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#9a6848;"></div>Specialty</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#6a7280;"></div>Mineral (Natural)</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#2a9898;"></div>Regenerated</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#4a5ac8;"></div>Synthetic Polymer</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#5a6878;"></div>Mineral (Man-made)</div>
+</div>
+
+</body>
+</html>
