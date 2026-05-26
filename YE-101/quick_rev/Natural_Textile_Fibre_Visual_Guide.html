@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Natural Textile Fibre — Visual Machinery & Process Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #faf6ef;
+    --parchment: #f0e8d8;
+    --ink: #1a1208;
+    --brown: #6b3f1a;
+    --gold: #c9922a;
+    --rust: #b84c1e;
+    --sage: #4a7c59;
+    --slate: #3d4f5c;
+    --cotton: #e8f4f8;
+    --jute: #d4c4a0;
+    --silk: #f5e6f0;
+    --wool: #e8d8cc;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  /* ─── HEADER ─── */
+  .site-header {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 56px 40px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .site-header::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 18px,
+      rgba(201,146,42,0.07) 18px,
+      rgba(201,146,42,0.07) 19px
+    );
+  }
+  .header-inner { position: relative; max-width: 1100px; margin: 0 auto; }
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 14px;
+  }
+  .site-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 5vw, 60px);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
+  .site-header h1 span { color: var(--gold); }
+  .subtitle {
+    font-size: 16px;
+    color: rgba(250,246,239,0.7);
+    max-width: 640px;
+  }
+
+  /* ─── NAV TABS ─── */
+  .nav-bar {
+    background: var(--ink);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    overflow-x: auto;
+    scrollbar-width: none;
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  }
+  .nav-bar::-webkit-scrollbar { display: none; }
+  .nav-inner {
+    display: flex;
+    gap: 2px;
+    padding: 0 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .tab-btn {
+    flex-shrink: 0;
+    padding: 14px 20px;
+    background: none;
+    border: none;
+    color: rgba(250,246,239,0.5);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .tab-btn:hover { color: var(--gold); border-bottom-color: rgba(201,146,42,0.3); }
+  .tab-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
+
+  /* ─── SECTIONS ─── */
+  .section { display: none; padding: 60px 40px; max-width: 1100px; margin: 0 auto; }
+  .section.active { display: block; animation: fadeIn 0.4s ease; }
+  @keyframes fadeIn { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--brown);
+  }
+  .section-lead {
+    font-size: 15px;
+    color: var(--slate);
+    margin-bottom: 48px;
+    border-left: 3px solid var(--gold);
+    padding-left: 16px;
+  }
+
+  /* ─── VISUAL CARDS ─── */
+  .visual-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 28px;
+    margin-bottom: 48px;
+  }
+  .visual-grid.wide { grid-template-columns: 1fr 1fr; }
+  .visual-grid.triple { grid-template-columns: repeat(3, 1fr); }
+  .visual-grid.single { grid-template-columns: 1fr; max-width: 700px; }
+
+  .v-card {
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 16px rgba(26,18,8,0.08);
+    border: 1px solid rgba(107,63,26,0.12);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .v-card:hover { transform: translateY(-3px); box-shadow: 0 8px 32px rgba(26,18,8,0.14); }
+
+  .v-card-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    background: var(--parchment);
+  }
+  .v-card-img.tall { height: 280px; }
+  .v-card-img.short { height: 170px; }
+
+  .v-card-body { padding: 20px 22px; }
+  .v-card-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+  .v-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--ink);
+  }
+  .v-card-desc {
+    font-size: 13.5px;
+    color: var(--slate);
+    line-height: 1.6;
+  }
+
+  /* ─── INFO BOXES ─── */
+  .info-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 32px 0;
+  }
+  .info-row.three { grid-template-columns: 1fr 1fr 1fr; }
+
+  .info-box {
+    background: var(--parchment);
+    border-radius: 4px;
+    padding: 24px;
+    border-left: 4px solid var(--gold);
+  }
+  .info-box.green { border-left-color: var(--sage); background: #eef5f1; }
+  .info-box.red { border-left-color: var(--rust); background: #fdf0ea; }
+  .info-box.blue { border-left-color: var(--slate); background: #eef1f4; }
+  .info-box.silk-bg { border-left-color: #9b6b9e; background: #f8f0f8; }
+
+  .info-box h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .info-box ul { list-style: none; padding: 0; }
+  .info-box ul li {
+    font-size: 13px;
+    padding: 4px 0;
+    padding-left: 16px;
+    position: relative;
+    color: var(--slate);
+  }
+  .info-box ul li::before {
+    content: '→';
+    position: absolute; left: 0;
+    color: var(--gold);
+    font-size: 11px;
+  }
+  .info-box.green ul li::before { color: var(--sage); }
+  .info-box.red ul li::before { color: var(--rust); }
+
+  /* ─── PROCESS FLOW ─── */
+  .process-flow {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    margin: 32px 0;
+    flex-wrap: wrap;
+  }
+  .flow-step {
+    flex: 1;
+    min-width: 120px;
+    background: var(--ink);
+    color: var(--cream);
+    padding: 18px 14px;
+    text-align: center;
+    position: relative;
+    clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 50%, calc(100% - 18px) 100%, 0 100%, 18px 50%);
+    margin-left: -14px;
+  }
+  .flow-step:first-child { clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 50%, calc(100% - 18px) 100%, 0 100%); margin-left: 0; }
+  .flow-step:last-child { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 18px 50%); }
+  .flow-step:nth-child(odd) { background: var(--brown); }
+  .flow-step:nth-child(even) { background: var(--slate); }
+  .flow-num { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--gold); letter-spacing: 1px; }
+  .flow-label { font-size: 11px; font-weight: 600; margin-top: 4px; }
+
+  /* ─── COMPARISON TABLE ─── */
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    margin: 28px 0;
+    box-shadow: 0 2px 16px rgba(26,18,8,0.08);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .compare-table thead tr {
+    background: var(--ink);
+    color: var(--gold);
+  }
+  .compare-table th {
+    padding: 14px 18px;
+    text-align: left;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  .compare-table td {
+    padding: 12px 18px;
+    border-bottom: 1px solid rgba(107,63,26,0.1);
+    vertical-align: top;
+  }
+  .compare-table tbody tr:nth-child(even) { background: var(--parchment); }
+  .compare-table tbody tr:hover { background: #f5e8d0; }
+  .compare-table td:first-child { font-weight: 600; color: var(--brown); }
+
+  /* ─── SVG DIAGRAMS ─── */
+  .diagram-wrap {
+    background: #fff;
+    border: 1px solid rgba(107,63,26,0.12);
+    border-radius: 4px;
+    padding: 32px;
+    margin: 28px 0;
+    box-shadow: 0 2px 16px rgba(26,18,8,0.06);
+  }
+  .diagram-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: var(--brown);
+    text-align: center;
+  }
+  svg text { font-family: 'Source Sans 3', sans-serif; }
+
+  /* ─── TAGS ─── */
+  .tag {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 2px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 2px;
+  }
+  .tag-gold { background: rgba(201,146,42,0.15); color: var(--brown); }
+  .tag-green { background: rgba(74,124,89,0.15); color: var(--sage); }
+  .tag-red { background: rgba(184,76,30,0.15); color: var(--rust); }
+  .tag-blue { background: rgba(61,79,92,0.15); color: var(--slate); }
+
+  /* ─── KEY CALLOUT ─── */
+  .key-callout {
+    background: linear-gradient(135deg, var(--ink) 0%, var(--brown) 100%);
+    color: var(--cream);
+    border-radius: 4px;
+    padding: 28px 32px;
+    margin: 32px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .key-callout::before {
+    content: '★';
+    position: absolute; right: 28px; top: 20px;
+    font-size: 64px; opacity: 0.08;
+  }
+  .key-callout h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+  .key-callout p { font-size: 14px; line-height: 1.7; color: rgba(250,246,239,0.85); }
+  .key-callout strong { color: var(--gold); }
+
+  /* ─── IMAGE + CAPTION WRAPPER ─── */
+  .img-frame {
+    border: 1px solid rgba(107,63,26,0.15);
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(26,18,8,0.07);
+  }
+  .img-frame img { width: 100%; display: block; }
+  .img-frame figcaption {
+    background: var(--parchment);
+    padding: 12px 16px;
+    font-size: 12.5px;
+    color: var(--slate);
+    border-top: 1px solid rgba(107,63,26,0.1);
+    font-style: italic;
+  }
+
+  /* ─── DIVIDER ─── */
+  .divider {
+    border: none;
+    border-top: 1px solid rgba(107,63,26,0.12);
+    margin: 48px 0;
+  }
+
+  /* responsive */
+  @media (max-width: 720px) {
+    .section { padding: 40px 20px; }
+    .visual-grid.wide, .info-row, .info-row.three { grid-template-columns: 1fr; }
+    .visual-grid.triple { grid-template-columns: 1fr 1fr; }
+    .nav-inner { padding: 0 16px; }
+    .site-header { padding: 40px 20px 32px; }
+    .process-flow { flex-direction: column; }
+    .flow-step { clip-path: none !important; margin-left: 0; margin-top: -1px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <p class="eyebrow">Textile Technology · Visual Reference</p>
+    <h1>Natural Textile Fibres<br><span>Machinery & Process Guide</span></h1>
+    <p class="subtitle">Complete visual reference — machinery diagrams, fibre structures, extraction processes, and microscopic views for exam preparation.</p>
+  </div>
+</header>
+
+<nav class="nav-bar">
+  <div class="nav-inner">
+    <button class="tab-btn active" onclick="showTab('overview')">Overview</button>
+    <button class="tab-btn" onclick="showTab('cotton')">Cotton & Ginning</button>
+    <button class="tab-btn" onclick="showTab('jute')">Jute & Retting</button>
+    <button class="tab-btn" onclick="showTab('bast')">Bast Fibres</button>
+    <button class="tab-btn" onclick="showTab('coir')">Coir & Leaf</button>
+    <button class="tab-btn" onclick="showTab('wool')">Wool & Felting</button>
+    <button class="tab-btn" onclick="showTab('silk')">Silk & Sericulture</button>
+    <button class="tab-btn" onclick="showTab('yarn')">Yarn Types</button>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════════════════════
+     SECTION 1 — OVERVIEW
+══════════════════════════════════════════════════════════════ -->
+<section id="overview" class="section active">
+  <h2 class="section-title">Fibre Classification</h2>
+  <p class="section-lead">A textile fibre must be long, fine, strong, flexible, and cohesive. Not all natural fibres qualify — see the full classification below.</p>
+
+  <div class="visual-grid">
+    <figure class="img-frame v-card">
+      <img src="https://www.textileapex.com/wp-content/uploads/2020/06/Classification-of-Textile-Fibers.jpg" alt="Classification of Textile Fibres" class="v-card-img" onerror="this.src='https://textilelearner.net/wp-content/uploads/2012/01/classification-of-textile-fiber.jpg'">
+      <figcaption>Complete classification tree — Natural (vegetable, animal, mineral) and Man-made fibres</figcaption>
+    </figure>
+    <figure class="img-frame v-card">
+      <img src="https://textilelearner.net/wp-content/uploads/2012/01/classification-of-textile-fiber.jpg" alt="Textile Fibre Classification" class="v-card-img" onerror="this.src='https://www.researchgate.net/profile/Subhankar-Maity/publication/304582924/figure/fig1/AS:380108993286146@1467633419699/Classification-of-textile-fibres.png'">
+      <figcaption>Natural vs synthetic fibre classification with examples for each category</figcaption>
+    </figure>
+  </div>
+
+  <!-- Custom SVG Classification Diagram -->
+  <div class="diagram-wrap">
+    <p class="diagram-title">🌿 Natural Fibre Classification — Schematic</p>
+    <svg viewBox="0 0 900 500" style="width:100%;height:auto;display:block;">
+      <!-- Root -->
+      <rect x="350" y="10" width="200" height="42" rx="4" fill="#1a1208"/>
+      <text x="450" y="36" text-anchor="middle" fill="#c9922a" font-size="14" font-weight="700">NATURAL FIBRES</text>
+      <!-- lines to 3 branches -->
+      <line x1="450" y1="52" x2="150" y2="100" stroke="#c9922a" stroke-width="1.5"/>
+      <line x1="450" y1="52" x2="450" y2="100" stroke="#c9922a" stroke-width="1.5"/>
+      <line x1="450" y1="52" x2="750" y2="100" stroke="#c9922a" stroke-width="1.5"/>
+      <!-- Branch 1 — Vegetable -->
+      <rect x="50" y="100" width="200" height="40" rx="4" fill="#4a7c59"/>
+      <text x="150" y="125" text-anchor="middle" fill="white" font-size="13" font-weight="600">Vegetable / Cellulosic</text>
+      <!-- 4 sub-categories -->
+      <line x1="150" y1="140" x2="60" y2="185" stroke="#4a7c59" stroke-width="1.5" stroke-dasharray="4"/>
+      <line x1="150" y1="140" x2="120" y2="185" stroke="#4a7c59" stroke-width="1.5" stroke-dasharray="4"/>
+      <line x1="150" y1="140" x2="180" y2="185" stroke="#4a7c59" stroke-width="1.5" stroke-dasharray="4"/>
+      <line x1="150" y1="140" x2="240" y2="185" stroke="#4a7c59" stroke-width="1.5" stroke-dasharray="4"/>
+
+      <rect x="10" y="185" width="95" height="54" rx="3" fill="#eef5f1" stroke="#4a7c59" stroke-width="1"/>
+      <text x="57" y="205" text-anchor="middle" fill="#4a7c59" font-size="11" font-weight="600">Seed</text>
+      <text x="57" y="220" text-anchor="middle" fill="#3d4f5c" font-size="10">Cotton</text>
+      <text x="57" y="232" text-anchor="middle" fill="#3d4f5c" font-size="10">Kapok</text>
+
+      <rect x="110" y="185" width="70" height="54" rx="3" fill="#eef5f1" stroke="#4a7c59" stroke-width="1"/>
+      <text x="145" y="205" text-anchor="middle" fill="#4a7c59" font-size="11" font-weight="600">Bast</text>
+      <text x="145" y="220" text-anchor="middle" fill="#3d4f5c" font-size="10">Jute, Flax</text>
+      <text x="145" y="232" text-anchor="middle" fill="#3d4f5c" font-size="10">Hemp, Ramie</text>
+
+      <rect x="185" y="185" width="70" height="54" rx="3" fill="#eef5f1" stroke="#4a7c59" stroke-width="1"/>
+      <text x="220" y="205" text-anchor="middle" fill="#4a7c59" font-size="11" font-weight="600">Leaf</text>
+      <text x="220" y="220" text-anchor="middle" fill="#3d4f5c" font-size="10">Sisal</text>
+      <text x="220" y="232" text-anchor="middle" fill="#3d4f5c" font-size="10">Pineapple</text>
+
+      <rect x="260" y="185" width="70" height="54" rx="3" fill="#eef5f1" stroke="#4a7c59" stroke-width="1"/>
+      <text x="295" y="205" text-anchor="middle" fill="#4a7c59" font-size="11" font-weight="600">Fruit</text>
+      <text x="295" y="220" text-anchor="middle" fill="#3d4f5c" font-size="10">Coir</text>
+      <text x="295" y="232" text-anchor="middle" fill="#3d4f5c" font-size="10">(Coconut)</text>
+
+      <!-- Branch 2 — Animal -->
+      <rect x="350" y="100" width="200" height="40" rx="4" fill="#6b3f1a"/>
+      <text x="450" y="125" text-anchor="middle" fill="white" font-size="13" font-weight="600">Animal / Protein</text>
+      <line x1="450" y1="140" x2="390" y2="185" stroke="#6b3f1a" stroke-width="1.5" stroke-dasharray="4"/>
+      <line x1="450" y1="140" x2="450" y2="185" stroke="#6b3f1a" stroke-width="1.5" stroke-dasharray="4"/>
+      <line x1="450" y1="140" x2="510" y2="185" stroke="#6b3f1a" stroke-width="1.5" stroke-dasharray="4"/>
+
+      <rect x="355" y="185" width="80" height="54" rx="3" fill="#fdf5e6" stroke="#6b3f1a" stroke-width="1"/>
+      <text x="395" y="207" text-anchor="middle" fill="#6b3f1a" font-size="11" font-weight="600">Wool</text>
+      <text x="395" y="222" text-anchor="middle" fill="#3d4f5c" font-size="10">Sheep fleece</text>
+      <text x="395" y="234" text-anchor="middle" fill="#3d4f5c" font-size="10">Keratin protein</text>
+
+      <rect x="440" y="185" width="70" height="54" rx="3" fill="#fdf5e6" stroke="#6b3f1a" stroke-width="1"/>
+      <text x="475" y="207" text-anchor="middle" fill="#6b3f1a" font-size="11" font-weight="600">Silk</text>
+      <text x="475" y="222" text-anchor="middle" fill="#3d4f5c" font-size="10">Silkworm</text>
+      <text x="475" y="234" text-anchor="middle" fill="#3d4f5c" font-size="10">Fibroin/Sericin</text>
+
+      <rect x="515" y="185" width="80" height="54" rx="3" fill="#fdf5e6" stroke="#6b3f1a" stroke-width="1"/>
+      <text x="555" y="207" text-anchor="middle" fill="#6b3f1a" font-size="11" font-weight="600">Specialty</text>
+      <text x="555" y="222" text-anchor="middle" fill="#3d4f5c" font-size="10">Cashmere</text>
+      <text x="555" y="234" text-anchor="middle" fill="#3d4f5c" font-size="10">Mohair, Angora</text>
+
+      <!-- Branch 3 — Mineral -->
+      <rect x="650" y="100" width="200" height="40" rx="4" fill="#3d4f5c"/>
+      <text x="750" y="125" text-anchor="middle" fill="white" font-size="13" font-weight="600">Mineral</text>
+      <line x1="750" y1="140" x2="750" y2="185" stroke="#3d4f5c" stroke-width="1.5" stroke-dasharray="4"/>
+      <rect x="695" y="185" width="110" height="54" rx="3" fill="#eef1f4" stroke="#3d4f5c" stroke-width="1"/>
+      <text x="750" y="207" text-anchor="middle" fill="#3d4f5c" font-size="11" font-weight="600">Asbestos</text>
+      <text x="750" y="222" text-anchor="middle" fill="#3d4f5c" font-size="10">Mineral rock</text>
+      <text x="750" y="234" text-anchor="middle" fill="#b84c1e" font-size="10">⚠ Carcinogen</text>
+
+      <!-- Legend at bottom -->
+      <rect x="10" y="300" width="880" height="1" fill="#c9922a" opacity="0.3"/>
+      <text x="450" y="325" text-anchor="middle" fill="#6b3f1a" font-size="12">Key differentiator: Vegetable = cellulose | Animal = protein | Mineral = inorganic</text>
+    </svg>
+  </div>
+
+  <div class="info-row three">
+    <div class="info-box green">
+      <h4>✅ Requirements for Textile Fibre</h4>
+      <ul>
+        <li>Length ≥ 15 mm for spinning</li>
+        <li>Fineness (measured in microns)</li>
+        <li>Tenacity / tensile strength</li>
+        <li>Flexibility — bends without breaking</li>
+        <li>Cohesiveness — fibres cling together</li>
+        <li>Moisture absorption / dyeability</li>
+        <li>Chemical stability</li>
+      </ul>
+    </div>
+    <div class="info-box">
+      <h4>🌿 Cellulosic Fibres</h4>
+      <ul>
+        <li>Base chemical: (C₆H₁₀O₅)ₙ</li>
+        <li>Stronger when wet</li>
+        <li>Attacked by acids</li>
+        <li>Resistant to alkalis</li>
+        <li>Biodegradable</li>
+        <li>Good moisture absorption</li>
+        <li>Examples: Cotton, Jute, Flax</li>
+      </ul>
+    </div>
+    <div class="info-box blue">
+      <h4>🐑 Protein Fibres</h4>
+      <ul>
+        <li>Base: amino acid chains</li>
+        <li>Weaker when wet</li>
+        <li>Resistant to dilute acids</li>
+        <li>Damaged by strong alkalis</li>
+        <li>Felts under heat + agitation</li>
+        <li>Excellent moisture regain</li>
+        <li>Examples: Wool, Silk</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     SECTION 2 — COTTON & GINNING
+══════════════════════════════════════════════════════════════ -->
+<section id="cotton" class="section">
+  <h2 class="section-title">Cotton & Ginning Machinery</h2>
+  <p class="section-lead">Cotton is a seed fibre (~88–96% pure cellulose). <strong>Ginning</strong> is the mechanical process of separating seed cotton into lint fibres and seeds. Two main types: Saw Gin and Roller Gin.</p>
+
+  <!-- Cotton Cross-Section -->
+  <div class="diagram-wrap">
+    <p class="diagram-title">Cotton Fibre — Cross Section &amp; Longitudinal Structure</p>
+    <svg viewBox="0 0 800 320" style="width:100%;height:auto;display:block;">
+      <!-- Cross section -->
+      <text x="190" y="28" text-anchor="middle" fill="#6b3f1a" font-size="14" font-weight="700">CROSS SECTION (Mature)</text>
+      <!-- Kidney/bean shape -->
+      <ellipse cx="190" cy="165" rx="90" ry="110" fill="#e8f4f8" stroke="#1a1208" stroke-width="2"/>
+      <ellipse cx="205" cy="165" rx="62" ry="78" fill="#faf6ef" stroke="#6b3f1a" stroke-width="1.5"/>
+      <!-- Lumen -->
+      <ellipse cx="205" cy="165" rx="28" ry="38" fill="#c9922a" opacity="0.35" stroke="#c9922a" stroke-width="1.5"/>
+      <!-- Labels -->
+      <line x1="125" y1="130" x2="70" y2="100" stroke="#3d4f5c" stroke-width="1"/>
+      <text x="65" y="96" text-anchor="end" fill="#3d4f5c" font-size="12">Cuticle (wax)</text>
+      <line x1="155" y1="145" x2="50" y2="145" stroke="#3d4f5c" stroke-width="1"/>
+      <text x="45" y="149" text-anchor="end" fill="#3d4f5c" font-size="12">Primary Wall</text>
+      <line x1="170" y1="165" x2="50" y2="185" stroke="#3d4f5c" stroke-width="1"/>
+      <text x="45" y="189" text-anchor="end" fill="#3d4f5c" font-size="12">Secondary Wall</text>
+      <line x1="205" y1="165" x2="270" y2="210" stroke="#c9922a" stroke-width="1.5"/>
+      <text x="275" y="214" fill="#c9922a" font-size="12" font-weight="600">Lumen</text>
+      <text x="275" y="228" fill="#3d4f5c" font-size="11">(hollow centre)</text>
+      <text x="190" y="290" text-anchor="middle" fill="#6b3f1a" font-size="12" font-style="italic">Kidney / bean shape — characteristic of cotton</text>
+
+      <!-- Longitudinal View -->
+      <text x="590" y="28" text-anchor="middle" fill="#6b3f1a" font-size="14" font-weight="700">LONGITUDINAL VIEW</text>
+      <!-- Twisted ribbon -->
+      <path d="M480,60 C520,80 560,100 500,120 C440,140 540,160 500,180 C460,200 540,220 500,240 C460,260 520,280 480,300" fill="none" stroke="#1a1208" stroke-width="8" stroke-linecap="round"/>
+      <path d="M520,60 C560,80 600,100 540,120 C480,140 580,160 540,180 C500,200 580,220 540,240 C500,260 560,280 520,300" fill="none" stroke="#e8f4f8" stroke-width="8" stroke-linecap="round" opacity="0.7"/>
+      <text x="590" y="140" fill="#3d4f5c" font-size="12">↑ Convolutions</text>
+      <text x="590" y="158" fill="#3d4f5c" font-size="12">(twisted ribbon</text>
+      <text x="590" y="173" fill="#3d4f5c" font-size="12">appearance)</text>
+      <text x="590" y="250" text-anchor="middle" fill="#6b3f1a" font-size="12" font-style="italic">Dead cotton = fewer convolutions</text>
+    </svg>
+  </div>
+
+  <!-- Ginning Visual Cards -->
+  <div class="visual-grid wide">
+    <figure class="img-frame v-card">
+      <img src="https://www.textilelearner.net/wp-content/uploads/2012/01/saw-gin.jpg" alt="Saw Gin Machine" class="v-card-img tall" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Eli_Whitney_cotton_gin_1793.jpg/320px-Eli_Whitney_cotton_gin_1793.jpg'">
+      <figcaption>✦ Saw Gin — Uses circular saw-toothed discs to pull fibres through slots; seeds cannot pass through. Invented by Eli Whitney (1793). Faster but produces more neps.</figcaption>
+    </figure>
+    <figure class="img-frame v-card">
+      <img src="https://www.researchgate.net/profile/Prasanta-Majumdar/publication/338046044/figure/fig2/AS:839145001254915@1577080153344/Principle-of-McCarthy-roller-ginning.png" alt="Roller Gin McCarthy" class="v-card-img tall" onerror="this.src='https://textilelearner.net/wp-content/uploads/2012/01/roller-gin.jpg'">
+      <figcaption>✦ McCarthy Roller Gin — A leather roller + stationary and oscillating knives peel fibres from seeds. Slower, gentler, fewer neps. Used for long-staple (Sea Island, Egyptian) cotton.</figcaption>
+    </figure>
+  </div>
+
+  <!-- Ginning Process Flow -->
+  <div class="key-callout">
+    <h4>⚙ Ginning — Step by Step Process</h4>
+    <p>Seed cotton → <strong>Drying / Pre-cleaning</strong> → Gin stand (Saw or Roller) → <strong>Fibre (lint) separated from seeds</strong> → Cleaning of lint → Bale pressing → Seeds sent for oil/meal extraction</p>
+  </div>
+
+  <div class="info-row">
+    <div class="info-box green">
+      <h4>✦ Saw Gin</h4>
+      <ul>
+        <li>Uses rotating saw-toothed cylinders</li>
+        <li>Saw teeth pull fibres through narrow slots</li>
+        <li>Seeds are too large to pass through</li>
+        <li>Faster — used for short/medium staple</li>
+        <li>Produces more neps (fibre entanglement)</li>
+        <li>~90% of world ginning is saw ginning</li>
+      </ul>
+    </div>
+    <div class="info-box red">
+      <h4>✦ Roller Gin (McCarthy)</h4>
+      <ul>
+        <li>Leather roller rotates against stationary knife</li>
+        <li>Fibres gripped by roller, seeds held back by knife</li>
+        <li>Slower — used for long staple cotton</li>
+        <li>Fewer neps — better fibre quality</li>
+        <li>Used for Egyptian, Sea Island varieties</li>
+        <li>Higher fibre quality retention</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Saw Gin SVG diagram -->
+  <div class="diagram-wrap">
+    <p class="diagram-title">Saw Gin — Schematic Working Principle</p>
+    <svg viewBox="0 0 700 280" style="width:100%;height:auto;display:block;">
+      <!-- Saw cylinder -->
+      <circle cx="350" cy="140" r="90" fill="#e8f4f8" stroke="#1a1208" stroke-width="2"/>
+      <!-- Saw teeth around rim -->
+      <g fill="#3d4f5c">
+        <polygon points="350,50 345,35 355,35"/>
+        <polygon points="413,75 420,62 424,72"/>
+        <polygon points="440,140 455,135 455,145"/>
+        <polygon points="413,205 420,218 424,208"/>
+        <polygon points="350,230 345,245 355,245"/>
+        <polygon points="287,205 280,218 276,208"/>
+        <polygon points="260,140 245,135 245,145"/>
+        <polygon points="287,75 280,62 276,72"/>
+      </g>
+      <text x="350" y="145" text-anchor="middle" fill="#6b3f1a" font-size="13" font-weight="700">SAW CYLINDER</text>
+      <text x="350" y="163" text-anchor="middle" fill="#3d4f5c" font-size="11">rotating →</text>
+      <!-- Grid / ribs -->
+      <rect x="430" y="90" width="12" height="100" rx="1" fill="#6b3f1a"/>
+      <rect x="450" y="90" width="12" height="100" rx="1" fill="#6b3f1a"/>
+      <rect x="470" y="90" width="12" height="100" rx="1" fill="#6b3f1a"/>
+      <text x="530" y="145" text-anchor="middle" fill="#6b3f1a" font-size="12" font-weight="600">Grid Bars</text>
+      <text x="530" y="162" text-anchor="middle" fill="#3d4f5c" font-size="11">(seeds blocked)</text>
+      <!-- Seed cotton input -->
+      <text x="100" y="140" text-anchor="middle" fill="#c9922a" font-size="12" font-weight="600">Seed cotton →</text>
+      <text x="100" y="158" text-anchor="middle" fill="#3d4f5c" font-size="10">(lint + seeds)</text>
+      <!-- Lint output -->
+      <text x="580" y="75" text-anchor="start" fill="#4a7c59" font-size="12" font-weight="600">← Lint (fibres)</text>
+      <text x="580" y="210" text-anchor="start" fill="#c9922a" font-size="12" font-weight="600">↓ Seeds fall out</text>
+      <!-- Rotation arrow -->
+      <path d="M310,70 A85,85 0 0,1 410,70" fill="none" stroke="#c9922a" stroke-width="2" marker-end="url(#arrow)"/>
+    </svg>
+  </div>
+
+  <table class="compare-table">
+    <thead><tr>
+      <th>Property</th><th>Saw Gin</th><th>Roller Gin</th>
+    </tr></thead>
+    <tbody>
+      <tr><td>Speed</td><td>High (fast)</td><td>Low (slow)</td></tr>
+      <tr><td>Staple suitability</td><td>Short/medium staple</td><td>Long staple (fine varieties)</td></tr>
+      <tr><td>Nep formation</td><td>More neps</td><td>Fewer neps</td></tr>
+      <tr><td>Fibre damage</td><td>Slightly more</td><td>Minimal damage</td></tr>
+      <tr><td>Seed damage</td><td>Less seed damage</td><td>More seed damage</td></tr>
+      <tr><td>Output quality</td><td>Standard</td><td>Premium</td></tr>
+      <tr><td>Used for</td><td>Upland cotton (~90%)</td><td>Egyptian, Sea Island</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     SECTION 3 — JUTE & RETTING
+══════════════════════════════════════════════════════════════ -->
+<section id="jute" class="section">
+  <h2 class="section-title">Jute Extraction & Retting</h2>
+  <p class="section-lead">Jute is a <strong>bast fibre</strong> obtained from the phloem (inner stem bark) of <em>Corchorus capsularis</em> (White jute) and <em>C. olitorius</em> (Tossa jute). The extraction process is called <strong>retting</strong>.</p>
+
+  <div class="visual-grid wide">
+    <figure class="img-frame v-card">
+      <img src="https://image.slidesharecdn.com/jute-161202073503/95/jute-manufacturing-process-8-638.jpg?cb=1480661785" alt="Jute Manufacturing Process" class="v-card-img tall" onerror="this.src='https://www.fibre2fashion.com/industry-article/6085/images/Jute-Processing-Method.jpg'">
+      <figcaption>Jute manufacturing overview — from harvest through retting, stripping, and baling</figcaption>
+    </figure>
+    <figure class="img-frame v-card">
+      <img src="https://image.slidesharecdn.com/rettingprocessinjute-150904145026-lva1-app6891/95/retting-process-in-jute-3-638.jpg?cb=1441378332" alt="Retting Process in Jute" class="v-card-img tall" onerror="this.src='https://textilelearner.net/wp-content/uploads/2012/01/jute-retting.jpg'">
+      <figcaption>Retting process — jute stalks bundled and submerged in slow-flowing water for 8–30 days for microbial decomposition of pectin</figcaption>
+    </figure>
+  </div>
+
+  <!-- Retting Process SVG -->
+  <div class="diagram-wrap">
+    <p class="diagram-title">Jute Fibre Extraction — Process Flow</p>
+    <svg viewBox="0 0 760 200" style="width:100%;height:auto;display:block;">
+      <!-- Steps as boxes with arrows -->
+      <defs>
+        <marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#c9922a"/>
+        </marker>
+      </defs>
+      <!-- Box 1 -->
+      <rect x="10" y="70" width="100" height="60" rx="4" fill="#1a1208"/>
+      <text x="60" y="95" text-anchor="middle" fill="#c9922a" font-size="11" font-weight="700">Harvesting</text>
+      <text x="60" y="112" text-anchor="middle" fill="#faf6ef" font-size="9">at flowering</text>
+      <text x="60" y="124" text-anchor="middle" fill="#faf6ef" font-size="9">stage</text>
+      <line x1="110" y1="100" x2="135" y2="100" stroke="#c9922a" stroke-width="1.5" marker-end="url(#arr)"/>
+
+      <!-- Box 2 -->
+      <rect x="138" y="70" width="100" height="60" rx="4" fill="#4a7c59"/>
+      <text x="188" y="95" text-anchor="middle" fill="white" font-size="11" font-weight="700">Bundling &amp;</text>
+      <text x="188" y="109" text-anchor="middle" fill="white" font-size="11">Steeping</text>
+      <text x="188" y="123" text-anchor="middle" fill="#d4f0df" font-size="9">8–30 days</text>
+      <line x1="238" y1="100" x2="263" y2="100" stroke="#c9922a" stroke-width="1.5" marker-end="url(#arr)"/>
+
+      <!-- Box 3 -->
+      <rect x="266" y="70" width="110" height="60" rx="4" fill="#3d4f5c"/>
+      <text x="321" y="92" text-anchor="middle" fill="white" font-size="11" font-weight="700">Retting</text>
+      <text x="321" y="107" text-anchor="middle" fill="#c0d0db" font-size="9">Microbes break</text>
+      <text x="321" y="119" text-anchor="middle" fill="#c0d0db" font-size="9">pectin &amp; lignin</text>
+      <text x="321" y="131" text-anchor="middle" fill="#c9922a" font-size="9">bast released</text>
+      <line x1="376" y1="100" x2="401" y2="100" stroke="#c9922a" stroke-width="1.5" marker-end="url(#arr)"/>
+
+      <!-- Box 4 -->
+      <rect x="404" y="70" width="100" height="60" rx="4" fill="#6b3f1a"/>
+      <text x="454" y="95" text-anchor="middle" fill="white" font-size="11" font-weight="700">Stripping</text>
+      <text x="454" y="109" text-anchor="middle" fill="#f0d8c0" font-size="9">fibres stripped</text>
+      <text x="454" y="121" text-anchor="middle" fill="#f0d8c0" font-size="9">by hand</text>
+      <line x1="504" y1="100" x2="529" y2="100" stroke="#c9922a" stroke-width="1.5" marker-end="url(#arr)"/>
+
+      <!-- Box 5 -->
+      <rect x="532" y="70" width="100" height="60" rx="4" fill="#b84c1e"/>
+      <text x="582" y="95" text-anchor="middle" fill="white" font-size="11" font-weight="700">Washing &amp;</text>
+      <text x="582" y="109" text-anchor="middle" fill="white" font-size="11">Drying</text>
+      <text x="582" y="123" text-anchor="middle" fill="#f5d0c0" font-size="9">sun-dried</text>
+      <line x1="632" y1="100" x2="657" y2="100" stroke="#c9922a" stroke-width="1.5" marker-end="url(#arr)"/>
+
+      <!-- Box 6 -->
+      <rect x="660" y="70" width="90" height="60" rx="4" fill="#1a1208"/>
+      <text x="705" y="92" text-anchor="middle" fill="#c9922a" font-size="11" font-weight="700">Baling &amp;</text>
+      <text x="705" y="107" text-anchor="middle" fill="#c9922a" font-size="11">Export</text>
+      <text x="705" y="121" text-anchor="middle" fill="#faf6ef" font-size="9">graded &amp;</text>
+      <text x="705" y="133" text-anchor="middle" fill="#faf6ef" font-size="9">pressed</text>
+
+      <!-- labels below -->
+      <text x="380" y="175" text-anchor="middle" fill="#6b3f1a" font-size="12">Key: <tspan fill="#c9922a">Retting</tspan> = microbial decomposition of pectin to release bast fibres</text>
+    </svg>
+  </div>
+
+  <!-- Jute structure -->
+  <div class="visual-grid">
+    <figure class="img-frame v-card">
+      <img src="https://textilehouse.net/wp-content/uploads/2021/01/jute-fiber.jpg" alt="Jute Fibre Structure" class="v-card-img" onerror="this.src='https://www.researchgate.net/profile/Subhankar-Maity/publication/304582924/figure/fig3/AS:380108993286148@1467633419735/SEM-image-of-jute-fibre.jpg'">
+      <figcaption>Jute fibre cross-section — polygonal cells bound by lignified middle lamella; multicellular in cross-section</figcaption>
+    </figure>
+    <figure class="img-frame v-card">
+      <img src="https://image.slidesharecdn.com/productiontechnologyofjute-150626055540-lva1-app6892/95/production-technology-of-jute-12-638.jpg" alt="Jute Production Technology" class="v-card-img" onerror="this.src='https://www.textilelearner.net/wp-content/uploads/2012/01/jute.jpg'">
+      <figcaption>Jute stalk cross-section showing bast fibre location in the phloem region of the stem</figcaption>
+    </figure>
+  </div>
+
+  <div class="info-row">
+    <div class="info-box">
+      <h4>Types of Retting</h4>
+      <ul>
+        <li><strong>Water retting</strong> — Submerged in slow rivers/ponds (most common)</li>
+        <li><strong>Dew retting</strong> — Left on fields; slower, needs more land</li>
+        <li><strong>Chemical retting</strong> — NaOH + enzymes; faster, controlled quality</li>
+        <li><strong>Steam retting</strong> — High-pressure steam; industrial use</li>
+      </ul>
+    </div>
+    <div class="info-box blue">
+      <h4>Jute Properties</h4>
+      <ul>
+        <li>Golden, silky lustre → "Golden Fibre"</li>
+        <li>High lignocellulosic content (lignin: 12–15%)</li>
+        <li>Poor elastic recovery — stiff</li>
+        <li>Good tensile strength</li>
+        <li>Poor moisture resistance (absorbs moisture)</li>
+        <li>Main use: Bags, sacking, rope, geotextiles</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     SECTION 4 — BAST FIBRES
+══════════════════════════════════════════════════════════════ -->
+<section id="bast" class="section">
+  <h2 class="section-title">Bast Fibres — Flax, Hemp & Ramie</h2>
+  <p class="section-lead">Bast fibres come from the phloem (inner bark) of plant stems. All share a similar extraction method involving <strong>retting → scutching → hackling</strong>. They are all cellulosic and stronger when wet.</p>
+
+  <!-- Flax Processing -->
+  <h3 style="font-family:'Playfair Display',serif;font-size:24px;color:var(--brown);margin:32px 0 16px;">Flax (Linen) — Processing Machinery</h3>
+
+  <div class="visual-grid wide">
+    <figure class="img-frame v-card">
+      <img src="https://image.slidesharecdn.com/naturalfibertoyarnstagelinen-140401091657-phpapp02/95/natural-fiber-to-yarn-stage-linen-9-638.jpg" alt="Flax Processing" class="v-card-img tall" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Scutching_flax.jpg/320px-Scutching_flax.jpg'">
+      <figcaption>Flax processing stages — from retting through scutching to hackling</figcaption>
+    </figure>
+    <figure class="img-frame v-card">
+      <img src="https://image.slidesharecdn.com/compositesresources-130731161729-phpapp01/95/composites-from-renewable-resources-25-638.jpg" alt="Scutching Hackling" class="v-card-img tall" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Scutching_flax.jpg/320px-Scutching_flax.jpg'">
+      <figcaption>Scutching &amp; Hackling principle — breaking woody shives away from bast fibres, then combing to align</figcaption>
+    </figure>
+  </div>
+
+  <!-- Flax Process SVG -->
+  <div class="diagram-wrap">
+    <p class="diagram-title">Flax / Linen — Bast Fibre Extraction Process</p>
+    <svg viewBox="0 0 820 220" style="width:100%;height:auto;display:block;">
+      <defs>
+        <marker id="arr2" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#4a7c59"/>
+        </marker>
+      </defs>
+      <g>
+        <!-- Step 1 -->
+        <rect x="5" y="75" width="115" height="70" rx="4" fill="#1a1208"/>
+        <text x="62" y="100" text-anchor="middle" fill="#c9922a" font-size="11" font-weight="700">1. Rippling</text>
+        <text x="62" y="116" text-anchor="middle" fill="#faf6ef" font-size="9">Remove seed</text>
+        <text x="62" y="129" text-anchor="middle" fill="#faf6ef" font-size="9">bolls by combing</text>
+        <line x1="120" y1="110" x2="140" y2="110" stroke="#4a7c59" stroke-width="1.5" marker-end="url(#arr2)"/>
+        <!-- Step 2 -->
+        <rect x="143" y="75" width="115" height="70" rx="4" fill="#4a7c59"/>
+        <text x="200" y="100" text-anchor="middle" fill="white" font-size="11" font-weight="700">2. Retting</text>
+        <text x="200" y="116" text-anchor="middle" fill="#d4f0df" font-size="9">Water / dew</text>
+        <text x="200" y="129" text-anchor="middle" fill="#d4f0df" font-size="9">2–6 weeks</text>
+        <line x1="258" y1="110" x2="278" y2="110" stroke="#4a7c59" stroke-width="1.5" marker-end="url(#arr2)"/>
+        <!-- Step 3 -->
+        <rect x="281" y="75" width="115" height="70" rx="4" fill="#6b3f1a"/>
+        <text x="338" y="100" text-anchor="middle" fill="white" font-size="11" font-weight="700">3. Breaking</text>
+        <text x="338" y="116" text-anchor="middle" fill="#f0d8c0" font-size="9">Crush woody</text>
+        <text x="338" y="129" text-anchor="middle" fill="#f0d8c0" font-size="9">shives on rollers</text>
+        <line x1="396" y1="110" x2="416" y2="110" stroke="#4a7c59" stroke-width="1.5" marker-end="url(#arr2)"/>
+        <!-- Step 4 -->
+        <rect x="419" y="75" width="115" height="70" rx="4" fill="#3d4f5c"/>
+        <text x="476" y="100" text-anchor="middle" fill="white" font-size="11" font-weight="700">4. Scutching</text>
+        <text x="476" y="116" text-anchor="middle" fill="#c0d0db" font-size="9">Beat to remove</text>
+        <text x="476" y="129" text-anchor="middle" fill="#c0d0db" font-size="9">woody residue</text>
+        <line x1="534" y1="110" x2="554" y2="110" stroke="#4a7c59" stroke-width="1.5" marker-end="url(#arr2)"/>
+        <!-- Step 5 -->
+        <rect x="557" y="75" width="115" height="70" rx="4" fill="#b84c1e"/>
+        <text x="614" y="100" text-anchor="middle" fill="white" font-size="11" font-weight="700">5. Hackling</text>
+        <text x="614" y="116" text-anchor="middle" fill="#f5d0c0" font-size="9">Comb to align</text>
+        <text x="614" y="129" text-anchor="middle" fill="#f5d0c0" font-size="9">fibres (like wool</text>
+        <text x="614" y="142" text-anchor="middle" fill="#f5d0c0" font-size="9">combing)</text>
+        <line x1="672" y1="110" x2="692" y2="110" stroke="#4a7c59" stroke-width="1.5" marker-end="url(#arr2)"/>
+        <!-- Step 6 -->
+        <rect x="695" y="75" width="115" height="70" rx="4" fill="#1a1208"/>
+        <text x="752" y="100" text-anchor="middle" fill="#c9922a" font-size="11" font-weight="700">6. Spinning</text>
+        <text x="752" y="116" text-anchor="middle" fill="#faf6ef" font-size="9">Long fibres: line</text>
+        <text x="752" y="129" text-anchor="middle" fill="#faf6ef" font-size="9">Short: tow yarn</text>
+      </g>
+      <text x="410" y="195" text-anchor="middle" fill="#6b3f1a" font-size="12" font-style="italic">Produces: Line yarn (long, smooth) and Tow yarn (short, rough)</text>
+    </svg>
+  </div>
+
+  <div class="info-row three">
+    <div class="info-box green">
+      <h4>🌿 Flax (Linen)</h4>
+      <ul>
+        <li><em>Linum usitatissimum</em></li>
+        <li>Strongest when wet (gains 20%)</li>
+        <li>High lustre, cool to touch</li>
+        <li>Poor crease recovery</li>
+        <li>Good abrasion resistance</li>
+        <li>Used: Linen fabric, paper, nets</li>
+      </ul>
+    </div>
+    <div class="info-box">
+      <h4>🌿 Hemp</h4>
+      <ul>
+        <li><em>Cannabis sativa</em></li>
+        <li>Coarser than flax</li>
+        <li>Very strong and durable</li>
+        <li>Rot-resistant, saltwater-resistant</li>
+        <li>Naturally antimicrobial</li>
+        <li>Used: Rope, canvas, sacking</li>
+      </ul>
+    </div>
+    <div class="info-box blue">
+      <h4>🌿 Ramie</h4>
+      <ul>
+        <li><em>Boehmeria nivea</em></li>
+        <li>Longest and strongest bast fibre</li>
+        <li>Silky, high lustre</li>
+        <li>Bacteriostatic (resists bacteria)</li>
+        <li>Poor elasticity — brittle</li>
+        <li>Used: Industrial fabrics, mixed yarns</li>
+      </ul>
+    </div>
+  </div>
+
+  <table class="compare-table">
+    <thead><tr>
+      <th>Property</th><th>Flax</th><th>Hemp</th><th>Ramie</th>
+    </tr></thead>
+    <tbody>
+      <tr><td>Botanical name</td><td><em>Linum usitatissimum</em></td><td><em>Cannabis sativa</em></td><td><em>Boehmeria nivea</em></td></tr>
+      <tr><td>Length</td><td>30–120 cm</td><td>Up to 200 cm</td><td>Longest bast fibre</td></tr>
+      <tr><td>Strength</td><td>High</td><td>Very High</td><td>Highest</td></tr>
+      <tr><td>Texture</td><td>Smooth, cool</td><td>Coarse</td><td>Silky, lustrous</td></tr>
+      <tr><td>Moisture</td><td>Stronger when wet</td><td>Stronger when wet</td><td>Stronger when wet</td></tr>
+      <tr><td>Key feature</td><td>Wears smooth with use</td><td>Rot-resistant</td><td>Bacteriostatic</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     SECTION 5 — COIR & LEAF FIBRES
+══════════════════════════════════════════════════════════════ -->
+<section id="coir" class="section">
+  <h2 class="section-title">Coir, Sisal & Leaf Fibres</h2>
+  <p class="section-lead">Coir is a <strong>fruit fibre</strong> from the coconut husk. Sisal and pineapple (PALF) are <strong>leaf fibres</strong> from Agave and Ananas plants respectively. All are coarse cellulosic fibres.</p>
+
+  <div class="visual-grid wide">
+    <figure class="img-frame v-card">
+      <img src="https://www.rsc.org/images/coir-fiber-extraction-flow-process_tcm18-235083.jpg" alt="Coir Extraction Flow" class="v-card-img tall" onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Coir_processing.jpg/320px-Coir_processing.jpg'">
+      <figcaption>Coir fibre extraction flow — from coconut fruit through dehusking, retting, defibring, and spinning</figcaption>
+    </figure>
+    <figure class="img-frame v-card">
+      <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs12221-019-8809-4/MediaObjects/12221_2019_8809_Fig1_HTML.gif" alt="Coir Processing" class="v-card-img tall" onerror="this.src='https://www.researchgate.net/profile/Ramana-Murthy-10/publication/340047791/figure/fig1/AS:871213183041536@1584710296527/Coir-fiber-extraction-flow-process-from-coconut-fruits.png'">
+      <figcaption>State-of-the-art coir processing review — showing fibre bundle structure and extraction method</figcaption>
+    </figure>
+  </div>
+
+  <!-- Coir Process Flow -->
+  <div class="diagram-wrap">
+    <p class="diagram-title">Coir Fibre — Extraction Process from Coconut Husk</p>
+    <svg viewBox="0 0 760 180" style="width:100%;height:auto;display:block;">
+      <defs>
+        <marker id="arr3" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#6b3f1a"/>
+        </marker>
+      </defs>
+      <rect x="5" y="65" width="110" height="55" rx="4" fill="#4a7c59"/>
+      <text x="60" y="88" text-anchor="middle" fill="white" font-size="11" font-weight="700">Coconut Fruit</text>
+      <text x="60" y="104" text-anchor="middle" fill="#d4f0df" font-size="9">Harvested green</text>
+      <text x="60" y="116" text-anchor="middle" fill="#d4f0df" font-size="9">or mature</text>
+      <line x1="115" y1="92" x2="130" y2="92" stroke="#6b3f1a" stroke-width="1.5" marker-end="url(#arr3)"/>
+
+      <rect x="133" y="65" width="110" height="55" rx="4" fill="#6b3f1a"/>
+      <text x="188" y="88" text-anchor="middle" fill="white" font-size="11" font-weight="700">Dehusking</text>
+      <text x="188" y="104" text-anchor="middle" fill="#f0d8c0" font-size="9">Husk separated</text>
+      <text x="188" y="116" text-anchor="middle" fill="#f0d8c0" font-size="9">from shell</text>
+      <line x1="243" y1="92" x2="258" y2="92" stroke="#6b3f1a" stroke-width="1.5" marker-end="url(#arr3)"/>
+
+      <rect x="261" y="65" width="110" height="55" rx="4" fill="#3d4f5c"/>
+      <text x="316" y="88" text-anchor="middle" fill="white" font-size="11" font-weight="700">Retting</text>
+      <text x="316" y="104" text-anchor="middle" fill="#c0d0db" font-size="9">Soak 6–12 months</text>
+      <text x="316" y="116" text-anchor="middle" fill="#c0d0db" font-size="9">in brackish water</text>
+      <line x1="371" y1="92" x2="386" y2="92" stroke="#6b3f1a" stroke-width="1.5" marker-end="url(#arr3)"/>
+
+      <rect x="389" y="65" width="110" height="55" rx="4" fill="#b84c1e"/>
+      <text x="444" y="88" text-anchor="middle" fill="white" font-size="11" font-weight="700">Defibring</text>
+      <text x="444" y="104" text-anchor="middle" fill="#f5d0c0" font-size="9">Machine beats</text>
+      <text x="444" y="116" text-anchor="middle" fill="#f5d0c0" font-size="9">to separate fibre</text>
+      <line x1="499" y1="92" x2="514" y2="92" stroke="#6b3f1a" stroke-width="1.5" marker-end="url(#arr3)"/>
+
+      <rect x="517" y="65" width="110" height="55" rx="4" fill="#c9922a"/>
+      <text x="572" y="88" text-anchor="middle" fill="white" font-size="11" font-weight="700">Cleaning &amp;</text>
+      <text x="572" y="102" text-anchor="middle" fill="white" font-size="11">Drying</text>
+      <text x="572" y="116" text-anchor="middle" fill="#faf6ef" font-size="9">Sun dried</text>
+      <line x1="627" y1="92" x2="642" y2="92" stroke="#6b3f1a" stroke-width="1.5" marker-end="url(#arr3)"/>
+
+      <rect x="645" y="65" width="110" height="55" rx="4" fill="#1a1208"/>
+      <text x="700" y="88" text-anchor="middle" fill="#c9922a" font-size="11" font-weight="700">Spinning /</text>
+      <text x="700" y="102" text-anchor="middle" fill="#c9922a" font-size="11">Matting</text>
+      <text x="700" y="116" text-anchor="middle" fill="#faf6ef" font-size="9">Rope, mats, geo</text>
+    </svg>
+  </div>
+
+  <div class="info-row three">
+    <div class="info-box">
+      <h4>🥥 Coir</h4>
+      <ul>
+        <li>From: Coconut (<em>Cocos nucifera</em>) husk</li>
+        <li>Fruit fibre — coarse and stiff</li>
+        <li>Best water-resistant natural fibre</li>
+        <li>High lignin (45%) — very resistant</li>
+        <li>Longest retting (6–12 months)</li>
+        <li>Uses: Doormats, geotextiles, rope</li>
+      </ul>
+    </div>
+    <div class="info-box green">
+      <h4>🌵 Sisal</h4>
+      <ul>
+        <li>From: <em>Agave sisalana</em> leaves</li>
+        <li>Hard leaf fibre</li>
+        <li>Stiff, strong, saltwater-resistant</li>
+        <li>Low moisture absorption</li>
+        <li>Leaf is decorticated (scraped)</li>
+        <li>Uses: Marine rope, mats, bags</li>
+      </ul>
+    </div>
+    <div class="info-box silk-bg">
+      <h4>🍍 Pineapple (PALF)</h4>
+      <ul>
+        <li>From: <em>Ananas comosus</em> leaves</li>
+        <li>Very fine and lustrous</li>
+        <li>Soft — can be woven into fine fabric</li>
+        <li>Called "Piña cloth" (Philippines)</li>
+        <li>Used in fashion and luxury textiles</li>
+        <li>Also used in composites</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     SECTION 6 — WOOL & FELTING
+══════════════════════════════════════════════════════════════ -->
+<section id="wool" class="section">
+  <h2 class="section-title">Wool Fibre Structure & Felting</h2>
+  <p class="section-lead">Wool is a <strong>protein fibre</strong> (keratin) from sheep fleece. Its unique scale structure gives it the ability to <strong>felt</strong> — irreversibly interlocking under heat + moisture + agitation.</p>
+
+  <div class="visual-grid wide">
+    <figure class="img-frame v-card">
+      <img src="https://yarnmanufacturing.files.wordpress.com/2013/04/wool.png" alt="Wool Fibre Structure" class="v-card-img tall" onerror="this.src='https://www.textilelearner.net/wp-content/uploads/2012/01/wool-structure.jpg'">
+      <figcaption>Wool fibre macro and micro structure — cuticle scales, cortex (ortho- and para-cortex), and medulla layers</figcaption>
+    </figure>
+    <figure class="img-frame v-card">
+      <img src="https://www.researchgate.net/profile/Tom-Cassidy/publication/308787516/figure/fig1/AS:413004447211521@1475475168827/Diagram-of-wool-fibers-and-the-interlocking-mechanism-of-wool-scales-in-felting.png" alt="Wool Felting Scale Interlocking" class="v-card-img tall" onerror="this.src='https://www.woolmark.com/fileadmin/user_upload/images/fiber/wool-fiber-scale.jpg'">
+      <figcaption>Wool felting — scale interlocking mechanism. Scales ratchet in one direction, causing fibres to migrate and mat together (Differential Friction Effect)</figcaption>
+    </figure>
+  </div>
+
+  <!-- Wool Structure SVG -->
+  <div class="diagram-wrap">
+    <p class="diagram-title">Wool Fibre — Cross Section &amp; Scale Structure</p>
+    <svg viewBox="0 0 800 320" style="width:100%;height:auto;display:block;">
+      <!-- Cross section -->
+      <text x="200" y="28" text-anchor="middle" fill="#6b3f1a" font-size="14" font-weight="700">CROSS SECTION</text>
+      <circle cx="200" cy="170" r="100" fill="#e8d8cc" stroke="#1a1208" stroke-width="2"/>
+      <!-- Para cortex -->
+      <ellipse cx="200" cy="170" rx="85" ry="85" fill="#d4b090"/>
+      <!-- Ortho cortex -->
+      <ellipse cx="200" cy="170" rx="55" ry="70" fill="#c09060"/>
+      <!-- Medulla -->
+      <circle cx="200" cy="170" r="20" fill="none" stroke="#6b3f1a" stroke-dasharray="4" stroke-width="1.5"/>
+      <!-- Labels -->
+      <line x1="110" y1="120" x2="65" y2="90" stroke="#3d4f5c" stroke-width="1"/>
+      <text x="60" y="87" text-anchor="end" fill="#3d4f5c" font-size="11">Cuticle (scales)</text>
+      <line x1="145" y1="150" x2="60" y2="150" stroke="#3d4f5c" stroke-width="1"/>
+      <text x="55" y="154" text-anchor="end" fill="#3d4f5c" font-size="11">Para-cortex</text>
+      <line x1="155" y1="170" x2="60" y2="190" stroke="#3d4f5c" stroke-width="1"/>
+      <text x="55" y="193" text-anchor="end" fill="#3d4f5c" font-size="11">Ortho-cortex</text>
+      <line x1="200" y1="170" x2="270" y2="220" stroke="#6b3f1a" stroke-width="1"/>
+      <text x="275" y="223" fill="#6b3f1a" font-size="11">Medulla</text>
+      <text x="275" y="237" fill="#3d4f5c" font-size="10">(fine fibres lack this)</text>
+
+      <!-- Longitudinal with scales -->
+      <text x="580" y="28" text-anchor="middle" fill="#6b3f1a" font-size="14" font-weight="700">SCALE STRUCTURE</text>
+      <!-- Fibre body -->
+      <rect x="530" y="55" width="100" height="250" rx="50" fill="#e8d8cc" stroke="#6b3f1a" stroke-width="2"/>
+      <!-- Scales overlapping upward -->
+      <g fill="#c9922a" opacity="0.8">
+        <path d="M490,95 Q480,85 510,80 L540,90 Q510,100 490,95Z"/>
+        <path d="M490,125 Q480,115 510,110 L540,120 Q510,130 490,125Z"/>
+        <path d="M490,155 Q480,145 510,140 L540,150 Q510,160 490,155Z"/>
+        <path d="M490,185 Q480,175 510,170 L540,180 Q510,190 490,185Z"/>
+        <path d="M490,215 Q480,205 510,200 L540,210 Q510,220 490,215Z"/>
+        <path d="M490,245 Q480,235 510,230 L540,240 Q510,250 490,245Z"/>
+        <path d="M630,95 Q650,85 620,80 L590,90 Q620,100 630,95Z"/>
+        <path d="M630,125 Q650,115 620,110 L590,120 Q620,130 630,125Z"/>
+        <path d="M630,155 Q650,145 620,140 L590,150 Q620,160 630,155Z"/>
+        <path d="M630,185 Q650,175 620,170 L590,180 Q620,190 630,185Z"/>
+        <path d="M630,215 Q650,205 620,200 L590,210 Q620,220 630,215Z"/>
+        <path d="M630,245 Q650,235 620,230 L590,240 Q620,250 630,245Z"/>
+      </g>
+      <text x="720" y="140" fill="#c9922a" font-size="12" font-weight="600">← Scales</text>
+      <text x="720" y="156" fill="#3d4f5c" font-size="10">overlap like</text>
+      <text x="720" y="170" fill="#3d4f5c" font-size="10">roof tiles</text>
+      <text x="720" y="190" fill="#3d4f5c" font-size="10">Point toward tip</text>
+
+      <text x="580" y="310" text-anchor="middle" fill="#6b3f1a" font-size="12" font-style="italic">DFE: Scales catch &amp; ratchet → fibres migrate → felt forms</text>
+    </svg>
+  </div>
+
+  <!-- Felting DFE diagram -->
+  <figure class="img-frame" style="margin:28px 0;">
+    <img src="https://textilelearner.net/wp-content/uploads/2012/01/directional-friction-effect.jpg" alt="DFE Directional Friction Effect Wool" style="width:100%;display:block;max-height:300px;object-fit:contain;" onerror="this.src='https://www.woolmark.com/fileadmin/user_upload/images/fiber/wool-fiber-scale.jpg'">
+    <figcaption>Directional Friction Effect (DFE) — the root cause of wool felting. When wool fibres rub against each other, they preferentially migrate root-ward due to one-directional scale structure.</figcaption>
+  </figure>
+
+  <div class="info-row">
+    <div class="info-box green">
+      <h4>💧 Wet Felting</h4>
+      <ul>
+        <li>Water swells fibre (13–18% MR)</li>
+        <li>Hot water + agitation + alkali (soap)</li>
+        <li>Scales open and interlock rapidly</li>
+        <li>FASTER — more pronounced</li>
+        <li>Why wool shrinks in washing machine</li>
+        <li>Used to make hat felt, padding</li>
+      </ul>
+    </div>
+    <div class="info-box blue">
+      <h4>🔧 Dry Felting (Needlefelt)</h4>
+      <ul>
+        <li>No water — only mechanical pressure</li>
+        <li>Barbed needles push fibres through web</li>
+        <li>Scales interlock mechanically</li>
+        <li>SLOWER — less pronounced</li>
+        <li>Used for carpet backing, insulation</li>
+        <li>Industrial nonwoven production</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     SECTION 7 — SILK & SERICULTURE
+══════════════════════════════════════════════════════════════ -->
+<section id="silk" class="section">
+  <h2 class="section-title">Silk & Sericulture</h2>
+  <p class="section-lead"><strong>Sericulture</strong> is the cultivation of silkworms (<em>Bombyx mori</em>) for silk production. One cocoon yields 300–1500 m of continuous filament — the only natural filament fibre.</p>
+
+  <!-- Life cycle -->
+  <div class="visual-grid wide">
+    <figure class="img-frame v-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Silkworm_lifecycle_-_colored.svg/640px-Silkworm_lifecycle_-_colored.svg.png" alt="Silkworm Life Cycle" class="v-card-img tall" onerror="this.src='https://www.researchgate.net/profile/Massimo-Giangregorio/publication/340540820/figure/fig1/AS:878170736537600@1586368019456/Life-cycle-of-Bombyx-mori-silkworm.png'">
+      <figcaption>Complete life cycle of <em>Bombyx mori</em> — Egg → Larva (4 instars/moults) → Cocoon → Pupa → Moth → Eggs again</figcaption>
+    </figure>
+    <figure class="img-frame v-card">
+      <img src="https://image.slidesharecdn.com/sericulturepostcocontechnology-150821052521-lva1-app6891/95/sericulture-post-cocoon-technology-processing-of-cocoons-16-638.jpg" alt="Silk Reeling Machine" class="v-card-img tall" onerror="this.src='https://textilelearner.net/wp-content/uploads/2012/01/silk-reeling.jpg'">
+      <figcaption>Silk reeling machine — cocoons softened in hot water (90–95°C), filaments located, 5–8 cocoons reeled simultaneously to form one raw silk thread</figcaption>
+    </figure>
+  </div>
+
+  <!-- Sericulture Process Flow SVG -->
+  <div class="diagram-wrap">
+    <p class="diagram-title">Sericulture — Complete Process Flow</p>
+    <svg viewBox="0 0 820 240" style="width:100%;height:auto;display:block;">
+      <defs>
+        <marker id="arr4" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#9b6b9e"/>
+        </marker>
+      </defs>
+      <!-- Row 1 -->
+      <rect x="5" y="10" width="108" height="65" rx="4" fill="#1a1208"/>
+      <text x="59" y="32" text-anchor="middle" fill="#c9922a" font-size="11" font-weight="700">1. Mulberry</text>
+      <text x="59" y="48" text-anchor="middle" fill="#c9922a" font-size="11">Cultivation</text>
+      <text x="59" y="64" text-anchor="middle" fill="#faf6ef" font-size="9">Morus alba</text>
+      <line x1="113" y1="42" x2="130" y2="42" stroke="#9b6b9e" stroke-width="1.5" marker-end="url(#arr4)"/>
+
+      <rect x="133" y="10" width="108" height="65" rx="4" fill="#4a7c59"/>
+      <text x="187" y="32" text-anchor="middle" fill="white" font-size="11" font-weight="700">2. Egg</text>
+      <text x="187" y="48" text-anchor="middle" fill="white" font-size="11">Production</text>
+      <text x="187" y="64" text-anchor="middle" fill="#d4f0df" font-size="9">300–400 eggs/moth</text>
+      <line x1="241" y1="42" x2="258" y2="42" stroke="#9b6b9e" stroke-width="1.5" marker-end="url(#arr4)"/>
+
+      <rect x="261" y="10" width="108" height="65" rx="4" fill="#6b3f1a"/>
+      <text x="315" y="32" text-anchor="middle" fill="white" font-size="11" font-weight="700">3. Silkworm</text>
+      <text x="315" y="48" text-anchor="middle" fill="white" font-size="11">Rearing</text>
+      <text x="315" y="64" text-anchor="middle" fill="#f0d8c0" font-size="9">25–30 days, 4 moults</text>
+      <line x1="369" y1="42" x2="386" y2="42" stroke="#9b6b9e" stroke-width="1.5" marker-end="url(#arr4)"/>
+
+      <rect x="389" y="10" width="108" height="65" rx="4" fill="#3d4f5c"/>
+      <text x="443" y="32" text-anchor="middle" fill="white" font-size="11" font-weight="700">4. Cocoon</text>
+      <text x="443" y="48" text-anchor="middle" fill="white" font-size="11">Spinning</text>
+      <text x="443" y="64" text-anchor="middle" fill="#c0d0db" font-size="9">300–1500m filament</text>
+      <line x1="497" y1="42" x2="514" y2="42" stroke="#9b6b9e" stroke-width="1.5" marker-end="url(#arr4)"/>
+
+      <rect x="517" y="10" width="108" height="65" rx="4" fill="#b84c1e"/>
+      <text x="571" y="32" text-anchor="middle" fill="white" font-size="11" font-weight="700">5. Stifling</text>
+      <text x="571" y="48" text-anchor="middle" fill="#f5d0c0" font-size="9">Heat at 80°C</text>
+      <text x="571" y="64" text-anchor="middle" fill="#f5d0c0" font-size="9">kills pupa</text>
+      <line x1="625" y1="42" x2="642" y2="42" stroke="#9b6b9e" stroke-width="1.5" marker-end="url(#arr4)"/>
+
+      <rect x="645" y="10" width="108" height="65" rx="4" fill="#9b6b9e"/>
+      <text x="699" y="32" text-anchor="middle" fill="white" font-size="11" font-weight="700">6. Reeling</text>
+      <text x="699" y="48" text-anchor="middle" fill="white" font-size="9">Cocoons in 90°C</text>
+      <text x="699" y="62" text-anchor="middle" fill="white" font-size="9">water; 5–8 together</text>
+
+      <!-- Row 2 arrow and processing -->
+      <line x1="699" y1="75" x2="699" y2="98" stroke="#9b6b9e" stroke-width="1.5" marker-end="url(#arr4)"/>
+      <rect x="590" y="100" width="220" height="65" rx="4" fill="#1a1208"/>
+      <text x="700" y="125" text-anchor="middle" fill="#c9922a" font-size="12" font-weight="700">7. Processing</text>
+      <text x="700" y="143" text-anchor="middle" fill="#faf6ef" font-size="10">Degumming → Dyeing → Weaving → Silk Fabric</text>
+      <text x="700" y="158" text-anchor="middle" fill="#c9922a" font-size="9">(sericin removed; fibroin = silk)</text>
+    </svg>
+  </div>
+
+  <!-- Reeling Visual -->
+  <div class="visual-grid single">
+    <figure class="img-frame v-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Silk_cocoons_being_reeled.jpg/640px-Silk_cocoons_being_reeled.jpg" alt="Silk Reeling from Cocoon" class="v-card-img" onerror="this.src='https://www.textilelearner.net/wp-content/uploads/2012/01/silk-cocoon-reeling.jpg'">
+      <figcaption>Silk reeling — multiple cocoons submerged in hot water to dissolve sericin (gum). The free filament ends are found and wound together onto a reel. Raw silk (reeled silk) is the product.</figcaption>
+    </figure>
+  </div>
+
+  <div class="info-row">
+    <div class="info-box silk-bg">
+      <h4>🪱 Bombyx mori Details</h4>
+      <ul>
+        <li>Sole food: Mulberry leaves (<em>Morus alba</em>)</li>
+        <li>4 larval moults (instars)</li>
+        <li>Grows: 3mm → 7–8 cm</li>
+        <li>Cocoon spun in 2–3 days</li>
+        <li>Fibre: Fibroin (core) + Sericin (gum)</li>
+        <li>Raw silk: 5–8 cocoons reeled together</li>
+      </ul>
+    </div>
+    <div class="info-box">
+      <h4>🧵 Types of Silk</h4>
+      <ul>
+        <li><strong>Mulberry</strong> — Bombyx mori; finest quality</li>
+        <li><strong>Tasar</strong> — Antheraea mylitta; wild silk</li>
+        <li><strong>Eri</strong> — Samia cynthia; Assam, India</li>
+        <li><strong>Muga</strong> — A. assamensis; golden colour</li>
+        <li>China = 70% of world production</li>
+        <li>Only natural <strong>filament</strong> fibre</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════════════════
+     SECTION 8 — YARN TYPES
+══════════════════════════════════════════════════════════════ -->
+<section id="yarn" class="section">
+  <h2 class="section-title">Yarn Types — Woollen vs Worsted</h2>
+  <p class="section-lead">Both woollen and worsted yarns are made from wool, but differ fundamentally in fibre length used, processing steps, and final properties. This is a <strong>key exam topic</strong>.</p>
+
+  <div class="visual-grid wide">
+    <figure class="img-frame v-card">
+      <img src="https://www.researchgate.net/profile/Thomas-Gries/publication/314456434/figure/fig2/AS:469745069350912@1489001082543/The-steps-involved-in-both-woollen-and-worsted-processing.png" alt="Woollen vs Worsted Processing Steps" class="v-card-img tall" onerror="this.src='https://textilelearner.net/wp-content/uploads/2012/01/woollen-worsted.jpg'">
+      <figcaption>Side-by-side comparison of woollen and worsted processing steps — worsted includes the additional combing stage to align and remove short fibres</figcaption>
+    </figure>
+    <figure class="img-frame v-card">
+      <img src="https://image.slidesharecdn.com/woolproductionflowchart-131017151555-phpapp01/95/wool-production-flow-chart-4-638.jpg" alt="Wool Production Flow Chart" class="v-card-img tall" onerror="this.src='https://www.textilelearner.net/wp-content/uploads/2012/01/wool-processing.jpg'">
+      <figcaption>Complete wool processing flow — from raw fleece through scouring, carding, and diverging into woollen or worsted paths</figcaption>
+    </figure>
+  </div>
+
+  <!-- Process comparison SVG -->
+  <div class="diagram-wrap">
+    <p class="diagram-title">Woollen vs Worsted — Process Path Comparison</p>
+    <svg viewBox="0 0 780 320" style="width:100%;height:auto;display:block;">
+      <!-- Common steps -->
+      <rect x="320" y="10" width="140" height="46" rx="4" fill="#1a1208"/>
+      <text x="390" y="30" text-anchor="middle" fill="#c9922a" font-size="12" font-weight="700">Raw Wool (Fleece)</text>
+      <text x="390" y="48" text-anchor="middle" fill="#faf6ef" font-size="10">Shearing → Scouring</text>
+      <!-- split arrows -->
+      <line x1="390" y1="56" x2="390" y2="72" stroke="#c9922a" stroke-width="2"/>
+      <line x1="390" y1="72" x2="185" y2="72" stroke="#c9922a" stroke-width="2"/>
+      <line x1="390" y1="72" x2="595" y2="72" stroke="#c9922a" stroke-width="2"/>
+      <line x1="185" y1="72" x2="185" y2="86" stroke="#6b3f1a" stroke-width="2"/>
+      <line x1="595" y1="72" x2="595" y2="86" stroke="#3d4f5c" stroke-width="2"/>
+
+      <!-- WOOLLEN column -->
+      <text x="185" y="80" text-anchor="middle" fill="#6b3f1a" font-size="10"/>
+      <rect x="100" y="86" width="170" height="40" rx="4" fill="#6b3f1a"/>
+      <text x="185" y="111" text-anchor="middle" fill="white" font-size="13" font-weight="700">WOOLLEN PATH</text>
+      <line x1="185" y1="126" x2="185" y2="142" stroke="#6b3f1a" stroke-width="1.5"/>
+
+      <rect x="115" y="142" width="140" height="36" rx="3" fill="#e8d8cc" stroke="#6b3f1a"/>
+      <text x="185" y="165" text-anchor="middle" fill="#6b3f1a" font-size="12" font-weight="600">Carding</text>
+      <line x1="185" y1="178" x2="185" y2="194" stroke="#6b3f1a" stroke-width="1.5"/>
+      <!-- NOTE: no combing for woollen -->
+      <rect x="95" y="194" width="180" height="28" rx="3" fill="#fff8f0" stroke="#c9922a" stroke-dasharray="4"/>
+      <text x="185" y="212" text-anchor="middle" fill="#c9922a" font-size="10">(No combing step)</text>
+      <line x1="185" y1="222" x2="185" y2="238" stroke="#6b3f1a" stroke-width="1.5"/>
+
+      <rect x="115" y="238" width="140" height="36" rx="3" fill="#e8d8cc" stroke="#6b3f1a"/>
+      <text x="185" y="261" text-anchor="middle" fill="#6b3f1a" font-size="12" font-weight="600">Spinning</text>
+      <line x1="185" y1="274" x2="185" y2="290" stroke="#6b3f1a" stroke-width="1.5"/>
+
+      <rect x="95" y="290" width="180" height="26" rx="3" fill="#6b3f1a"/>
+      <text x="185" y="307" text-anchor="middle" fill="white" font-size="11">Woollen Yarn</text>
+
+      <!-- WORSTED column -->
+      <rect x="510" y="86" width="170" height="40" rx="4" fill="#3d4f5c"/>
+      <text x="595" y="111" text-anchor="middle" fill="white" font-size="13" font-weight="700">WORSTED PATH</text>
+      <line x1="595" y1="126" x2="595" y2="142" stroke="#3d4f5c" stroke-width="1.5"/>
+
+      <rect x="525" y="142" width="140" height="36" rx="3" fill="#eef1f4" stroke="#3d4f5c"/>
+      <text x="595" y="165" text-anchor="middle" fill="#3d4f5c" font-size="12" font-weight="600">Carding</text>
+      <line x1="595" y1="178" x2="595" y2="194" stroke="#3d4f5c" stroke-width="1.5"/>
+
+      <rect x="525" y="194" width="140" height="36" rx="3" fill="#eef1f4" stroke="#3d4f5c"/>
+      <text x="595" y="218" text-anchor="middle" fill="#3d4f5c" font-size="12" font-weight="600">Combing ✓</text>
+      <line x1="595" y1="230" x2="595" y2="246" stroke="#3d4f5c" stroke-width="1.5"/>
+
+      <rect x="525" y="246" width="140" height="36" rx="3" fill="#eef1f4" stroke="#3d4f5c"/>
+      <text x="595" y="265" text-anchor="middle" fill="#3d4f5c" font-size="12" font-weight="600">Drawing</text>
+      <line x1="595" y1="282" x2="595" y2="290" stroke="#3d4f5c" stroke-width="1.5"/>
+
+      <rect x="505" y="290" width="180" height="26" rx="3" fill="#3d4f5c"/>
+      <text x="595" y="307" text-anchor="middle" fill="white" font-size="11">Worsted Yarn</text>
+
+      <!-- Key diff -->
+      <text x="390" y="195" text-anchor="middle" fill="#c9922a" font-size="22" font-weight="700">vs</text>
+    </svg>
+  </div>
+
+  <table class="compare-table">
+    <thead><tr>
+      <th>Feature</th><th>Woollen Yarn</th><th>Worsted Yarn</th>
+    </tr></thead>
+    <tbody>
+      <tr><td>Fibre length</td><td>Short (25–75 mm)</td><td>Long (75–150 mm+)</td></tr>
+      <tr><td>Combing</td><td>❌ Not combed</td><td>✅ Combed (removes short fibres)</td></tr>
+      <tr><td>Fibre arrangement</td><td>Random, not parallel</td><td>Parallel and orderly</td></tr>
+      <tr><td>Texture</td><td>Soft, fuzzy, bulky</td><td>Smooth, fine, compact</td></tr>
+      <tr><td>Lustre</td><td>Low</td><td>High (parallel fibres reflect light)</td></tr>
+      <tr><td>Warmth</td><td>Warmer (more trapped air)</td><td>Less warm</td></tr>
+      <tr><td>Durability</td><td>Less durable</td><td>More durable</td></tr>
+      <tr><td>End uses</td><td>Overcoats, blankets, tweeds, knitwear</td><td>Suits, gabardine, dress fabric, crepe</td></tr>
+    </tbody>
+  </table>
+
+  <div class="key-callout">
+    <h4>📝 Exam Memory Tips</h4>
+    <p>
+      <strong>Woollen</strong> = Woolly/Fuzzy/Warm = <strong>W</strong>ithout combing<br>
+      <strong>Worsted</strong> = Smooth/Strong/Smart suits = <strong>W</strong>ith combing<br><br>
+      Cotton: <strong>Kidney-shaped cross-section with lumen</strong> | Wet: stronger<br>
+      Wool: <strong>Felts due to Differential Friction Effect (DFE)</strong> on scales<br>
+      Silk: <strong>Only natural filament fibre</strong> — 300–1500m per cocoon<br>
+      Jute: <strong>Retting = microbial</strong> breakdown of pectin in stem | "Golden Fibre"
+    </p>
+  </div>
+</section>
+
+<!-- footer -->
+<footer style="background:var(--ink);color:rgba(250,246,239,0.5);text-align:center;padding:32px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1px;">
+  NATURAL TEXTILE FIBRE — VISUAL STUDY GUIDE &nbsp;·&nbsp; ALL FIBRES AT A GLANCE &nbsp;·&nbsp; EXAM READY
+</footer>
+
+<script>
+  function showTab(id) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    event.target.classList.add('active');
+    window.scrollTo({top: document.querySelector('.nav-bar').offsetTop - 10, behavior: 'smooth'});
+  }
+</script>
+</body>
+</html>
