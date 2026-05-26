@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Natural Textile Fibre — Morphology & Cross-Section Visual Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1208;
+    --cream: #f5f0e8;
+    --paper: #faf7f2;
+    --accent: #8b4513;
+    --gold: #c8952a;
+    --teal: #2d6b6b;
+    --rust: #b04020;
+    --sage: #5a7a5a;
+    --border: #d4c8b0;
+    --muted: #6b5d4a;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 48px 40px 36px;
+    text-align: center;
+    border-bottom: 4px solid var(--gold);
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: repeating-linear-gradient(
+      45deg, transparent, transparent 20px,
+      rgba(200,149,42,0.04) 20px, rgba(200,149,42,0.04) 40px
+    );
+  }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    position: relative;
+  }
+  header p {
+    margin-top: 10px;
+    color: #c8b896;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.78rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .badge-row {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .badge {
+    padding: 4px 14px;
+    border: 1px solid rgba(200,149,42,0.5);
+    border-radius: 20px;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--gold);
+    letter-spacing: 1px;
+  }
+
+  /* ── LAYOUT ── */
+  .container { max-width: 1100px; margin: 0 auto; padding: 40px 24px; }
+
+  .section-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+  .section-sub {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 28px;
+    font-style: italic;
+  }
+
+  /* ── INTRO TABLE ── */
+  .intro-table-wrap {
+    overflow-x: auto;
+    margin-bottom: 48px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+  }
+  table.intro-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+  }
+  table.intro-table thead th {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 10px 14px;
+    text-align: left;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  table.intro-table tbody tr:nth-child(even) { background: #f0ebe0; }
+  table.intro-table tbody td {
+    padding: 9px 14px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  table.intro-table tbody td:first-child {
+    font-weight: 600;
+    color: var(--accent);
+    font-family: 'DM Mono', monospace;
+    font-size: 0.82rem;
+    white-space: nowrap;
+  }
+
+  /* ── FIBRE CARDS GRID ── */
+  .fibre-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 28px;
+    margin-bottom: 60px;
+  }
+
+  .fibre-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s;
+  }
+  .fibre-card:hover { box-shadow: 0 6px 28px rgba(26,18,8,0.12); }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+  .card-icon {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+  .card-title-wrap { flex: 1; }
+  .card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.2;
+  }
+  .card-subtitle {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--muted);
+    letter-spacing: 1px;
+    margin-top: 2px;
+  }
+  .card-type-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  /* diagram area */
+  .card-diagram {
+    padding: 20px;
+    background: var(--cream);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    min-height: 160px;
+  }
+
+  .diagram-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    flex: 1;
+  }
+  .diagram-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  svg.diagram { overflow: visible; }
+
+  .card-props {
+    padding: 14px 16px;
+    flex: 1;
+  }
+  .prop-row {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    padding: 4px 0;
+    border-bottom: 1px solid #f0ebe0;
+    font-size: 0.82rem;
+  }
+  .prop-row:last-child { border-bottom: none; }
+  .prop-key {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    color: var(--muted);
+    min-width: 95px;
+    flex-shrink: 0;
+  }
+  .prop-val { color: var(--ink); }
+
+  /* colour tags per fibre type */
+  .tag-seed    { background: #fff4e0; color: #a06010; border: 1px solid #e8c878; }
+  .tag-bast    { background: #eaf4ea; color: #3a6b3a; border: 1px solid #9dc89d; }
+  .tag-leaf    { background: #eaf0f8; color: #2a5080; border: 1px solid #9ab8d8; }
+  .tag-fruit   { background: #f4eaf0; color: #7a3a6a; border: 1px solid #c89ab8; }
+  .tag-protein { background: #fdeaea; color: #802a2a; border: 1px solid #d89898; }
+  .tag-mineral { background: #e8e8e8; color: #404040; border: 1px solid #aaaaaa; }
+
+  .icon-seed    { background: #fff4e0; }
+  .icon-bast    { background: #eaf4ea; }
+  .icon-leaf    { background: #eaf0f8; }
+  .icon-fruit   { background: #f4eaf0; }
+  .icon-protein { background: #fdeaea; }
+  .icon-mineral { background: #e8e8e8; }
+
+  /* ── COMPARISON SECTION ── */
+  .comparison-section { margin-bottom: 60px; }
+  .compare-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+  }
+  .compare-item {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 14px 10px;
+    text-align: center;
+    font-size: 0.78rem;
+  }
+  .compare-item .cs-name {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 8px;
+    display: block;
+  }
+  .compare-item .cs-shape {
+    font-size: 0.75rem;
+    color: var(--accent);
+    font-style: italic;
+    display: block;
+    margin-top: 2px;
+  }
+
+  /* ── STRUCTURE LAYERS ── */
+  .layers-section { margin-bottom: 60px; }
+  .layers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+  }
+  @media(max-width:640px){ .layers-grid { grid-template-columns: 1fr; } }
+
+  .layer-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .layer-card-title {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 10px 16px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .layer-card-body { padding: 16px; }
+  .layer-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+    border-bottom: 1px dashed #e8e0d0;
+    font-size: 0.82rem;
+  }
+  .layer-row:last-child { border: none; }
+  .layer-swatch {
+    width: 18px; height: 18px;
+    border-radius: 3px;
+    flex-shrink: 0;
+    border: 1px solid rgba(0,0,0,0.1);
+  }
+  .layer-name { font-weight: 600; min-width: 90px; }
+  .layer-desc { color: var(--muted); font-size: 0.78rem; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--ink);
+    color: #8a7a60;
+    text-align: center;
+    padding: 24px;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    border-top: 3px solid var(--gold);
+  }
+
+  .divider {
+    border: none;
+    border-top: 2px solid var(--border);
+    margin: 48px 0 36px;
+  }
+
+  /* annotation arrow */
+  .ann { font-size: 0.62rem; fill: var(--muted); font-family: 'DM Mono', monospace; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Natural Textile Fibre</h1>
+  <p>Morphology &amp; Cross-Section Visual Reference Guide</p>
+  <div class="badge-row">
+    <span class="badge">Seed Fibres</span>
+    <span class="badge">Bast Fibres</span>
+    <span class="badge">Leaf Fibres</span>
+    <span class="badge">Fruit Fibres</span>
+    <span class="badge">Protein Fibres</span>
+    <span class="badge">Mineral Fibres</span>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- INTRO TABLE -->
+  <div class="section-label">Quick Reference</div>
+  <div class="section-title">All Fibres — Cross-Section Shape at a Glance</div>
+  <p class="section-sub">The cross-sectional shape is one of the most reliable ways to identify a fibre under a microscope.</p>
+
+  <div class="intro-table-wrap">
+    <table class="intro-table">
+      <thead>
+        <tr>
+          <th>Fibre</th>
+          <th>Cross-Section Shape</th>
+          <th>Longitudinal Feature</th>
+          <th>Lumen</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Cotton (mature)</td><td>Kidney/Bean-shaped</td><td>Twisted ribbon (convolutions)</td><td>Small, collapsed</td><td>Seed</td></tr>
+        <tr><td>Cotton (immature)</td><td>Thin-walled circle / flat ribbon</td><td>Fewer convolutions, flat</td><td>Large, open</td><td>Seed</td></tr>
+        <tr><td>Jute</td><td>Polygonal (5–6 sided)</td><td>Smooth with cross-markings</td><td>Large, round</td><td>Bast</td></tr>
+        <tr><td>Flax (Linen)</td><td>Polygonal (5–6 sided)</td><td>Nodes/joints at intervals</td><td>Narrow slit</td><td>Bast</td></tr>
+        <tr><td>Hemp</td><td>Polygonal/irregular</td><td>Nodes, surface striations</td><td>Narrow</td><td>Bast</td></tr>
+        <tr><td>Ramie</td><td>Irregular oval/kidney</td><td>Cross-marks, striated surface</td><td>Large, irregular</td><td>Bast</td></tr>
+        <tr><td>Sisal</td><td>Horse-shoe / C-shaped bundle</td><td>Smooth, rough surface bundles</td><td>Present</td><td>Leaf</td></tr>
+        <tr><td>Coir</td><td>Oval/round with thick wall</td><td>Smooth, pitted surface</td><td>Small</td><td>Fruit</td></tr>
+        <tr><td>Kapok</td><td>Hollow circle (thin-walled tube)</td><td>Smooth, almost no twists</td><td>Very large (hollow 80%+)</td><td>Fruit/Seed</td></tr>
+        <tr><td>Wool</td><td>Oval/circular</td><td>Overlapping scales (serrated edge)</td><td>Medulla (in coarse)</td><td>Protein-Animal</td></tr>
+        <tr><td>Silk (mulberry)</td><td>Triangular with rounded corners</td><td>Smooth, rod-like; two fibroin strands</td><td>No lumen</td><td>Protein-Animal</td></tr>
+        <tr><td>Asbestos</td><td>Fibrillar bundles, irregular</td><td>Parallel, rod-like fibrils</td><td>No lumen</td><td>Mineral</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- FIBRE-BY-FIBRE CARDS -->
+  <div class="section-label">Detailed Analysis</div>
+  <div class="section-title">Fibre-by-Fibre Morphology</div>
+  <p class="section-sub">Each card shows the accurate cross-section and longitudinal view with annotated SVG diagrams based on microscopy literature.</p>
+
+  <div class="fibre-grid">
+
+    <!-- ═══════════ COTTON ═══════════ -->
+    <div class="fibre-card">
+      <div class="card-header">
+        <div class="card-icon icon-seed">🌿</div>
+        <div class="card-title-wrap">
+          <div class="card-title">Cotton</div>
+          <div class="card-subtitle">Gossypium spp.</div>
+        </div>
+        <span class="card-type-tag tag-seed">Seed</span>
+      </div>
+      <div class="card-diagram">
+        <!-- Cross section: mature = kidney shaped -->
+        <div class="diagram-panel">
+          <svg class="diagram" width="100" height="100" viewBox="0 0 100 100">
+            <!-- outer wall kidney shape -->
+            <path d="M50,15 C70,10 88,25 88,45 C88,65 70,75 55,78 C45,80 20,75 15,58 C10,42 22,15 50,15Z"
+                  fill="#f5e8c0" stroke="#8b4513" stroke-width="2.5"/>
+            <!-- secondary wall (thick) -->
+            <path d="M50,22 C66,18 80,30 80,46 C80,62 66,70 53,72 C44,74 24,70 20,56 C16,43 26,22 50,22Z"
+                  fill="#d4a860" stroke="#8b4513" stroke-width="1.5"/>
+            <!-- lumen (collapsed) -->
+            <path d="M50,30 C60,27 68,35 68,46 C68,56 60,62 52,63 C44,64 33,58 32,48 C31,38 40,32 50,30Z"
+                  fill="#1a1208" stroke="#5a3010" stroke-width="1"/>
+            <!-- labels -->
+            <text x="93" y="28" class="ann" text-anchor="start">Cuticle</text>
+            <line x1="88" y1="27" x2="80" y2="34" stroke="#8b4513" stroke-width="0.8"/>
+            <text x="93" y="48" class="ann" text-anchor="start">Sec. wall</text>
+            <line x1="91" y1="47" x2="80" y2="47" stroke="#8b4513" stroke-width="0.8"/>
+            <text x="93" y="68" class="ann" text-anchor="start">Lumen</text>
+            <line x1="91" y1="67" x2="68" y2="57" stroke="#8b4513" stroke-width="0.8"/>
+          </svg>
+          <span class="diagram-label">Cross-section<br/>(Mature)</span>
+        </div>
+        <!-- Longitudinal: twisted ribbon -->
+        <div class="diagram-panel">
+          <svg class="diagram" width="80" height="110" viewBox="0 0 80 110">
+            <!-- twisted ribbon effect -->
+            <path d="M20,5 C30,5 55,5 60,5 C60,5 65,20 60,25 C55,30 25,30 20,30 C20,30 15,45 20,50 C25,55 55,55 60,55 C60,55 65,70 60,75 C55,80 25,80 20,80 C20,80 15,95 20,100 C25,105 55,105 60,105"
+                  fill="none" stroke="#8b4513" stroke-width="2"/>
+            <path d="M20,5 C20,5 15,20 20,25 C25,30 55,30 60,30 C60,30 65,45 60,50 C55,55 25,55 20,55 C20,55 15,70 20,75 C25,80 55,80 60,80 C60,80 65,95 60,100"
+                  fill="#f5e8c0" stroke="#8b4513" stroke-width="1.5"/>
+            <text x="40" y="120" class="ann" text-anchor="middle">convolutions</text>
+          </svg>
+          <span class="diagram-label">Longitudinal<br/>(twisted ribbon)</span>
+        </div>
+      </div>
+      <div class="card-props">
+        <div class="prop-row"><span class="prop-key">Cross-section</span><span class="prop-val">Kidney / bean-shaped (mature); round thin wall (immature)</span></div>
+        <div class="prop-row"><span class="prop-key">Longitudinal</span><span class="prop-val">Twisted ribbon with convolutions (spiral reversals)</span></div>
+        <div class="prop-row"><span class="prop-key">Lumen</span><span class="prop-val">Central, collapsed in mature fibre</span></div>
+        <div class="prop-row"><span class="prop-key">Layers</span><span class="prop-val">Cuticle → Primary wall → Secondary wall (S1,S2,S3) → Lumen</span></div>
+        <div class="prop-row"><span class="prop-key">Key ID</span><span class="prop-val">Convolutions = unique to cotton; absent in other fibres</span></div>
+      </div>
+    </div>
+
+    <!-- ═══════════ JUTE ═══════════ -->
+    <div class="fibre-card">
+      <div class="card-header">
+        <div class="card-icon icon-bast">🌾</div>
+        <div class="card-title-wrap">
+          <div class="card-title">Jute</div>
+          <div class="card-subtitle">Corchorus capsularis / olitorius</div>
+        </div>
+        <span class="card-type-tag tag-bast">Bast</span>
+      </div>
+      <div class="card-diagram">
+        <div class="diagram-panel">
+          <svg class="diagram" width="110" height="100" viewBox="0 0 110 100">
+            <!-- Polygonal outline (pentagon-ish) -->
+            <polygon points="50,10 80,25 85,55 65,80 35,80 15,55 20,25"
+                     fill="#c8d8a0" stroke="#3a6b3a" stroke-width="2.5"/>
+            <!-- cell wall thickness -->
+            <polygon points="50,22 70,33 74,54 58,72 42,72 26,54 30,33"
+                     fill="#7aaa50" stroke="#3a6b3a" stroke-width="1.5"/>
+            <!-- large round lumen -->
+            <ellipse cx="50" cy="48" rx="16" ry="16" fill="#1a3010" stroke="#3a6b3a" stroke-width="1"/>
+            <text x="50" y="52" class="ann" text-anchor="middle" fill="#ffffff">Lumen</text>
+            <text x="95" y="22" class="ann">Cell wall</text>
+            <line x1="92" y1="22" x2="78" y2="28" stroke="#3a6b3a" stroke-width="0.8"/>
+          </svg>
+          <span class="diagram-label">Cross-section<br/>(single cell)</span>
+        </div>
+        <div class="diagram-panel">
+          <svg class="diagram" width="70" height="110" viewBox="0 0 70 110">
+            <!-- smooth rod with cross markings -->
+            <rect x="20" y="5" width="30" height="100" rx="4" fill="#c8d8a0" stroke="#3a6b3a" stroke-width="2"/>
+            <!-- cross-markings (dislocations) -->
+            <line x1="15" y1="30" x2="55" y2="30" stroke="#3a6b3a" stroke-width="1.5" stroke-dasharray="4,2"/>
+            <line x1="15" y1="55" x2="55" y2="55" stroke="#3a6b3a" stroke-width="1.5" stroke-dasharray="4,2"/>
+            <line x1="15" y1="80" x2="55" y2="80" stroke="#3a6b3a" stroke-width="1.5" stroke-dasharray="4,2"/>
+            <text x="60" y="30" class="ann">nodes</text>
+          </svg>
+          <span class="diagram-label">Longitudinal<br/>(cross-marks)</span>
+        </div>
+      </div>
+      <div class="card-props">
+        <div class="prop-row"><span class="prop-key">Cross-section</span><span class="prop-val">Polygonal (5–6 sided), thick cell wall</span></div>
+        <div class="prop-row"><span class="prop-key">Longitudinal</span><span class="prop-val">Smooth surface with irregular cross-marks (dislocations)</span></div>
+        <div class="prop-row"><span class="prop-key">Lumen</span><span class="prop-val">Large, round, prominent</span></div>
+        <div class="prop-row"><span class="prop-key">Middle lamella</span><span class="prop-val">Lignin-rich cement holds cell bundles together</span></div>
+        <div class="prop-row"><span class="prop-key">Key ID</span><span class="prop-val">Large polygonal cells in bundles; lignin = golden colour + stiffness</span></div>
+      </div>
+    </div>
+
+    <!-- ═══════════ FLAX ═══════════ -->
+    <div class="fibre-card">
+      <div class="card-header">
+        <div class="card-icon icon-bast">🌿</div>
+        <div class="card-title-wrap">
+          <div class="card-title">Flax (Linen)</div>
+          <div class="card-subtitle">Linum usitatissimum</div>
+        </div>
+        <span class="card-type-tag tag-bast">Bast</span>
+      </div>
+      <div class="card-diagram">
+        <div class="diagram-panel">
+          <svg class="diagram" width="110" height="100" viewBox="0 0 110 100">
+            <!-- Polygonal, thicker walls than jute, smaller lumen -->
+            <polygon points="50,8 76,22 82,52 65,78 35,78 18,52 24,22"
+                     fill="#d4c8a0" stroke="#7a6a30" stroke-width="2.5"/>
+            <polygon points="50,20 68,31 73,52 60,70 40,70 27,52 32,31"
+                     fill="#b8a870" stroke="#7a6a30" stroke-width="1.5"/>
+            <!-- small narrow lumen (slit-like) -->
+            <ellipse cx="50" cy="46" rx="8" ry="12" fill="#2a2010" stroke="#7a6a30" stroke-width="1"/>
+            <text x="50" y="50" class="ann" text-anchor="middle" fill="#fff" font-size="7">lumen</text>
+          </svg>
+          <span class="diagram-label">Cross-section<br/>(polygonal, narrow lumen)</span>
+        </div>
+        <div class="diagram-panel">
+          <svg class="diagram" width="70" height="110" viewBox="0 0 70 110">
+            <rect x="22" y="5" width="26" height="100" rx="3" fill="#d4c8a0" stroke="#7a6a30" stroke-width="2"/>
+            <!-- nodes (distinctive bamboo-like joints) -->
+            <line x1="14" y1="28" x2="56" y2="28" stroke="#7a6a30" stroke-width="2"/>
+            <line x1="14" y1="52" x2="56" y2="52" stroke="#7a6a30" stroke-width="2"/>
+            <line x1="14" y1="76" x2="56" y2="76" stroke="#7a6a30" stroke-width="2"/>
+            <text x="60" y="28" class="ann">NODE</text>
+            <text x="60" y="52" class="ann">NODE</text>
+            <text x="60" y="76" class="ann">NODE</text>
+          </svg>
+          <span class="diagram-label">Longitudinal<br/>(nodes/joints)</span>
+        </div>
+      </div>
+      <div class="card-props">
+        <div class="prop-row"><span class="prop-key">Cross-section</span><span class="prop-val">Polygonal (5–6 sides), thick wall, narrow lumen</span></div>
+        <div class="prop-row"><span class="prop-key">Longitudinal</span><span class="prop-val">Nodes (cross-joints/dislocations) at irregular intervals — diagnostic!</span></div>
+        <div class="prop-row"><span class="prop-key">Lumen</span><span class="prop-val">Narrow slit-like; much smaller than jute</span></div>
+        <div class="prop-row"><span class="prop-key">Key ID</span><span class="prop-val">Nodes are the hallmark of flax — called "bamboo joints"</span></div>
+      </div>
+    </div>
+
+    <!-- ═══════════ HEMP ═══════════ -->
+    <div class="fibre-card">
+      <div class="card-header">
+        <div class="card-icon icon-bast">🌱</div>
+        <div class="card-title-wrap">
+          <div class="card-title">Hemp</div>
+          <div class="card-subtitle">Cannabis sativa</div>
+        </div>
+        <span class="card-type-tag tag-bast">Bast</span>
+      </div>
+      <div class="card-diagram">
+        <div class="diagram-panel">
+          <svg class="diagram" width="110" height="100" viewBox="0 0 110 100">
+            <!-- Irregular polygonal shape -->
+            <polygon points="48,8 75,18 84,48 70,80 30,80 16,48 25,18"
+                     fill="#c0d4b0" stroke="#3a5530" stroke-width="2.5"/>
+            <polygon points="48,20 67,28 74,50 63,72 37,72 26,50 33,28"
+                     fill="#80a870" stroke="#3a5530" stroke-width="1.5"/>
+            <ellipse cx="50" cy="48" rx="10" ry="13" fill="#1a2810" stroke="#3a5530" stroke-width="1"/>
+            <text x="50" y="52" class="ann" text-anchor="middle" fill="#fff" font-size="7">lumen</text>
+          </svg>
+          <span class="diagram-label">Cross-section<br/>(irregular polygon)</span>
+        </div>
+        <div class="diagram-panel">
+          <svg class="diagram" width="70" height="110" viewBox="0 0 70 110">
+            <rect x="22" y="5" width="26" height="100" rx="3" fill="#c0d4b0" stroke="#3a5530" stroke-width="2"/>
+            <!-- nodes like flax but less regular + striations -->
+            <line x1="14" y1="35" x2="56" y2="35" stroke="#3a5530" stroke-width="1.5"/>
+            <line x1="14" y1="65" x2="56" y2="65" stroke="#3a5530" stroke-width="1.5"/>
+            <!-- surface striations -->
+            <line x1="22" y1="20" x2="22" y2="100" stroke="#3a5530" stroke-width="0.5" stroke-dasharray="3,4"/>
+            <line x1="48" y1="20" x2="48" y2="100" stroke="#3a5530" stroke-width="0.5" stroke-dasharray="3,4"/>
+            <text x="60" y="35" class="ann">node</text>
+          </svg>
+          <span class="diagram-label">Longitudinal<br/>(nodes + striations)</span>
+        </div>
+      </div>
+      <div class="card-props">
+        <div class="prop-row"><span class="prop-key">Cross-section</span><span class="prop-val">Irregular polygonal, oval; varies more than flax</span></div>
+        <div class="prop-row"><span class="prop-key">Longitudinal</span><span class="prop-val">Nodes similar to flax + longitudinal striations on surface</span></div>
+        <div class="prop-row"><span class="prop-key">Lumen</span><span class="prop-val">Narrow, present</span></div>
+        <div class="prop-row"><span class="prop-key">Key ID</span><span class="prop-val">Rounder than flax; more irregular; often confused — check striations</span></div>
+      </div>
+    </div>
+
+    <!-- ═══════════ RAMIE ═══════════ -->
+    <div class="fibre-card">
+      <div class="card-header">
+        <div class="card-icon icon-bast">🌿</div>
+        <div class="card-title-wrap">
+          <div class="card-title">Ramie</div>
+          <div class="card-subtitle">Boehmeria nivea</div>
+        </div>
+        <span class="card-type-tag tag-bast">Bast</span>
+      </div>
+      <div class="card-diagram">
+        <div class="diagram-panel">
+          <svg class="diagram" width="110" height="100" viewBox="0 0 110 100">
+            <!-- Irregular kidney/oval, very large lumen -->
+            <path d="M50,10 C70,8 88,22 88,46 C88,68 70,82 50,82 C30,82 12,68 12,46 C12,22 30,12 50,10Z"
+                  fill="#d8e8d0" stroke="#2a6040" stroke-width="2.5"/>
+            <!-- thin walls, large central lumen -->
+            <path d="M50,22 C64,20 76,32 76,46 C76,60 64,70 50,70 C36,70 24,60 24,46 C24,32 36,24 50,22Z"
+                  fill="#78a888" stroke="#2a6040" stroke-width="1.5"/>
+            <!-- very large lumen -->
+            <ellipse cx="50" cy="46" rx="20" ry="22" fill="#102818" stroke="#2a6040" stroke-width="1"/>
+            <text x="50" y="50" class="ann" text-anchor="middle" fill="#aed4be" font-size="8">Large</text>
+            <text x="50" y="60" class="ann" text-anchor="middle" fill="#aed4be" font-size="8">Lumen</text>
+          </svg>
+          <span class="diagram-label">Cross-section<br/>(irregular, large lumen)</span>
+        </div>
+        <div class="diagram-panel">
+          <svg class="diagram" width="70" height="110" viewBox="0 0 70 110">
+            <rect x="20" y="5" width="30" height="100" rx="3" fill="#d8e8d0" stroke="#2a6040" stroke-width="2"/>
+            <!-- cross marks + striated -->
+            <line x1="12" y1="32" x2="58" y2="32" stroke="#2a6040" stroke-width="1.5" stroke-dasharray="3,2"/>
+            <line x1="12" y1="60" x2="58" y2="60" stroke="#2a6040" stroke-width="1.5" stroke-dasharray="3,2"/>
+            <line x1="12" y1="88" x2="58" y2="88" stroke="#2a6040" stroke-width="1.5" stroke-dasharray="3,2"/>
+          </svg>
+          <span class="diagram-label">Longitudinal<br/>(striated + cross-marks)</span>
+        </div>
+      </div>
+      <div class="card-props">
+        <div class="prop-row"><span class="prop-key">Cross-section</span><span class="prop-val">Irregular oval/kidney; very large lumen (largest among bast fibres)</span></div>
+        <div class="prop-row"><span class="prop-key">Longitudinal</span><span class="prop-val">Striated surface; cross-marks similar to flax but more pronounced</span></div>
+        <div class="prop-row"><span class="prop-key">Lumen</span><span class="prop-val">Very large and irregular — up to 70% of cell width</span></div>
+        <div class="prop-row"><span class="prop-key">Key ID</span><span class="prop-val">Largest natural vegetable fibre cell; silky appearance; bacteriostatic</span></div>
+      </div>
+    </div>
+
+    <!-- ═══════════ SISAL ═══════════ -->
+    <div class="fibre-card">
+      <div class="card-header">
+        <div class="card-icon icon-leaf">🌵</div>
+        <div class="card-title-wrap">
+          <div class="card-title">Sisal</div>
+          <div class="card-subtitle">Agave sisalana</div>
+        </div>
+        <span class="card-type-tag tag-leaf">Leaf</span>
+      </div>
+      <div class="card-diagram">
+        <div class="diagram-panel">
+          <svg class="diagram" width="110" height="100" viewBox="0 0 110 100">
+            <!-- Arc/horseshoe shaped fibre bundle cross-section -->
+            <!-- Outer vascular bundle ring -->
+            <path d="M20,80 C20,30 80,30 80,80" fill="none" stroke="#2a5080" stroke-width="3"/>
+            <path d="M26,80 C26,38 74,38 74,80" fill="none" stroke="#4a78b0" stroke-width="2"/>
+            <!-- individual cells shown as small ovals in arc -->
+            <circle cx="35" cy="55" r="6" fill="#9ab8d8" stroke="#2a5080" stroke-width="1"/>
+            <circle cx="50" cy="42" r="6" fill="#9ab8d8" stroke="#2a5080" stroke-width="1"/>
+            <circle cx="65" cy="55" r="6" fill="#9ab8d8" stroke="#2a5080" stroke-width="1"/>
+            <circle cx="29" cy="68" r="5" fill="#9ab8d8" stroke="#2a5080" stroke-width="1"/>
+            <circle cx="71" cy="68" r="5" fill="#9ab8d8" stroke="#2a5080" stroke-width="1"/>
+            <text x="50" y="95" class="ann" text-anchor="middle">Arc/C-shaped bundle</text>
+          </svg>
+          <span class="diagram-label">Cross-section<br/>(arc/horseshoe bundle)</span>
+        </div>
+        <div class="diagram-panel">
+          <svg class="diagram" width="70" height="110" viewBox="0 0 70 110">
+            <rect x="22" y="5" width="26" height="100" rx="2" fill="#9ab8d8" stroke="#2a5080" stroke-width="2"/>
+            <!-- rough surface pits -->
+            <circle cx="27" cy="25" r="3" fill="#2a5080"/>
+            <circle cx="43" cy="40" r="3" fill="#2a5080"/>
+            <circle cx="30" cy="60" r="3" fill="#2a5080"/>
+            <circle cx="44" cy="78" r="3" fill="#2a5080"/>
+            <circle cx="28" cy="95" r="3" fill="#2a5080"/>
+            <text x="55" y="40" class="ann">pits</text>
+            <line x1="53" y1="40" x2="46" y2="42" stroke="#2a5080" stroke-width="0.8"/>
+          </svg>
+          <span class="diagram-label">Longitudinal<br/>(pitted surface)</span>
+        </div>
+      </div>
+      <div class="card-props">
+        <div class="prop-row"><span class="prop-key">Cross-section</span><span class="prop-val">Individual cells oval; bundled in arc/horseshoe (C-shape) arrangement</span></div>
+        <div class="prop-row"><span class="prop-key">Longitudinal</span><span class="prop-val">Smooth with surface pits; coarser than bast fibres</span></div>
+        <div class="prop-row"><span class="prop-key">Bundle structure</span><span class="prop-val">3 fibre types: structural (hard), ribbon (flexible), xylem (woody)</span></div>
+        <div class="prop-row"><span class="prop-key">Key ID</span><span class="prop-val">Hard leaf fibre; arc-bundle shape is diagnostic; saltwater resistant</span></div>
+      </div>
+    </div>
+
+    <!-- ═══════════ COIR ═══════════ -->
+    <div class="fibre-card">
+      <div class="card-header">
+        <div class="card-icon icon-fruit">🥥</div>
+        <div class="card-title-wrap">
+          <div class="card-title">Coir</div>
+          <div class="card-subtitle">Cocos nucifera (husk)</div>
+        </div>
+        <span class="card-type-tag tag-fruit">Fruit</span>
+      </div>
+      <div class="card-diagram">
+        <div class="diagram-panel">
+          <svg class="diagram" width="110" height="100" viewBox="0 0 110 100">
+            <!-- Round to oval shape, very thick wall -->
+            <ellipse cx="50" cy="50" rx="38" ry="36" fill="#d4b060" stroke="#7a5010" stroke-width="2.5"/>
+            <!-- Thick secondary wall -->
+            <ellipse cx="50" cy="50" rx="28" ry="26" fill="#a87830" stroke="#7a5010" stroke-width="1.5"/>
+            <!-- tiny lumen -->
+            <ellipse cx="50" cy="50" rx="8" ry="7" fill="#2a1808" stroke="#7a5010" stroke-width="1"/>
+            <text x="50" y="53" class="ann" text-anchor="middle" fill="#d4a060" font-size="7">lumen</text>
+            <text x="92" y="28" class="ann">Thick</text>
+            <text x="92" y="36" class="ann">S-wall</text>
+            <line x1="90" y1="35" x2="78" y2="35" stroke="#7a5010" stroke-width="0.8"/>
+          </svg>
+          <span class="diagram-label">Cross-section<br/>(thick-walled oval)</span>
+        </div>
+        <div class="diagram-panel">
+          <svg class="diagram" width="70" height="110" viewBox="0 0 70 110">
+            <rect x="18" y="5" width="34" height="100" rx="4" fill="#d4b060" stroke="#7a5010" stroke-width="2"/>
+            <!-- Pitted surface (lots of pits) -->
+            <circle cx="25" cy="20" r="2.5" fill="#7a5010"/>
+            <circle cx="35" cy="30" r="2.5" fill="#7a5010"/>
+            <circle cx="46" cy="22" r="2.5" fill="#7a5010"/>
+            <circle cx="28" cy="45" r="2.5" fill="#7a5010"/>
+            <circle cx="43" cy="55" r="2.5" fill="#7a5010"/>
+            <circle cx="24" cy="65" r="2.5" fill="#7a5010"/>
+            <circle cx="46" cy="75" r="2.5" fill="#7a5010"/>
+            <circle cx="32" cy="88" r="2.5" fill="#7a5010"/>
+            <text x="58" y="50" class="ann">pits</text>
+          </svg>
+          <span class="diagram-label">Longitudinal<br/>(pitted/rough)</span>
+        </div>
+      </div>
+      <div class="card-props">
+        <div class="prop-row"><span class="prop-key">Cross-section</span><span class="prop-val">Oval to round; very thick secondary cell wall; small lumen</span></div>
+        <div class="prop-row"><span class="prop-key">Longitudinal</span><span class="prop-val">Smooth with prominent pitting on surface</span></div>
+        <div class="prop-row"><span class="prop-key">Lumen</span><span class="prop-val">Small (unlike kapok)</span></div>
+        <div class="prop-row"><span class="prop-key">Key ID</span><span class="prop-val">Thickest cell wall of all natural fibres; lignin-rich (40–45%); waterproof</span></div>
+      </div>
+    </div>
+
+    <!-- ═══════════ KAPOK ═══════════ -->
+    <div class="fibre-card">
+      <div class="card-header">
+        <div class="card-icon icon-seed">🌰</div>
+        <div class="card-title-wrap">
+          <div class="card-title">Kapok</div>
+          <div class="card-subtitle">Ceiba pentandra</div>
+        </div>
+        <span class="card-type-tag tag-seed">Seed Pod</span>
+      </div>
+      <div class="card-diagram">
+        <div class="diagram-panel">
+          <svg class="diagram" width="110" height="100" viewBox="0 0 110 100">
+            <!-- Hollow thin-walled tube - most distinctive feature -->
+            <ellipse cx="50" cy="50" rx="38" ry="36" fill="#f0e0a0" stroke="#9a8020" stroke-width="2.5"/>
+            <!-- Very large hollow lumen (80%+) -->
+            <ellipse cx="50" cy="50" rx="32" ry="30" fill="#f5f0e0" stroke="#9a8020" stroke-width="1"/>
+            <!-- Air space label -->
+            <text x="50" y="46" class="ann" text-anchor="middle" font-size="9" fill="#6a6020">AIR-FILLED</text>
+            <text x="50" y="58" class="ann" text-anchor="middle" font-size="9" fill="#6a6020">HOLLOW CORE</text>
+            <!-- Wall annotation -->
+            <line x1="90" y1="25" x2="80" y2="35" stroke="#9a8020" stroke-width="0.8"/>
+            <text x="92" y="23" class="ann">Thin wall</text>
+            <text x="92" y="30" class="ann">(~1µm)</text>
+          </svg>
+          <span class="diagram-label">Cross-section<br/>(hollow tube — 80% air)</span>
+        </div>
+        <div class="diagram-panel">
+          <svg class="diagram" width="70" height="110" viewBox="0 0 70 110">
+            <!-- Smooth cylindrical tube appearance -->
+            <rect x="20" y="5" width="30" height="100" rx="5" fill="#f0e0a0" stroke="#9a8020" stroke-width="2"/>
+            <!-- show hollow inside with inner line -->
+            <rect x="24" y="8" width="22" height="94" rx="3" fill="#f9f5e8" stroke="#c8b060" stroke-width="0.8"/>
+            <!-- almost no convolutions, barely any twists -->
+            <text x="38" y="56" class="ann" text-anchor="middle" fill="#8a7020" font-size="8">smooth,</text>
+            <text x="38" y="66" class="ann" text-anchor="middle" fill="#8a7020" font-size="8">no twist</text>
+          </svg>
+          <span class="diagram-label">Longitudinal<br/>(smooth, no convolutions)</span>
+        </div>
+      </div>
+      <div class="card-props">
+        <div class="prop-row"><span class="prop-key">Cross-section</span><span class="prop-val">Perfect thin-walled hollow circle; lumen occupies ~80% of diameter</span></div>
+        <div class="prop-row"><span class="prop-key">Longitudinal</span><span class="prop-val">Smooth cylindrical tube; no convolutions, no nodes</span></div>
+        <div class="prop-row"><span class="prop-key">Special</span><span class="prop-val">Cannot be spun — too short (10–35mm) and smooth; no friction/crimp</span></div>
+        <div class="prop-row"><span class="prop-key">Key ID</span><span class="prop-val">Only fibre that is essentially a sealed hollow tube = ultra-lightweight, buoyant</span></div>
+      </div>
+    </div>
+
+    <!-- ═══════════ WOOL ═══════════ -->
+    <div class="fibre-card">
+      <div class="card-header">
+        <div class="card-icon icon-protein">🐑</div>
+        <div class="card-title-wrap">
+          <div class="card-title">Wool</div>
+          <div class="card-subtitle">Ovis aries (sheep fleece)</div>
+        </div>
+        <span class="card-type-tag tag-protein">Protein</span>
+      </div>
+      <div class="card-diagram">
+        <div class="diagram-panel">
+          <svg class="diagram" width="110" height="110" viewBox="0 0 110 110">
+            <!-- Oval cross section -->
+            <ellipse cx="50" cy="55" rx="36" ry="38" fill="#f0e0d0" stroke="#8a3020" stroke-width="2.5"/>
+            <!-- Cortex layer -->
+            <ellipse cx="50" cy="55" rx="28" ry="30" fill="#d8b090" stroke="#8a3020" stroke-width="1.5"/>
+            <!-- Ortho cortex (left) -->
+            <path d="M22,55 C22,35 50,25 50,25 C50,25 50,85 50,85 C35,85 22,75 22,55Z"
+                  fill="#c89068" stroke="#8a3020" stroke-width="1" opacity="0.7"/>
+            <!-- Para cortex (right) -->
+            <path d="M78,55 C78,35 50,25 50,25 C50,25 50,85 50,85 C65,85 78,75 78,55Z"
+                  fill="#e8b090" stroke="#8a3020" stroke-width="1" opacity="0.7"/>
+            <!-- Medulla (central, only in coarse wool) -->
+            <ellipse cx="50" cy="55" rx="7" ry="7" fill="#3a1808" stroke="#8a3020" stroke-width="1"/>
+            <!-- scale edge visible on cuticle -->
+            <text x="92" y="20" class="ann">Cuticle</text>
+            <text x="92" y="38" class="ann">Cortex</text>
+            <text x="92" y="58" class="ann">Medulla</text>
+            <line x1="90" y1="20" x2="80" y2="28" stroke="#8a3020" stroke-width="0.8"/>
+            <line x1="90" y1="37" x2="76" y2="40" stroke="#8a3020" stroke-width="0.8"/>
+            <line x1="90" y1="57" x2="58" y2="57" stroke="#8a3020" stroke-width="0.8"/>
+            <!-- ortho/para labels -->
+            <text x="34" y="55" class="ann" text-anchor="middle" fill="#5a2010" font-size="7">Ortho</text>
+            <text x="64" y="55" class="ann" text-anchor="middle" fill="#5a2010" font-size="7">Para</text>
+          </svg>
+          <span class="diagram-label">Cross-section<br/>(oval; cortex + medulla)</span>
+        </div>
+        <div class="diagram-panel">
+          <svg class="diagram" width="70" height="120" viewBox="0 0 70 120">
+            <!-- Fibre body -->
+            <path d="M25,5 C20,5 18,10 18,110 C18,115 22,118 35,118 C48,118 52,115 52,110 C52,10 50,5 45,5Z"
+                  fill="#f0e0d0" stroke="#8a3020" stroke-width="2"/>
+            <!-- Overlapping scales on left edge -->
+            <path d="M18,15 C10,15 8,22 18,22" fill="#d4a080" stroke="#8a3020" stroke-width="1"/>
+            <path d="M18,28 C10,28 8,35 18,35" fill="#d4a080" stroke="#8a3020" stroke-width="1"/>
+            <path d="M18,41 C10,41 8,48 18,48" fill="#d4a080" stroke="#8a3020" stroke-width="1"/>
+            <path d="M18,54 C10,54 8,61 18,61" fill="#d4a080" stroke="#8a3020" stroke-width="1"/>
+            <path d="M18,67 C10,67 8,74 18,74" fill="#d4a080" stroke="#8a3020" stroke-width="1"/>
+            <path d="M18,80 C10,80 8,87 18,87" fill="#d4a080" stroke="#8a3020" stroke-width="1"/>
+            <path d="M18,93 C10,93 8,100 18,100" fill="#d4a080" stroke="#8a3020" stroke-width="1"/>
+            <text x="6" y="55" class="ann" text-anchor="middle" fill="#8a3020" font-size="7" transform="rotate(-90,6,55)">scales</text>
+          </svg>
+          <span class="diagram-label">Longitudinal<br/>(overlapping scales)</span>
+        </div>
+      </div>
+      <div class="card-props">
+        <div class="prop-row"><span class="prop-key">Cross-section</span><span class="prop-val">Oval/circular; 3 layers: Cuticle (scales) → Cortex (ortho+para) → Medulla</span></div>
+        <div class="prop-row"><span class="prop-key">Longitudinal</span><span class="prop-val">Overlapping imbricated scales pointing toward tip — UNIQUE to wool</span></div>
+        <div class="prop-row"><span class="prop-key">Medulla</span><span class="prop-val">Present only in coarse/carpet wool; absent in fine Merino</span></div>
+        <div class="prop-row"><span class="prop-key">Crimp</span><span class="prop-val">Natural 3D crimp due to bilateral cortex (ortho vs para-cortex)</span></div>
+        <div class="prop-row"><span class="prop-key">Key ID</span><span class="prop-val">Scales cause felting (Differential Friction Effect); only fibre with serrated edge</span></div>
+      </div>
+    </div>
+
+    <!-- ═══════════ SILK ═══════════ -->
+    <div class="fibre-card">
+      <div class="card-header">
+        <div class="card-icon icon-protein">🦋</div>
+        <div class="card-title-wrap">
+          <div class="card-title">Silk (Mulberry)</div>
+          <div class="card-subtitle">Bombyx mori</div>
+        </div>
+        <span class="card-type-tag tag-protein">Protein</span>
+      </div>
+      <div class="card-diagram">
+        <div class="diagram-panel">
+          <svg class="diagram" width="120" height="110" viewBox="0 0 120 110">
+            <!-- Two triangular fibroin strands side by side (degummed) -->
+            <!-- Fibroin strand 1 -->
+            <polygon points="35,20 60,80 10,80" fill="#f8e8c0" stroke="#9a7020" stroke-width="2"/>
+            <!-- Fibroin strand 2 -->
+            <polygon points="70,20 95,80 45,80" fill="#f8e8c0" stroke="#9a7020" stroke-width="2"/>
+            <!-- Sericin gum joining them (shown as halo) -->
+            <path d="M10,85 C10,90 35,92 52,90 C69,92 95,90 95,85 C95,80 70,78 52,80 C35,78 10,80 10,85Z"
+                  fill="none" stroke="#c0a040" stroke-width="1.5" stroke-dasharray="3,2"/>
+            <text x="53" y="95" class="ann" text-anchor="middle">← Sericin (gum) →</text>
+            <!-- labels -->
+            <text x="35" y="55" class="ann" text-anchor="middle">Fibroin</text>
+            <text x="70" y="55" class="ann" text-anchor="middle">Fibroin</text>
+            <text x="35" y="14" class="ann" text-anchor="middle">▲ triangular</text>
+          </svg>
+          <span class="diagram-label">Cross-section<br/>(2 triangular fibroin strands)</span>
+        </div>
+        <div class="diagram-panel">
+          <svg class="diagram" width="70" height="110" viewBox="0 0 70 110">
+            <!-- Two smooth parallel rods -->
+            <rect x="18" y="5" width="12" height="100" rx="2" fill="#f8e8c0" stroke="#9a7020" stroke-width="1.5"/>
+            <rect x="38" y="5" width="12" height="100" rx="2" fill="#f8e8c0" stroke="#9a7020" stroke-width="1.5"/>
+            <!-- sericin coating shown as dotted outline -->
+            <rect x="15" y="3" width="38" height="104" rx="4" fill="none" stroke="#c0a040" stroke-width="1" stroke-dasharray="4,2"/>
+            <text x="56" y="30" class="ann">Sericin</text>
+            <text x="56" y="38" class="ann">coat</text>
+            <line x1="53" y1="35" x2="53" y2="35" stroke="#c0a040" stroke-width="0.8"/>
+            <text x="28" y="120" class="ann" text-anchor="middle">2 fibroin rods</text>
+          </svg>
+          <span class="diagram-label">Longitudinal<br/>(smooth, rod-like)</span>
+        </div>
+      </div>
+      <div class="card-props">
+        <div class="prop-row"><span class="prop-key">Cross-section</span><span class="prop-val">Two triangular fibroin strands with rounded corners, cemented by sericin</span></div>
+        <div class="prop-row"><span class="prop-key">Longitudinal</span><span class="prop-val">Smooth, rod-like; completely featureless surface — no scales, no nodes</span></div>
+        <div class="prop-row"><span class="prop-key">No lumen</span><span class="prop-val">Solid protein filament — no central hollow</span></div>
+        <div class="prop-row"><span class="prop-key">Sericin</span><span class="prop-val">Outer gum (25–30%); removed by degumming in hot water</span></div>
+        <div class="prop-row"><span class="prop-key">Key ID</span><span class="prop-val">Only continuous filament fibre; triangular cross-section gives lustre + sheen</span></div>
+      </div>
+    </div>
+
+    <!-- ═══════════ ASBESTOS ═══════════ -->
+    <div class="fibre-card">
+      <div class="card-header">
+        <div class="card-icon icon-mineral">⛏️</div>
+        <div class="card-title-wrap">
+          <div class="card-title">Asbestos</div>
+          <div class="card-subtitle">Chrysotile / Crocidolite</div>
+        </div>
+        <span class="card-type-tag tag-mineral">Mineral</span>
+      </div>
+      <div class="card-diagram">
+        <div class="diagram-panel">
+          <svg class="diagram" width="110" height="100" viewBox="0 0 110 100">
+            <!-- Bundle of fibrillar rods (chrysotile) -->
+            <!-- outer bundle -->
+            <ellipse cx="50" cy="50" rx="38" ry="36" fill="#e0e0d8" stroke="#505048" stroke-width="2"/>
+            <!-- individual fibrils packed together -->
+            <circle cx="35" cy="40" r="6" fill="#b8b8a8" stroke="#505048" stroke-width="1"/>
+            <circle cx="50" cy="35" r="6" fill="#b8b8a8" stroke="#505048" stroke-width="1"/>
+            <circle cx="65" cy="40" r="6" fill="#b8b8a8" stroke="#505048" stroke-width="1"/>
+            <circle cx="30" cy="54" r="6" fill="#b8b8a8" stroke="#505048" stroke-width="1"/>
+            <circle cx="50" cy="53" r="6" fill="#b8b8a8" stroke="#505048" stroke-width="1"/>
+            <circle cx="70" cy="54" r="6" fill="#b8b8a8" stroke="#505048" stroke-width="1"/>
+            <circle cx="40" cy="67" r="6" fill="#b8b8a8" stroke="#505048" stroke-width="1"/>
+            <circle cx="60" cy="67" r="6" fill="#b8b8a8" stroke="#505048" stroke-width="1"/>
+            <text x="50" y="95" class="ann" text-anchor="middle">Fibrillar bundle</text>
+          </svg>
+          <span class="diagram-label">Cross-section<br/>(fibrillar bundles)</span>
+        </div>
+        <div class="diagram-panel">
+          <svg class="diagram" width="70" height="110" viewBox="0 0 70 110">
+            <!-- Multiple thin parallel rods -->
+            <rect x="18" y="5" width="5" height="100" rx="1" fill="#b8b8a8" stroke="#505048" stroke-width="1"/>
+            <rect x="26" y="8" width="5" height="97" rx="1" fill="#b8b8a8" stroke="#505048" stroke-width="1"/>
+            <rect x="34" y="5" width="5" height="100" rx="1" fill="#b8b8a8" stroke="#505048" stroke-width="1"/>
+            <rect x="42" y="7" width="5" height="98" rx="1" fill="#b8b8a8" stroke="#505048" stroke-width="1"/>
+            <rect x="50" y="5" width="5" height="100" rx="1" fill="#b8b8a8" stroke="#505048" stroke-width="1"/>
+            <text x="35" y="120" class="ann" text-anchor="middle">parallel fibrils</text>
+          </svg>
+          <span class="diagram-label">Longitudinal<br/>(parallel rod fibrils)</span>
+        </div>
+      </div>
+      <div class="card-props">
+        <div class="prop-row"><span class="prop-key">Cross-section</span><span class="prop-val">Fibrillar bundles of silicate mineral; no true single-cell structure</span></div>
+        <div class="prop-row"><span class="prop-key">Longitudinal</span><span class="prop-val">Parallel rod-like fibrils; no nodes, no scales, no lumen</span></div>
+        <div class="prop-row"><span class="prop-key">Key ID</span><span class="prop-val">Completely inorganic; needle-like crystalline fibrils; fireproof; CARCINOGENIC — banned</span></div>
+        <div class="prop-row"><span class="prop-key">Types</span><span class="prop-val">Chrysotile (white, curly) · Crocidolite (blue, straight) · Amosite (brown)</span></div>
+      </div>
+    </div>
+
+  </div><!-- /fibre-grid -->
+
+  <hr class="divider">
+
+  <!-- ── STRUCTURAL LAYERS COMPARISON ── -->
+  <div class="section-label">Internal Architecture</div>
+  <div class="section-title">Structural Layers — Cotton vs Wool vs Silk</div>
+  <p class="section-sub">These three fibres have the most complex internal layer structures and are most commonly compared in exams.</p>
+
+  <div class="layers-grid">
+    <div class="layer-card">
+      <div class="layer-card-title">🌿 Cotton — Layer Structure (Outer → Inner)</div>
+      <div class="layer-card-body">
+        <div class="layer-row">
+          <div class="layer-swatch" style="background:#a8784a;"></div>
+          <span class="layer-name">Cuticle</span>
+          <span class="layer-desc">Wax + pectin outer coat; water-repellent until scoured</span>
+        </div>
+        <div class="layer-row">
+          <div class="layer-swatch" style="background:#c89870;"></div>
+          <span class="layer-name">Primary Wall</span>
+          <span class="layer-desc">Thin cellulose microfibrils; random orientation</span>
+        </div>
+        <div class="layer-row">
+          <div class="layer-swatch" style="background:#d4b060;"></div>
+          <span class="layer-name">S1 layer</span>
+          <span class="layer-desc">Outer secondary wall; fibrillar angle ~70°</span>
+        </div>
+        <div class="layer-row">
+          <div class="layer-swatch" style="background:#e8c870;"></div>
+          <span class="layer-name">S2 layer</span>
+          <span class="layer-desc">Middle (thickest) secondary wall; ~20–30° angle; gives strength</span>
+        </div>
+        <div class="layer-row">
+          <div class="layer-swatch" style="background:#f0d898;"></div>
+          <span class="layer-name">S3 layer</span>
+          <span class="layer-desc">Inner secondary wall; thin; ~0–45° angle</span>
+        </div>
+        <div class="layer-row">
+          <div class="layer-swatch" style="background:#1a1208;"></div>
+          <span class="layer-name">Lumen</span>
+          <span class="layer-desc">Central canal; collapses on drying → kidney shape</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="layer-card">
+      <div class="layer-card-title">🐑 Wool — Layer Structure (Outer → Inner)</div>
+      <div class="layer-card-body">
+        <div class="layer-row">
+          <div class="layer-swatch" style="background:#d4a080;"></div>
+          <span class="layer-name">Cuticle (scales)</span>
+          <span class="layer-desc">Overlapping keratinous scales; serrated edge; causes felting</span>
+        </div>
+        <div class="layer-row">
+          <div class="layer-swatch" style="background:#e8c0a0;"></div>
+          <span class="layer-name">Epicuticle</span>
+          <span class="layer-desc">Outermost membrane; hydrophobic (resists water initially)</span>
+        </div>
+        <div class="layer-row">
+          <div class="layer-swatch" style="background:#c89068;"></div>
+          <span class="layer-name">Ortho-cortex</span>
+          <span class="layer-desc">Left side; more water-absorbent; swells more → causes natural crimp</span>
+        </div>
+        <div class="layer-row">
+          <div class="layer-swatch" style="background:#e8b090;"></div>
+          <span class="layer-name">Para-cortex</span>
+          <span class="layer-desc">Right side; less absorbent; denser; bilateral arrangement → crimp</span>
+        </div>
+        <div class="layer-row">
+          <div class="layer-swatch" style="background:#3a1808;"></div>
+          <span class="layer-name">Medulla</span>
+          <span class="layer-desc">Central air-filled canal; only in coarse wool; absent in fine Merino</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="layer-card">
+      <div class="layer-card-title">🦋 Silk — Layer Structure</div>
+      <div class="layer-card-body">
+        <div class="layer-row">
+          <div class="layer-swatch" style="background:#c0a040;"></div>
+          <span class="layer-name">Sericin</span>
+          <span class="layer-desc">Outer gum (25–30% of raw silk); holds two fibroin strands together; removed by degumming</span>
+        </div>
+        <div class="layer-row">
+          <div class="layer-swatch" style="background:#f8e8c0;"></div>
+          <span class="layer-name">Fibroin core</span>
+          <span class="layer-desc">Two triangular protein filaments; gives strength and lustre; ~70–75% of silk</span>
+        </div>
+        <div class="layer-row">
+          <div class="layer-swatch" style="background:#f0d8a0;"></div>
+          <span class="layer-name">β-sheet structure</span>
+          <span class="layer-desc">Crystalline regions in fibroin; antiparallel chains; responsible for tensile strength</span>
+        </div>
+        <div style="margin-top:10px; padding:8px; background:#fffbf0; border:1px dashed #c0a040; border-radius:4px; font-size:0.78rem; color:var(--muted);">
+          <strong>Note:</strong> Silk has NO lumen. It is a solid continuous protein filament — the only natural continuous-filament fibre.
+        </div>
+      </div>
+    </div>
+
+    <div class="layer-card">
+      <div class="layer-card-title">🌾 Jute — Layer Structure</div>
+      <div class="layer-card-body">
+        <div class="layer-row">
+          <div class="layer-swatch" style="background:#8aaa60;"></div>
+          <span class="layer-name">Middle Lamella</span>
+          <span class="layer-desc">Pectin + lignin cement; binds adjacent cells into bundles</span>
+        </div>
+        <div class="layer-row">
+          <div class="layer-swatch" style="background:#a8c878;"></div>
+          <span class="layer-name">Primary Wall</span>
+          <span class="layer-desc">Thin cellulose + lignin + hemicellulose</span>
+        </div>
+        <div class="layer-row">
+          <div class="layer-swatch" style="background:#c8d8a0;"></div>
+          <span class="layer-name">Secondary Wall</span>
+          <span class="layer-desc">Thick; cellulose microfibrils embedded in lignin matrix; gives rigidity</span>
+        </div>
+        <div class="layer-row">
+          <div class="layer-swatch" style="background:#1a3010;"></div>
+          <span class="layer-name">Lumen</span>
+          <span class="layer-desc">Large, round, open; clearly visible under low magnification</span>
+        </div>
+        <div style="margin-top:10px; padding:8px; background:#f4f8f0; border:1px dashed #8aaa60; border-radius:4px; font-size:0.78rem; color:var(--muted);">
+          <strong>Lignin content (15–25%)</strong> is what makes jute stiff, golden-coloured, and difficult to bleach/dye evenly.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ── SIDE-BY-SIDE MINI CROSS SECTIONS ── -->
+  <div class="section-label">Visual Summary</div>
+  <div class="section-title">All Cross-Sections Side by Side</div>
+  <p class="section-sub">Scaled representation of cross-sectional shapes for quick exam revision.</p>
+
+  <div class="compare-grid">
+
+    <!-- Cotton -->
+    <div class="compare-item">
+      <svg width="70" height="70" viewBox="0 0 70 70">
+        <path d="M35,8 C50,5 62,16 62,32 C62,48 50,54 38,56 C28,57 12,52 9,40 C6,28 15,10 35,8Z" fill="#f5e8c0" stroke="#8b4513" stroke-width="2"/>
+        <path d="M35,20 C46,18 55,26 55,34 C55,44 46,49 37,50 C29,51 18,46 16,38 C14,29 22,21 35,20Z" fill="#1a1208" stroke="#5a3010" stroke-width="1"/>
+      </svg>
+      <span class="cs-name">Cotton</span>
+      <span class="cs-shape">kidney-shaped</span>
+    </div>
+
+    <!-- Jute -->
+    <div class="compare-item">
+      <svg width="70" height="70" viewBox="0 0 70 70">
+        <polygon points="35,6 56,18 60,40 46,58 24,58 10,40 14,18" fill="#c8d8a0" stroke="#3a6b3a" stroke-width="2"/>
+        <polygon points="35,18 48,26 51,40 42,52 28,52 19,40 22,26" fill="#7aaa50" stroke="#3a6b3a" stroke-width="1"/>
+        <circle cx="35" cy="38" r="10" fill="#1a3010" stroke="#3a6b3a" stroke-width="1"/>
+      </svg>
+      <span class="cs-name">Jute</span>
+      <span class="cs-shape">polygonal</span>
+    </div>
+
+    <!-- Flax -->
+    <div class="compare-item">
+      <svg width="70" height="70" viewBox="0 0 70 70">
+        <polygon points="35,5 55,16 60,38 46,57 24,57 10,38 15,16" fill="#d4c8a0" stroke="#7a6a30" stroke-width="2"/>
+        <polygon points="35,16 50,25 54,38 43,51 27,51 16,38 20,25" fill="#b8a870" stroke="#7a6a30" stroke-width="1.5"/>
+        <ellipse cx="35" cy="37" rx="5" ry="8" fill="#2a2010" stroke="#7a6a30" stroke-width="1"/>
+      </svg>
+      <span class="cs-name">Flax</span>
+      <span class="cs-shape">polygonal, narrow lumen</span>
+    </div>
+
+    <!-- Hemp -->
+    <div class="compare-item">
+      <svg width="70" height="70" viewBox="0 0 70 70">
+        <polygon points="33,5 54,14 62,36 48,57 22,57 8,36 16,14" fill="#c0d4b0" stroke="#3a5530" stroke-width="2"/>
+        <polygon points="33,16 50,23 56,37 45,52 25,52 14,37 20,23" fill="#80a870" stroke="#3a5530" stroke-width="1.5"/>
+        <ellipse cx="35" cy="38" rx="8" ry="9" fill="#1a2810" stroke="#3a5530" stroke-width="1"/>
+      </svg>
+      <span class="cs-name">Hemp</span>
+      <span class="cs-shape">irregular polygon</span>
+    </div>
+
+    <!-- Ramie -->
+    <div class="compare-item">
+      <svg width="70" height="70" viewBox="0 0 70 70">
+        <ellipse cx="35" cy="36" rx="30" ry="28" fill="#d8e8d0" stroke="#2a6040" stroke-width="2"/>
+        <ellipse cx="35" cy="36" rx="22" ry="20" fill="#78a888" stroke="#2a6040" stroke-width="1.5"/>
+        <ellipse cx="35" cy="36" rx="14" ry="13" fill="#102818" stroke="#2a6040" stroke-width="1"/>
+      </svg>
+      <span class="cs-name">Ramie</span>
+      <span class="cs-shape">oval, large lumen</span>
+    </div>
+
+    <!-- Sisal -->
+    <div class="compare-item">
+      <svg width="70" height="70" viewBox="0 0 70 70">
+        <path d="M10,62 C10,25 62,25 62,62" fill="none" stroke="#2a5080" stroke-width="3"/>
+        <circle cx="22" cy="45" r="6" fill="#9ab8d8" stroke="#2a5080" stroke-width="1"/>
+        <circle cx="36" cy="34" r="6" fill="#9ab8d8" stroke="#2a5080" stroke-width="1"/>
+        <circle cx="50" cy="45" r="6" fill="#9ab8d8" stroke="#2a5080" stroke-width="1"/>
+      </svg>
+      <span class="cs-name">Sisal</span>
+      <span class="cs-shape">arc/horseshoe bundle</span>
+    </div>
+
+    <!-- Coir -->
+    <div class="compare-item">
+      <svg width="70" height="70" viewBox="0 0 70 70">
+        <ellipse cx="35" cy="36" rx="30" ry="28" fill="#d4b060" stroke="#7a5010" stroke-width="2"/>
+        <ellipse cx="35" cy="36" rx="22" ry="20" fill="#a87830" stroke="#7a5010" stroke-width="1.5"/>
+        <ellipse cx="35" cy="36" rx="5" ry="5" fill="#2a1808" stroke="#7a5010" stroke-width="1"/>
+      </svg>
+      <span class="cs-name">Coir</span>
+      <span class="cs-shape">thick-walled oval</span>
+    </div>
+
+    <!-- Kapok -->
+    <div class="compare-item">
+      <svg width="70" height="70" viewBox="0 0 70 70">
+        <ellipse cx="35" cy="36" rx="30" ry="28" fill="#f0e0a0" stroke="#9a8020" stroke-width="2"/>
+        <ellipse cx="35" cy="36" rx="25" ry="23" fill="#fdf8e8" stroke="#c8b060" stroke-width="1"/>
+        <text x="35" y="32" text-anchor="middle" font-size="8" fill="#8a7020" font-family="DM Mono, monospace">HOLLOW</text>
+        <text x="35" y="44" text-anchor="middle" font-size="8" fill="#8a7020" font-family="DM Mono, monospace">AIR</text>
+      </svg>
+      <span class="cs-name">Kapok</span>
+      <span class="cs-shape">hollow tube</span>
+    </div>
+
+    <!-- Wool -->
+    <div class="compare-item">
+      <svg width="70" height="70" viewBox="0 0 70 70">
+        <ellipse cx="35" cy="36" rx="30" ry="28" fill="#f0e0d0" stroke="#8a3020" stroke-width="2"/>
+        <ellipse cx="35" cy="36" rx="22" ry="20" fill="#d8b090" stroke="#8a3020" stroke-width="1.5"/>
+        <path d="M13,36 C13,18 35,10 35,10 C35,10 35,62 35,62 C22,62 13,54 13,36Z" fill="#c89068" stroke="#8a3020" stroke-width="0.8" opacity="0.7"/>
+        <path d="M57,36 C57,18 35,10 35,10 C35,10 35,62 35,62 C48,62 57,54 57,36Z" fill="#e8b090" stroke="#8a3020" stroke-width="0.8" opacity="0.7"/>
+        <circle cx="35" cy="36" r="5" fill="#3a1808" stroke="#8a3020" stroke-width="1"/>
+      </svg>
+      <span class="cs-name">Wool</span>
+      <span class="cs-shape">oval; cortex + medulla</span>
+    </div>
+
+    <!-- Silk -->
+    <div class="compare-item">
+      <svg width="70" height="70" viewBox="0 0 70 70">
+        <polygon points="20,10 44,62 -4,62" fill="#f8e8c0" stroke="#9a7020" stroke-width="2" transform="translate(13,0)"/>
+        <polygon points="20,10 44,62 -4,62" fill="#f8e8c0" stroke="#9a7020" stroke-width="2" transform="translate(28,0)"/>
+      </svg>
+      <span class="cs-name">Silk</span>
+      <span class="cs-shape">2× triangles</span>
+    </div>
+
+    <!-- Asbestos -->
+    <div class="compare-item">
+      <svg width="70" height="70" viewBox="0 0 70 70">
+        <ellipse cx="35" cy="36" rx="28" ry="26" fill="#e0e0d8" stroke="#505048" stroke-width="2"/>
+        <circle cx="24" cy="28" r="5" fill="#b8b8a8" stroke="#505048" stroke-width="1"/>
+        <circle cx="36" cy="24" r="5" fill="#b8b8a8" stroke="#505048" stroke-width="1"/>
+        <circle cx="48" cy="28" r="5" fill="#b8b8a8" stroke="#505048" stroke-width="1"/>
+        <circle cx="22" cy="42" r="5" fill="#b8b8a8" stroke="#505048" stroke-width="1"/>
+        <circle cx="36" cy="44" r="5" fill="#b8b8a8" stroke="#505048" stroke-width="1"/>
+        <circle cx="50" cy="42" r="5" fill="#b8b8a8" stroke="#505048" stroke-width="1"/>
+      </svg>
+      <span class="cs-name">Asbestos</span>
+      <span class="cs-shape">fibrillar bundle</span>
+    </div>
+
+  </div><!-- /compare-grid -->
+
+  <hr class="divider">
+
+  <!-- KEY EXAM TIPS -->
+  <div class="section-label">Exam Focus</div>
+  <div class="section-title">Key Morphological Identifiers</div>
+  <p class="section-sub">These are the single most distinguishing features examiners test.</p>
+
+  <div class="intro-table-wrap">
+    <table class="intro-table">
+      <thead>
+        <tr>
+          <th>Fibre</th>
+          <th>The ONE Feature That Identifies It</th>
+          <th>Exam Trick / Common Q</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Cotton</td><td>Twisted ribbon with convolutions (longitudinal)</td><td>"Why is the cross-section kidney-shaped?" → lumen collapses on drying</td></tr>
+        <tr><td>Jute</td><td>Polygonal cells with large round lumen + lignin</td><td>"Why can't jute be bleached white?" → lignin absorbs chemicals</td></tr>
+        <tr><td>Flax</td><td>Nodes (bamboo joints) on longitudinal surface</td><td>"How to distinguish flax from hemp?" → flax nodes more regular; smaller, thinner</td></tr>
+        <tr><td>Wool</td><td>Overlapping scales on longitudinal; bilateral cortex</td><td>"Why does wool felt?" → Differential Friction Effect from scales</td></tr>
+        <tr><td>Silk</td><td>Two triangular fibroin filaments in cross-section</td><td>"Why is silk lustrous?" → triangular prism acts as light reflector</td></tr>
+        <tr><td>Kapok</td><td>Hollow tube with enormous lumen (80%+)</td><td>"Why can't kapok be spun?" → too smooth + too short; no cohesion</td></tr>
+        <tr><td>Coir</td><td>Thickest cell wall of all natural fibres</td><td>"Why is coir water-resistant?" → thick lignified wall repels water</td></tr>
+        <tr><td>Ramie</td><td>Very large irregular lumen; widest bast fibre cell</td><td>"What is unique about ramie?" → longest + bacteriostatic + silky</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div><!-- /container -->
+
+<footer>
+  Natural Textile Fibre Morphology Guide &nbsp;|&nbsp; Based on Microscopy Literature &amp; Textile Science References &nbsp;|&nbsp; Exam Preparation
+</footer>
+
+</body>
+</html>
