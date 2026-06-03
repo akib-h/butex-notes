@@ -38,6 +38,12 @@ This repository contains comprehensive course notes from my journey through the 
 | **[MATH-101](https://github.com/itachi-re/butex-notes/tree/master/MATH-101)** | Mathematics - I | 🟢 Active | Differential Calculus, Integral Calculus, Linear Algebra, Coordinate Geometry | [📑 Topics](#math-101-topics) |
 | **[HSS-101](https://github.com/itachi-re/butex-notes/tree/master/HSS-101)** | Humanities & Social Science | 🟢 Active | Communication, Letters, Presentations, Meetings, Group Project | [📑 Topics](#hss-101-topics) |
 
+### 💻 Computing & Programming
+
+| Course Code | Course Title | Status | Topics Covered | Quick Links |
+| :--- | :--- | :---: | :--- | :--- |
+| **[MDM-101](https://github.com/itachi-re/butex-notes/tree/master/MDM-101)** ✨ New | Computer Programming | 🟢 Active | Programming Basics, C Language, Functions, Preprocessor, Pointers, Arrays, Strings, User-Defined Types, File I/O | [📑 Topics](#mdm-101-topics) |
+
 ### 🧵 Yarn Engineering (Fabric Department Focus)
 
 | Course Code | Course Title | Status | Topics Covered | Quick Links |
@@ -551,6 +557,63 @@ This repository contains comprehensive course notes from my journey through the 
 
 ---
 
+### MDM-101 Topics
+
+**[🔗 View All Computer Programming Notes](https://github.com/itachi-re/butex-notes/tree/master/MDM-101)**
+
+> MDM-101 covers the fundamentals of computer programming using the **C language**, introduced in Level 1 Term 2. Topics progress from basic concepts through memory management, user-defined types, and file I/O.
+
+<details>
+<summary><b>📂 01 - Programming Basics ✨ New</b></summary>
+
+- [Programming Basics](https://github.com/itachi-re/butex-notes/blob/master/MDM-101/01_programming_basics.md)
+
+</details>
+
+<details>
+<summary><b>📂 02 - Overview of C Language ✨ New</b></summary>
+
+- [C Language Overview](https://github.com/itachi-re/butex-notes/blob/master/MDM-101/02_c_overview.md)
+
+</details>
+
+<details>
+<summary><b>📂 03 - Functions ✨ New</b></summary>
+
+- [Functions in C](https://github.com/itachi-re/butex-notes/blob/master/MDM-101/03_functions.md)
+
+</details>
+
+<details>
+<summary><b>📂 04 - Preprocessor ✨ New</b></summary>
+
+- [Preprocessor Directives](https://github.com/itachi-re/butex-notes/blob/master/MDM-101/04_preprocessor.md)
+
+</details>
+
+<details>
+<summary><b>📂 05 - Pointers, Arrays & Strings ✨ New</b></summary>
+
+- [Pointers, Arrays & Strings](https://github.com/itachi-re/butex-notes/blob/master/MDM-101/05_pointers_arrays_strings.md)
+
+</details>
+
+<details>
+<summary><b>📂 06 - User-Defined Types ✨ New</b></summary>
+
+- [User-Defined Types (struct, union, enum)](https://github.com/itachi-re/butex-notes/blob/master/MDM-101/06_user_defined_types.md)
+
+</details>
+
+<details>
+<summary><b>📂 07 - File I/O ✨ New</b></summary>
+
+- [File Input & Output](https://github.com/itachi-re/butex-notes/blob/master/MDM-101/07_io.md)
+
+</details>
+
+---
+
 ### Lab Reports
 
 **[🔗 View All Lab Reports](https://github.com/itachi-re/butex-notes/tree/master/lab_reports)**
@@ -713,6 +776,14 @@ butex-notes/
 │   │   ├── 03_Script/
 │   │   └── 05_References/
 │   └── qna/
+├── MDM-101/                     # Computer Programming (7 files)  ✨ New
+│   ├── 01_programming_basics.md
+│   ├── 02_c_overview.md
+│   ├── 03_functions.md
+│   ├── 04_preprocessor.md
+│   ├── 05_pointers_arrays_strings.md
+│   ├── 06_user_defined_types.md
+│   └── 07_io.md
 ├── YE-101/                      # Natural Textile Fibres
 │   ├── bast/
 │   │   ├── flax/                # Flax module (11 files)
