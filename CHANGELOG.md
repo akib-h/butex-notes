@@ -7,6 +7,23 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) with [Se
 
 ## [Unreleased]
 
+### Summary
+New MATH-103 and PHY-103 course directories, expanded WPE-101 with fiber-forming polymers, raw materials, and synthesis content, and restructured WPE-101 into topic-based subdirectories.
+
+### Added
+- **MATH-103** — New course directory initialized
+- **PHY-103/magnetism/** — New magnetism module
+- **WPE-101/06-fiber-forming-polymers.md** — New note on fiber-forming polymers
+- **WPE-101/raw_materials/** — New raw materials subdirectory
+- **WPE-101/synthesis/** — New synthesis subdirectory
+- **WPE-101/README.md** — Course-level README for WPE-101
+
+### Changed
+- **WPE-101** reorganized into topic-based subdirectories:
+  - `01-introduction-and-history.md` → `fundamentals/01-introduction-and-history.md`
+  - `02-basic-concepts-and-terminology.md` → `fundamentals/02-basic-concepts-terminology.md`
+  - `03-classification-of-polymers.md` → `classification/01-classification-of-polymers.md`
+
 ## [0.6.0] — 2026-04-21
 *Release Notes:* https://github.com/itachi-re/butex-notes/releases/tag/0.6.0
 
