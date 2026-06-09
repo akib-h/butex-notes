@@ -7,6 +7,25 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) with [Se
 
 ## [Unreleased]
 
+## [0.7.0] — 2026-06-06
+*Release Notes:* https://github.com/itachi-re/butex-notes/releases/tag/0.7.0
+
+### Summary
+New second-year course foundations: PHY-103 Magnetism module (4 topic files + README) and MATH-103 initial content. PHY-103 Electricity was also formalised in this cycle.
+
+### Added
+- **PHY-103/magnetism** — New magnetism module (4 files + README):
+  - `01_magnetic_induction.md` — Biot-Savart Law, Ampere's Circuital Law, field due to straight conductor and circular coil
+  - `02_magnetic_force_conductor.md` — Force on a current-carrying conductor, force between parallel conductors, definition of Ampere
+  - `03_torque_current_loop.md` — Torque on a current loop, magnetic dipole moment, galvanometer principle
+  - `04_hall_effect.md` — Hall voltage, Hall coefficient, carrier type and concentration, applications
+  - `README.md` — Module overview, contents table, key formulae, notation reference
+- **MATH-103** — New course directory initialised
+
+### Changed
+- README: PHY-103 and MATH-103 added to Course Index and Detailed Course Contents
+- README: stats updated, last-updated date updated to 2026-06-06
+
 ### Summary
 New MATH-103 and PHY-103 course directories, expanded WPE-101 with fiber-forming polymers, raw materials, and synthesis content, and restructured WPE-101 into topic-based subdirectories.
 
