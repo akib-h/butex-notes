@@ -1,126 +1,154 @@
-# Prompt: University Course Notes Generator — [REPO_NAME] repo
+# Prompt: University Course Notes Generator — [REPO_URL] repo
+# (v2 — corrected against actual repo conventions, not just documented ones)
 
 ## Fill in before each use
 - SUBJECT: [e.g. Physics, Math, Chemistry, CS, Textile Engineering]
 - COURSE CODE: [e.g. PHY-103]
-- CHAPTER/UNIT: [e.g. Thermodynamics]
+- COURSE TITLE / CREDIT / HOURS-WEEK / TOTAL HOURS: [from the course info table]
+- CHAPTER/UNIT: [e.g. Electricity]
 - DISCIPLINE TYPE: [theoretical/math | experimental science | computational | applied/engineering]
+  → determines how "Core results" (Output 2, item 3) is framed
+
+### Original syllabus text (verbatim, as given by the institution)
   → this determines how "Core results" (Output 2, item 3) is framed
 
 
-### Topic list (ordered, cleaned — this is the generation order)
+### Topic list (ordered, cleaned — this is the canonical syllabus order)
 1. [topic 1]
 2. [topic 2]
 ...
 
-### Suggested file structure
-```text
-[COURSE_CODE]/
-└── [Chapter-Name]/
-    ├── README.md
-    ├── 01-[topic-1-slug].md
-    ├── 02-[topic-2-slug].md
-    ...
-```
-(`README.md` is the chapter index — GitHub auto-renders it as the folder's
-landing content, so it must keep this exact filename, no number prefix.
-slug = lowercase, hyphen-separated, matches topic list order exactly)
+## Step 0 — Verify against the live repo before writing anything
+Do this before generating a single file, every time:
+1. **Check for existing files in the target folder.** If any topics in this
+   chapter already have files, list them with their real filenames and note
+   their order. Do NOT rename or renumber existing files, even if their
+   numbering doesn't match syllabus order — that breaks links and git
+   history. Continue numbering from the next free integer for new files only.
+   The chapter's README (Output 0) is where syllabus order gets shown
+   correctly, regardless of what the filenames say.
+2. **Open 1-2 existing files in this subject/course** (this chapter if any
+   exist, otherwise a sibling chapter/course) and mirror their exact
+   frontmatter schema, heading style, and tone. Don't reuse this prompt's own
+   Output 2 structure if it conflicts with what's actually in the repo —
+   actual practice overrides documented convention.
+3. **Fetch the repo's real root `README.md` and `CONTRIBUTING.md`** if
+   reachable, rather than relying on what they're assumed to say. If they
+   document a convention (e.g. naming case) that contradicts what the actual
+   files do, follow the actual files and flag the contradiction in one line —
+   don't silently pick one.
+4. **Check whether a course-level README exists** (one level above the
+   chapter folder) if this course has multiple chapters/modules. If missing,
+   note it — it's needed for any chapter README to cross-link properly
+   (see Output 0b).
+5. **Check the real root README.md** for whether this course already has an
+   entry in the Course Index table / Detailed Course Contents. If not, that's
+   Output 5, not optional.
 
 ## Role
 Act as a contributor to the `[REPO_NAME]` GitHub repository. Produce rigorous,
 multi-source-researched notes on [CHAPTER/UNIT] for [COURSE CODE], matching
-this repo's existing structure and conventions (YAML frontmatter, LaTeX math,
-Mermaid diagrams, spoiler-format practice problems, changelog workflow).
-
-## Inputs (attach what's available; ask before starting if #1 is missing)
-1. **Syllabus / topic list** (required) — see above. Drives file order/count.
-2. **Hand notes / lecture PDFs** (optional) — secondary check only, for what
-   was actually taught (notation, scope, emphasis). Never the primary source —
-   every definition/law/result still gets verified externally.
-3. **README.md / CONTRIBUTING.md** (optional, repo-root level) — naming,
-   folder layout, frontmatter schema. If missing, default to this repo's
-   existing pattern in the relevant course folder and state explicitly which
-   conventions were assumed.
-4. **CHANGELOG.md** (optional, format reference only) — never rewritten, only
-   appended to (see Output 4).
+this repo's *actual* structure and conventions as confirmed in Step 0.
 
 ## Research standard (non-negotiable)
 - Verify every definition, law, formula, and derivation against 2–3 credible
-  sources before writing (standard textbooks, university OCW, domain-specific
-  references e.g. HyperPhysics/MIT OCW for physics, IUPAC/LibreTexts for
-  chemistry, Wolfram MathWorld for math, official docs/papers for CS).
-- Paraphrase everything in your own words — no copying source text.
-- If sources disagree on convention, sign convention, or scope, say so in one line.
-- If hand notes use non-standard notation/units, flag the mismatch with the standard form.
+  sources before writing (textbooks, university OCW, domain references —
+  HyperPhysics/MIT OCW for physics, IUPAC/LibreTexts for chemistry, Wolfram
+  MathWorld for math, official docs/papers for CS).
+- Paraphrase fully — no copied source text.
+- Flag source disagreements (convention, sign, scope) in one line.
+- Flag any hand-note notation that diverges from the standard form.
 
 ## Output 0 — Chapter index file (`README.md`)
-Generate this once per chapter, in addition to the per-topic files. Must be
-named exactly `README.md` (no number prefix) so GitHub renders it as the
-folder's landing page. Contents:
-1. Chapter/unit title + course info table (code, title, credit, hours/week, total hours).
-2. 3–5 sentence overview: what this chapter covers and why, in plain language.
-3. Ordered topic list, each item linking to its corresponding file (this is the
-   chapter's navigation index).
-4. Prerequisites — earlier chapters/courses this chapter assumes.
-5. Optional but encouraged: a Mermaid flowchart/mindmap showing how the topics
-   build on one another (e.g. law → consequence → application chains).
-6. One-line link back to the repo's root README/CONTRIBUTING for contribution norms.
+One per chapter, exact filename `README.md` (GitHub auto-renders it). Mirror
+the structure of this subject's existing best chapter README if one exists
+(header meta block, About, Official Syllabus quoted verbatim, Topic Index
+table, Quick Formula/Key-terms reference, Core References, footer back-links).
+**Topic Index table uses true syllabus order**, linking to whatever the real
+filenames are — file numbering and syllabus position will not always match
+for chapters with prior partial work, and that's fine.
 
-## Output 1 — One file per syllabus topic
-- File count and order = TOPIC LIST order, 1:1.
-- Naming: per the Suggested file structure above; confirm against any existing
-  files in the folder before naming the first one.
-- Frontmatter: title, course code, chapter, topic number, date (today's date),
-  tags, prerequisite links to earlier topic files in the same chapter.
+## Output 0b — Course-level README (only if missing and course has >1 chapter)
+Minimal index one level up: course info table, a row per
+chapter/module linking to each chapter's README, back-link to repo root.
 
-## Output 2 — Per-topic content template (every file gets all of this)
-1. **Overview** — 2–4 sentences: why this matters, where it sits in the chapter.
-2. **Definitions & key terms** — numbered, formal, each with a plain-English gloss.
-3. **Core results** — adapt to DISCIPLINE TYPE:
-   - Math → theorem, formal proof (state technique: direct/induction/contradiction).
-   - Physics/experimental science → law or principle, full derivation, the
-     experimental basis/evidence behind it, and limits of validity.
-   - Chemistry → mechanism/equation, with reasoning for each step.
-   - CS → algorithm/model, correctness argument, complexity analysis.
-   If a full derivation/proof is out of scope, give a labeled sketch + reference link.
-4. **Worked examples** — minimum 3, increasing difficulty, full step-by-step work.
-5. **Applications** — at least one real-world/engineering/industry use case.
-6. **Visual aid(s)** — see Output 3; minimum one per file.
-7. **Practice problems** — 3–5, solutions hidden in `<details>` spoiler blocks.
-8. **References** — 3–5 links, each with a one-line note on what it adds.
+## Output 1 — One file per missing syllabus topic
+- Continue numbering from the next free integer in the target folder; never
+  renumber existing files.
+- Naming: `NN_snake_case_topic.md` (lowercase, underscore-separated, zero-padded) —
+  unless Step 0 found this repo genuinely uses a different live convention.
+- Frontmatter: match exactly what Step 0 found in real files. Don't add
+  fields (chapter, topic number, prerequisites) that existing files don't have.
+
+## Output 2 — Per-topic content (organic structure, not a fixed mold)
+Numbered `## 1., 2., 3...` sections shaped by the topic, but every file must
+contain, somewhere, in whatever order reads naturally:
+1. Definition/statement of the law, theorem, mechanism, or model.
+2. **Core result**, adapted to DISCIPLINE TYPE:
+   - Math → theorem + full proof (name the technique).
+   - Physics/experimental science → law/principle + full derivation +
+     experimental basis + limits of validity.
+   - Chemistry → mechanism/equation with reasoning per step.
+   - CS → algorithm/model + correctness argument + complexity.
+   If a full proof/derivation is out of scope, give a labeled sketch + reference.
+3. Worked examples — minimum 3, increasing difficulty, fully solved.
+4. At least one comparison/distinction table or real-world application, where
+   the topic naturally supports one.
+5. Visual aid(s) — see Output 3.
+6. Practice problems — 3-5, **plain numbered list, no hidden/spoiler
+   answers** (only use spoiler blocks for collapsible reference tables, never
+   to hide solutions, unless Step 0 found this repo doing otherwise).
+7. References — numbered list, textbook chapter citations + 3-5 verified web
+   links, matching how sibling files in this subject already cite sources.
 
 ## Output 3 — Visual assets (reality-checked for GitHub rendering)
-Renders natively on GitHub — use these by default:
-- **Mermaid** — process flows, classification trees, cycles, relationships.
-- **SVG/PNG** — plots, vector diagrams, geometric/physical constructions
-  (generate via Python/matplotlib or similar, save into the repo's asset path).
-- **.ipynb** — for anything computational/interactive; link from the markdown
-  file, don't inline raw output.
-- Animated **GIF** — only for genuinely sequential/dynamic processes, not by default.
+Default to what the repo already uses for this subject (check Step 0):
+- **Mermaid** and **ASCII-art code blocks** — no extra asset files, render
+  natively, zero maintenance. Prefer these unless the repo already has an
+  established image-asset pattern for this subject.
+- **SVG/PNG** — only if this subject's existing files already use generated
+  images, or the diagram genuinely can't work as Mermaid/ASCII (e.g. precise
+  data plots). Save into whatever asset path the repo already uses.
+- **.ipynb** — for computational/interactive content only; link, don't inline.
+- Animated GIF — only for genuinely sequential/dynamic processes.
+Avoid PSD/BMP/TIFF/raw `.drawio`/XLSM — none render inline on GitHub.
+Every visual needs alt text.
 
-Does NOT render inline on GitHub — avoid unless converted first:
-- PSD, BMP, TIFF, raw `.drawio`, XLSM. If draw.io is the best tool for a
-  complex diagram, export to SVG/PNG, embed that, link the source separately.
+## Output 4 — Changelog snippet
+- Never rewrite `CHANGELOG.md`.
+- Check whether an `[Unreleased]` section is already open; if so, merge new
+  bullets into its existing `### Added`/`### Changed` lists rather than
+  creating a duplicate heading.
+- Match the exact bullet format already in use (e.g. `- **path** — desc:`
+  with indented `` `file.md` — desc `` sub-bullets).
+- Deliver as a standalone fenced code block, ready to paste in manually.
 
-Every visual needs alt text. Reuse openly-licensed diagrams (Wikimedia
-Commons, OCW) when correctly licensed and clearly attributed; otherwise generate one.
+## Output 5 — Root README.md update (diff snippet, never a full rewrite)
+If Step 0 found this course missing from the root README:
+1. One new row for the Course Index table, matching its exact column format.
+2. One new subsection under Detailed Course Contents, matching the pattern of
+   an existing course's subsection (heading anchor, module/file links).
+Deliver both as standalone snippets to paste in, not an edited full file.
 
-## Output 4 — Changelog
-- Never rewrite the existing file.
-- Output ONLY the new entries, in a fenced code block, matching the existing
-  changelog's header/format, ready to paste in manually.
+## Output 6 — Commit message (per the repo's real CONTRIBUTING.md convention)
+`type(scope): short imperative description` — confirm the exact types/scope
+convention from the real CONTRIBUTING.md in Step 0 rather than assuming.
 
 ## Notation
-- Math/physics/chemistry equations: LaTeX, `$...$` inline / `$$...$$` block.
-- Chemical equations: `mhchem` LaTeX extension where applicable.
-- Units: SI by default unless the course/source uses another convention — state it once per file if so.
+- LaTeX: `$...$` inline, `$$...$$` block. `mhchem` extension for chemistry.
+- SI units by default; state once per file if the course uses another convention.
 
 ## Pre-delivery checklist
-- [ ] `README.md` generated for the chapter folder (exact filename, no number prefix)
-- [ ] Files match TOPIC LIST order/count, correctly named per slug convention
-- [ ] Every definition/law/result cross-checked against 2–3 sources
+- [ ] Step 0 actually performed — existing files checked, real frontmatter
+      and structure mirrored, real README/CONTRIBUTING fetched
+- [ ] No existing file renamed or renumbered
+- [ ] New files numbered from next free integer, correct slug/case convention
+- [ ] Chapter README's Topic Index reflects syllabus order, not file order
+- [ ] Course-level README created if missing and course has >1 chapter
+- [ ] Every law/result cross-checked against 2-3 sources
 - [ ] Every derivation/proof complete, or sketch + reference
-- [ ] ≥1 properly-embedded, alt-texted visual per file
-- [ ] References section per file, links checked
-- [ ] Frontmatter dated with today's date
-- [ ] Changelog snippet delivered separately as a copy-paste block
+- [ ] ≥1 visual per file, in the format this subject already uses
+- [ ] Practice problems have no hidden answers (unless repo proves otherwise)
+- [ ] Root README diff snippet delivered if the course was missing from it
+- [ ] Changelog snippet merges into existing [Unreleased], doesn't duplicate
+- [ ] Commit message matches the repo's real CONTRIBUTING.md format
