@@ -10,6 +10,39 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) with [Se
 ### Summary
 CHEM-103 organic chemistry expansion: reaction intermediates, substitution and
 elimination mechanisms, addition reactions, and a new organometallic module.
+PHY-103 Electricity chapter completed: all 14 syllabus topics authored (Kirchhoff's
+Laws through parallel resonance), with module README and key formula reference added.
+
+### Added
+- **CHEM-103/organic_reaction** — New reaction mechanism files:
+  - `04_carbonium_ions.md` — Carbocation structure, stability, and rearrangements
+  - `05_carbanions.md` — Carbanion character, stability, and nucleophilicity
+  - `06_sn1.md` — SN1 mechanism, kinetics, stereochemistry, and solvent effects
+  - `07_sn2.md` — SN2 mechanism, steric factors, inversion, and reactivity trends
+  - `08_e1.md` — E1 elimination, carbocation intermediates, and Zaitsev's rule
+  - `09_e2.md` — E2 elimination, anti-periplanar geometry, and Hofmann vs Zaitsev
+  - `10_addition_reactions.md` — Electrophilic and nucleophilic addition to alkenes/carbonyls
+- **CHEM-103/organometallic** — New organometallic chemistry module (3 files):
+  - `01_organometallic_intro.md` — Definition, bonding types, and classification
+  - `02_grignard_reagent.md` — Preparation, reactions, and synthetic applications
+  - `README.md` — Module overview and contents
+- **PHY-103/electricity** — Completed remaining 6 topic files (syllabus §9–14):
+  - `09_kirchhoffs_laws.md` — KCL and KVL derivations, node/loop analysis, worked examples
+  - `10_wheatstone_bridge.md` — Bridge balance condition, null-deflection derivation, sensitivity
+  - `11_lr_circuit_growth_decay.md` — Transient analysis, time-constant derivation, energy considerations
+  - `12_ac_fundamentals.md` — Phasor representation, RMS quantities, power factor, AC generator
+  - `13_series_rlc_circuit.md` — Impedance, phase angle, resonance, power in series RLC
+  - `14_parallel_resonance.md` — Dynamic impedance, Q-factor, bandwidth, series vs parallel comparison
+  - `README.md` — Module overview, full 14-topic index, quick formula reference, key constants
+
+### Changed
+- README: PHY-103 added to **Core Sciences & Mathematics** Course Index table
+- README: `### PHY-103 Topics` subsection added under Detailed Course Contents,
+  listing all 14 Electricity files and 4 Magnetism files with GitHub blob links
+
+### Summary
+CHEM-103 organic chemistry expansion: reaction intermediates, substitution and
+elimination mechanisms, addition reactions, and a new organometallic module.
 
 ### Added
 - **CHEM-103/organic_reaction** — New reaction mechanism files:
