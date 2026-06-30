@@ -4,8 +4,27 @@ All notable changes to the BUTEX Notes project are documented here.
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) with [Semantic Versioning](https://semver.org/).
 
 ---
+[Unreleased]
+Added
 
-## [Unreleased]
+PHY-103/kinetic_theory_of_gases/README.md
+PHY-103/kinetic_theory_of_gases/01_heat.md
+PHY-103/kinetic_theory_of_gases/02_temperature.md
+PHY-103/kinetic_theory_of_gases/03_different_types_of_thermometer.md
+PHY-103/kinetic_theory_of_gases/04_newtons_law_of_cooling.md
+PHY-103/kinetic_theory_of_gases/05_isothermal_and_adiabatic_process.md
+PHY-103/kinetic_theory_of_gases/06_adiabatic_relation.md
+PHY-103/kinetic_theory_of_gases/07_fundamental_postulates_of_kinetic_theory.md
+PHY-103/kinetic_theory_of_gases/08_expression_of_pressure_from_kinetic_theory.md
+PHY-103/kinetic_theory_of_gases/09_degrees_of_freedom.md
+PHY-103/kinetic_theory_of_gases/10_mean_free_path.md
+PHY-103/kinetic_theory_of_gases/11_van_der_waals_equation_of_state.md
+PHY-103/kinetic_theory_of_gases/12_van_der_waals_constants_and_critical_constants.md
+PHY-103/kinetic_theory_of_gases/13_critical_coefficient.md
+PHY-103/qna/README.md
+PHY-103/quick_rev/01_kinetic_theory_of_gases.md
+
+## [0.8.0] — 2026-06-30
 
 ### Summary
 CHEM-103 organic chemistry expansion: reaction intermediates, substitution and
