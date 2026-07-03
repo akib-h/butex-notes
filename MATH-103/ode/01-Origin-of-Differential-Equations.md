@@ -393,5 +393,148 @@ The mass oscillates with angular frequency $\omega = 2$ rad/s, period $T = \pi$ 
 | 3Blue1Brown — What is a Differential Equation? | Video | [youtube.com/watch?v=p_di4Zn4wz4](https://www.youtube.com/watch?v=p_di4Zn4wz4) |
 
 ---
+---
+
+## 10. Practice Problems
+
+Try each problem before expanding the answer.
+
+---
+
+**Q1.** State the order and degree of:
+
+$$\left(\frac{d^3y}{dx^3}\right)^2 + 5\left(\frac{dy}{dx}\right)^7 + y = 0$$
+
+<details>
+<summary>Show Answer</summary>
+
+Order = 3 (highest derivative is the third derivative), degree = 2 (power on the highest-order derivative term).
+
+</details>
+
+---
+
+**Q2.** Verify that $y = C_1 e^{2x} + C_2 e^{-2x}$ satisfies $y'' - 4y = 0$.
+
+<details>
+<summary>Show Answer</summary>
+
+$y' = 2C_1e^{2x} - 2C_2e^{-2x}$, $y'' = 4C_1e^{2x} + 4C_2e^{-2x}$.
+
+$y'' - 4y = 4C_1e^{2x} + 4C_2e^{-2x} - 4(C_1e^{2x} + C_2e^{-2x}) = 0$ ✓
+
+</details>
+
+---
+
+**Q3.** A tank holds a chemical whose concentration decreases at a rate proportional to the amount present. Write the governing DE and its general solution.
+
+<details>
+<summary>Show Answer</summary>
+
+$$\frac{dC}{dt} = -kC, \quad k > 0$$
+
+General solution: $C(t) = C_0 e^{-kt}$
+
+</details>
+
+---
+
+**Q4.** The slope of a curve at any point $(x, y)$ is three times the $y$-coordinate. Formulate the DE and find the family of curves it represents.
+
+<details>
+<summary>Show Answer</summary>
+
+$$\frac{dy}{dx} = 3y$$
+
+Separating and integrating: $\ln|y| = 3x + C \Rightarrow y = Ae^{3x}$
+
+</details>
+
+---
+
+**Q5.** A cup of tea at 95°C is left in a room at 25°C. If $k = 0.05$ per minute, find the temperature after 10 minutes using Newton's Law of Cooling.
+
+<details>
+<summary>Show Answer</summary>
+
+$$T(t) = 25 + (95-25)e^{-0.05t}$$
+
+$$T(10) = 25 + 70e^{-0.5} \approx 25 + 70(0.6065) \approx 25 + 42.46 \approx 67.46°C$$
+
+</details>
+
+---
+
+**Q6.** Solve $y'' = 12x^2$ given $y(0) = 2$ and $y'(0) = 1$.
+
+<details>
+<summary>Show Answer</summary>
+
+$y' = 4x^3 + C_1$, using $y'(0) = 1 \Rightarrow C_1 = 1$
+
+$y = x^4 + x + C_2$, using $y(0) = 2 \Rightarrow C_2 = 2$
+
+Particular solution: $y = x^4 + x + 2$
+
+</details>
+
+---
+
+**Q7.** A population grows logistically with $r = 0.3$ and carrying capacity $K = 5000$. Write the DE. What happens to $\frac{dP}{dt}$ as $P \to K$?
+
+<details>
+<summary>Show Answer</summary>
+
+$$\frac{dP}{dt} = 0.3P\left(1 - \frac{P}{5000}\right)$$
+
+As $P \to K$, the factor $(1 - P/K) \to 0$, so $\frac{dP}{dt} \to 0$ — growth flattens out near carrying capacity.
+
+</details>
+
+---
+
+**Q8.** A series RLC circuit has $L = 2$ H, $R = 8\ \Omega$, $C = 0.1$ F, and no external voltage source. Write the governing DE for charge $q(t)$.
+
+<details>
+<summary>Show Answer</summary>
+
+$$L\frac{d^2q}{dt^2} + R\frac{dq}{dt} + \frac{q}{C} = 0$$
+
+$$2\frac{d^2q}{dt^2} + 8\frac{dq}{dt} + 10q = 0$$
+
+</details>
+
+---
+
+**Q9.** Cobalt-60 has a half-life of about 5.27 years. Starting with 40 mg, find how much remains after 10 years.
+
+<details>
+<summary>Show Answer</summary>
+
+$$\lambda = \frac{\ln 2}{5.27} \approx 0.1315 \text{ per year}$$
+
+$$N(10) = 40e^{-0.1315 \times 10} \approx 40 \times 0.2686 \approx 10.74 \text{ mg}$$
+
+</details>
+
+---
+
+**Q10.** A mass of 2 kg is attached to a spring with $k = 8$ N/m, no damping. Find the equation of motion if the mass starts at $x(0) = 0.5$ m with zero initial velocity.
+
+<details>
+<summary>Show Answer</summary>
+
+$$m\ddot{x} + kx = 0 \Rightarrow \ddot{x} + 4x = 0 \Rightarrow \omega = 2 \text{ rad/s}$$
+
+General solution: $x(t) = A\cos(2t) + B\sin(2t)$
+
+Using $x(0) = 0.5 \Rightarrow A = 0.5$; using $\dot{x}(0) = 0 \Rightarrow B = 0$
+
+$$x(t) = 0.5\cos(2t)$$
+
+</details>
+
+---
 
 > ⬅️ [Back to ODE Index](./README.md) · ➡️ [Next: Classification of DEs](./02-Classification-of-Differential-Equations.md)
