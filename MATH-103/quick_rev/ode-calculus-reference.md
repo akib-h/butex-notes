@@ -10,6 +10,7 @@ date: 2026-07-11
 ## Table of Contents
 
 1. [Derivatives & Integrals](#derivatives--integrals)
+   - Basic table, log/exp, inverse trig, hyperbolic, core rules, trig substitution, partial fractions
 2. [Differential Equations Cheat Sheet](#differential-equations-cheat-sheet)
 3. [Which Method Do I Use? (Decision Tree)](#which-method-do-i-use)
 4. [Worked Examples](#worked-examples)
@@ -17,6 +18,18 @@ date: 2026-07-11
 ---
 
 ## Derivatives & Integrals
+
+### Basic Derivatives & Integrals
+
+| Derivative | Integral |
+|---|---|
+| $d(x^n)/dx = nx^{n-1}$ | $\int x^n dx = \dfrac{x^{n+1}}{n+1}+C,\; n\neq -1$ |
+| $d(e^{ax})/dx = ae^{ax}$ | $\int e^{ax}dx=\dfrac{1}{a}e^{ax}+C$ |
+| $d(\sin ax)/dx=a\cos ax$ | $\int \cos(ax)dx=\dfrac{1}{a}\sin(ax)+C$ |
+| $d(\cos ax)/dx=-a\sin ax$ | $\int \sin(ax)dx=-\dfrac{1}{a}\cos(ax)+C$ |
+| $d(\tan x)/dx=\sec^2x$ | $\int \sec^2x\,dx=\tan x+C$ |
+| $d(\sec x)/dx=\sec x\tan x$ | $\int \sec x\tan x\,dx=\sec x+C$ |
+| $d(\ln|x|)/dx=1/x$ | $\int \dfrac1x\,dx=\ln|x|+C$ |
 
 ### Logarithmic & Exponential
 
@@ -53,6 +66,20 @@ date: 2026-07-11
 - **Chain rule**: $\dfrac{d}{dx}f(g(x)) = f'(g(x))g'(x)$
 - **Integration by parts**: $\int u\,dv = uv - \int v\,du$
   - LIATE ordering for picking $u$: **L**og, **I**nverse trig, **A**lgebraic, **T**rig, **E**xponential
+
+### Trigonometric Substitution
+
+| Expression in integrand | Substitution | Identity used |
+|---|---|---|
+| $\sqrt{a^2-x^2}$ | $x=a\sin\theta$ | $1-\sin^2\theta=\cos^2\theta$ |
+| $\sqrt{a^2+x^2}$ | $x=a\tan\theta$ | $1+\tan^2\theta=\sec^2\theta$ |
+| $\sqrt{x^2-a^2}$ | $x=a\sec\theta$ | $\sec^2\theta-1=\tan^2\theta$ |
+
+### Partial Fractions Quick Reference
+
+- Distinct linear factors: $\dfrac{P(x)}{(x-a)(x-b)} = \dfrac{A}{x-a}+\dfrac{B}{x-b}$
+- Repeated linear factor: $\dfrac{P(x)}{(x-a)^2} = \dfrac{A}{x-a}+\dfrac{B}{(x-a)^2}$
+- Irreducible quadratic factor: $\dfrac{P(x)}{x^2+bx+c} = \dfrac{Ax+B}{x^2+bx+c}$
 
 ---
 
@@ -136,31 +163,31 @@ $ax^2y'' + bxy' + cy = 0$
 
 ```mermaid
 flowchart TD
-    A[Start: identify the ODE] --> B{What order?}
-    B -->|1st order| C{Separable?<br/>dy/dx = f(x)g(y)}
-    C -->|Yes| C1[Separate and integrate both sides]
-    C -->|No| D{Linear in y?<br/>y' + P(x)y = Q(x)}
-    D -->|Yes| D1[Integrating factor<br/>mu = e^int P dx]
-    D -->|No| E{Exact?<br/>M dy = N dx, My = Nx}
-    E -->|Yes| E1[Solve F(x,y) = C directly]
-    E -->|No, but fixable| E2[Find integrating factor<br/>mu(x) or mu(y), then treat as exact]
-    E -->|No| F{Bernoulli form?<br/>y' + Py = Qy^n}
-    F -->|Yes| F1[Substitute v = y^1-n<br/>reduces to linear]
-    F -->|No| G{Homogeneous?<br/>dy/dx = f(y/x)}
-    G -->|Yes| G1[Substitute y = vx]
-    G -->|No| H[Try a special-case substitution<br/>or numerical method]
+    A["Start: identify the ODE"] --> B{"What order?"}
+    B -->|"1st order"| C{"Separable? dy/dx = f(x)g(y)"}
+    C -->|"Yes"| C1["Separate and integrate both sides"]
+    C -->|"No"| D{"Linear in y? y' + P(x)y = Q(x)"}
+    D -->|"Yes"| D1["Integrating factor: mu = e^(int P dx)"]
+    D -->|"No"| E{"Exact? My = Nx for M dx + N dy = 0"}
+    E -->|"Yes"| E1["Solve F(x,y) = C directly"]
+    E -->|"No, but fixable"| E2["Find integrating factor mu(x) or mu(y), then treat as exact"]
+    E -->|"No"| F{"Bernoulli form? y' + Py = Qy^n"}
+    F -->|"Yes"| F1["Substitute v = y^(1-n), reduces to linear"]
+    F -->|"No"| G{"Homogeneous? dy/dx = f(y/x)"}
+    G -->|"Yes"| G1["Substitute y = vx"]
+    G -->|"No"| H["Try a special substitution or numerical method"]
 
-    B -->|2nd order, constant coeff| I{Homogeneous?<br/>g(x) = 0}
-    I -->|Yes| I1[Characteristic equation<br/>am^2+bm+c=0<br/>real distinct / repeated / complex]
-    I -->|No| J{g(x) is poly, exp,<br/>sin/cos, or a product?}
-    J -->|Yes, simple form| J1[Undetermined Coefficients]
-    J -->|No, complicated g(x)| J2[Variation of Parameters]
+    B -->|"2nd order, constant coeff"| I{"Homogeneous? g(x) = 0"}
+    I -->|"Yes"| I1["Characteristic equation am^2+bm+c=0: real distinct / repeated / complex"]
+    I -->|"No"| J{"Is g(x) poly, exp, sin/cos, or a product of these?"}
+    J -->|"Yes, simple form"| J1["Undetermined Coefficients"]
+    J -->|"No, complicated g(x)"| J2["Variation of Parameters"]
 
-    B -->|Variable coeff,<br/>x^2 y'' form| K[Cauchy-Euler:<br/>try y = x^m]
+    B -->|"Variable coeff, x^2 y'' form"| K["Cauchy-Euler: try y = x^m"]
 
-    B -->|IVP with<br/>discontinuous/impulse g(t)| L[Laplace Transform method]
+    B -->|"IVP with discontinuous or impulse g(t)"| L["Laplace Transform method"]
 
-    B -->|Near singular point,<br/>variable coefficients| M[Power Series /<br/>Frobenius Method]
+    B -->|"Near singular point, variable coefficients"| M["Power Series / Frobenius Method"]
 ```
 
 ---
