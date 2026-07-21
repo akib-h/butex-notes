@@ -1,3 +1,4 @@
+#include <stdio.h>
 void print_grade(int mark)
 {
     if (mark < 0 || mark > 100)      { printf("Invalid marks!"); return; }
