@@ -1,53 +1,43 @@
 #include <stdio.h>
 
-int main() {
-    float marks;
+int main()
+{
+    int mark;
 
-    printf("Enter your marks (0-100): ");
-    scanf("%f", &marks);
+    printf("Enter marks: ");
+    scanf("%d", &mark);
 
-    if (marks < 0 || marks > 100) {
-        printf("Invalid marks!\n");
+    if (mark < 0 || mark > 100)
+    {
+        printf("Invalid marks!");
     }
-    else if (marks >= 80) {
-        printf("Grade: A+\n");
-        printf("GPA: 4.00\n");
+    else if (mark >= 80)
+    {
+        printf("Grade: A+\nGPA: 5.00");
     }
-    else if (marks >= 75) {
-        printf("Grade: A\n");
-        printf("GPA: 3.75\n");
+    else if (mark >= 70)
+    {
+        printf("Grade: A\nGPA: 4.00");
     }
-    else if (marks >= 70) {
-        printf("Grade: A-\n");
-        printf("GPA: 3.50\n");
+    else if (mark >= 60)
+    {
+        printf("Grade: A-\nGPA: 3.50");
     }
-    else if (marks >= 65) {
-        printf("Grade: B+\n");
-        printf("GPA: 3.25\n");
+    else if (mark >= 50)
+    {
+        printf("Grade: B\nGPA: 3.00");
     }
-    else if (marks >= 60) {
-        printf("Grade: B\n");
-        printf("GPA: 3.00\n");
+    else if (mark >= 40)
+    {
+        printf("Grade: C\nGPA: 2.00");
     }
-    else if (marks >= 55) {
-        printf("Grade: B-\n");
-        printf("GPA: 2.75\n");
+    else if (mark >= 33)
+    {
+        printf("Grade: D\nGPA: 1.00");
     }
-    else if (marks >= 50) {
-        printf("Grade: C+\n");
-        printf("GPA: 2.50\n");
-    }
-    else if (marks >= 45) {
-        printf("Grade: C\n");
-        printf("GPA: 2.25\n");
-    }
-    else if (marks >= 40) {
-        printf("Grade: D\n");
-        printf("GPA: 2.00\n");
-    }
-    else {
-        printf("Grade: F\n");
-        printf("GPA: 0.00\n");
+    else
+    {
+        printf("Grade: F\nGPA: 0.00");
     }
 
     return 0;
