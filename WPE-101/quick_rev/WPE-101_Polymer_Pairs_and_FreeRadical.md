@@ -11,7 +11,7 @@
 | **Size vs polymer** | Building block, reacts to lose its double bond/functional group | May be identical to monomer (addition polymers) or smaller than it (condensation polymers, since small molecules like H₂O are eliminated) |
 | **Example** | Ethylene, CH₂=CH₂ | —CH₂—CH₂— (in polyethylene) |
 
-![Monomer vs Repeating Unit](assets/monomer_repeating_unit.png)
+![Monomer vs Repeating Unit](../../assets/monomer_repeating_unit.png)
 
 > **Key exam line:** In addition polymerization the repeating unit = monomer unit (just the double bond opens up), but in condensation polymerization the repeating unit ≠ monomer, because a small molecule (H₂O, HCl, etc.) is lost at each linkage — e.g., in Nylon-6,6 the repeating unit excludes the water eliminated during amide-bond formation.
 
@@ -80,7 +80,7 @@ $$DP = \frac{M_{polymer}}{M_{repeating\ unit}}$$
 | **Mechanical behavior** | Generally flexible, lower strength | Rigid, brittle, higher heat/chemical resistance |
 | **Example** | Polyethylene, Polypropylene, PVC, Nylon | Bakelite, Epoxy resin, Melamine, Vulcanized rubber |
 
-![Thermoplastic vs Thermosetting](assets/thermo_compare.png)
+![Thermoplastic vs Thermosetting](../../assets/thermo_compare.png)
 
 ---
 
@@ -90,7 +90,7 @@ $$DP = \frac{M_{polymer}}{M_{repeating\ unit}}$$
 
 It proceeds through **three main stages**:
 
-![Free Radical Mechanism](assets/free_radical_mechanism.png)
+![Free Radical Mechanism](../../assets/free_radical_mechanism.png)
 
 ### Step 1 — Initiation
 Two sub-steps:
