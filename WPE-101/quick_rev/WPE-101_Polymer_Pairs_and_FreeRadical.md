@@ -19,12 +19,21 @@
 
 ### 2️⃣ Oligomer vs Degree of Polymerization (DP)
 
-- **Oligomer:** A molecule made of only a *few* repeating units (typically 2–10), too short to show true "polymer" bulk properties. Example: a dimer or trimer of ethylene glycol formed as an intermediate before full-length polyester forms.
-- **Degree of Polymerization (DP):** A *number*, not a molecule — it is the count "n" of repeating units in one polymer chain. 
+- **Oligomer:** A molecule made of only a *few* repeating units (roughly 10–20 by some definitions, sometimes narrowed to 2–10) — too short to show true "polymer" bulk properties. Dimers, trimers, and tetramers all count as oligomers. Example: a dimer or trimer of ethylene glycol formed as an intermediate before full-length polyester forms.
+- **Degree of Polymerization (DP):** A *number*, not a molecule — it is the count "n" of repeating units in one polymer chain.
 $$DP = \frac{M_{polymer}}{M_{repeating\ unit}}$$
   Example: if polyethylene has molecular mass 280,000 g/mol and the repeat unit (—CH₂CH₂—) mass is 28 g/mol, DP = 10,000.
 
-> **Key exam line:** Oligomer describes *how short* a molecule is (a category), while DP is the *numerical measure* of chain length used for any polymer, long or short.
+**Typical DP values by material** (useful for comparing natural vs synthetic fiber chain lengths):
+
+| Material | Degree of Polymerization (DP) |
+|---|---|
+| Cotton | ~5000 |
+| Nylon 6,6 | ~50–80 |
+| Flax | ~18000 |
+| Polyester | ~115–140 |
+
+> **Key exam line:** Oligomer describes *how short* a molecule is (a category), while DP is the *numerical measure* of chain length used for any polymer, long or short. The table above shows why natural cellulosic fibers (cotton, flax) have far higher DP than many synthetic condensation polymers like nylon and polyester.
 
 ---
 
@@ -35,14 +44,18 @@ $$DP = \frac{M_{polymer}}{M_{repeating\ unit}}$$
 | **Action** | Slows down the rate of polymerization throughout the reaction | Completely stops/blocks polymerization for an initial "induction period," then reaction proceeds normally |
 | **Radical consumption** | Reacts with radicals *slower* than propagation — some polymerization still occurs simultaneously | Reacts with radicals *faster* than propagation — no polymer forms until inhibitor is fully consumed |
 | **Rate-time curve** | Gradual, reduced rate from t = 0 | Zero rate initially (flat line), then normal rate after a delay |
-| **Example** | Quinone (in small amount) | Hydroquinone, DPPH (used to prevent premature polymerization of styrene/MMA during storage) |
+| **Example** | Quinone (in small amount); m-nitrobenzene, 3,5-dinitrobenzoic acid | Hydroquinone, DPPH, nitrobenzene, dinitrobenzene; atmospheric O₂ is also a good inhibitor (used to prevent premature polymerization of styrene/MMA during storage) |
+
+**Inhibition reaction (termination by inhibitor):**
+$$P^{\bullet} + C_6H_5\text{-}NO_2 \rightarrow C_6H_5\text{-}NO + P\text{-}O\text{-}P \ (\text{dead polymer})$$
+$$P^{\bullet} + O^{\bullet}\text{-}O^{\bullet} \rightarrow P\text{-}O\text{-}O^{\bullet}; \quad P\text{-}O\text{-}O^{\bullet} + P^{\bullet} \rightarrow P\text{-}O\text{-}O\text{-}P \ (\text{dead polymer})$$
 
 ---
 
 ### 4️⃣ Network (Crosslinked) Polymer vs Graft Copolymer
 
-- **Network polymer:** Formed when chains are joined by covalent crosslinks in **three dimensions**, producing one giant interconnected molecule. Rigid, infusible, insoluble. Example: **vulcanized rubber**, **epoxy resin**, **bakelite**.
-- **Graft copolymer:** A **linear backbone** of one monomer (A) with **branches/side chains** of a different monomer (B) grafted onto it — the backbone and branches are chemically different but it is *not* a crosslinked 3-D network. Example: **ABS (Acrylonitrile-Butadiene-Styrene)** — polybutadiene backbone with grafted styrene-acrylonitrile branches.
+- **Network polymer:** Formed when chains are joined by covalent crosslinks in **three dimensions**, producing one giant interconnected molecule. Rigid, infusible, insoluble. Example: **vulcanized rubber**, **epoxy resin**, **bakelite**, **urea formaldehyde**.
+- **Graft copolymer:** A **linear backbone** of one monomer (A) with **branches/side chains** of a different monomer (B) grafted onto it — the backbone and branches are chemically different but it is *not* a crosslinked 3-D network. Schematically: A + B → –A–A–A–A–A– with B branches attached along the main chain. Example: **ABS (Acrylonitrile-Butadiene-Styrene)** — polybutadiene backbone with grafted styrene-acrylonitrile branches.
 
 > **Key exam line:** Both involve "extra" polymer chains attached to a main chain, but a network polymer forms a rigid interconnected 3-D solid via crosslinking, while a graft copolymer is still a soluble/moldable branched molecule made of two *different* monomer types.
 
@@ -50,23 +63,23 @@ $$DP = \frac{M_{polymer}}{M_{repeating\ unit}}$$
 
 ### 5️⃣ Biological vs Non-biological Polymer
 
-- **Biological (natural/bio) polymer:** Synthesized by living organisms, usually biodegradable. Examples: **cellulose, starch, proteins (keratin, silk fibroin), DNA, natural rubber (cis-1,4-polyisoprene)**.
-- **Non-biological (synthetic) polymer:** Man-made in industry from petrochemical monomers, often non-biodegradable. Examples: **polyethylene, PVC, nylon, polyester (PET)**.
+- **Biological (natural/bio) polymer:** Isolated from natural materials, synthesized by living organisms, usually biodegradable. Examples: **cellulose, starch, proteins (keratin, silk fibroin), DNA, natural rubber (cis-1,4-polyisoprene), cotton, jute, flax**.
+- **Non-biological (synthetic) polymer:** Synthesized from low molecular weight compounds by man-controlled chemical reactions, often petrochemical-derived and non-biodegradable. Examples: **polyethylene, PVC, nylon, polyester (PET)**.
 
 ---
 
 ### 6️⃣ Homopolymer vs Copolymer
 
-- **Homopolymer:** Made from **one single type** of monomer repeated. Example: Polyethylene (–CH₂–CH₂–)ₙ, PVC.
-- **Copolymer:** Made from **two or more different** monomers in the same chain. Example: SBR (Styrene-Butadiene Rubber), Nylon-6,6 (from a diamine + a diacid).
+- **Homopolymer:** Made from **one single type** of monomer repeated. Example: Polyethylene (–CH₂–CH₂–)ₙ, PVC, cellulose.
+- **Copolymer:** Made from **two or more different** monomers in the same chain. Example: SBR (Styrene-Butadiene Rubber), Nylon-6,6 (from a diamine + a diacid), acrylic, modacrylic.
   - Copolymers can be **random, alternating, block, or graft**, depending on monomer arrangement.
 
 ---
 
 ### 7️⃣ Organic vs Inorganic Polymer
 
-- **Organic polymer:** Backbone built mainly of **carbon atoms** (with H, O, N, etc. attached). Examples: polyethylene, nylon, cellulose, rubber — the vast majority of commercial and textile polymers.
-- **Inorganic polymer:** Backbone made of **non-carbon elements** such as Si, P, S, or B. Examples: **silicones** (–Si–O–Si– backbone), **polyphosphazenes**, glass (a network inorganic polymer of SiO₂).
+- **Organic polymer:** Backbone built mainly of **carbon atoms** (with H, O, N, etc. attached). Examples: polyethylene, PVC, nylon, cellulose, rubber — the vast majority of commercial and textile polymers.
+- **Inorganic polymer:** Backbone made of **non-carbon elements** such as Si, P, S, or B — generally contains no carbon atoms in the backbone chain. Examples: **silicones/silicon rubber** (–Si–O–Si– backbone), **polyphosphazenes**, **glass** (a network inorganic polymer of SiO₂).
 
 ---
 
@@ -75,10 +88,10 @@ $$DP = \frac{M_{polymer}}{M_{repeating\ unit}}$$
 | | Thermoplastic | Thermosetting |
 |---|---|---|
 | **Structure** | Linear or branched chains, no crosslinks | Heavily crosslinked 3-D network |
-| **Effect of heat** | Softens/melts on heating, hardens on cooling — reversible | Hardens permanently ("cures") on heating/curing — irreversible |
-| **Recyclability** | Recyclable, can be remolded | Not recyclable, cannot be remelted (chars/decomposes instead) |
+| **Effect of heat** | Softens/melts on heating, hardens on cooling — reversible, can be repeatedly softened and stiffened | Undergoes a chemical change on heating/curing, forming an infusible, insoluble mass — irreversible |
+| **Recyclability** | Recyclable, can be remolded | Not recyclable, cannot be remelted or reshaped once set (chars/decomposes instead) |
 | **Mechanical behavior** | Generally flexible, lower strength | Rigid, brittle, higher heat/chemical resistance |
-| **Example** | Polyethylene, Polypropylene, PVC, Nylon | Bakelite, Epoxy resin, Melamine, Vulcanized rubber |
+| **Example** | Polyethylene, Polypropylene, PVC, Nylon | Bakelite, Epoxy resin, Melamine formaldehyde, Urea formaldehyde, Vulcanized rubber |
 
 ![Thermoplastic vs Thermosetting](../../assets/thermo_compare.png)
 
@@ -92,11 +105,21 @@ It proceeds through **three main stages**:
 
 ![Free Radical Mechanism](../../assets/free_radical_mechanism.png)
 
+### Initiators
+
+Initiators are thermally unstable compounds that decompose into free radicals: R–R → 2R•. Azo compounds, peroxides, and hydroperoxides are the main classes used industrially.
+
+| Chemical Name | Chemical Structure | Free Radical Formed |
+|---|---|---|
+| Hydrogen peroxide | H₂O₂ (HO–OH) | HO• |
+| Benzoyl peroxide | C₆H₅–COO–OOC–C₆H₅ | C₆H₅–COO• and C₆H₅• |
+| Peracetic acid | CH₃COOOH | CH₃• and CH₃COO• |
+| AIBN (azobisisobutyronitrile) | (CH₃)₂C(CN)–N=N–C(CN)(CH₃)₂ | (CH₃)₂C(CN)• (+ N₂) |
+
 ### Step 1 — Initiation
 Two sub-steps:
 1. **Decomposition of initiator** into free radicals under heat, light, or a redox system:
 $$I_2 \xrightarrow{\Delta \text{ or } h\nu} 2I^{\bullet}$$
-   Common initiators: benzoyl peroxide, AIBN (azobisisobutyronitrile), persulfates.
 2. **Addition of the radical to the first monomer**, generating a new, larger radical:
 $$I^{\bullet} + CH_2=CHX \rightarrow I-CH_2-CHX^{\bullet}$$
 
@@ -105,12 +128,20 @@ The chain radical adds monomer after monomer, very rapidly, extending the chain 
 $$I-CH_2-CHX^{\bullet} + CH_2=CHX \rightarrow I-CH_2-CHX-CH_2-CHX^{\bullet}$$
 This repeats thousands of times within a fraction of a second — this is the rate-determining "chain-building" stage responsible for high molecular weight.
 
-### Step 3 — Termination
-The reactive radical ends are destroyed by one of two paths:
-- **Combination (coupling):** two growing radical chains join to form one dead chain.
-- **Disproportionation:** one radical abstracts a hydrogen atom from another, producing one saturated and one unsaturated chain end.
+The incoming monomer can add to the growing chain in different orientations, which affects chain regularity:
+- Head-to-tail
+- Tail-to-head
+- Tail-to-tail
+- Head-to-head
 
-Chain transfer (to monomer, solvent, or initiator) can also stop growth of one chain while starting another, affecting molecular weight without truly ending the kinetic chain.
+### Step 3 — Termination
+The reactive radical ends are destroyed by one of **four** paths:
+- **Combination (coupling):** Two growing radical chains join, uniting via the lone electron on each, to form one dead chain.
+- **Disproportionation:** One radical abstracts a hydrogen atom from another; the H-donating chain is stabilized by forming a double bond, producing one saturated and one unsaturated chain end.
+- **Chain transfer:** Growth of one chain stops (forming a dead polymer), while a new free radical capable of starting a fresh chain is simultaneously generated by H-atom (or other atom) abstraction from the initiator, monomer, solvent, or another species present — this affects molecular weight without truly ending the kinetic chain.
+- **Termination by inhibitors:** Inhibitors combine with active free radicals to form stable products or inactive radicals, killing chain growth. Hydroquinone, nitrobenzene, dinitrobenzene, and atmospheric O₂ are common examples:
+$$P^{\bullet} + C_6H_5\text{-}NO_2 \rightarrow C_6H_5\text{-}NO + P\text{-}O\text{-}P \ (\text{dead polymer})$$
+$$P^{\bullet} + O^{\bullet}\text{-}O^{\bullet} \rightarrow P\text{-}O\text{-}O^{\bullet}; \quad P\text{-}O\text{-}O^{\bullet} + P^{\bullet} \rightarrow P\text{-}O\text{-}O\text{-}P$$
 
 ### Overall Rate Behaviour
 - Initiation is comparatively **slow** (needs energy input to break the initiator).
