@@ -158,6 +158,10 @@ CH2=C(CH3)COOCH3  --[AIBN, Δ]-->  –(CH2–C(CH3)(COOCH3))n–
 CH2=CHCl  --[peroxide]-->  –(CH2–CHCl)n–
 ```
 
+**Structures (monomer + repeating unit for each):**
+
+![Addition monomers and repeat units](../../assets/addition_monomers_repeat_units.png)
+
 **Mechanism diagram (generic, applies to a–d):**
 
 ```mermaid
@@ -195,6 +199,10 @@ flowchart LR
 
 Repeating unit mass < (sum of monomer masses) because one H₂O is lost per amide bond — direct link back to the **Monomer vs Repeating Unit** distinction in Q1.
 
+**Structures (Nylon-6,6 and PET monomers + repeat units):**
+
+![Condensation monomers and repeat units](../../assets/condensation_monomers_repeat_units.png)
+
 #### (b) PET (Polyethylene Terephthalate) — a copolymer via condensation
 
 ```
@@ -212,6 +220,10 @@ Step 2 (condensation, heat/acid or base catalyst):
         HO-C6H4-CH2OH + HO-C6H4-CH2OH -->  HO-C6H4-CH2-C6H4-OH  +  H2O
 ```
 Repeated methylene (–CH₂–) bridging between phenol rings in three dimensions produces the rigid, infusible, crosslinked network — this is the chemical basis for the **Network polymer** entry in Q1.4.
+
+**Structures (phenol, formaldehyde, methylol intermediate, bridged fragment):**
+
+![Phenol-formaldehyde fragments](../../assets/phenol_formaldehyde_fragments.png)
 
 ```mermaid
 graph TD
@@ -250,6 +262,10 @@ flowchart TB
     X --> N["3-D network — vulcanized rubber\n(elastic but no longer fully soluble)"]
 ```
 
+**Structures (isoprene, polyisoprene repeat unit, sulfur, crosslinked fragment):**
+
+![Vulcanization structures](../../assets/vulcanization_structures.png)
+
 > **Key exam line:** Vulcanization is the practical demonstration that "network vs linear" is a *processing* distinction, not just a monomer-identity distinction — the same polyisoprene chain can be linear (raw latex) or networked (vulcanized tire rubber) depending on crosslink density.
 
 ---
@@ -269,6 +285,10 @@ flowchart LR
     B["Polybutadiene backbone (linear)"] -->|"graft polymerization of styrene + acrylonitrile at double-bond sites"| G["SAN branches attached at intervals"]
     G --> P["ABS: rubbery backbone + rigid glassy branches"]
 ```
+
+**Structures (butadiene, styrene, acrylonitrile, simplified graft fragment):**
+
+![ABS structures](../../assets/abs_structures.png)
 
 This is the reaction-level picture behind the **Network vs Graft copolymer** distinction in Q1.4: ABS branches (SAN) hang off a butadiene backbone without forming an interconnected 3-D solid, so unlike bakelite or vulcanized rubber, ABS remains thermoplastic and moldable.
 
