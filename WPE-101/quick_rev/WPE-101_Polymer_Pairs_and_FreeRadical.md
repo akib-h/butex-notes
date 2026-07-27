@@ -119,6 +119,170 @@ Chain transfer (to monomer, solvent, or initiator) can also stop growth of one c
 
 ### Typical Examples
 Polymerized industrially by free radical mechanism: **polyethylene (LDPE, high pressure process), polystyrene, PVC, PMMA (Perspex/acrylic), SBR rubber**.
+## Q3. Worked Examples & Chemical Reactions (with Diagrams)
+
+This section extends Q1–Q2 with concrete reaction schemes for each polymer type discussed above. Meant to be appended directly under the Free Radical Polymerization section in `WPE-101/classtest-notes.md`.
+
+---
+
+### 3.1 Addition (Chain-growth) Examples — Free Radical Route
+
+#### (a) Polyethylene (LDPE) from Ethylene
+
+```
+Initiation:   R–O–O–R  --Δ-->  2 R–O•
+              R–O• + CH2=CH2  -->  R–O–CH2–CH2•
+
+Propagation:  R–O–CH2–CH2• + n CH2=CH2  -->  R–O–(CH2–CH2)n–CH2–CH2•
+
+Termination:  ~CH2–CH2• + •CH2–CH2~  -->  ~CH2–CH2–CH2–CH2~   (combination)
+```
+Repeating unit: **–(CH₂–CH₂)–**, monomer = repeating unit (true of all addition polymers).
+
+#### (b) Polystyrene from Styrene (C₆H₅–CH=CH₂)
+
+```
+CH2=CH(C6H5)  --[peroxide, Δ]-->  –(CH2–CH(C6H5))n–
+```
+Radical is stabilized by resonance with the phenyl ring, so styrene polymerizes readily by the free-radical route and is a classic textbook example alongside PE.
+
+#### (c) PMMA (Perspex/Acrylic) from Methyl Methacrylate
+
+```
+CH2=C(CH3)COOCH3  --[AIBN, Δ]-->  –(CH2–C(CH3)(COOCH3))n–
+```
+
+#### (d) PVC from Vinyl Chloride
+
+```
+CH2=CHCl  --[peroxide]-->  –(CH2–CHCl)n–
+```
+
+**Mechanism diagram (generic, applies to a–d):**
+
+```mermaid
+flowchart LR
+    A["Initiator I-I"] -->|"heat / light / redox"| B["2 I• (radicals)"]
+    B --> C["I• + CH2=CHX"]
+    C --> D["I-CH2-CHX•"]
+    D -->|"+n monomer, propagation"| E["I-(CH2-CHX)n-CH2-CHX•"]
+    E -->|"combination"| F["Dead polymer chain"]
+    E -->|"disproportionation"| G["Two chains: one saturated, one unsaturated end"]
+```
+
+> **Key exam line:** All four monomers above are vinyl monomers (CH₂=CHX); only the substituent X changes (H, C₆H₅, COOCH₃, Cl), but the initiation–propagation–termination sequence is identical for each — this is why free radical polymerization is described as a general mechanism rather than monomer-specific.
+
+---
+
+### 3.2 Condensation (Step-growth) Examples
+
+#### (a) Nylon-6,6 — from a diamine + a diacid (illustrates repeating unit ≠ monomer)
+
+```
+n H2N-(CH2)6-NH2  +  n HOOC-(CH2)4-COOH
+        (hexamethylenediamine)      (adipic acid)
+
+   -->  H-[NH-(CH2)6-NH-CO-(CH2)4-CO]n-OH   +   (2n-1) H2O
+```
+
+```mermaid
+flowchart LR
+    A["Diamine\nH2N-(CH2)6-NH2"] --> C["Amide (peptide) bond forms"]
+    B["Diacid\nHOOC-(CH2)4-COOH"] --> C
+    C --> D["Repeating unit\n-NH-(CH2)6-NH-CO-(CH2)4-CO-"]
+    C --> E["H2O eliminated per linkage"]
+```
+
+Repeating unit mass < (sum of monomer masses) because one H₂O is lost per amide bond — direct link back to the **Monomer vs Repeating Unit** distinction in Q1.
+
+#### (b) PET (Polyethylene Terephthalate) — a copolymer via condensation
+
+```
+n HOOC-C6H4-COOH  +  n HO-CH2-CH2-OH
+    (terephthalic acid)      (ethylene glycol)
+
+  -->  -[O-CH2-CH2-O-CO-C6H4-CO]n-  +  (2n-1) H2O
+```
+
+#### (c) Phenol–Formaldehyde (Bakelite) — a Network (Thermosetting) Polymer
+
+```
+Step 1 (addition):   C6H5OH + HCHO  -->  HO-C6H4-CH2OH   (methylol phenol)
+Step 2 (condensation, heat/acid or base catalyst):
+        HO-C6H4-CH2OH + HO-C6H4-CH2OH -->  HO-C6H4-CH2-C6H4-OH  +  H2O
+```
+Repeated methylene (–CH₂–) bridging between phenol rings in three dimensions produces the rigid, infusible, crosslinked network — this is the chemical basis for the **Network polymer** entry in Q1.4.
+
+```mermaid
+graph TD
+    P1["Phenol ring"] --- M1["-CH2-"]
+    P2["Phenol ring"] --- M1
+    P2 --- M2["-CH2-"]
+    P3["Phenol ring"] --- M2
+    P1 --- M3["-CH2-"]
+    P3 --- M3
+    P4["Phenol ring"] --- M3
+    style P1 fill:#fdf,stroke:#333
+    style P2 fill:#fdf,stroke:#333
+    style P3 fill:#fdf,stroke:#333
+    style P4 fill:#fdf,stroke:#333
+```
+*(Each node represents a phenol ring bridged by methylene units in multiple directions — the 3-D crosslink density is what makes bakelite thermosetting and non-recyclable, unlike the linear thermoplastics in 3.1.)*
+
+---
+
+### 3.3 Vulcanization — Network Formation from a Linear Elastomer
+
+Natural rubber (cis-1,4-polyisoprene) is a **linear, biological polymer** (Q1.5) that becomes a **network polymer** (Q1.4) only after crosslinking with sulfur:
+
+```
+~CH2-C(CH3)=CH-CH2~  (rubber chain 1)
+         |
+        S–S            (sulfur crosslink, "vulcanization")
+         |
+~CH2-C(CH3)=CH-CH2~  (rubber chain 2)
+```
+
+```mermaid
+flowchart TB
+    R1["Rubber chain A (linear)"] -->|"+ S8, heat"| X["Sulfur (-S-S-) crosslinks"]
+    R2["Rubber chain B (linear)"] -->|"+ S8, heat"| X
+    X --> N["3-D network — vulcanized rubber\n(elastic but no longer fully soluble)"]
+```
+
+> **Key exam line:** Vulcanization is the practical demonstration that "network vs linear" is a *processing* distinction, not just a monomer-identity distinction — the same polyisoprene chain can be linear (raw latex) or networked (vulcanized tire rubber) depending on crosslink density.
+
+---
+
+### 3.4 ABS — Graft Copolymer Example (contrast with 3.3's network)
+
+```
+Backbone:  ~CH2-CH=CH-CH2~n   (polybutadiene, from butadiene monomer)
+                    |
+                 (grafting site, residual double bond)
+                    |
+Branch:    -(CH2-CH(C6H5))-(CH2-CH(CN))-   (styrene-acrylonitrile, SAN, grafted on)
+```
+
+```mermaid
+flowchart LR
+    B["Polybutadiene backbone (linear)"] -->|"graft polymerization of styrene + acrylonitrile at double-bond sites"| G["SAN branches attached at intervals"]
+    G --> P["ABS: rubbery backbone + rigid glassy branches"]
+```
+
+This is the reaction-level picture behind the **Network vs Graft copolymer** distinction in Q1.4: ABS branches (SAN) hang off a butadiene backbone without forming an interconnected 3-D solid, so unlike bakelite or vulcanized rubber, ABS remains thermoplastic and moldable.
+
+---
+
+### Quick Reference Table — Reaction Type vs Polymer Type
+
+| Reaction Example | Mechanism | Resulting Structure | Cross-reference (Q1) |
+|---|---|---|---|
+| Ethylene → PE | Free radical, addition | Linear homopolymer | 1.6 Homopolymer |
+| Hexamethylenediamine + adipic acid → Nylon-6,6 | Step-growth, condensation | Linear copolymer, H₂O lost | 1.1 Monomer vs repeating unit |
+| Phenol + formaldehyde → Bakelite | Step-growth, condensation | 3-D network | 1.4 Network polymer, 1.8 Thermoset |
+| Polyisoprene + S₈ → vulcanized rubber | Post-polymerization crosslinking | Linear → 3-D network | 1.4 Network polymer |
+| Butadiene backbone + styrene/acrylonitrile → ABS | Graft (chain-growth branch onto backbone) | Branched, non-network | 1.4 Graft copolymer |
 
 ---
 *Prepared for WPE-101 (Polymer Science) classtest — BUTEX.*
