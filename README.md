@@ -34,15 +34,27 @@ This repository contains comprehensive course notes from my journey through the 
 | Course Code | Course Title | Status | Topics Covered | Quick Links |
 | :--- | :--- | :---: | :--- | :--- |
 | **[CHEM-101](https://github.com/itachi-re/butex-notes/tree/master/CHEM-101)** | Chemistry - I | 🟢 Active | Periodicity, Bonding, Acids/Bases, Equilibrium, Kinetics, Colloids, Photochemistry | [📑 Topics](#chemistry-101-topics) |
+| **[CHEM-103](https://github.com/itachi-re/butex-notes/tree/master/CHEM-103)** | Organic Chemistry — Reactions & Mechanisms | 🟢 Active | Inductive/Electromeric/Mesomeric Effects, Carbonium Ions, Carbanions, SN1/SN2/E1/E2, Addition Reactions, Organometallics (Grignard, Organozinc, TEL), Alcohols, Phenols, Carboxylic Acid Derivatives | [📑 Topics](#chem-103-topics) |
+| **[CHEM-104](https://github.com/itachi-re/butex-notes/tree/master/CHEM-104)** ✨ New | Chemistry - II (Practical) | 🟡 In Progress | Identification of Organic Compounds (Alcohols, Acids, Aldehydes, Ketones, Phenols, Amines, Amides), Titrations | [📑 Topics](#chem-104-topics) |
 | **[PHY-101](https://github.com/itachi-re/butex-notes/tree/master/PHY-101)** | Physics - I | 🟢 Active | Elasticity, Fluid Mechanics, Interference, Dynamics, Surface Tension, Viscosity, Diffraction, Polarization | [📑 Topics](#physics-101-topics) |
+| **[PHY-103](https://github.com/itachi-re/butex-notes/tree/master/PHY-103)** | Physics - II | 🟢 Active | Electricity (Coulomb's Law → Parallel Resonance, 14 topics), Kinetic Theory of Gases (13 topics), Magnetism | [📑 Topics](#phy-103-topics) |
 | **[MATH-101](https://github.com/itachi-re/butex-notes/tree/master/MATH-101)** | Mathematics - I | 🟢 Active | Differential Calculus, Integral Calculus, Linear Algebra, Coordinate Geometry | [📑 Topics](#math-101-topics) |
+| **[MATH-103](https://github.com/itachi-re/butex-notes/tree/master/MATH-103)** | Mathematics - II | 🟡 In Progress | Ordinary Differential Equations, Vector Analysis (Gradient/Divergence/Curl, Green's/Stokes'/Gauss's Theorems), Calculus Extras (prerequisites, limits, derivatives) | [📑 Topics](#math-103-topics) |
 | **[HSS-101](https://github.com/itachi-re/butex-notes/tree/master/HSS-101)** | Humanities & Social Science | 🟢 Active | Communication, Letters, Presentations, Meetings, Group Project | [📑 Topics](#hss-101-topics) |
 
 ### 💻 Computing & Programming
 
 | Course Code | Course Title | Status | Topics Covered | Quick Links |
 | :--- | :--- | :---: | :--- | :--- |
-| **[MDM-101](https://github.com/itachi-re/butex-notes/tree/master/MDM-101)** ✨ New | Computer Programming | 🟢 Active | Programming Basics, C Language, Functions, Preprocessor, Pointers, Arrays, Strings, User-Defined Types, File I/O | [📑 Topics](#mdm-101-topics) |
+| **[MDM-101](https://github.com/itachi-re/butex-notes/tree/master/MDM-101)** | Computer Programming - I | 🟢 Active | Programming Basics, C Language, Functions, Preprocessor, Pointers, Arrays, Strings, User-Defined Types, File I/O | [📑 Topics](#mdm-101-topics) |
+| **[MDM-102](https://github.com/itachi-re/butex-notes/tree/master/MDM-102)** ✨ New | Computer Programming - II (C Programming) | 🟢 Active | Simple Programs, Variables/Datatypes, Operators, Decision Control, Loops, Functions, Recursion, Pointers & Arrays, User-Defined Types, Exception Handling, Graphics/Game Dev, Homework Programs | [📑 Topics](#mdm-102-topics) |
+
+### 🧬 Materials & Polymer Science
+
+| Course Code | Course Title | Status | Topics Covered | Quick Links |
+| :--- | :--- | :---: | :--- | :--- |
+| **[IPE-101](https://github.com/itachi-re/butex-notes/tree/master/IPE-101)** ✨ New | Industrial & Production Engineering (Materials Science) | 🟢 Active | Properties of Materials, Processing, Material Selection, Atomic/Molecular/Crystalline Structures, Elastic-Plastic Behavior, Phase Diagrams | [📑 Topics](#ipe-101-topics) |
+| **[WPE-101](https://github.com/itachi-re/butex-notes/tree/master/WPE-101)** | Polymer Science and Engineering | 🟢 Active | Fundamentals & History, Classification, Raw Materials, Synthesis (Addition/Condensation), Fibre-Forming Polymers | [📑 Topics](#wpe-101-topics) |
 
 ### 🧵 Yarn Engineering (Fabric Department Focus)
 
@@ -130,7 +142,7 @@ This repository contains comprehensive course notes from my journey through the 
 </details>
 
 <details>
-<summary><b>📂 Question Bank ✨ New</b></summary>
+<summary><b>📂 Question Bank</b></summary>
 
 - [01 - Chemical Bonding QB](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/qb/01_Chemical_Bonding.md)
 - [02 - Periodic Properties QB](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/qb/02_Periodic_Properties.md)
@@ -153,6 +165,127 @@ This repository contains comprehensive course notes from my journey through the 
 - [Class Test 02 - 2024](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/qna/chem_classtest_02_2024.md)
 - [Class Test 02 - 2024-25](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/qna/chem_classtest_02_2024_25.md)
 - [Class Test 02 - 2026 Suggestions](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/qna/chem_classtest_02_2026_sugg.md)
+
+</details>
+
+<details>
+<summary><b>📂 Quick Revision</b></summary>
+
+- [01 - Periodicity of Elements](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/quick_rev/01-periodicity-of-elements.md)
+- [02 - Chemical Bonding](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/quick_rev/02-chemical-bonding.md)
+- [03 - Complex Compounds](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/quick_rev/03-complex-compounds.md)
+- [04 - Acids, Bases & Analytical Chemistry](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/quick_rev/04-acids-bases-analytical-chemistry.md)
+- [05 - Physical Chemistry (Dilute Solutions)](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/quick_rev/05-physical-chemistry-dilute-solutions.md)
+- [06 - Chemical Equilibrium](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/quick_rev/06-chemical-equilibrium.md)
+- [07 - Chemical Kinetics](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/quick_rev/07-Chemical_Kinetics.md)
+- [08 - Photochemistry](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/quick_rev/08_photochemistry.md)
+- [Answer Sheet 2016–2023](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/quick_rev/answer_sheet_2016_2023.md)
+- [Chemistry Exam Prep](https://github.com/itachi-re/butex-notes/blob/master/CHEM-101/quick_rev/Chemistry_Exam_Prep.md)
+
+</details>
+
+---
+
+### CHEM-103 Topics
+
+**[🔗 View All Organic Chemistry Notes](https://github.com/itachi-re/butex-notes/tree/master/CHEM-103)**
+
+> Organic reaction mechanisms and organometallic chemistry, covering CHEM-103 modules 11–12.
+
+<details>
+<summary><b>📂 Organic Reaction Mechanisms</b></summary>
+
+- [01 - Inductive Effect](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/organic_reaction/01_inductive_effect.md)
+- [02 - Electromeric Effect](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/organic_reaction/02_electromeric_effect.md)
+- [03 - Mesomeric Effect](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/organic_reaction/03_mesomeric_effect.md)
+- [04 - Carbonium Ions](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/organic_reaction/04_carbonium_ions.md)
+- [05 - Carbanions](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/organic_reaction/05_carbanions.md)
+- [06 - SN1 Mechanism](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/organic_reaction/06_sn1.md)
+- [07 - SN2 Mechanism](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/organic_reaction/07_sn2.md)
+- [08 - E1 Elimination](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/organic_reaction/08_e1.md)
+- [09 - E2 Elimination](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/organic_reaction/09_e2.md)
+- [10 - Addition Reactions](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/organic_reaction/10_addition_reactions.md)
+- [📖 Module README](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/organic_reaction/README.md)
+- [Q&A](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/organic_reaction/qna.md)
+
+</details>
+
+<details>
+<summary><b>📂 Organometallic Compounds</b></summary>
+
+- [01 - Organometallic Intro](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/organometallic/01_organometallic_intro.md)
+- [02 - Grignard Reagent](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/organometallic/02_grignard_reagent.md)
+- [03 - Organozinc Compounds](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/organometallic/03_organozinc_compounds.md)
+- [04 - Tetraethyl Lead](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/organometallic/04_tetraethyl_lead.md)
+- [05 - Alcohols](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/organometallic/05_alcohols.md)
+- [06 - Phenols](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/organometallic/06_phenols.md)
+- [09 - Carboxylic Acid Derivatives](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/organometallic/09-carboxylic-acid-derivatives.md)
+- [📖 Module README](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/organometallic/README.md)
+
+</details>
+
+<details>
+<summary><b>📂 Q&A</b></summary>
+
+- [Grignard Reagents & TEL](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/qna/grignard-reagents-and-tel.md)
+- [Kinetics Proof](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/qna/kinetics-proof.md)
+- [Organic Reactions](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/qna/organic_reactions.md)
+- [Question Bank — Class Test 1](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/qna/qb_ct1.md)
+
+</details>
+
+<details>
+<summary><b>📂 Quick Revision</b></summary>
+
+- [One-Shot: Organic Reactions & Organometallic](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/quick_rev/OneShot_OrganicReactions_Organometallic.md)
+- [Addition, Substitution, Grignard & TEL](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/quick_rev/addition_substitution_grignard_tel.md)
+- [Nucleophilic Mechanisms](https://github.com/itachi-re/butex-notes/blob/master/CHEM-103/quick_rev/nucleophilic_mechanisms.md)
+
+</details>
+
+---
+
+### CHEM-104 Topics
+
+**[🔗 View All Chemistry - II (Practical) Notes](https://github.com/itachi-re/butex-notes/tree/master/CHEM-104)**
+
+> Chemistry-II practical course — qualitative identification of organic compounds and titrations.
+
+<details>
+<summary><b>📂 Identification of Organic Compounds</b></summary>
+
+- [01 - Methyl Alcohol](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/01_methyl_alcohol.md)
+- [02 - Ethyl Alcohol](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/02_ethyl_alcohol.md)
+- [03 - Isopropyl Alcohol](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/03_isopropyl_alcohol.md)
+- [04 - Tert-Butyl Alcohol](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/04_tert_butyl_alcohol.md)
+- [05 - Formic Acid](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/05_formic_acid.md)
+- [06 - Acetic Acid](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/06_acetic_acid.md)
+- [07 - Oxalic Acid](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/07_oxalic_acid.md)
+- [08 - Benzoic Acid](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/08_benzoic_acid.md)
+- [09 - Salicylic Acid](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/09_salicylic_acid.md)
+- [10 - Picric Acid](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/10_picric_acid.md)
+- [11 - Formaldehyde](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/11_formaldehyde.md)
+- [12 - Acetaldehyde](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/12_acetaldehyde.md)
+- [13 - Acetone](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/13_acetone.md)
+- [14 - Benzaldehyde](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/14_benzaldehyde.md)
+- [15 - Acetophenone](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/15_acetophenone.md)
+- [16 - Phenol](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/16_phenol.md)
+- [17 - Aniline](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/17_aniline.md)
+- [18 - Nitrobenzene](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/18_nitrobenzene.md)
+- [19 - Chlorobenzene](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/19_chlorobenzene.md)
+- [20 - Urea](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/20_urea.md)
+- [21 - Benzamide](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/21_benzamide.md)
+- [22 - Acetanilide](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/22_acetanilide.md)
+- [23 - Acetamide](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/23_acetamide.md)
+- [📖 Module README](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/README.md)
+- [Q&A](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/identification_of_organic_compounds/qna.md)
+
+</details>
+
+<details>
+<summary><b>📂 Titrations ⚪ Pending</b></summary>
+
+- [📖 Module README](https://github.com/itachi-re/butex-notes/blob/master/CHEM-104/titrations/README.md) — placeholder, content not yet added
 
 </details>
 
@@ -188,7 +321,7 @@ This repository contains comprehensive course notes from my journey through the 
 </details>
 
 <details>
-<summary><b>📂 02 - Fluid Mechanics (Worked Examples) ✨ New</b></summary>
+<summary><b>📂 02 - Fluid Mechanics (Worked Examples)</b></summary>
 
 - [01 - Fluid](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid_mech_ex/01_fluid.md)
 - [02 - Rate of Flow](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/02_fluid_mech_ex/02_rate_of_flow.md)
@@ -277,7 +410,7 @@ This repository contains comprehensive course notes from my journey through the 
 </details>
 
 <details>
-<summary><b>📂 08 - Polarization ✨ New</b></summary>
+<summary><b>📂 08 - Polarization</b></summary>
 
 - [01 - Polarization](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/08_polarization/01_Polarization.md)
 - [02 - Polarization by Reflection](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/08_polarization/02_Polarization_by_Reflection.md)
@@ -296,6 +429,93 @@ This repository contains comprehensive course notes from my journey through the 
 - [Class Test 02 - 2024](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/qna/class_test_02_2024.md)
 - [Questions 2017–2023](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/qna/ques_2017~23.md)
 - [Questions & Solutions 2012–2018](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/qna/questions_n_sols_2012_18.md)
+
+</details>
+
+<details>
+<summary><b>📂 Quick Revision</b></summary>
+
+- [01 - Fluid Mechanics](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/quick_rev/01_Fluid_Mechanics.md)
+- [02 - Viscosity](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/quick_rev/02_Viscosity.md)
+- [03 - Surface Tension](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/quick_rev/03_Surface_Tension.md)
+- [04 - Elasticity](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/quick_rev/04_Elasticity.md)
+- [05 - Circular Motion](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/quick_rev/05_Circular_Motion.md)
+- [06 - Interference](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/quick_rev/06_Interference.md)
+- [07 - Diffraction](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/quick_rev/07_Diffraction.md)
+- [08 - Polarization](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/quick_rev/08_Polarization.md)
+- [Diffraction Exam Notes](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/quick_rev/Diffraction_Exam_Notes.md)
+- [Dynamics & Circular Motion Exam Notes](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/quick_rev/Dynamics_CircularMotion_ExamNotes.md)
+- [Elasticity & Surface Tension Exam Notes](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/quick_rev/Elasticity_SurfaceTension_ExamNotes.md)
+- [Fluid Mechanics Notes](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/quick_rev/fluid_mechanics_notes.md)
+- [Physics L1T1 2025](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/quick_rev/physics_L1T1_2025.md)
+- [Rotational Mechanics Notes](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/quick_rev/rotational_mechanics_notes.md)
+- [Viscosity Notes](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/quick_rev/viscosity_notes.md)
+- [Wave Optics Exam Notes](https://github.com/itachi-re/butex-notes/blob/master/PHY-101/quick_rev/Wave_Optics_Exam_Notes.md)
+
+</details>
+
+---
+
+### PHY-103 Topics
+
+**[🔗 View All Physics - II Notes](https://github.com/itachi-re/butex-notes/tree/master/PHY-103)**
+
+<details>
+<summary><b>📂 Electricity (14/14 topics)</b></summary>
+
+- [01 - Coulomb's Law](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/electricity/01_coulombs_law.md)
+- [02 - Electric Flux](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/electricity/02_electric_flux.md)
+- [03 - Gauss's Law](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/electricity/03_gauss_law.md)
+- [04 - Electric Dipole](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/electricity/04_electric_dipole.md)
+- [05 - Capacitors and Capacitance](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/electricity/05_capacitors_and_capacitance.md)
+- [06 - Capacitors with Dielectrics](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/electricity/06_capacitors_with_dielectrics.md)
+- [07 - Charging & Discharging a Capacitor](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/electricity/07_charging_discharging_capacitor.md)
+- [08 - Ohm's Law](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/electricity/08_ohms_law.md)
+- [09 - Kirchhoff's Laws](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/electricity/09_kirchhoffs_laws.md)
+- [10 - Wheatstone Bridge](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/electricity/10_wheatstone_bridge.md)
+- [11 - LR Circuit Growth & Decay](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/electricity/11_lr_circuit_growth_decay.md)
+- [12 - AC Fundamentals](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/electricity/12_ac_fundamentals.md)
+- [13 - Series RLC Circuit](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/electricity/13_series_rlc_circuit.md)
+- [14 - Parallel Resonance](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/electricity/14_parallel_resonance.md)
+- [📖 Module README + Formula Reference](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/electricity/README.md)
+
+</details>
+
+<details>
+<summary><b>📂 Kinetic Theory of Gases ✨ New</b></summary>
+
+- [01 - Heat](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/kinetic_theory_of_gases/01_heat.md)
+- [02 - Temperature](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/kinetic_theory_of_gases/02_temperature.md)
+- [03 - Types of Thermometer](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/kinetic_theory_of_gases/03_different_types_of_thermometer.md)
+- [04 - Newton's Law of Cooling](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/kinetic_theory_of_gases/04_newtons_law_of_cooling.md)
+- [05 - Isothermal & Adiabatic Process](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/kinetic_theory_of_gases/05_isothermal_and_adiabatic_process.md)
+- [06 - Adiabatic Relation](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/kinetic_theory_of_gases/06_adiabatic_relation.md)
+- [07 - Fundamental Postulates of Kinetic Theory](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/kinetic_theory_of_gases/07_fundamental_postulates_of_kinetic_theory.md)
+- [08 - Pressure from Kinetic Theory](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/kinetic_theory_of_gases/08_expression_of_pressure_from_kinetic_theory.md)
+- [09 - Degrees of Freedom](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/kinetic_theory_of_gases/09_degrees_of_freedom.md)
+- [10 - Mean Free Path](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/kinetic_theory_of_gases/10_mean_free_path.md)
+- [11 - van der Waals Equation of State](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/kinetic_theory_of_gases/11_van_der_waals_equation_of_state.md)
+- [12 - van der Waals & Critical Constants](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/kinetic_theory_of_gases/12_van_der_waals_constants_and_critical_constants.md)
+- [13 - Critical Coefficient](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/kinetic_theory_of_gases/13_critical_coefficient.md)
+- [📖 Module README](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/kinetic_theory_of_gases/README.md)
+
+</details>
+
+<details>
+<summary><b>📂 Magnetism</b></summary>
+
+- [01 - Magnetic Induction](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/magnetism/01_magnetic_induction.md)
+- [02 - Magnetic Force on a Conductor](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/magnetism/02_magnetic_force_conductor.md)
+- [03 - Torque on a Current Loop](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/magnetism/03_torque_current_loop.md)
+- [04 - Hall Effect](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/magnetism/04_hall_effect.md)
+- [📖 Module README](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/magnetism/README.md)
+
+</details>
+
+<details>
+<summary><b>📂 Quick Revision</b></summary>
+
+- [Kinetic Theory of Gases](https://github.com/itachi-re/butex-notes/blob/master/PHY-103/quick_rev/kinetic_theory_of_gases.md)
 
 </details>
 
@@ -370,8 +590,14 @@ This repository contains comprehensive course notes from my journey through the 
 </details>
 
 <details>
-<summary><b>📂 Quick Revision ✨ New</b></summary>
+<summary><b>📂 Quick Revision</b></summary>
 
+- [01 - Matrix](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/quick_rev/01_Matrix.md)
+- [02 - Differential Calculus](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/quick_rev/02_Differential_Calculus.md)
+- [03 - Integral Calculus](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/quick_rev/03_Integral_Calculus.md)
+- [04 - Gamma & Beta Functions](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/quick_rev/04_Gamma_Beta_Functions.md)
+- [05 - Area & Volume](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/quick_rev/05_Area_Volume.md)
+- [06 - Coordinate Geometry (3D)](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/quick_rev/06_Coordinate_Geometry_3D.md)
 - [Common Formulas](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/quick_rev/common-formulas.md)
 - [Differential Calculus Quick Rev](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/quick_rev/differential-calculus.md)
 - [Integral Calculus Quick Rev](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/quick_rev/integral-calculus.md)
@@ -399,6 +625,71 @@ This repository contains comprehensive course notes from my journey through the 
 - [Class Test 02 Q&A - 2025](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/qna/ct/math_classtest_02_qna_2025.md)
 - [Class Test 02 Q&A - 2026](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/qna/ct/math_classtest_02_qna_2026.md)
 - [Mixed Q&A](https://github.com/itachi-re/butex-notes/blob/master/MATH-101/qna/ct/math_classtest_02_qna_mixed.md)
+
+</details>
+
+---
+
+### MATH-103 Topics
+
+**[🔗 View All Mathematics - II Notes](https://github.com/itachi-re/butex-notes/tree/master/MATH-103)**
+
+<details>
+<summary><b>📂 Ordinary Differential Equations</b></summary>
+
+- [01 - Origin of Differential Equations](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/01_ode/01-Origin-of-Differential-Equations.md)
+- [02 - Classification of Differential Equations](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/01_ode/02-Classification-of-Differential-Equations.md)
+- [03 - First Order ODE](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/01_ode/03-First-Order-ODE.md)
+- [04 - Second & Higher Order ODE](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/01_ode/04-Second-and-Higher-Order-ODE.md)
+- [05 - Homogeneous Linear DE](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/01_ode/05-Homogeneous-Linear-DE.md)
+- [📖 Module README](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/01_ode/README.md)
+
+</details>
+
+<details>
+<summary><b>📂 Vector Analysis</b></summary>
+
+- [01 - Scalar & Vector Quantities](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/02_vector/01-scalar-and-vector-quantities.md)
+- [02 - Scalar & Vector Products](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/02_vector/02-scalar-and-vector-products.md)
+- [03 - Vector Triple Product](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/02_vector/03-vector-triple-product.md)
+- [04 - Scalar & Vector Functions](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/02_vector/04-scalar-and-vector-functions.md)
+- [05 - Gradient, Divergence & Curl](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/02_vector/05-gradient-divergence-curl.md)
+- [06 - Vector Line Integration & Work Done](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/02_vector/06-vector-line-integration-and-work-done.md)
+- [07 - Green's Theorem](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/02_vector/07-greens-theorem.md)
+- [08 - Vector Surface & Volume Integration](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/02_vector/08-vector-surface-and-volume-integration.md)
+- [09 - Gauss's Divergence Theorem](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/02_vector/09-gauss-divergence-theorem.md)
+- [10 - Stokes' Theorem](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/02_vector/10-stokes-theorem.md)
+- [📖 Module README](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/02_vector/README.md)
+
+</details>
+
+<details>
+<summary><b>📂 Calculus Extras (Prerequisites) ✨ New</b></summary>
+
+> Companion material covering everything before ODEs and vector calculus: limits, derivatives, and foundational review.
+
+- [📖 Overview](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/calculus-extras/README.md)
+- [Structure Guide](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/calculus-extras/STRUCTURE.md)
+- **Prerequisites:** [Algebra](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/calculus-extras/01-prerequisites/algebra.md) · [Functions](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/calculus-extras/01-prerequisites/functions.md) · [Limits Review](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/calculus-extras/01-prerequisites/limits-review.md) · [Trigonometry](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/calculus-extras/01-prerequisites/trigonometry.md)
+- **Limits:** [Introduction](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/calculus-extras/02_limits/introduction.md) · [Limit Laws](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/calculus-extras/02_limits/limit-laws.md) · [One-Sided & Infinite Limits](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/calculus-extras/02_limits/one-sided-and-infinite-limits.md) · [Continuity](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/calculus-extras/02_limits/continuity.md) · [Intermediate Value Theorem](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/calculus-extras/02_limits/intermediate-value-theorem.md) · [Squeeze Theorem](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/calculus-extras/02_limits/squeeze-theorem.md) · [Examples](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/calculus-extras/02_limits/examples.md)
+- **Derivatives:** [Definition](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/calculus-extras/03_derivatives/definition.md) · [Differentiation Rules](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/calculus-extras/03_derivatives/differentiation-rules.md) · [Chain Rule](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/calculus-extras/03_derivatives/chain-rule.md)
+
+</details>
+
+<details>
+<summary><b>📂 Q&A</b></summary>
+
+- [Differential Equations Q&A](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/qna/Differential_Equations_qna.md)
+- [Math ODE Homework (2026-07-05)](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/qna/math-ode-hw-20260705.md)
+
+</details>
+
+<details>
+<summary><b>📂 Quick Revision</b></summary>
+
+- [Differential Equations Complete Revision Handbook](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/quick_rev/Differential_Equations_Complete_Revision_Handbook.md)
+- [ODE Quick Notes](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/quick_rev/ODE_Quick_Notes.md)
+- [ODE / Calculus Reference](https://github.com/itachi-re/butex-notes/blob/master/MATH-103/quick_rev/ode-calculus-reference.md)
 
 </details>
 
@@ -564,51 +855,163 @@ This repository contains comprehensive course notes from my journey through the 
 > MDM-101 covers the fundamentals of computer programming using the **C language**, introduced in Level 1 Term 2. Topics progress from basic concepts through memory management, user-defined types, and file I/O.
 
 <details>
-<summary><b>📂 01 - Programming Basics ✨ New</b></summary>
+<summary><b>📂 01 - Programming Basics</b></summary>
 
 - [Programming Basics](https://github.com/itachi-re/butex-notes/blob/master/MDM-101/01_programming_basics.md)
 
 </details>
 
 <details>
-<summary><b>📂 02 - Overview of C Language ✨ New</b></summary>
+<summary><b>📂 02 - Overview of C Language</b></summary>
 
 - [C Language Overview](https://github.com/itachi-re/butex-notes/blob/master/MDM-101/02_c_overview.md)
 
 </details>
 
 <details>
-<summary><b>📂 03 - Functions ✨ New</b></summary>
+<summary><b>📂 03 - Functions</b></summary>
 
 - [Functions in C](https://github.com/itachi-re/butex-notes/blob/master/MDM-101/03_functions.md)
 
 </details>
 
 <details>
-<summary><b>📂 04 - Preprocessor ✨ New</b></summary>
+<summary><b>📂 04 - Preprocessor</b></summary>
 
 - [Preprocessor Directives](https://github.com/itachi-re/butex-notes/blob/master/MDM-101/04_preprocessor.md)
 
 </details>
 
 <details>
-<summary><b>📂 05 - Pointers, Arrays & Strings ✨ New</b></summary>
+<summary><b>📂 05 - Pointers, Arrays & Strings</b></summary>
 
 - [Pointers, Arrays & Strings](https://github.com/itachi-re/butex-notes/blob/master/MDM-101/05_pointers_arrays_strings.md)
 
 </details>
 
 <details>
-<summary><b>📂 06 - User-Defined Types ✨ New</b></summary>
+<summary><b>📂 06 - User-Defined Types</b></summary>
 
 - [User-Defined Types (struct, union, enum)](https://github.com/itachi-re/butex-notes/blob/master/MDM-101/06_user_defined_types.md)
 
 </details>
 
 <details>
-<summary><b>📂 07 - File I/O ✨ New</b></summary>
+<summary><b>📂 07 - File I/O</b></summary>
 
 - [File Input & Output](https://github.com/itachi-re/butex-notes/blob/master/MDM-101/07_io.md)
+
+</details>
+
+---
+
+### MDM-102 Topics
+
+**[🔗 View All MDM-102 Notes](https://github.com/itachi-re/butex-notes/tree/master/MDM-102)**
+
+> Continuation of C Programming (11/11 topics complete).
+
+<details>
+<summary><b>📂 C Programming</b></summary>
+
+- [01 - Simple C Programs](https://github.com/itachi-re/butex-notes/blob/master/MDM-102/C-Programming/01-simple-c-programs.md)
+- [02 - Variables, Datatypes & Constants](https://github.com/itachi-re/butex-notes/blob/master/MDM-102/C-Programming/02-variables-datatypes-constants.md)
+- [03 - Operators](https://github.com/itachi-re/butex-notes/blob/master/MDM-102/C-Programming/03-operators.md)
+- [04 - Decision Control & Conditional Operators](https://github.com/itachi-re/butex-notes/blob/master/MDM-102/C-Programming/04-decision-control-conditional-operators.md)
+- [05 - Loop Control Statements](https://github.com/itachi-re/butex-notes/blob/master/MDM-102/C-Programming/05-loop-control-statements.md)
+- [06 - Library & User-Defined Functions](https://github.com/itachi-re/butex-notes/blob/master/MDM-102/C-Programming/06-library-and-user-defined-functions.md)
+- [07 - Recursion](https://github.com/itachi-re/butex-notes/blob/master/MDM-102/C-Programming/07-recursion.md)
+- [08 - Pointers & Arrays](https://github.com/itachi-re/butex-notes/blob/master/MDM-102/C-Programming/08-pointers-and-arrays.md)
+- [09 - User-Defined Data Types](https://github.com/itachi-re/butex-notes/blob/master/MDM-102/C-Programming/09-user-defined-data-types.md)
+- [10 - Exception Handling](https://github.com/itachi-re/butex-notes/blob/master/MDM-102/C-Programming/10-exception-handling.md)
+- [11 - C Graphics & Game Development](https://github.com/itachi-re/butex-notes/blob/master/MDM-102/C-Programming/11-c-graphics-game-development.md)
+- [📖 Module README](https://github.com/itachi-re/butex-notes/blob/master/MDM-102/C-Programming/README.md)
+
+</details>
+
+<details>
+<summary><b>📂 Homework Programs</b></summary>
+
+- [Circle (`circle.c`)](https://github.com/itachi-re/butex-notes/blob/master/MDM-102/C-Programming/homeworks/circle.c)
+- [Grading — Marks v2 (`grading-m2.c`)](https://github.com/itachi-re/butex-notes/blob/master/MDM-102/C-Programming/homeworks/grading-m2.c)
+- [Grading System (`grading-systm.c`)](https://github.com/itachi-re/butex-notes/blob/master/MDM-102/C-Programming/homeworks/grading-systm.c)
+- [Triangle (`triangle.c`)](https://github.com/itachi-re/butex-notes/blob/master/MDM-102/C-Programming/homeworks/triangle.c)
+
+</details>
+
+<details>
+<summary><b>📂 Quick Revision</b></summary>
+
+- [C Programming Suggestions](https://github.com/itachi-re/butex-notes/blob/master/MDM-102/quick_rev/c_programming_sug.md)
+- [C Programming Suggestions (Part 2)](https://github.com/itachi-re/butex-notes/blob/master/MDM-102/quick_rev/c_programming_sug_2.md)
+
+</details>
+
+---
+
+### IPE-101 Topics
+
+**[🔗 View All IPE-101 Notes](https://github.com/itachi-re/butex-notes/tree/master/IPE-101)**
+
+> Industrial & Production Engineering materials science, following Callister & Rethwisch, Kalpakjian & Schmid, and Ashby.
+
+<details>
+<summary><b>📂 Materials Science Topics</b></summary>
+
+- [01 - Properties of Metals, Ceramics & Polymers](https://github.com/itachi-re/butex-notes/blob/master/IPE-101/01-properties-of-materials.md)
+- [02 - Processing of Materials](https://github.com/itachi-re/butex-notes/blob/master/IPE-101/02-processing-of-materials.md)
+- [03 - Material Selection](https://github.com/itachi-re/butex-notes/blob/master/IPE-101/03-material-selection.md)
+- [04 - Atomic, Molecular, Crystalline & Amorphous Structures](https://github.com/itachi-re/butex-notes/blob/master/IPE-101/04-atomic-molecular-structures.md)
+- [05 - Elastic & Plastic Behavior](https://github.com/itachi-re/butex-notes/blob/master/IPE-101/05-elastic-plastic-behavior.md)
+- [06 - Phase Diagrams & Mixtures](https://github.com/itachi-re/butex-notes/blob/master/IPE-101/06-phase-diagrams-mixtures.md)
+
+</details>
+
+<details>
+<summary><b>📂 Quick Revision</b></summary>
+
+- [Materials Revision Notebook](https://github.com/itachi-re/butex-notes/blob/master/IPE-101/quick_rev/materials_revision_notebook.md)
+
+</details>
+
+---
+
+### WPE-101 Topics
+
+**[🔗 View All Polymer Science and Engineering Notes](https://github.com/itachi-re/butex-notes/tree/master/WPE-101)**
+
+<details>
+<summary><b>📂 Fundamentals</b></summary>
+
+- [01 - Introduction and History](https://github.com/itachi-re/butex-notes/blob/master/WPE-101/fundamentals/01-introduction-and-history.md)
+- [02 - Basic Concepts & Terminology](https://github.com/itachi-re/butex-notes/blob/master/WPE-101/fundamentals/02-basic-concepts-terminology.md)
+
+</details>
+
+<details>
+<summary><b>📂 Classification, Raw Materials & Synthesis</b></summary>
+
+- [Classification of Polymers](https://github.com/itachi-re/butex-notes/blob/master/WPE-101/classification/01-classification-of-polymers.md)
+- [Raw Materials](https://github.com/itachi-re/butex-notes/blob/master/WPE-101/raw_materials/04-raw-materials.md)
+- [Synthesis of Polymers](https://github.com/itachi-re/butex-notes/blob/master/WPE-101/synthesis/05-synthesis-of-polymers.md)
+- [Fiber-Forming Polymers](https://github.com/itachi-re/butex-notes/blob/master/WPE-101/06-fiber-forming-polymers.md)
+- [📖 Course README](https://github.com/itachi-re/butex-notes/blob/master/WPE-101/README.md)
+
+</details>
+
+<details>
+<summary><b>📂 Q&A</b></summary>
+
+- [Polymer Science Question Bank](https://github.com/itachi-re/butex-notes/blob/master/WPE-101/qna/psqb.md)
+
+</details>
+
+<details>
+<summary><b>📂 Quick Revision</b></summary>
+
+- [Polymer Pairs & Free Radical Mechanism](https://github.com/itachi-re/butex-notes/blob/master/WPE-101/quick_rev/WPE-101_Polymer_Pairs_and_FreeRadical.md)
+- [Class Test 1 Prep](https://github.com/itachi-re/butex-notes/blob/master/WPE-101/quick_rev/ct1-prep.md)
+- [Polymer Science Revision](https://github.com/itachi-re/butex-notes/blob/master/WPE-101/quick_rev/polymer-science-revision.md)
 
 </details>
 
@@ -735,22 +1138,22 @@ Convert all notes to PDF format with proper formatting:
 
 ```
 butex-notes/
-├── CHEM-101/                    # Chemistry notes (10 modules + oneshots + qb + qna)
-│   ├── 01_periodicity/
-│   ├── 02_chemical_bonding/
-│   ├── 03_complex_compounds/
-│   ├── 04_acids_bases/
-│   ├── 05_analytical_methods/
-│   ├── 06_physical_chemistry/
-│   ├── 07_equilibrium/
-│   ├── 08_kinetics/
-│   ├── 09_colloids/
-│   ├── 10_photochemistry/
+├── CHEM-101/                    # Chemistry - I (10 modules + oneshots + qb + quick_rev + qna)
+│   ├── 01_periodicity/ … 10_photochemistry/
 │   ├── oneshots/
 │   ├── qb/                      # Question bank (7 topics)
+│   ├── quick_rev/                # Quick revision (10 files)
 │   ├── qna/
 │   └── README.md
-├── PHY-101/                     # Physics notes (8 modules + worked examples)
+├── CHEM-103/                    # Organic Chemistry — Reactions & Mechanisms
+│   ├── organic_reaction/        # Inductive/electromeric/mesomeric effects → addition rxns (12 files)
+│   ├── organometallic/          # Grignard, organozinc, TEL, alcohols, phenols (8 files)
+│   ├── qna/
+│   └── quick_rev/
+├── CHEM-104/                    # Chemistry - II (Practical)
+│   ├── identification_of_organic_compounds/  # 23 compounds + qna
+│   └── titrations/               # ⚪ Pending — placeholder only
+├── PHY-101/                     # Physics - I (8 modules + worked examples + quick_rev)
 │   ├── 01_elasticity/
 │   ├── 02_fluid_mechanics/
 │   ├── 02_fluid_mech_ex/        # Fluid mechanics worked examples (12 files)
@@ -760,15 +1163,27 @@ butex-notes/
 │   ├── 06_viscosity/
 │   ├── 07_diffraction/
 │   ├── 08_polarization/         # Polarization module (8 files)
+│   ├── quick_rev/                # Quick revision (16 files)
 │   ├── qna/
 │   └── README.md
-├── MATH-101/                    # Mathematics notes
+├── PHY-103/                     # Physics - II
+│   ├── electricity/             # Coulomb's Law → Parallel Resonance (14/14 topics)
+│   ├── kinetic_theory_of_gases/ # 13 topics — heat, thermometry, kinetic theory, van der Waals
+│   ├── magnetism/                # 4 topics
+│   └── quick_rev/
+├── MATH-101/                    # Mathematics - I
 │   ├── differential_calculus/
 │   ├── integral_calculus/
 │   ├── linear_algebra/
 │   ├── coordinate_geometry/     # 2D/3D geometry & conics (10 files)
-│   ├── quick_rev/               # Quick revision sheets (4 files)
+│   ├── quick_rev/               # Quick revision sheets (10 files)
 │   └── qna/                     # Full Q&A set (11 topics + ct/ subdirectory)
+├── MATH-103/                    # Mathematics - II
+│   ├── 01_ode/                  # Ordinary Differential Equations (5 topics)
+│   ├── 02_vector/                # Vector Analysis (10 topics)
+│   ├── calculus-extras/          # Prerequisites, limits, derivatives (companion material)
+│   ├── qna/
+│   └── quick_rev/
 ├── HSS-101/                     # Humanities & Social Science
 │   ├── 01_intro.md … 04_meetings.md
 │   ├── extras/                  # Group project materials
@@ -776,7 +1191,7 @@ butex-notes/
 │   │   ├── 03_Script/
 │   │   └── 05_References/
 │   └── qna/
-├── MDM-101/                     # Computer Programming (7 files)  ✨ New
+├── MDM-101/                     # Computer Programming - I (7 files)
 │   ├── 01_programming_basics.md
 │   ├── 02_c_overview.md
 │   ├── 03_functions.md
@@ -784,6 +1199,20 @@ butex-notes/
 │   ├── 05_pointers_arrays_strings.md
 │   ├── 06_user_defined_types.md
 │   └── 07_io.md
+├── MDM-102/                     # Computer Programming - II (C Programming, 11/11 topics)
+│   ├── C-Programming/
+│   │   └── homeworks/            # circle.c, triangle.c, grading programs
+│   └── quick_rev/
+├── IPE-101/                     # Industrial & Production Engineering (Materials Science)
+│   ├── 01-properties-of-materials.md … 06-phase-diagrams-mixtures.md
+│   └── quick_rev/
+├── WPE-101/                     # Polymer Science and Engineering
+│   ├── fundamentals/
+│   ├── classification/
+│   ├── raw_materials/
+│   ├── synthesis/
+│   ├── qna/
+│   └── quick_rev/
 ├── YE-101/                      # Natural Textile Fibres
 │   ├── bast/
 │   │   ├── flax/                # Flax module (11 files)
@@ -802,6 +1231,7 @@ butex-notes/
 ├── lab_reports/                 # Lab reports (CHEM-102, PHY-102, Mechanical)
 ├── tmp/
 │   └── ME-102-Practical/        # ME practical notes (5 topics)
+├── assets/                      # Diagrams & images referenced by notes
 ├── pdfs/                        # PDF resources
 ├── scripts/                     # Automation scripts
 │   ├── new_note.sh
@@ -939,8 +1369,8 @@ This project is licensed under the terms specified in the [LICENSE](LICENSE) fil
 ## 📊 Repository Stats
 
 ```
-Total Notes: 62 directories, 388 files
-Last Updated: Tuesday, April 21, 2026
+Total Notes: 108 directories, 642 files
+Last Updated: Tuesday, July 28, 2026
 Export Format: Markdown → PDF
 Department: Fabric Engineering
 University: BUTEX
