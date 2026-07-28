@@ -328,7 +328,7 @@ Examples: Magnesium, Zinc, Cadmium. HCP shares the same APF as FCC (0.74), but i
 
 1. Above 727°C, the steel exists as a single homogeneous phase: **austenite (γ)**, FCC, able to dissolve up to 0.8% C at this composition.
 2. On slowly cooling through 727°C (the A₁/eutectoid temperature), the **eutectoid reaction** occurs entirely at this one temperature:
-$$\gamma_{(0.8\%C)} \longrightarrow \alpha_{(0.02\%C)} + Fe_3C_{(6.67\%C)}$$
+$$\gamma_{(0.8\%C)} \longrightarrow \alpha_{(0.02\%C)} + \text{Fe}_3\text{C}_{(6.67\%C)}$$
 3. This produces **pearlite** — alternating lamellae (thin plates) of soft ferrite and hard, brittle cementite — giving the steel a characteristic combination of moderate strength and moderate ductility.
 4. Below 727°C, no further phase change occurs on slow cooling; the pearlitic microstructure is retained down to room temperature (only the tiny amount of carbon solubility in α-ferrite drops slightly further along the solvus line).
 
