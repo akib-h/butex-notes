@@ -1,0 +1,101 @@
+<svg viewBox="0 0 780 560" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="780" height="560" fill="#ffffff"/>
+
+  <!-- Axes -->
+  <line x1="100" y1="500" x2="680" y2="500" stroke="#000" stroke-width="2"/>
+  <line x1="100" y1="500" x2="100" y2="40" stroke="#000" stroke-width="2"/>
+
+  <!-- Axis ticks / labels -->
+  <text x="390" y="540" font-size="16" text-anchor="middle" font-weight="bold">% Carbon (by weight)</text>
+  <text x="30" y="270" font-size="16" text-anchor="middle" font-weight="bold" transform="rotate(-90 30 270)">Temperature (°C)</text>
+
+  <!-- x tick labels -->
+  <text x="100" y="518" font-size="12" text-anchor="middle">0</text>
+  <text x="166" y="518" font-size="12" text-anchor="middle">0.8</text>
+  <text x="255" y="518" font-size="12" text-anchor="middle">2.0</text>
+  <text x="290" y="518" font-size="12" text-anchor="middle">2.14</text>
+  <text x="455" y="518" font-size="12" text-anchor="middle">4.3</text>
+  <text x="650" y="518" font-size="12" text-anchor="middle">6.67</text>
+  <line x1="166" y1="500" x2="166" y2="505" stroke="#000"/>
+  <line x1="290" y1="500" x2="290" y2="505" stroke="#000"/>
+  <line x1="455" y1="500" x2="455" y2="505" stroke="#000"/>
+  <line x1="650" y1="500" x2="650" y2="505" stroke="#000"/>
+
+  <!-- y tick labels -->
+  <text x="90" y="504" font-size="12" text-anchor="end">0</text>
+  <text x="90" y="304" font-size="12" text-anchor="end">727</text>
+  <text x="90" y="252" font-size="12" text-anchor="end">912</text>
+  <text x="90" y="185" font-size="12" text-anchor="end">1147</text>
+  <text x="90" y="88" font-size="12" text-anchor="end">1493</text>
+  <text x="90" y="65" font-size="12" text-anchor="end">1538</text>
+
+  <!-- Dashed vertical composition lines -->
+  <line x1="166" y1="296" x2="166" y2="500" stroke="#999" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="290" y1="296" x2="290" y2="500" stroke="#999" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="455" y1="177" x2="455" y2="500" stroke="#999" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- A1 line (eutectoid, horizontal at 727C) -->
+  <line x1="100" y1="296" x2="650" y2="296" stroke="#c0392b" stroke-width="2"/>
+
+  <!-- Liquidus line -->
+  <path d="M 100 60 L 118 82 L 160 100 L 260 140 L 455 177 L 560 165 L 650 152"
+        fill="none" stroke="#1a5276" stroke-width="2.5"/>
+
+  <!-- Solidus / peritectic / eutectic horizontal segments -->
+  <path d="M 100 60 L 100 90 L 118 82" fill="none" stroke="#1a5276" stroke-width="2"/>
+  <line x1="100" y1="90" x2="145" y2="90" stroke="#1a5276" stroke-width="2"/>
+  <line x1="118" y1="82" x2="145" y2="90" stroke="#1a5276" stroke-width="2"/>
+
+  <!-- A3 line: 912C (pure Fe) curving down to eutectoid point (0.8%,727) -->
+  <path d="M 100 252 Q 140 260 166 296" fill="none" stroke="#1a5276" stroke-width="2.5"/>
+
+  <!-- Acm line: eutectoid (0.8,727) up to eutectic (4.3,1147) via 2.14 boundary -->
+  <path d="M 166 296 Q 250 280 290 250 Q 380 200 455 177" fill="none" stroke="#1a5276" stroke-width="2.5"/>
+
+  <!-- Solvus line (solubility of C in ferrite decreasing) -->
+  <path d="M 166 296 Q 130 400 108 500" fill="none" stroke="#7d3c98" stroke-width="2" stroke-dasharray="6,3"/>
+
+  <!-- gamma+Fe3C right boundary down from eutectic to eutectoid area (Acm continuing) already drawn -->
+
+  <!-- Solidus from peritectic area down to eutectic (gamma solvus upper) -->
+  <path d="M 145 90 Q 250 130 455 177" fill="none" stroke="#1a5276" stroke-width="1.5" stroke-dasharray="2,2"/>
+
+  <!-- Cementite vertical line -->
+  <line x1="650" y1="40" x2="650" y2="500" stroke="#000" stroke-width="1.5"/>
+
+  <!-- Eutectic horizontal solidus (ledeburite forms) -->
+  <line x1="166" y1="296" x2="650" y2="296" stroke="none"/>
+
+  <!-- Key points -->
+  <circle cx="100" cy="60" r="4" fill="#000"/>
+  <circle cx="118" cy="82" r="4" fill="#000"/>
+  <circle cx="455" cy="177" r="4" fill="#000"/>
+  <circle cx="166" cy="296" r="4" fill="#000"/>
+
+  <!-- Labels for phase fields -->
+  <text x="230" y="80" font-size="14" font-style="italic">L (Liquid)</text>
+  <text x="108" y="120" font-size="13" font-style="italic">δ</text>
+  <text x="108" y="180" font-size="14" font-style="italic">γ (Austenite)</text>
+  <text x="330" y="150" font-size="13" font-style="italic">γ + L</text>
+  <text x="470" y="230" font-size="13" font-style="italic">γ + Fe₃C</text>
+  <text x="330" y="270" font-size="12" font-style="italic">(Acm)</text>
+  <text x="108" y="340" font-size="14" font-style="italic">α (Ferrite)</text>
+  <text x="120" y="270" font-size="12" font-style="italic">γ + α</text>
+  <text x="230" y="400" font-size="13" font-style="italic">α + Fe₃C</text>
+  <text x="230" y="420" font-size="12">(Ferrite + Pearlite)</text>
+  <text x="480" y="400" font-size="13" font-style="italic">Fe₃C + Pearlite</text>
+  <text x="480" y="420" font-size="12">(Ledeburite)</text>
+  <text x="500" y="480" font-size="13" font-style="italic">Cementite (Fe₃C)</text>
+
+  <!-- Key point labels -->
+  <text x="30" y="55" font-size="11">1538°C</text>
+  <text x="128" y="78" font-size="11">Peritectic (0.18%C, 1493°C)</text>
+  <text x="460" y="172" font-size="11">Eutectic (4.3%C, 1147°C)</text>
+  <text x="176" y="296" font-size="11">Eutectoid (0.8%C, 727°C)</text>
+
+  <text x="660" y="500" font-size="12">6.67%C</text>
+  <text x="662" y="30" font-size="12">Fe₃C</text>
+
+  <!-- Legend -->
+  <text x="120" y="30" font-size="15" font-weight="bold">Fe–Fe₃C Equilibrium (Iron–Iron Carbide) Diagram</text>
+</svg>
