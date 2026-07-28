@@ -1,0 +1,67 @@
+<svg viewBox="0 0 760 380" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="760" height="380" fill="#ffffff"/>
+
+  <!-- ===================== BCC (left) ===================== -->
+  <g>
+    <text x="150" y="30" font-size="18" font-weight="bold" text-anchor="middle">BCC Unit Cell</text>
+
+    <!-- cube isometric: front face square + offset top/back -->
+    <!-- front bottom-left (60,300) front bottom-right(200,300) front top-left(60,160) front top-right(200,160) -->
+    <!-- back offset: +70,-60 -->
+    <polygon points="60,300 200,300 200,160 60,160" fill="none" stroke="#333" stroke-width="2"/>
+    <polygon points="130,240 270,240 270,100 130,100" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="5,3"/>
+    <line x1="60" y1="300" x2="130" y2="240" stroke="#333" stroke-width="2"/>
+    <line x1="200" y1="300" x2="270" y2="240" stroke="#333" stroke-width="2"/>
+    <line x1="200" y1="160" x2="270" y2="100" stroke="#333" stroke-width="2"/>
+    <line x1="60" y1="160" x2="130" y2="100" stroke="#333" stroke-width="2"/>
+
+    <!-- corner atoms (8) -->
+    <circle cx="60" cy="300" r="9" fill="#2980b9"/>
+    <circle cx="200" cy="300" r="9" fill="#2980b9"/>
+    <circle cx="60" cy="160" r="9" fill="#2980b9"/>
+    <circle cx="200" cy="160" r="9" fill="#2980b9"/>
+    <circle cx="130" cy="240" r="9" fill="#2980b9"/>
+    <circle cx="270" cy="240" r="9" fill="#2980b9"/>
+    <circle cx="130" cy="100" r="9" fill="#2980b9"/>
+    <circle cx="270" cy="100" r="9" fill="#2980b9"/>
+
+    <!-- body center atom -->
+    <circle cx="165" cy="200" r="13" fill="#c0392b"/>
+
+    <text x="150" y="335" font-size="12" text-anchor="middle">8 corner atoms (1/8 each) + 1 body-center atom</text>
+    <text x="150" y="352" font-size="13" text-anchor="middle" font-weight="bold">n = 2, APF = 0.68</text>
+  </g>
+
+  <!-- ===================== FCC (right) ===================== -->
+  <g transform="translate(420,0)">
+    <text x="150" y="30" font-size="18" font-weight="bold" text-anchor="middle">FCC Unit Cell</text>
+
+    <polygon points="60,300 200,300 200,160 60,160" fill="none" stroke="#333" stroke-width="2"/>
+    <polygon points="130,240 270,240 270,100 130,100" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="5,3"/>
+    <line x1="60" y1="300" x2="130" y2="240" stroke="#333" stroke-width="2"/>
+    <line x1="200" y1="300" x2="270" y2="240" stroke="#333" stroke-width="2"/>
+    <line x1="200" y1="160" x2="270" y2="100" stroke="#333" stroke-width="2"/>
+    <line x1="60" y1="160" x2="130" y2="100" stroke="#333" stroke-width="2"/>
+
+    <!-- corner atoms (8) -->
+    <circle cx="60" cy="300" r="9" fill="#2980b9"/>
+    <circle cx="200" cy="300" r="9" fill="#2980b9"/>
+    <circle cx="60" cy="160" r="9" fill="#2980b9"/>
+    <circle cx="200" cy="160" r="9" fill="#2980b9"/>
+    <circle cx="130" cy="240" r="9" fill="#2980b9"/>
+    <circle cx="270" cy="240" r="9" fill="#2980b9"/>
+    <circle cx="130" cy="100" r="9" fill="#2980b9"/>
+    <circle cx="270" cy="100" r="9" fill="#2980b9"/>
+
+    <!-- face center atoms (6): front, back, left, right, top, bottom -->
+    <circle cx="130" cy="230" r="11" fill="#27ae60"/>   <!-- front face center -->
+    <circle cx="200" cy="170" r="11" fill="#27ae60"/>   <!-- back face center -->
+    <circle cx="95" cy="200" r="11" fill="#27ae60"/>    <!-- left face center -->
+    <circle cx="235" cy="200" r="11" fill="#27ae60"/>   <!-- right face center -->
+    <circle cx="165" cy="130" r="11" fill="#27ae60"/>   <!-- top face center -->
+    <circle cx="165" cy="270" r="11" fill="#27ae60"/>   <!-- bottom face center -->
+
+    <text x="150" y="335" font-size="12" text-anchor="middle">8 corner atoms (1/8 each) + 6 face-center atoms (1/2 each)</text>
+    <text x="150" y="352" font-size="13" text-anchor="middle" font-weight="bold">n = 4, APF = 0.74</text>
+  </g>
+</svg>
