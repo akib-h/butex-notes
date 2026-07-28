@@ -27,7 +27,7 @@
 **Definition — Atomic Packing Factor (APF):**
 The **fraction of the volume of a unit cell that is actually occupied by atoms**, assuming atoms are hard, touching spheres.
 
-$$APF = \dfrac{n \times \dfrac{4}{3}\pi r^3}{a^3}$$
+> **APF = [ n × (4/3)πr³ ] / a³**
 
 where *n* = atoms per unit cell, *r* = atomic radius, *a* = unit cell edge length.
 
@@ -39,19 +39,19 @@ FCC has atoms at all 8 corners and at the center of all 6 faces.
 | Corner | 8 | 8 adjacent cells | 8 × 1/8 = 1 |
 | Face center | 6 | 2 adjacent cells | 6 × 1/2 = 3 |
 
-$$n = 1 + 3 = \boxed{4 \text{ atoms per unit cell}}$$
+> **n = 1 + 3 = 4 atoms per unit cell**
 
 **Step 2 — Relate r and a (atoms touch along the face diagonal in FCC):**
 
 Face diagonal length = 4r, and by Pythagoras, face diagonal = √2·a
 
-$$\sqrt{2},a = 4r \quad\Rightarrow\quad r = \frac{\sqrt{2}\,a}{4}$$
+> **√2 · a = 4r  ⟹  r = √2a / 4**
 
 **Step 3 — Substitute into the APF formula:**
 
-$$APF = \frac{4 \times \dfrac{4}{3}\pi\left(\dfrac{\sqrt{2}a}{4}\right)^3}{a^3} = \frac{4 \times \dfrac{4}{3}\pi \times \dfrac{2\sqrt{2}}{64}a^3}{a^3} = \frac{\pi\sqrt{2}}{6}$$
+> **APF = [4 × (4/3)π(√2a/4)³] / a³ = [4 × (4/3)π × (2√2/64)a³] / a³ = π√2 / 6**
 
-$$\boxed{APF_{FCC} \approx 0.74}$$
+> **APF (FCC) ≈ 0.74**
 
 This is the **densest possible packing** of equal spheres (shared with HCP), which is why FCC metals (Al, Ni, Cu, Au, Ag) tend to be soft, ductile, and good conductors.
 
@@ -128,7 +128,7 @@ BCC has one atom at each of the 8 corners, and one atom at the exact body center
 - Each **corner** atom is shared by **8** adjacent unit cells → contributes 1/8
 - The **body-center** atom is not shared by any other cell → contributes fully (1)
 
-$$n_{BCC} = \left(\frac{1}{8}\times 8\right) + (1\times 1) = 1 + 1 = \boxed{2 \text{ atoms}}$$
+> **n (BCC) = (1/8 × 8) + (1 × 1) = 1 + 1 = 2 atoms**
 
 ### A3 (5 marks) — BCC & FCC: diagrams, r–a relation, APF
 
@@ -138,17 +138,17 @@ $$n_{BCC} = \left(\frac{1}{8}\times 8\right) + (1\times 1) = 1 + 1 = \boxed{2 \t
 
 Body diagonal length = 4r, and for a cube, body diagonal = √3·a
 
-$$\sqrt{3}\,a = 4r \quad\Rightarrow\quad \boxed{r = \frac{\sqrt{3}\,a}{4}}$$
+> **√3 · a = 4r  ⟹  r = √3a / 4**
 
-$$APF_{BCC} = \frac{2\times \frac{4}{3}\pi\left(\frac{\sqrt3 a}{4}\right)^3}{a^3} = \boxed{0.68}$$
+> **APF (BCC) = [2 × (4/3)π(√3a/4)³] / a³ = 0.68**
 
 **FCC — atoms touch along the face diagonal:**
 
 Face diagonal length = 4r, and face diagonal = √2·a
 
-$$\sqrt{2}\,a = 4r \quad\Rightarrow\quad \boxed{r = \frac{\sqrt{2}\,a}{4}}$$
+> **√2 · a = 4r  ⟹  r = √2a / 4**
 
-$$APF_{FCC} = \frac{4\times \frac{4}{3}\pi\left(\frac{\sqrt2 a}{4}\right)^3}{a^3} = \boxed{0.74}$$
+> **APF (FCC) = [4 × (4/3)π(√2a/4)³] / a³ = 0.74**
 
 | Property | BCC | FCC |
 |---|---|---|
@@ -314,7 +314,7 @@ flowchart TD
 | Basal-plane center (top + bottom) | 2 | 2 adjacent cells | 2 × 1/2 = 1 |
 | Mid-layer (interior) | 3 | Not shared | 3 × 1 = 3 |
 
-$$n_{HCP} = 2 + 1 + 3 = \boxed{6 \text{ atoms per unit cell}}$$
+> **n (HCP) = 2 + 1 + 3 = 6 atoms per unit cell**
 
 Examples: Magnesium, Zinc, Cadmium. HCP shares the same APF as FCC (0.74), but is less ductile due to fewer available slip systems.
 
@@ -328,7 +328,7 @@ Examples: Magnesium, Zinc, Cadmium. HCP shares the same APF as FCC (0.74), but i
 
 1. Above 727°C, the steel exists as a single homogeneous phase: **austenite (γ)**, FCC, able to dissolve up to 0.8% C at this composition.
 2. On slowly cooling through 727°C (the A₁/eutectoid temperature), the **eutectoid reaction** occurs entirely at this one temperature:
-$$\gamma_{(0.8\%C)} \longrightarrow \alpha_{(0.02\%C)} + \text{Fe}_3\text{C}_{(6.67\%C)}$$
+> **γ (0.8% C) → α (0.02% C) + Fe₃C (6.67% C)**
 3. This produces **pearlite** — alternating lamellae (thin plates) of soft ferrite and hard, brittle cementite — giving the steel a characteristic combination of moderate strength and moderate ductility.
 4. Below 727°C, no further phase change occurs on slow cooling; the pearlitic microstructure is retained down to room temperature (only the tiny amount of carbon solubility in α-ferrite drops slightly further along the solvus line).
 
