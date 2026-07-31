@@ -1,0 +1,11 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect x="80" y="50" width="140" height="100" fill="none" stroke="#2c3e50" stroke-width="2"/>
+  <text x="70" y="45" font-size="12">A</text><text x="220" y="45" font-size="12">B</text>
+  <text x="70" y="160" font-size="12">D</text><text x="220" y="160" font-size="12">C</text>
+  <g stroke="#3498db" stroke-width="1"><line x1="20" y1="30" x2="20" y2="170"/><line x1="40" y1="30" x2="40" y2="170"/><line x1="60" y1="30" x2="60" y2="170"/></g>
+  <text x="20" y="20" font-size="12">B →</text>
+  <line x1="80" y1="50" x2="80" y2="10" stroke="#e74c3c" stroke-width="2" marker-end="url(#a5)"/>
+  <line x1="220" y1="150" x2="220" y2="190" stroke="#e74c3c" stroke-width="2" marker-end="url(#a5)"/>
+  <text x="150" y="180" text-anchor="middle" font-size="13">τ = B·I·A·sinφ = m × B</text>
+  <defs><marker id="a5" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#e74c3c"/></marker></defs>
+</svg>
