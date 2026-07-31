@@ -98,6 +98,8 @@ where
 - $q_1, q_2$ = magnitudes of the two charges (C)
 - $r$ = distance between charge centres (m)
 
+![Coulomb's Law — force between two point charges](../../assets/01_coulombs_law.svg)
+
 ### Derivation / Explanation
 Let two point charges $q_1$ and $q_2$ be separated by distance $r$ in a medium.
 
@@ -194,6 +196,8 @@ A ring of radius $R$ carries total charge $Q$, uniformly distributed. Point $P$ 
         radius R
 ```
 
+![Electric field on the axis of a charged ring](../../assets/02_ring_axis_field.svg)
+
 ### Derivation
 A small element $dq$ on the ring is at distance $r=\sqrt{R^2+x^2}$ from $P$. Field due to $dq$:
 $$dE = \frac{1}{4\pi\varepsilon_0}\cdot\frac{dq}{R^2+x^2}$$
@@ -233,6 +237,8 @@ $$\oint \vec{E}\cdot d\vec{A} = \frac{Q_{enc}}{\varepsilon_0}$$
 
 - $\oint \vec E \cdot d\vec A$ = total electric flux $\Phi_E$ through the closed ("Gaussian") surface
 - $Q_{enc}$ = net charge enclosed by that surface
+
+![Gauss's Law — flux through a closed Gaussian surface](../../assets/03_gauss_law.svg)
 
 ### Proof (2020 PYQ 1(a))
 Start from the field of a point charge $q$ at distance $r$:
@@ -284,6 +290,8 @@ Gauss's law is a **shortcut**, not a separate physical law — it's Coulomb's la
 > An **electric dipole** is a system of two equal and opposite point charges separated by a very small distance.
 
 **Electric dipole moment:** $p = q\times(2\ell)$, where $2\ell$ is the separation between the charges — unit: **C·m**.
+
+![Electric dipole — two equal and opposite charges separated by 2ℓ](../../assets/04_electric_dipole.svg)
 
 ### 5.1 Potential Due to a Dipole on its Axis — Numerical (2016 PYQ 1(c))
 
@@ -518,6 +526,8 @@ For a capacitor with an air gap $(d-t)$ **in series** with a dielectric slab of 
 $$C = \frac{\varepsilon_0 A}{(d-t)+\dfrac{t}{k}}$$
 
 *(This formula comes from treating the arrangement as two capacitors in series — an air-filled one of thickness $d-t$, and a dielectric-filled one of thickness $t$ — and combining via $\frac1C=\frac1{C_1}+\frac1{C_2}$; the derivation collapses neatly to the single formula above.)*
+
+![Parallel-plate capacitor with a partial dielectric slab](../../assets/05_capacitor_dielectric_slab.svg)
 
 ### Solution
 
@@ -949,6 +959,8 @@ A rectangular loop $ABCD$ of length $\ell$ and breadth $b$, carrying current $I$
    D ────────── C
 ```
 
+![Torque on a current-carrying rectangular loop in a magnetic field](../../assets/09_torque_current_loop.svg)
+
 ### Derivation (2016 PYQ 2(c))
 
 **Forces on each side**, using $F=I\ell\times B$:
@@ -1161,6 +1173,8 @@ $$V_H = \frac{IB}{nqe}$$
 ### Full Derivation (2018 PYQ 2(a))
 
 **Setup:** A current-carrying conductor of thickness (width) $w$ and thickness $d$ sits in magnetic field $B$, perpendicular to current $I$.
+
+![Hall effect — transverse Hall voltage across a current-carrying conductor in a magnetic field](../../assets/11_hall_effect.svg)
 
 **Step 1 — Force balance on a charge carrier:**
 
