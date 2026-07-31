@@ -661,27 +661,21 @@ $$q(t) = Q_0e^{-t/RC}, \qquad V_C = V_0e^{-t/RC}$$
 ### Graphical Representation (2015 PYQ 2(b))
 
 **Charging curve** (exponential rise, saturating at $Q_0$):
-```
-Charge (q)
-    Q0 |- - - - - - - - - - - - -
-       |                ,-•''
-       |            ,-•'
-       |        ,-•'
-       |    ,-•'
-       |  •'
-     0 +---------------------------→ Time (t)
+```mermaid
+xychart-beta
+    title "RC Charging: q/Q0 vs t/RC"
+    x-axis "t / RC" [0, 0.5, 1, 1.5, 2, 3, 4, 5]
+    y-axis "q / Q0" 0 --> 1
+    line [0, 0.39, 0.63, 0.78, 0.86, 0.95, 0.98, 0.99]
 ```
 
 **Discharging curve** (exponential decay toward zero):
-```
-Charge (q)
-    Q0 •
-       |\
-       | \
-       |  \
-       |   \_
-       |     \___
-     0 +--------•==========------→ Time (t)
+```mermaid
+xychart-beta
+    title "RC Discharging: q/Q0 vs t/RC"
+    x-axis "t / RC" [0, 0.5, 1, 1.5, 2, 3, 4, 5]
+    y-axis "q / Q0" 0 --> 1
+    line [1, 0.61, 0.37, 0.22, 0.14, 0.05, 0.02, 0.01]
 ```
 
 ### 13.3 Numerical — Capacitance & Time Constant from 50% Charge Time (2015 PYQ (d))
@@ -823,6 +817,16 @@ KCL ↔ conservation of **charge**; KVL ↔ conservation of **energy** (voltage 
      (battery across A–C, galvanometer across B–D)
 ```
 
+```mermaid
+flowchart TD
+    A((A)) -->|P| B((B))
+    A -->|Q| D((D))
+    B -->|R| C((C))
+    D -->|S| C
+    B <-.->|Galvanometer G, I_g = 0 at balance| D
+    A ---|Battery| C
+```
+
 **Derivation:**
 
 Applying **KCL** at the junctions (with $I_g=0$ at balance):
@@ -919,6 +923,17 @@ $$\varepsilon = -N\frac{\Delta\phi}{\Delta t} \qquad\text{(or, instantaneously, 
 
 ### Statement (2021 PYQ 2(a))
 > Lenz's Law states that the current created by a changing magnetic field will always flow in a direction that opposes the original change (the change that produced it).
+
+```mermaid
+flowchart LR
+    M[Magnet / flux source moves] --> F["Flux Φ through coil changes"]
+    F --> E["EMF induced: ε = −N·dΦ/dt"]
+    E --> I[Induced current flows]
+    I --> O["Induced current creates opposing B-field"]
+    O -. opposes the motion .-> M
+```
+
+The negative sign in Faraday's formula (§18) *is* Lenz's law — direction always opposes the change that caused it.
 
 ### Why Lenz's Law Obeys Conservation of Energy — Full Derivation (2021 PYQ 2(b))
 
@@ -1097,16 +1112,24 @@ $$L\frac{dI}{dt}+IR=0 \qquad\Rightarrow\qquad \boxed{I(t)=I_0e^{-Rt/L}}$$
 At $t=\tau=L/R$: $I(\tau)=I_0e^{-1}\approx0.368I_0$ (36.8% of initial value).
 
 ### Growth & Decay Graphs
+
+```mermaid
+xychart-beta
+    title "LR Growth: I/I0 vs t/(L/R)"
+    x-axis "t / (L/R)" [0, 0.5, 1, 1.5, 2, 3, 4, 5]
+    y-axis "I / I0" 0 --> 1
+    line [0, 0.39, 0.63, 0.78, 0.86, 0.95, 0.98, 0.99]
 ```
-Growth of current              Decay of current
-   I                              I
-  I0|- - - - - - ,•''            I0•
-    |         ,-•'                 \
-    |     ,-•'                      \_
-    |  ,-•'                           \___
-    |,'                                   \===----
-   0+------------------→ t             0 +---------→ t
+
+```mermaid
+xychart-beta
+    title "LR Decay: I/I0 vs t/(L/R)"
+    x-axis "t / (L/R)" [0, 0.5, 1, 1.5, 2, 3, 4, 5]
+    y-axis "I / I0" 0 --> 1
+    line [1, 0.61, 0.37, 0.22, 0.14, 0.05, 0.02, 0.01]
 ```
+
+Same exponential shape as RC (§13) — swap τ = RC for τ = L/R.
 
 ### 23.3 Numerical (2020 PYQ 2(c)) — Time Constant from "reaches ⅓ of maximum in 5 s"
 
@@ -1233,6 +1256,16 @@ $$2\pi f_0L = \frac{1}{2\pi f_0C}$$
 $$f_0^2 = \frac{1}{4\pi^2LC}$$
 
 $$\boxed{f_0 = \frac{1}{2\pi\sqrt{LC}}}$$
+
+```mermaid
+xychart-beta
+    title "Series RLC Resonance: |Z| vs frequency ratio f/f0"
+    x-axis "f / f0" [0.4, 0.6, 0.8, 0.9, 1.0, 1.1, 1.2, 1.4, 1.6]
+    y-axis "Impedance Z (normalized)" 1 --> 3
+    line [2.8, 1.9, 1.3, 1.05, 1.0, 1.05, 1.3, 1.9, 2.8]
+```
+
+At `f/f0 = 1`, $X_L = X_C$, so $Z$ is minimum (purely resistive) — the resonance dip.
 
 ### Numerical (2023 PYQ 2(c))
 
