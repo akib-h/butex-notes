@@ -1,0 +1,11 @@
+<svg viewBox="0 0 400 140" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="70" r="20" fill="#3498db"/>
+  <text x="100" y="76" text-anchor="middle" fill="white" font-size="15">+q</text>
+  <circle cx="300" cy="70" r="20" fill="#e74c3c"/>
+  <text x="300" y="76" text-anchor="middle" fill="white" font-size="15">−q</text>
+  <line x1="120" y1="70" x2="280" y2="70" stroke="#333" stroke-width="1.5"/>
+  <text x="200" y="55" text-anchor="middle" font-size="13">2ℓ</text>
+  <line x1="120" y1="95" x2="280" y2="95" stroke="#8e44ad" stroke-width="2" marker-end="url(#a4)"/>
+  <text x="200" y="115" text-anchor="middle" font-size="13">p = q·(2ℓ), points −q → +q</text>
+  <defs><marker id="a4" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#8e44ad"/></marker></defs>
+</svg>
