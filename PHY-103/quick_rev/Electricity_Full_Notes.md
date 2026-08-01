@@ -2,7 +2,7 @@
 ### BUTEX Previous Year Questions (2015–2024) · Rewritten, Corrected & Fully Derived
 
 > [!NOTE]
-> This guide rewrites your handwritten "Electricity" notebook (2015–2024 PYQs) into a corrected, fully-derived reference. Every question keeps its **original year and question number** from your notebook. Because several years repeat the same theory (Coulomb's law, Gauss's law, parallel-plate capacitance, Faraday's law, LR circuits, Wheatstone bridge, Hall effect), each concept is derived **once, in full**, and every repeat year is cross-referenced to it — with its own numbers worked out in full where a numerical was attached. This avoids 10× repetition of the same algebra while still giving you every single question, answer, and correction.
+> This guide rewrites the handwritten "Electricity" notebook (2015–2024 PYQs) into a corrected, fully-derived reference. Every question keeps its **original year and question number** from the notebook. Because several years repeat the same theory (Coulomb's law, Gauss's law, parallel-plate capacitance, Faraday's law, LR circuits, Wheatstone bridge, Hall effect), each concept is derived **once, in full**, and every repeat year is cross-referenced to it — with its own numbers worked out in full where a numerical was attached. This avoids 10× repetition of the same algebra while still giving you every single question, answer, and correction.
 
 ---
 
